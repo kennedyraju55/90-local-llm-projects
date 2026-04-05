@@ -237,6 +237,25 @@ section{padding:100px 0;position:relative;z-index:1}
 .tech-icon{font-size:2.4rem;margin-bottom:10px;display:block}
 .tech-item span{font-size:.95rem;font-weight:600}
 
+/* ===== WHAT'S IN EACH PROJECT ===== */
+.project-structure{
+  max-width:800px;margin:0 auto;
+  background:var(--glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid var(--glass-border);border-radius:20px;padding:40px;
+}
+.project-structure pre{
+  background:rgba(0,0,0,.4);border-radius:12px;padding:24px;
+  font-family:'Fira Code','Cascadia Code',monospace;font-size:.88rem;
+  line-height:1.7;color:#a5b4fc;overflow-x:auto;margin-bottom:24px;
+}
+.feature-pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.feature-pill{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 20px;
+  background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.2);
+  border-radius:50px;font-size:.88rem;color:#a5b4fc;transition:all .3s ease;
+}
+.feature-pill:hover{background:rgba(99,102,241,.15);border-color:rgba(99,102,241,.4);transform:translateY(-2px)}
+
 /* ===== ARCHITECTURE ===== */
 .arch-flow{
   display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;
@@ -335,8 +354,8 @@ footer p{color:var(--text-dim);font-size:.95rem;margin-bottom:16px}
         <span class="stat-label">Projects</span>
       </div>
       <div class="stat-card">
-        <span class="stat-number" data-target="9">0</span>
-        <span class="stat-label">Categories</span>
+        <span class="stat-number" data-target="500" data-suffix="+">0</span>
+        <span class="stat-label">API Endpoints</span>
       </div>
       <div class="stat-card">
         <span class="stat-number" data-target="2400" data-suffix="+">0</span>
@@ -344,7 +363,7 @@ footer p{color:var(--text-dim);font-size:.95rem;margin-bottom:16px}
       </div>
       <div class="stat-card">
         <span class="stat-number" data-target="270" data-suffix="+">0</span>
-        <span class="stat-label">SVG Images</span>
+        <span class="stat-label">SVGs</span>
       </div>
     </div>
     <div class="cta-group">
@@ -424,7 +443,7 @@ footer p{color:var(--text-dim);font-size:.95rem;margin-bottom:16px}
   <div class="container">
     <div class="section-header reveal">
       <h2 class="gradient-text">All 90 Projects</h2>
-      <p>Each project is a standalone repo with tests, docs, and beautiful SVG images.</p>
+      <p>Each project is a standalone repo with tests, docs, FastAPI, Docker, CI/CD, and SVG images.</p>
       <div class="section-divider"></div>
     </div>
     <div class="search-bar reveal">
@@ -449,10 +468,54 @@ footer p{color:var(--text-dim);font-size:.95rem;margin-bottom:16px}
       <div class="tech-item"><span class="tech-icon">&#128013;</span><span>Python</span></div>
       <div class="tech-item"><span class="tech-icon">&#129433;</span><span>Ollama</span></div>
       <div class="tech-item"><span class="tech-icon">&#128142;</span><span>Gemma 4</span></div>
+      <div class="tech-item"><span class="tech-icon">&#9889;</span><span>FastAPI</span></div>
       <div class="tech-item"><span class="tech-icon">&#128640;</span><span>Streamlit</span></div>
       <div class="tech-item"><span class="tech-icon">&#128187;</span><span>Click CLI</span></div>
       <div class="tech-item"><span class="tech-icon">&#127912;</span><span>Rich</span></div>
       <div class="tech-item"><span class="tech-icon">&#129514;</span><span>pytest</span></div>
+      <div class="tech-item"><span class="tech-icon">&#128051;</span><span>Docker</span></div>
+      <div class="tech-item"><span class="tech-icon">&#9881;&#65039;</span><span>CI/CD</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHAT'S IN EACH PROJECT ==================== -->
+<section id="whats-inside">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2 class="gradient-text">What's in Each Project</h2>
+      <p>Every project follows the same production-grade structure.</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="project-structure reveal">
+      <pre>
+each-project/
+&#9500;&#9472;&#9472; src/{module}/
+&#9474;   &#9500;&#9472;&#9472; core.py          # Business logic + LLM integration
+&#9474;   &#9500;&#9472;&#9472; cli.py           # Click CLI interface
+&#9474;   &#9500;&#9472;&#9472; web_ui.py        # Streamlit web UI (dark theme)
+&#9474;   &#9500;&#9472;&#9472; api.py           # FastAPI REST API
+&#9474;   &#9492;&#9472;&#9472; config.py        # Configuration
+&#9500;&#9472;&#9472; tests/               # pytest test suite
+&#9500;&#9472;&#9472; examples/demo.py     # Usage examples
+&#9500;&#9472;&#9472; docs/images/         # SVG diagrams
+&#9500;&#9472;&#9472; Dockerfile           # Multi-stage Docker build
+&#9500;&#9472;&#9472; docker-compose.yml   # Full stack with Ollama
+&#9500;&#9472;&#9472; .github/workflows/   # CI/CD pipeline
+&#9500;&#9472;&#9472; CONTRIBUTING.md
+&#9500;&#9472;&#9472; CHANGELOG.md
+&#9492;&#9472;&#9472; README.md            # 500+ line documentation
+      </pre>
+      <div class="feature-pills">
+        <span class="feature-pill">&#128051; Docker Ready</span>
+        <span class="feature-pill">&#9889; FastAPI REST API</span>
+        <span class="feature-pill">&#9881;&#65039; CI/CD Pipeline</span>
+        <span class="feature-pill">&#128187; Click CLI</span>
+        <span class="feature-pill">&#127912; Streamlit UI</span>
+        <span class="feature-pill">&#129514; pytest Suite</span>
+        <span class="feature-pill">&#128196; 500+ Line Docs</span>
+        <span class="feature-pill">&#127912; SVG Diagrams</span>
+      </div>
     </div>
   </div>
 </section>

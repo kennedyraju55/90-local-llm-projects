@@ -7,6 +7,7 @@ Always consult a qualified healthcare provider or pharmacist before making
 any decisions about your medications.
 """
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import sys
 import os
 import logging
@@ -282,7 +283,7 @@ def classify_severity(interaction_text: str) -> str:
     return "none"
 
 
-def display_results(medications: list[str], response: str):
+def display_results(medications: list[str], response: str) -> None:
     """Display the interaction check results with rich formatting and severity."""
     from rich.console import Console
     from rich.panel import Panel

@@ -2,7 +2,7 @@
 
 import logging
 import re
-from typing import Any
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 from .config import load_config
 from .utils import get_llm_client, truncate_text, read_document

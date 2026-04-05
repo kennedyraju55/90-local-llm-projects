@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Core business logic for Home Automation Scripter."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import sys
 import os
 import json
@@ -247,6 +248,7 @@ def load_config(config_path: str | None = None) -> dict:
 
 
 def _rules_path(config: dict | None = None) -> str:
+    """Rules path."""
     if config and "rules_file" in config:
         return config["rules_file"]
     return DEFAULT_CONFIG["rules_file"]

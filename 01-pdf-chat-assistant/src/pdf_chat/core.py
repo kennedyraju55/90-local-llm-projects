@@ -1,5 +1,6 @@
 """Core business logic for PDF Chat Assistant."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import logging
 import os
 import sys

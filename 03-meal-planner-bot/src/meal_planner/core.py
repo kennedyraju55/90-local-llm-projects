@@ -1,5 +1,6 @@
 """Core business logic for Meal Planner Bot."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import logging
 import sys
 from pathlib import Path

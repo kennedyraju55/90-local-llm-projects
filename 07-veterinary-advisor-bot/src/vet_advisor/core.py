@@ -1,5 +1,6 @@
 """Core business logic for Veterinary Advisor Bot."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import logging
 from datetime import datetime
 

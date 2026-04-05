@@ -7,7 +7,7 @@ import sys
 import logging
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import Any, Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import yaml
 
@@ -117,6 +117,7 @@ class Email:
     personalization_tokens: list[str] = field(default_factory=list)
 
     def __post_init__(self) -> None:
+        """Post init."""
         if not self.personalization_tokens:
             self.personalization_tokens = extract_personalization_tokens(self.body)
 

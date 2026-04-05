@@ -10,7 +10,7 @@ import json
 import logging
 import os
 import sys
-from typing import Any, Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import yaml
 
@@ -244,6 +244,7 @@ def compare_periods(data: list[dict], current_period: str, previous_period: str)
         change.
     """
     def _find_period_rows(label: str) -> list[dict]:
+        """Find period rows."""
         matching: list[dict] = []
         for row in data:
             if any(str(v).strip().lower() == label.strip().lower() for v in row.values()):

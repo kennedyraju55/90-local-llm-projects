@@ -6,7 +6,7 @@ import json
 import re
 from datetime import datetime
 from pathlib import Path
-from typing import Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import yaml
 
@@ -44,6 +44,7 @@ SKILL_CATEGORIES = {
 def load_config(config_path: Optional[str] = None) -> dict:
     config = DEFAULT_CONFIG.copy()
     if config_path and os.path.exists(config_path):
+        """Load config."""
         with open(config_path, "r", encoding="utf-8") as f:
             user_config = yaml.safe_load(f) or {}
         _deep_merge(config, user_config)
@@ -52,6 +53,7 @@ def load_config(config_path: Optional[str] = None) -> dict:
 
 def _deep_merge(base: dict, override: dict) -> None:
     for key, value in override.items():
+        """Deep merge."""
         if key in base and isinstance(base[key], dict) and isinstance(value, dict):
             _deep_merge(base[key], value)
         else:
@@ -59,6 +61,7 @@ def _deep_merge(base: dict, override: dict) -> None:
 
 
 def get_tones() -> dict:
+    """Get tones."""
     return TONES
 
 

@@ -9,6 +9,7 @@ Always consult a qualified fitness professional or physician before starting any
 exercise program. Improper form can lead to injury.
 """
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import sys
 import os
 import logging

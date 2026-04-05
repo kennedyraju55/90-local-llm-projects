@@ -11,7 +11,7 @@ import logging
 import os
 import sys
 from datetime import datetime, timedelta
-from typing import Any, Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import yaml
 

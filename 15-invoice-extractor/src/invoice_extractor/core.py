@@ -5,7 +5,7 @@ import io
 import json
 import logging
 import os
-from typing import Any
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 from .config import load_config
 from .utils import get_llm_client, parse_llm_json, read_invoice_file

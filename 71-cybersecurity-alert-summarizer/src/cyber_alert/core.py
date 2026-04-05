@@ -7,7 +7,7 @@ import hashlib
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
-from typing import Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 from common.llm_client import chat
 
@@ -118,6 +118,7 @@ class ThreatScore:
 
     @property
     def label(self) -> str:
+        """Label."""
         if self.overall_score >= 9.0:
             return "CRITICAL"
         elif self.overall_score >= 7.0:

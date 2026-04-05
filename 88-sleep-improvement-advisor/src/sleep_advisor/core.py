@@ -6,6 +6,7 @@ is NOT medical advice. It does NOT diagnose or treat sleep disorders. Always con
 a qualified healthcare provider for sleep-related health concerns.
 """
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import sys
 import os
 import csv

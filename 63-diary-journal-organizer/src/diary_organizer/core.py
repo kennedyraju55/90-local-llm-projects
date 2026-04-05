@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Diary Journal Organizer - Core functions for diary management and AI insights."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import sys
 import os
 import json

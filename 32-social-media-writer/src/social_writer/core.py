@@ -7,7 +7,7 @@ import logging
 import re
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import yaml
 
@@ -134,6 +134,7 @@ class SocialPost:
     created_at: datetime = field(default_factory=datetime.now)
 
     def __post_init__(self) -> None:
+        """Post init."""
         self.char_count = len(self.content)
         config = _get_platform_config(self.platform)
         self.is_within_limit = self.char_count <= config["max_chars"]

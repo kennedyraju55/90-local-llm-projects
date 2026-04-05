@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Personal Knowledge Base - Core functions for note storage and semantic search."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import sys
 import os
 import json

@@ -1,5 +1,6 @@
 """Core business logic for the Report Generator."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import csv
 import os
 import statistics

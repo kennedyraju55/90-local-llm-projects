@@ -1,5 +1,6 @@
 """Core business logic for the News Digest Generator."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import os
 import glob as glob_module
 import logging

@@ -1,5 +1,6 @@
 """Core business logic for Travel Itinerary Bot."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import logging
 import sys
 from pathlib import Path

@@ -8,7 +8,7 @@ import hashlib
 import logging
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 from common.llm_client import chat
 

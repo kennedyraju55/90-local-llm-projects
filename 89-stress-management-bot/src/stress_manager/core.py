@@ -11,6 +11,7 @@ If you are in crisis, please contact:
   - Emergency Services: Call 911
 """
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import logging
 import os
 import sys
@@ -179,7 +180,7 @@ def show_disclaimer():
     console.print()
 
 
-def run_breathing_exercise(exercise_key: str):
+def run_breathing_exercise(exercise_key: str) -> None:
     """Run a guided breathing exercise with timed progress bars."""
     exercise = BREATHING_EXERCISES[exercise_key]
     logger.info("Starting breathing exercise: %s", exercise["name"])
@@ -236,6 +237,7 @@ def calculate_stress_score(answers: dict) -> dict:
     ]
 
     def _severity(score: int) -> str:
+        """Severity."""
         if score <= 3:
             return "low"
         if score <= 6:

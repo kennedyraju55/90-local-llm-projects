@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Family Story Creator - Core business logic for creating personalized family stories."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import sys
 import os
 import json

@@ -1,5 +1,6 @@
 """Core business logic for the Policy Compliance Checker."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import json
 import re
 import logging

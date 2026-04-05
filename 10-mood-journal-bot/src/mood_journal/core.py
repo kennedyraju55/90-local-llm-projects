@@ -1,5 +1,6 @@
 """Core business logic for Mood Journal Bot."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import logging
 from datetime import datetime, timedelta
 from collections import Counter

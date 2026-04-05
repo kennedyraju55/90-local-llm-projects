@@ -8,7 +8,7 @@ import logging
 from datetime import datetime, timedelta
 from collections import defaultdict
 from itertools import combinations
-from typing import Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import yaml
 
@@ -93,6 +93,7 @@ def load_config(config_path: str = "config.yaml") -> dict:
 
 def _setup_logging(config: dict) -> None:
     log_cfg = config.get("logging", {})
+    """Setup logging."""
     logging.basicConfig(
         level=getattr(logging, log_cfg.get("level", "INFO")),
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
@@ -108,6 +109,7 @@ def _setup_logging(config: dict) -> None:
 # ---------------------------------------------------------------------------
 
 def _resolve_habits_file(habits_file: Optional[str] = None, config: Optional[dict] = None) -> str:
+    """Resolve habits file."""
     if habits_file:
         return habits_file
     if config:

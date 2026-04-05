@@ -10,7 +10,7 @@ import math
 from datetime import datetime, timedelta
 from collections import defaultdict
 from dataclasses import dataclass, field
-from typing import Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import yaml
 

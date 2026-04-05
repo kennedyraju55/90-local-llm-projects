@@ -4,7 +4,7 @@ import os
 import sys
 import logging
 import json
-from typing import Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import pandas as pd
 import yaml
@@ -30,7 +30,7 @@ def load_config(config_path: str = None) -> dict:
     return _config
 
 
-def get_llm_client():
+def get_llm_client() -> Tuple[Any, ...]:
     """Get LLM client with proper path setup."""
     project_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
     parent_dir = os.path.dirname(project_root)

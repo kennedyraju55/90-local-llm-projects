@@ -7,7 +7,7 @@ import re
 import logging
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
-from typing import Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import yaml
 
@@ -81,6 +81,7 @@ def load_config(path: Optional[str] = None) -> dict:
     def _merge(base: dict, override: dict) -> dict:
         merged = base.copy()
         for key, val in override.items():
+            """Merge."""
             if isinstance(val, dict) and isinstance(merged.get(key), dict):
                 merged[key] = _merge(merged[key], val)
             else:
@@ -126,6 +127,7 @@ class BlogPost:
 
     def __post_init__(self) -> None:
         if self.word_count == 0:
+            """Post init."""
             self.word_count = len(self.content.split())
 
 
@@ -360,6 +362,7 @@ def analyze_tone(content: str) -> dict:
     ]
 
     def _score(markers: list[str]) -> float:
+        """Score."""
         count = sum(1 for m in markers if m in content_lower)
         return round(min(count / max(len(markers) * 0.4, 1), 1.0), 2)
 

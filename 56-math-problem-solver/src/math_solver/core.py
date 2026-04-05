@@ -5,7 +5,7 @@ import logging
 import os
 import sys
 from dataclasses import dataclass, field, asdict
-from typing import List, Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import yaml
 
@@ -61,6 +61,7 @@ class MathProblemResult:
     latex_output: str = ""
 
     def to_dict(self) -> dict:
+        """To dict."""
         return asdict(self)
 
 
@@ -167,7 +168,7 @@ def get_formula_library(category: str = "") -> dict:
 # ---------------------------------------------------------------------------
 
 
-def _get_llm_client():
+def _get_llm_client() -> Tuple[Any, ...]:
     """Import and return the LLM client lazily."""
     sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", ".."))
     from common.llm_client import chat, check_ollama_running

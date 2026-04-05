@@ -14,6 +14,9 @@
 [![License](https://img.shields.io/badge/License-MIT-2ea44f?style=for-the-badge)](LICENSE)
 [![Projects](https://img.shields.io/badge/🚀_Projects-90-FF6B6B?style=for-the-badge)]()
 [![Tests](https://img.shields.io/badge/✅_Tests-2400+-00C853?style=for-the-badge)]()
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)]()
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)]()
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)]()
 
 <br/>
 
@@ -22,8 +25,9 @@
 <td align="center"><strong>🤖<br/>90<br/>Projects</strong></td>
 <td align="center"><strong>📂<br/>9<br/>Categories</strong></td>
 <td align="center"><strong>✅<br/>2400+<br/>Tests</strong></td>
-<td align="center"><strong>🎨<br/>270<br/>SVG Images</strong></td>
-<td align="center"><strong>🔒<br/>100%<br/>Private</strong></td>
+<td align="center"><strong>🚀<br/>500+<br/>API Endpoints</strong></td>
+<td align="center"><strong>🎨<br/>270<br/>SVGs</strong></td>
+<td align="center"><strong>🐳<br/>Docker<br/>Ready</strong></td>
 </tr>
 </table>
 
@@ -48,6 +52,7 @@
 
 - [🌟 Why Local LLMs?](#-why-local-llms)
 - [⚡ Quick Start](#-quick-start)
+- [📦 What's Inside Each Project](#-whats-inside-each-project)
 - [📂 All 90 Projects](#-all-90-projects)
   - [🤖 Chatbots & Conversational AI (01–10)](#-category-1-chatbots--conversational-ai)
   - [📄 Document Processing & Analysis (11–20)](#-category-2-document-processing--analysis)
@@ -114,6 +119,31 @@ python app.py --help
 ```
 
 > 💡 **Each of the 90 projects also lives in its own dedicated GitHub repo** — click any project link below to explore it individually!
+
+---
+
+## 📦 What's Inside Each Project
+
+Every project follows the same production-grade structure:
+
+```
+each-project/
+├── src/{module}/
+│   ├── core.py          # Business logic + LLM integration
+│   ├── cli.py           # Click CLI interface
+│   ├── web_ui.py        # Streamlit web UI (dark theme)
+│   ├── api.py           # FastAPI REST API
+│   └── config.py        # Configuration
+├── tests/               # pytest test suite
+├── examples/demo.py     # Usage examples
+├── docs/images/         # SVG diagrams
+├── Dockerfile            # Multi-stage Docker build
+├── docker-compose.yml   # Full stack with Ollama
+├── .github/workflows/   # CI/CD pipeline
+├── CONTRIBUTING.md
+├── CHANGELOG.md
+└── README.md            # 500+ line documentation
+```
 
 ---
 
@@ -348,7 +378,9 @@ The web book includes detailed walkthroughs, architecture diagrams, and code exa
 | 🚀 **Total Projects** | **90** |
 | 📂 **Categories** | **9** |
 | ✅ **Unit Tests** | **2,400+** |
+| 🚀 **API Endpoints** | **500+** |
 | 🎨 **SVG Assets** | **270** |
+| 🐳 **Docker** | **Ready (all 90 projects)** |
 | 🐍 **Language** | **Python** |
 | 🤖 **LLM** | **Gemma 4 (100% local)** |
 | 🔒 **Privacy** | **100% offline** |

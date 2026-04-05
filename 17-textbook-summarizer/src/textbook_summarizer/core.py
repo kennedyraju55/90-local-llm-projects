@@ -1,5 +1,6 @@
 """Core business logic for the Textbook Summarizer."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import os
 import re
 import logging

@@ -6,6 +6,7 @@ If someone is seriously injured or in a life-threatening situation, CALL 911 IMM
 This is NOT medical advice. Always seek professional medical help for injuries and illness.
 """
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import logging
 import os
 import sys
@@ -262,6 +263,7 @@ class EmergencyContactManager:
     """Manage a list of emergency contacts (in-memory storage)."""
 
     def __init__(self) -> None:
+        """Init."""
         self._contacts: list[EmergencyContact] = []
 
     def add_contact(self, contact: EmergencyContact) -> None:

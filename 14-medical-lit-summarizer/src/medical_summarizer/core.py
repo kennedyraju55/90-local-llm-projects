@@ -1,7 +1,7 @@
 """Core business logic for Medical Literature Summarizer."""
 
 import logging
-from typing import Any
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 from .config import load_config
 from .utils import get_llm_client

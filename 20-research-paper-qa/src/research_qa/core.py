@@ -1,5 +1,6 @@
 """Core business logic for the Research Paper QA."""
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import os
 import logging
 

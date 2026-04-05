@@ -9,6 +9,7 @@ It is NOT a substitute for professional medical advice, diagnosis, or treatment.
 ALWAYS consult a qualified healthcare provider for any health concerns.
 """
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import os
 import sys
 import json
@@ -250,6 +251,7 @@ class MedicalHistoryTracker:
     """Track symptom history across a session."""
 
     def __init__(self) -> None:
+        """Init."""
         self.entries: list[dict] = []
 
     def add_entry(

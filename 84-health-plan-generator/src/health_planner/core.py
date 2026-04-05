@@ -7,6 +7,7 @@ qualified healthcare professional before starting any new health, diet, or
 exercise program.
 """
 
+from typing import Optional, List, Dict, Any, Tuple, Union
 import datetime
 import json
 import logging
@@ -143,13 +144,14 @@ WEEKLY_CHECKIN_QUESTIONS = [
 class ProgressTracker:
     """Track progress toward health goals."""
 
-    def __init__(self):
+    def __init__(self) -> None:
+        """Init."""
         self.checkins: list[dict] = []
         self.current_week: int = 1
         self.goal: str | None = None
         self.start_date: str | None = None
 
-    def start_plan(self, goal: str):
+    def start_plan(self, goal: str) -> None:
         """Initialize tracking for a new plan."""
         self.goal = goal
         self.start_date = datetime.date.today().isoformat()
