@@ -10,6 +10,7 @@
 [![Click CLI](https://img.shields.io/badge/Click-CLI-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://click.palletsprojects.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-f1c40f?style=for-the-badge)](LICENSE)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)]()
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)]()
 
 [![Tests](https://img.shields.io/github/actions/workflow/status/kennedyraju55/sales-email-generator/tests.yml?label=tests&style=flat-square)](https://github.com/kennedyraju55/sales-email-generator/actions)
 [![GitHub stars](https://img.shields.io/github/stars/kennedyraju55/sales-email-generator?style=flat-square&color=e63946)](https://github.com/kennedyraju55/sales-email-generator/stargazers)
@@ -198,6 +199,42 @@ open http://localhost:8501
 
 
 ---
+
+
+---
+
+## ⚡ REST API
+
+Every project includes a FastAPI REST API with auto-generated docs.
+
+### Start the API Server
+
+```bash
+# Run directly
+uvicorn src.sales_email_gen.api:app --reload --port 8000
+
+# Or with Docker
+docker compose up
+```
+
+### API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/health` | Health check |
+| `GET` | `/docs` | Interactive Swagger UI |
+| `GET` | `/redoc` | ReDoc documentation |
+| `POST` | `/analyze` | Main analysis endpoint |
+
+### Example Request
+
+```bash
+curl -X POST http://localhost:8000/analyze \
+  -H "Content-Type: application/json" \
+  -d '{"text": "your input here"}'
+```
+
+> 📖 Visit `http://localhost:8000/docs` for the full interactive API documentation.
 
 ## 💻 CLI Reference
 
