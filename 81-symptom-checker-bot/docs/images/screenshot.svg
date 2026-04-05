@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" rx="10" fill="#282a36"/>
+
+  <!-- Title bar -->
+  <rect width="800" height="32" rx="10" fill="#1e1f29"/>
+  <rect y="20" width="800" height="12" fill="#1e1f29"/>
+
+  <!-- macOS window dots -->
+  <circle cx="20" cy="16" r="6" fill="#ff5555"/>
+  <circle cx="40" cy="16" r="6" fill="#f1fa8c"/>
+  <circle cx="60" cy="16" r="6" fill="#50fa7b"/>
+
+  <!-- Title bar text -->
+  <text x="85" y="20" fill="#bd93f9" font-family="'Cascadia Code',Consolas,monospace" font-size="13" font-weight="bold">  Symptom Checker Bot — Project #81</text>
+
+  <!-- Terminal content -->
+  <text x="20" y="60" fill="#50fa7b" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">$ python -m symptom_checker check</text>
+  <text x="20" y="76" fill="#8be9fd" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">🤖 Model: gemma4:latest | Ollama @ localhost:11434</text>
+  <text x="20" y="92" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">──────────────────────────────────────────────────────────────────────</text>
+  <text x="20" y="108" fill="#8be9fd" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">📋 Prompt: Headache and mild fever - possible causes? Brief....</text>
+  <text x="20" y="124" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">──────────────────────────────────────────────────────────────────────</text>
+  <text x="20" y="140" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="156" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">***Disclaimer: I am an AI and cannot provide medical advice. This information is for</text>
+  <text x="20" y="172" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">educational purposes only. If you are concerned about your symptoms, you must consult</text>
+  <text x="20" y="188" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">a qualified healthcare professional immediately.***</text>
+  <text x="20" y="204" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="220" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">Headache and mild fever are very common symptoms that can be caused by a wide range</text>
+  <text x="20" y="236" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">of issues, from mild to moderate.</text>
+  <text x="20" y="252" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="268" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">Here are the most common possible causes, grouped by category:</text>
+  <text x="20" y="284" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="300" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">### 🤧 Infectious Causes (Most Common)</text>
+  <text x="20" y="316" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">These are the most frequent culprits and usually suggest your body is fighting</text>
+  <text x="20" y="332" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">something off.</text>
+  <text x="20" y="348" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="364" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">*   **Viral Infections:** The common cold, influenza (flu), or COVID-19. Most general</text>
+  <text x="20" y="380" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">viral illnesses can cause both fever and headache.</text>
+  <text x="20" y="396" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">*   **Sinusitis:** Inflammation or infection of the sinuses can cause localized pain</text>
+  <text x="20" y="412" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">(often felt as a headache) and mild systemic symptoms like fever.</text>
+  <text x="20" y="428" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">  ... [truncated for display]</text>
+
+  <!-- Bottom status bar -->
+  <rect y="478" width="800" height="22" rx="0" fill="#1e1f29"/>
+  <text x="20" y="493" fill="#6272a4" font-family="Consolas,monospace" font-size="10">gemma4:latest • Ollama • localhost:11434 • 81-symptom-checker-bot</text>
+</svg>

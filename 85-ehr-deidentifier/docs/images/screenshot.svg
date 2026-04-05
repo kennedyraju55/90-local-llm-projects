@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" rx="10" fill="#282a36"/>
+
+  <!-- Title bar -->
+  <rect width="800" height="32" rx="10" fill="#1e1f29"/>
+  <rect y="20" width="800" height="12" fill="#1e1f29"/>
+
+  <!-- macOS window dots -->
+  <circle cx="20" cy="16" r="6" fill="#ff5555"/>
+  <circle cx="40" cy="16" r="6" fill="#f1fa8c"/>
+  <circle cx="60" cy="16" r="6" fill="#50fa7b"/>
+
+  <!-- Title bar text -->
+  <text x="85" y="20" fill="#bd93f9" font-family="'Cascadia Code',Consolas,monospace" font-size="13" font-weight="bold">  EHR De-identifier — Project #85</text>
+
+  <!-- Terminal content -->
+  <text x="20" y="60" fill="#50fa7b" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">$ python -m ehr_deidentifier process</text>
+  <text x="20" y="76" fill="#8be9fd" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">🤖 Model: gemma4:latest | Ollama @ localhost:11434</text>
+  <text x="20" y="92" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">──────────────────────────────────────────────────────────────────────</text>
+  <text x="20" y="108" fill="#8be9fd" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">📋 Prompt: De-identify: Patient John Smith DOB 03/15/1985 SSN 123-45-6789. Show r...</text>
+  <text x="20" y="124" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">──────────────────────────────────────────────────────────────────────</text>
+  <text x="20" y="140" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="156" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">Here are a few ways to show the result, depending on how strict your privacy</text>
+  <text x="20" y="172" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">standards are:</text>
+  <text x="20" y="188" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="204" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">**Option 1: Full Masking (Best for testing/display)**</text>
+  <text x="20" y="220" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">[Patient Name] DOB [Date] SSN [Last 4 Digits]</text>
+  <text x="20" y="236" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="252" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">**Option 2: Redaction (Best for documents)**</text>
+  <text x="20" y="268" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">Patient [REDACTED] DOB [REDACTED] SSN [REDACTED]</text>
+  <text x="20" y="284" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="300" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">**Option 3: Generalization (Best for data analysis)**</text>
+  <text x="20" y="316" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">Patient John Smith DOB 1985 SSN ***-***-6789</text>
+  <text x="20" y="332" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="348" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">***</text>
+  <text x="20" y="364" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="380" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">**The most common professional result is:**</text>
+  <text x="20" y="396" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">&quot;Patient: **[NAME REDACTED]** | DOB: **[DATE REDACTED]** | SSN: **[NUMBER</text>
+  <text x="20" y="412" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">REDACTED]**&quot;</text>
+  <text x="20" y="428" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">  ... [truncated for display]</text>
+
+  <!-- Bottom status bar -->
+  <rect y="478" width="800" height="22" rx="0" fill="#1e1f29"/>
+  <text x="20" y="493" fill="#6272a4" font-family="Consolas,monospace" font-size="10">gemma4:latest • Ollama • localhost:11434 • 85-ehr-deidentifier</text>
+</svg>

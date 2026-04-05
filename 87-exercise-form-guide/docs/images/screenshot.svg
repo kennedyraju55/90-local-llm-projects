@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" rx="10" fill="#282a36"/>
+
+  <!-- Title bar -->
+  <rect width="800" height="32" rx="10" fill="#1e1f29"/>
+  <rect y="20" width="800" height="12" fill="#1e1f29"/>
+
+  <!-- macOS window dots -->
+  <circle cx="20" cy="16" r="6" fill="#ff5555"/>
+  <circle cx="40" cy="16" r="6" fill="#f1fa8c"/>
+  <circle cx="60" cy="16" r="6" fill="#50fa7b"/>
+
+  <!-- Title bar text -->
+  <text x="85" y="20" fill="#bd93f9" font-family="'Cascadia Code',Consolas,monospace" font-size="13" font-weight="bold">  Exercise Form Guide — Project #87</text>
+
+  <!-- Terminal content -->
+  <text x="20" y="60" fill="#50fa7b" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">$ python -m exercise_guide explain</text>
+  <text x="20" y="76" fill="#8be9fd" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">🤖 Model: gemma4:latest | Ollama @ localhost:11434</text>
+  <text x="20" y="92" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">──────────────────────────────────────────────────────────────────────</text>
+  <text x="20" y="108" fill="#8be9fd" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">📋 Prompt: Proper deadlift form, 3 key tips. Brief....</text>
+  <text x="20" y="124" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">──────────────────────────────────────────────────────────────────────</text>
+  <text x="20" y="140" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="156" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">Here are three key tips to nail your deadlift form:</text>
+  <text x="20" y="172" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="188" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">1.  **Engage Your Lats and Core:** Before you lift, imagine you are trying to &quot;bend</text>
+  <text x="20" y="204" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">the bar to your shins&quot; rather than pulling it to you. Keep your chest up, pull your</text>
+  <text x="20" y="220" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">shoulder blades back, and brace your core like you&#x27;re about to be punched.</text>
+  <text x="20" y="236" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">2.  **Drive with Your Legs, Not Your Back:** Think of the movement as a hip hinge.</text>
+  <text x="20" y="252" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">Keep the bar close to your body and push your hips back (like you&#x27;re closing a car</text>
+  <text x="20" y="268" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">door with your butt), then extend your knees and hips simultaneously. Your back</text>
+  <text x="20" y="284" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">should stay neutral and flat throughout the ascent.</text>
+  <text x="20" y="300" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">3.  **Keep the Bar Overhead:** Throughout the lift, your bar path should be in a</text>
+  <text x="20" y="316" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">straight vertical line, staying as close to your legs as possible. Do not let it</text>
+  <text x="20" y="332" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">drift away from your body&#x27;s center.</text>
+  <text x="20" y="348" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="364" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">***</text>
+  <text x="20" y="380" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="396" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">*Disclaimer: I am an AI, not a strength coach. It is highly recommended that you film</text>
+  <text x="20" y="412" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">a set of your deadlifts and have a certified trainer review the video for</text>
+  <text x="20" y="428" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">  ... [truncated for display]</text>
+
+  <!-- Bottom status bar -->
+  <rect y="478" width="800" height="22" rx="0" fill="#1e1f29"/>
+  <text x="20" y="493" fill="#6272a4" font-family="Consolas,monospace" font-size="10">gemma4:latest • Ollama • localhost:11434 • 87-exercise-form-guide</text>
+</svg>

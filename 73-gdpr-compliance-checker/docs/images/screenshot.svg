@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" rx="10" fill="#282a36"/>
+
+  <!-- Title bar -->
+  <rect width="800" height="32" rx="10" fill="#1e1f29"/>
+  <rect y="20" width="800" height="12" fill="#1e1f29"/>
+
+  <!-- macOS window dots -->
+  <circle cx="20" cy="16" r="6" fill="#ff5555"/>
+  <circle cx="40" cy="16" r="6" fill="#f1fa8c"/>
+  <circle cx="60" cy="16" r="6" fill="#50fa7b"/>
+
+  <!-- Title bar text -->
+  <text x="85" y="20" fill="#bd93f9" font-family="'Cascadia Code',Consolas,monospace" font-size="13" font-weight="bold">  GDPR Compliance Checker — Project #73</text>
+
+  <!-- Terminal content -->
+  <text x="20" y="60" fill="#50fa7b" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">$ python -m gdpr_checker check</text>
+  <text x="20" y="76" fill="#8be9fd" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">🤖 Model: gemma4:latest | Ollama @ localhost:11434</text>
+  <text x="20" y="92" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">──────────────────────────────────────────────────────────────────────</text>
+  <text x="20" y="108" fill="#8be9fd" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">📋 Prompt: GDPR violations for storing user emails without consent? List 3 briefl...</text>
+  <text x="20" y="124" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">──────────────────────────────────────────────────────────────────────</text>
+  <text x="20" y="140" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="156" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">Here are three brief explanations of the GDPR violations associated with storing user</text>
+  <text x="20" y="172" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">emails without proper consent:</text>
+  <text x="20" y="188" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="204" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">**1. Violation of the Lawfulness, Fairness, and Transparency Principle (Article 5)**</text>
+  <text x="20" y="220" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">You cannot process or store personal data without a specific, lawful reason. By</text>
+  <text x="20" y="236" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">collecting an email without asking for permission, you lack a legal basis (such as</text>
+  <text x="20" y="252" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">user consent or a direct contract) for holding that data. This is considered</text>
+  <text x="20" y="268" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">&quot;processing without a right.&quot;</text>
+  <text x="20" y="284" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="300" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">**2. Violation of the Principle of Data Minimization (Article 5)**</text>
+  <text x="20" y="316" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">This principle dictates that you should only collect data that is strictly necessary</text>
+  <text x="20" y="332" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">for a specific purpose. If you have no stated reason for needing the email (e.g., &quot;We</text>
+  <text x="20" y="348" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">need it for marketing&quot;), storing it is a violation because you are keeping more data</text>
+  <text x="20" y="364" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">than is required to do business.</text>
+  <text x="20" y="380" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12"></text>
+  <text x="20" y="396" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">**3. Violation of Purpose Limitation (Article 5)**</text>
+  <text x="20" y="412" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">Once a user provides their email for one reason (e.g., &quot;to reset a password&quot;), you</text>
+  <text x="20" y="428" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace" font-size="12">  ... [truncated for display]</text>
+
+  <!-- Bottom status bar -->
+  <rect y="478" width="800" height="22" rx="0" fill="#1e1f29"/>
+  <text x="20" y="493" fill="#6272a4" font-family="Consolas,monospace" font-size="10">gemma4:latest • Ollama • localhost:11434 • 73-gdpr-compliance-checker</text>
+</svg>
