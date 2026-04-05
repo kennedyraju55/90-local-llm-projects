@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="12" fill="url(#bg)" filter="url(#shadow)"/>
+
+  <!-- Title bar -->
+  <rect width="800" height="36" rx="12" fill="#0d1117"/>
+  <rect y="12" width="800" height="24" fill="#0d1117"/>
+  <circle cx="20" cy="18" r="7" fill="#ff5f56"/>
+  <circle cx="42" cy="18" r="7" fill="#ffbd2e"/>
+  <circle cx="64" cy="18" r="7" fill="#27c93f"/>
+  <text x="400" y="22" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13" text-anchor="middle">🔍 Code Review Bot — Terminal</text>
+
+  <!-- Command prompt -->
+  <text x="30" y="100" fill="#27c93f" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13" font-weight="bold">$ python -m code_reviewer.cli review --file my_script.py</text>
+
+  <!-- LLM Output -->
+    <text x="30" y="130" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">Code Review - my_script.py</text>
+    <text x="30" y="148" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13"></text>
+    <text x="30" y="166" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">[CRITICAL] Division by zero not handled in divide(x, y).</text>
+    <text x="30" y="184" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">  Fix: if y == 0: raise ValueError(&quot;Cannot divide by zero&quot;)</text>
+    <text x="30" y="202" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13"></text>
+    <text x="30" y="220" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">[WARNING] No type hints on function parameters.</text>
+    <text x="30" y="238" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">  Suggest: def divide(x: float, y: float) -&gt; float:</text>
+    <text x="30" y="256" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13"></text>
+    <text x="30" y="274" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">[WARNING] No docstrings present on any function.</text>
+    <text x="30" y="292" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">  Add documentation explaining parameters and return values.</text>
+    <text x="30" y="310" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13"></text>
+    <text x="30" y="328" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">[INFO] Single-line function bodies are acceptable but consider</text>
+    <text x="30" y="346" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">  readability for more complex logic.</text>
+    <text x="30" y="364" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13"></text>
+    <text x="30" y="382" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">Quality Score: 4/10 | Issues: 1 critical, 2 warnings, 1 info</text>
+
+  <!-- Footer -->
+  <line x1="30" y1="415" x2="770" y2="415" stroke="#30363d" stroke-width="1"/>
+  <text x="400" y="435" fill="#6e7681" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">Powered by Gemma 4 via Ollama &#xb7; Local LLM &#xb7; No data leaves your machine</text>
+</svg>

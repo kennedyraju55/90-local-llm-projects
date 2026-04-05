@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="12" fill="url(#bg)" filter="url(#shadow)"/>
+
+  <!-- Title bar -->
+  <rect width="800" height="36" rx="12" fill="#0d1117"/>
+  <rect y="12" width="800" height="24" fill="#0d1117"/>
+  <circle cx="20" cy="18" r="7" fill="#ff5f56"/>
+  <circle cx="42" cy="18" r="7" fill="#ffbd2e"/>
+  <circle cx="64" cy="18" r="7" fill="#27c93f"/>
+  <text x="400" y="22" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="13" text-anchor="middle">🔎 Code Snippet Search — Terminal</text>
+
+  <!-- Command prompt -->
+  <text x="30" y="100" fill="#27c93f" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13" font-weight="bold">$ python -m code_search search &quot;read CSV file with pandas&quot;</text>
+
+  <!-- LLM Output -->
+    <text x="30" y="130" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">Search Results: &quot;read CSV file with pandas&quot;</text>
+    <text x="30" y="148" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13"></text>
+    <text x="30" y="166" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">  import pandas as pd</text>
+    <text x="30" y="184" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13"></text>
+    <text x="30" y="202" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">  df = pd.read_csv(&quot;data.csv&quot;)</text>
+    <text x="30" y="220" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">  df = df.fillna(0)                   # Handle missing values</text>
+    <text x="30" y="238" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">  print(df.describe())                 # Display statistics</text>
+    <text x="30" y="256" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">  print(f&quot;Shape: {df.shape[0]} rows, {df.shape[1]} cols&quot;)</text>
+    <text x="30" y="274" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13"></text>
+    <text x="30" y="292" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">Relevance: 98% | Source: pandas-cookbook</text>
+    <text x="30" y="310" fill="#e0e0e0" font-family="Cascadia Code, Fira Code, JetBrains Mono, monospace" font-size="13">Tags: #pandas #csv #data-analysis</text>
+
+  <!-- Footer -->
+  <line x1="30" y1="343" x2="770" y2="343" stroke="#30363d" stroke-width="1"/>
+  <text x="400" y="363" fill="#6e7681" font-family="Segoe UI, Arial, sans-serif" font-size="11" text-anchor="middle">Powered by Gemma 4 via Ollama &#xb7; Local LLM &#xb7; No data leaves your machine</text>
+</svg>
