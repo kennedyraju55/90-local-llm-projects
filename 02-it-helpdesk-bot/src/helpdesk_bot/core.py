@@ -42,5 +42,6 @@ def get_response(
     temperature: float = 0.7,
 ) -> str:
     """Get a response from the IT helpdesk bot."""
+    logger.info("Processing helpdesk query: %d chars", len(user_message))
     messages = history + [{"role": "user", "content": user_message}]
     return chat(messages, model=model, system_prompt=SYSTEM_PROMPT, temperature=temperature)

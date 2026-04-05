@@ -38,6 +38,7 @@ def generate_itinerary(
     temperature: float = 0.7,
 ) -> str:
     """Generate a travel itinerary."""
+    logger.info("Generating %d-day itinerary for %s", days, destination)
     prompt_parts = [
         f"Create a detailed {days}-day travel itinerary for {destination}.",
         f"Budget level: {budget}.",
@@ -63,6 +64,7 @@ def generate_multi_destination_itinerary(
     temperature: float = 0.7,
 ) -> str:
     """Generate a multi-destination itinerary."""
+    logger.info("Generating multi-dest itinerary for %d destinations", len(destinations))
     dest_str = " → ".join(destinations)
     total_days = days_per_dest * len(destinations)
     prompt = (
@@ -82,6 +84,7 @@ def generate_multi_destination_itinerary(
 
 def get_place_details(place: str, destination: str, model: str = "gemma4", temperature: float = 0.7) -> str:
     """Get detailed information about a specific place or attraction."""
+    logger.info("Fetching details for %s in %s", place, destination)
     messages = [
         {
             "role": "user",
@@ -97,6 +100,7 @@ def get_place_details(place: str, destination: str, model: str = "gemma4", tempe
 
 def generate_budget_breakdown(itinerary: str, budget: str, travelers: int, model: str = "gemma4") -> str:
     """Generate a budget breakdown for the itinerary."""
+    logger.info("Generating budget breakdown for %d travelers", travelers)
     from .utils import generate_budget_prompt
     messages = [{"role": "user", "content": generate_budget_prompt(itinerary, budget, travelers)}]
     return chat(messages, model=model, system_prompt=SYSTEM_PROMPT, temperature=0.3, max_tokens=2048)
@@ -104,6 +108,7 @@ def generate_budget_breakdown(itinerary: str, budget: str, travelers: int, model
 
 def generate_packing_list(destination: str, days: int, interests: str | None, model: str = "gemma4") -> str:
     """Generate a packing list for the trip."""
+    logger.info("Generating packing list for %s (%d days)", destination, days)
     from .utils import generate_packing_list_prompt
     messages = [{"role": "user", "content": generate_packing_list_prompt(destination, days, interests)}]
     return chat(messages, model=model, system_prompt=SYSTEM_PROMPT, temperature=0.3, max_tokens=2048)

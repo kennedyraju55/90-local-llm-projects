@@ -82,6 +82,7 @@ def summarize_document(text: str, output_format: str = "bullet", config: dict | 
     Returns:
         The LLM-generated summary string.
     """
+    logger.info("Summarizing legal document: %d chars, format=%s", len(text), output_format)
     cfg = config or load_config()
     chat, _, _ = get_llm_client()
 
@@ -120,6 +121,7 @@ def extract_clauses(text: str, config: dict | None = None) -> str:
     Returns:
         Structured clause extraction from the LLM.
     """
+    logger.info("Extracting clauses from document: %d chars", len(text))
     cfg = config or load_config()
     chat, _, _ = get_llm_client()
 
@@ -146,6 +148,7 @@ def score_risks(text: str, config: dict | None = None) -> str:
     Returns:
         Risk analysis with scores from the LLM.
     """
+    logger.info("Scoring risks in document: %d chars", len(text))
     cfg = config or load_config()
     chat, _, _ = get_llm_client()
 
@@ -172,6 +175,7 @@ def compare_documents(file_paths: list[str], config: dict | None = None) -> str:
     Returns:
         Comparison analysis from the LLM.
     """
+    logger.info("Comparing %d documents", len(file_paths))
     cfg = config or load_config()
     chat, _, _ = get_llm_client()
 
@@ -211,6 +215,7 @@ def generate_export_markdown(summary: str, clauses: str | None = None,
     Returns:
         Complete markdown document ready for PDF conversion.
     """
+    logger.info("Generating export markdown")
     sections = [f"# Legal Document Analysis Report\n\n**Source:** {filepath}\n"]
     sections.append("## Document Summary\n\n" + summary)
 

@@ -37,6 +37,7 @@ def generate_meal_plan(
     temperature: float = 0.7,
 ) -> str:
     """Generate a meal plan based on preferences."""
+    logger.info("Generating %d-day meal plan for %s diet", days, diet)
     prompt_parts = [
         f"Create a {days}-day meal plan for a {diet} diet.",
         "Include Breakfast, Lunch, Dinner, and one Snack for each day.",
@@ -53,6 +54,7 @@ def generate_meal_plan(
 
 def get_recipe_details(meal_name: str, diet: str, model: str = "gemma4", temperature: float = 0.7) -> str:
     """Get a detailed recipe for a specific meal."""
+    logger.info("Fetching recipe details for: %s", meal_name)
     messages = [
         {
             "role": "user",
@@ -69,6 +71,7 @@ def get_recipe_details(meal_name: str, diet: str, model: str = "gemma4", tempera
 
 def generate_shopping_list(meal_plan: str, model: str = "gemma4", temperature: float = 0.3) -> str:
     """Generate a consolidated shopping list from a meal plan."""
+    logger.info("Generating shopping list from meal plan")
     from .utils import generate_shopping_list_prompt
     messages = [{"role": "user", "content": generate_shopping_list_prompt(meal_plan)}]
     return chat(messages, model=model, system_prompt=SYSTEM_PROMPT, temperature=temperature, max_tokens=2048)

@@ -37,6 +37,7 @@ def generate_workout_plan(
     temperature: float = 0.7,
 ) -> str:
     """Generate a personalized workout plan."""
+    logger.info("Generating workout plan: level=%s goal=%s", level, goal)
     prompt = (
         f"Create a {days_per_week}-day per week workout plan.\n"
         f"Fitness Level: {level}\n"
@@ -56,6 +57,7 @@ def generate_workout_plan(
 
 def get_exercise_details(exercise_name: str, level: str, model: str = "gemma4", temperature: float = 0.7) -> str:
     """Get detailed instructions for a specific exercise."""
+    logger.info("Fetching exercise details: %s", exercise_name)
     messages = [
         {
             "role": "user",

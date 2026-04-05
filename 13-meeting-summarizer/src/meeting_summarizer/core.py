@@ -82,6 +82,7 @@ Transcript:
 
 def summarize_meeting(transcript: str, config: dict | None = None) -> str:
     """Send the transcript to the LLM for analysis and summarization."""
+    logger.info("Summarizing meeting transcript: %d chars", len(transcript))
     cfg = config or load_config()
     chat, _, _ = get_llm_client()
 
@@ -100,6 +101,7 @@ def summarize_meeting(transcript: str, config: dict | None = None) -> str:
 
 def identify_speakers(transcript: str, config: dict | None = None) -> str:
     """Identify and profile speakers from the transcript."""
+    logger.info("Identifying speakers in transcript")
     cfg = config or load_config()
     chat, _, _ = get_llm_client()
 
@@ -117,6 +119,7 @@ def identify_speakers(transcript: str, config: dict | None = None) -> str:
 
 def extract_decision_log(transcript: str, config: dict | None = None) -> str:
     """Extract a detailed decision log from the transcript."""
+    logger.info("Extracting decision log")
     cfg = config or load_config()
     chat, _, _ = get_llm_client()
 
@@ -134,6 +137,7 @@ def extract_decision_log(transcript: str, config: dict | None = None) -> str:
 
 def generate_followup_reminders(transcript: str, config: dict | None = None) -> str:
     """Generate follow-up reminders with priorities and deadlines."""
+    logger.info("Generating follow-up reminders")
     cfg = config or load_config()
     chat, _, _ = get_llm_client()
 
@@ -151,5 +155,6 @@ def generate_followup_reminders(transcript: str, config: dict | None = None) -> 
 
 def save_summary(summary: str, output_path: str) -> None:
     """Save the meeting summary to a file."""
+    logger.info("Saving summary to %s", output_path)
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(summary)

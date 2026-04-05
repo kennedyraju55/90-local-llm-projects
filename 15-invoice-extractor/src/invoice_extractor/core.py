@@ -63,6 +63,7 @@ Invoice data:
 
 def extract_invoice_data(text: str, config: dict | None = None) -> dict:
     """Send invoice text to the LLM and parse the structured JSON response."""
+    logger.info("Extracting invoice data: %d chars", len(text))
     cfg = config or load_config()
     chat, _, _ = get_llm_client()
 
@@ -85,6 +86,7 @@ def batch_extract(file_paths: list[str], config: dict | None = None) -> list[dic
 
     Returns list of dicts with 'file', 'data' or 'error' keys.
     """
+    logger.info("Batch extracting from %d files", len(file_paths))
     results = []
     for filepath in file_paths:
         try:
@@ -105,6 +107,7 @@ def detect_duplicates(invoices: list[dict], threshold: float = 0.9) -> list[tupl
 
     Returns list of (index1, index2, reason) tuples.
     """
+    logger.info("Detecting duplicates among %d invoices", len(invoices))
     duplicates = []
     for i in range(len(invoices)):
         for j in range(i + 1, len(invoices)):
@@ -134,6 +137,7 @@ def detect_duplicates(invoices: list[dict], threshold: float = 0.9) -> list[tupl
 
 def categorize_items(invoice_data: dict, config: dict | None = None) -> dict:
     """Categorize invoice line items using the LLM."""
+    logger.info("Categorizing invoice line items")
     cfg = config or load_config()
     chat, _, _ = get_llm_client()
 
@@ -157,6 +161,7 @@ def categorize_items(invoice_data: dict, config: dict | None = None) -> dict:
 
 def export_to_csv(invoices: list[dict]) -> str:
     """Export extracted invoice data to CSV format string."""
+    logger.info("Exporting %d invoices to CSV", len(invoices))
     output = io.StringIO()
     writer = csv.writer(output)
     writer.writerow([

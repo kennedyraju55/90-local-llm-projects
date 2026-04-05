@@ -22,6 +22,7 @@ def analyze_resume(resume_text: str, config: dict | None = None) -> dict:
     Returns dict with: skills, experience_summary, education, achievements,
     strengths, weaknesses, formatting_suggestions, content_suggestions, overall_score.
     """
+    logger.info("Analyzing resume: %d chars", len(resume_text))
     cfg = config or load_config()
     _, generate, _ = get_llm_client()
 
@@ -60,6 +61,7 @@ def score_against_jd(resume_text: str, jd_text: str, config: dict | None = None)
     experience_alignment, suggestions, keyword_gaps, overall_assessment,
     priority_improvements.
     """
+    logger.info("Scoring resume against job description")
     cfg = config or load_config()
     _, generate, _ = get_llm_client()
 
@@ -100,6 +102,7 @@ def simulate_ats_score(resume_text: str, jd_text: str, config: dict | None = Non
 
     Returns dict with category scores and overall ATS score.
     """
+    logger.info("Simulating ATS score")
     cfg = config or load_config()
     _, generate, _ = get_llm_client()
 
@@ -149,6 +152,7 @@ def compare_resumes(resume_texts: list[tuple[str, str]], jd_text: str | None = N
     Returns:
         Comparison analysis dict.
     """
+    logger.info("Comparing %d resumes", len(resume_texts))
     cfg = config or load_config()
     _, generate, _ = get_llm_client()
 
@@ -187,6 +191,7 @@ def generate_improvement_suggestions(resume_text: str, config: dict | None = Non
 
     Returns dict with section-by-section improvement suggestions.
     """
+    logger.info("Generating improvement suggestions")
     cfg = config or load_config()
     _, generate, _ = get_llm_client()
 
