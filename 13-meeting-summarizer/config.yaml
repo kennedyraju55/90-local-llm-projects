@@ -1,0 +1,12 @@
+# Meeting Summarizer Configuration
+
+llm:
+  model: "gemma4"
+  temperature: 0.3
+  max_tokens: 4096
+
+processing:
+  max_transcript_length: 15000
+
+output:
+  default_format: "structured"

@@ -1,97 +1,77 @@
 # 📋 Meeting Summarizer
 
-An AI-powered meeting transcript summarizer that extracts attendees, agenda topics, key decisions, action items, and follow-ups using a local LLM.
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
+![LLM](https://img.shields.io/badge/LLM-Gemma%204-orange)
+![Ollama](https://img.shields.io/badge/Ollama-Local-green)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-red?logo=streamlit)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## Features
+Production-grade meeting transcript analyzer with speaker identification, action item tracking, decision logging, and follow-up reminders using a local LLM.
 
-- **Attendee Extraction** — Identifies participants and their roles from the transcript
-- **Agenda Detection** — Finds discussion topics covered in the meeting
-- **Decision Tracking** — Highlights key decisions made during the meeting
-- **Action Items** — Extracts tasks with assignee, description, and deadline
-- **Follow-ups** — Captures items needing future attention
-- **Rich Output** — Formatted panels, tables, and colored sections in the terminal
-- **File Export** — Optionally save the summary to a Markdown file
-- **Local Processing** — All data stays on your machine via Ollama + Gemma 4
+## ✨ Features
 
-## Installation
+- **Attendee Extraction** — Identifies participants and their roles
+- **Speaker Identification** — Profile speakers with contribution analysis
+- **Action Item Tracking** — Tasks with assignee, description, and deadline
+- **Decision Log** — Structured decision tracking with proposers and approvers
+- **Follow-up Reminders** — Prioritized follow-ups with deadlines
+- **Agenda Detection** — Topics covered in the meeting
+- **Dual Interface** — CLI + Streamlit Web UI
+- **File Export** — Save summaries to Markdown
+- **Local & Private** — All data stays on your machine
 
-1. **Install and start Ollama:**
-   ```bash
-   ollama serve
-   ollama pull gemma4
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   cd 13-meeting-summarizer
-   pip install -r requirements.txt
-   ```
-
-## Usage
+## 🚀 Installation
 
 ```bash
-# Basic usage
-python app.py --transcript meeting.txt
-
-# Save summary to a file
-python app.py --transcript meeting.txt --output summary.md
+cd 13-meeting-summarizer
+pip install -r requirements.txt
+ollama serve && ollama pull gemma4
 ```
 
-### CLI Options
-
-| Option          | Required | Description                              |
-|-----------------|----------|------------------------------------------|
-| `--transcript`  | Yes      | Path to the meeting transcript text file  |
-| `--output`      | No       | Path to save the summary output           |
-
-## Example Output
-
-```
-╭──────────── 📋 Meeting Summary ────────────╮
-│                                             │
-│  The team discussed the Q1 roadmap,         │
-│  reviewed progress on the API spec and      │
-│  dashboard redesign, and decided to go      │
-│  with Option B for the pricing page.        │
-│                                             │
-╰─────────────────────────────────────────────╯
-
-╭───────────── 👥 Attendees ──────────────────╮
-│  - Alice (PM)                               │
-│  - Bob (Dev)                                │
-│  - Carol (Design)                           │
-│  - Dave (QA)                                │
-╰─────────────────────────────────────────────╯
-
-       📝 Action Items
-┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
-┃ Who     ┃ What                  ┃ When     ┃
-┡━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
-│ Bob     │ Share technical spec  │ Friday   │
-│ Carol   │ Share mockups         │ Today    │
-│ Dave    │ Write test cases      │ TBD      │
-│ Bob     │ Update documentation  │ Wed      │
-└─────────┴───────────────────────┴──────────┘
-```
-
-## Testing
+## 📋 CLI Usage
 
 ```bash
-pytest test_app.py -v
+# Full summary
+python -m src.meeting_summarizer.cli summarize --transcript meeting.txt
+
+# Save to file
+python -m src.meeting_summarizer.cli summarize --transcript meeting.txt --output summary.md
+
+# Speaker identification
+python -m src.meeting_summarizer.cli speakers --transcript meeting.txt
+
+# Decision log
+python -m src.meeting_summarizer.cli decisions --transcript meeting.txt
+
+# Follow-up reminders
+python -m src.meeting_summarizer.cli followups --transcript meeting.txt
 ```
 
-## Requirements
+## 🌐 Web UI (Streamlit)
 
-- Python 3.10+
-- [Ollama](https://ollama.com/) with the `gemma4` model
-- Dependencies listed in `requirements.txt`
+```bash
+streamlit run src/meeting_summarizer/web_ui.py
+```
 
-## Project Structure
+Features: Transcript upload, summary tabs (decisions/actions/notes), speaker profiles, timeline.
+
+## 🧪 Running Tests
+
+```bash
+python -m pytest tests/ -v
+```
+
+## 📁 Project Structure
 
 ```
 13-meeting-summarizer/
-├── app.py              # Main application
-├── test_app.py         # Test suite
-├── requirements.txt    # Python dependencies
-└── README.md           # This file
+├── src/meeting_summarizer/
+│   ├── __init__.py, core.py, cli.py, web_ui.py, config.py, utils.py
+├── tests/
+│   ├── __init__.py, test_core.py, test_cli.py
+├── config.yaml, setup.py, requirements.txt, Makefile, .env.example, README.md
 ```
+
+## Part of
+
+[90 Local LLM Projects](../README.md)

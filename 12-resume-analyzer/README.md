@@ -1,111 +1,72 @@
 # 📄 Resume Analyzer
 
-Analyze resumes, get improvement suggestions, and score them against job descriptions — all powered by a local LLM via Ollama.
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
+![LLM](https://img.shields.io/badge/LLM-Gemma%204-orange)
+![Ollama](https://img.shields.io/badge/Ollama-Local-green)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-red?logo=streamlit)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## Features
+Production-grade resume analysis tool with ATS score simulation, keyword gap analysis, multi-resume comparison, and actionable improvement suggestions — all powered by a local LLM via Ollama.
 
-- **General Resume Analysis** — Extract skills, experience, education, and achievements; identify strengths and weaknesses; get formatting and content suggestions with an overall quality score.
-- **Job Description Scoring** — Score your resume against a specific JD with match percentage, missing skills, keyword gaps, and prioritized improvement recommendations.
-- **Rich Terminal Output** — Beautiful panels, tables, and progress bars rendered with Rich.
-- **Local & Private** — All processing happens on your machine via Ollama. Your resume never leaves your computer.
+## ✨ Features
 
-## Prerequisites
+- **General Analysis** — Skills, experience, education, strengths, weaknesses, overall scoring
+- **JD Scoring** — Match percentage with skill gap analysis and keyword gaps
+- **ATS Simulation** — Applicant Tracking System compatibility scoring
+- **Multi-Resume Comparison** — Compare multiple candidates side by side
+- **Improvement Suggestions** — Section-by-section actionable feedback with power words
+- **Dual Interface** — CLI for power users, Streamlit Web UI for visual analysis
+- **Local & Private** — All processing runs locally via Ollama
 
-- [Python 3.10+](https://www.python.org/)
-- [Ollama](https://ollama.com/) running locally with the `gemma4` model pulled
-
-```bash
-ollama serve
-ollama pull gemma4
-```
-
-## Installation
+## 🚀 Installation
 
 ```bash
 cd 12-resume-analyzer
 pip install -r requirements.txt
+ollama serve && ollama pull gemma4
 ```
 
-## Usage
-
-### General Resume Analysis
-
-Analyze a resume and get feedback without a specific job in mind:
+## 📋 CLI Usage
 
 ```bash
-python app.py --resume resume.txt
+# General analysis
+python -m src.resume_analyzer.cli analyze --resume resume.txt
+
+# Score against job description
+python -m src.resume_analyzer.cli score --resume resume.txt --jd job.txt
+
+# ATS score simulation
+python -m src.resume_analyzer.cli ats --resume resume.txt --jd job.txt
+
+# Improvement suggestions
+python -m src.resume_analyzer.cli improve --resume resume.txt
 ```
 
-### Score Against a Job Description
-
-Compare your resume to a job posting and see how well you match:
+## 🌐 Web UI (Streamlit)
 
 ```bash
-python app.py --resume resume.txt --job-description jd.txt
+streamlit run src/resume_analyzer/web_ui.py
 ```
 
-## Example Output
+Features: Resume upload, job description input, score dashboard, suggestions panel, multi-resume comparison.
 
-### General Analysis
-
-```
-╭──── 📊 Overall Resume Score ────╮
-│          72/100                  │
-╰─────────────────────────────────╯
-
-🛠️  Extracted Skills
-┌───┬──────────────┐
-│ # │ Skill        │
-├───┼──────────────┤
-│ 1 │ Python       │
-│ 2 │ Go           │
-│ 3 │ Docker       │
-│ 4 │ Kubernetes   │
-│ 5 │ AWS          │
-└───┴──────────────┘
-
-💪 Strengths & Weaknesses
-┌─────────────────────┬──────────────────────────┐
-│ Strengths ✅        │ Weaknesses ⚠️            │
-├─────────────────────┼──────────────────────────┤
-│ Strong tech skills  │ No summary section       │
-│ Leadership exp.     │ Limited project details   │
-└─────────────────────┴──────────────────────────┘
-```
-
-### JD Scoring
-
-```
-╭──── 🎯 Resume-JD Match Score ────╮
-│              78%                  │
-╰──────────────────────────────────╯
-
-🛠️  Skills Comparison
-┌─────────────┬─────────────┐
-│ Matching ✅ │ Missing ❌   │
-├─────────────┼─────────────┤
-│ Python      │ Redis       │
-│ Go          │ Rust        │
-│ Docker      │ GCP         │
-└─────────────┴─────────────┘
-```
-
-## Running Tests
+## 🧪 Running Tests
 
 ```bash
-pytest test_app.py -v
+python -m pytest tests/ -v
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 12-resume-analyzer/
-├── app.py              # Main application
-├── requirements.txt    # Python dependencies
-├── test_app.py         # Pytest test suite
-└── README.md           # This file
+├── src/resume_analyzer/
+│   ├── __init__.py, core.py, cli.py, web_ui.py, config.py, utils.py
+├── tests/
+│   ├── __init__.py, test_core.py, test_cli.py
+├── config.yaml, setup.py, requirements.txt, Makefile, .env.example, README.md
 ```
 
-## License
+## Part of
 
-Part of the [90 Local LLM Projects](../) collection.
+[90 Local LLM Projects](../README.md) — A collection of projects powered by local language models.

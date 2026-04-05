@@ -1,0 +1,40 @@
+# Legal Document Summarizer Configuration
+
+llm:
+  model: "gemma4"
+  temperature: 0.3
+  max_tokens: 4096
+
+processing:
+  max_document_chars: 12000
+  supported_formats:
+    - ".txt"
+    - ".text"
+    - ".md"
+    - ".pdf"
+
+risk_scoring:
+  high_risk_keywords:
+    - "indemnification"
+    - "unlimited liability"
+    - "non-compete"
+    - "automatic renewal"
+    - "liquidated damages"
+    - "waiver"
+    - "sole discretion"
+    - "irrevocable"
+    - "perpetual license"
+  medium_risk_keywords:
+    - "termination for convenience"
+    - "assignment"
+    - "governing law"
+    - "force majeure"
+    - "limitation of liability"
+    - "confidentiality"
+
+output:
+  default_format: "bullet"
+  available_formats:
+    - "bullet"
+    - "narrative"
+    - "detailed"

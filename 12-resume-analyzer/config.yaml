@@ -1,0 +1,15 @@
+# Resume Analyzer Configuration
+
+llm:
+  model: "gemma4"
+  temperature: 0.3
+  max_tokens: 4096
+
+ats:
+  keyword_weight: 0.4
+  experience_weight: 0.3
+  education_weight: 0.15
+  formatting_weight: 0.15
+
+output:
+  default_format: "rich"

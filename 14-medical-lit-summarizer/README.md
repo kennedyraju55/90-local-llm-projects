@@ -1,98 +1,72 @@
 # 🔬 Medical Literature Summarizer
 
-Automatically summarize medical and scientific research papers using a local LLM. Extracts structured sections including methodology, key findings, statistical results, conclusions, and more.
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
+![LLM](https://img.shields.io/badge/LLM-Gemma%204-orange)
+![Ollama](https://img.shields.io/badge/Ollama-Local-green)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-red?logo=streamlit)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## Features
+Production-grade medical literature analyzer with PICO framework extraction, evidence quality rating, citation formatting, and structured paper summarization.
 
-- **Structured Extraction** — Pulls out title/authors, abstract, methodology, key findings, statistical results, conclusions, limitations, and future work
-- **Adjustable Detail** — Choose between brief, standard, or comprehensive summaries
-- **Rich Output** — Color-coded, formatted terminal output with section panels
-- **Local LLM** — Powered by Ollama with Gemma 4, keeping your data private
-- **CLI Interface** — Simple command-line usage via Click
+## ✨ Features
 
-## Installation
+- **Structured Extraction** — Title/authors, abstract, methodology, findings, statistics, conclusions, limitations, future work
+- **PICO Framework** — Population, Intervention, Comparison, Outcome extraction
+- **Evidence Quality Rating** — Study design, sample size, methodology rigor, bias risk assessment
+- **Citation Formatter** — APA, MLA, Chicago, Vancouver citation styles
+- **Adjustable Detail** — Brief, standard, or comprehensive summaries
+- **Dual Interface** — CLI + Streamlit Web UI
+- **Local & Private** — All processing via local Ollama
+
+## 🚀 Installation
 
 ```bash
 cd 14-medical-lit-summarizer
 pip install -r requirements.txt
+ollama serve && ollama pull gemma4
 ```
 
-Ensure [Ollama](https://ollama.ai) is installed and running with the `gemma4` model:
+## 📋 CLI Usage
 
 ```bash
-ollama pull gemma4
-ollama serve
+# Summarize a paper
+python -m src.medical_summarizer.cli summarize --paper research.txt --detail standard
+
+# PICO framework extraction
+python -m src.medical_summarizer.cli pico --paper research.txt
+
+# Evidence quality rating
+python -m src.medical_summarizer.cli evidence --paper research.txt
+
+# Format citation
+python -m src.medical_summarizer.cli cite --paper research.txt --style APA
 ```
 
-## Usage
+## 🌐 Web UI (Streamlit)
 
 ```bash
-# Standard summary
-python app.py --paper research.txt
-
-# Brief summary
-python app.py --paper research.txt --detail brief
-
-# Comprehensive summary
-python app.py --paper research.txt --detail comprehensive
+streamlit run src/medical_summarizer/web_ui.py
 ```
 
-### Options
+Features: Paper upload, structured summary, evidence table, PICO extraction, formatted citations.
 
-| Option     | Description                              | Default    |
-|------------|------------------------------------------|------------|
-| `--paper`  | Path to the paper text file (required)   | —          |
-| `--detail` | Detail level: brief/standard/comprehensive | standard |
-
-## Example Output
-
-```
-╭─────────────────────────────────────╮
-│ 🔬 Medical Literature Summarizer    │
-╰─────────────────────────────────────╯
-✓ Ollama is running.
-
-Analyzing paper...
-
-╭──── 📄 Title & Authors ─────────────╮
-│ Title: Effects of Aspirin on ...     │
-│ Authors: Jane Smith, John Doe, ...   │
-╰──────────────────────────────────────╯
-
-╭──── 🔬 Methodology ─────────────────╮
-│ Double-blind, placebo-controlled     │
-│ randomized trial with 5,000 ...      │
-╰──────────────────────────────────────╯
-
-╭──── 🔑 Key Findings ────────────────╮
-│ 15% relative risk reduction in       │
-│ cardiovascular events (p=0.003) ...  │
-╰──────────────────────────────────────╯
-```
-
-## Running Tests
+## 🧪 Running Tests
 
 ```bash
-pytest test_app.py -v
+python -m pytest tests/ -v
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 14-medical-lit-summarizer/
-├── app.py              # Main application
-├── requirements.txt    # Python dependencies
-├── test_app.py         # Test suite
-└── README.md           # This file
+├── src/medical_summarizer/
+│   ├── __init__.py, core.py, cli.py, web_ui.py, config.py, utils.py
+├── tests/
+│   ├── __init__.py, test_core.py, test_cli.py
+├── config.yaml, setup.py, requirements.txt, Makefile, .env.example, README.md
 ```
 
-## How It Works
+## Part of
 
-1. Reads the full text of a medical/scientific paper from a file
-2. Sends the paper to a local Gemma 4 model via Ollama for each section
-3. Extracts structured information using tailored prompts per section
-4. Displays a formatted summary with Rich panels in the terminal
-
-## License
-
-Part of the [90 Local LLM Projects](../README.md) collection.
+[90 Local LLM Projects](../README.md) — A collection of projects powered by local language models.

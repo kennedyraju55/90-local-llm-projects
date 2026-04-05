@@ -1,0 +1,24 @@
+# Invoice Extractor Configuration
+
+llm:
+  model: "gemma4"
+  temperature: 0.1
+  max_tokens: 4096
+
+processing:
+  batch_size: 10
+  duplicate_threshold: 0.9
+
+categories:
+  - "Office Supplies"
+  - "Software"
+  - "Hardware"
+  - "Consulting"
+  - "Travel"
+  - "Utilities"
+  - "Marketing"
+  - "Other"
+
+output:
+  default_format: "json"
+  csv_delimiter: ","

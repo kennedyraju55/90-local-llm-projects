@@ -1,108 +1,70 @@
 # 🧾 Invoice Extractor
 
-Extract structured data from invoices and receipts using a local LLM.
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
+![LLM](https://img.shields.io/badge/LLM-Gemma%204-orange)
+![Ollama](https://img.shields.io/badge/Ollama-Local-green)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-red?logo=streamlit)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-Feed in a plain-text invoice and get back clean, structured JSON with vendor
-details, line items, totals, tax, and payment terms — no cloud APIs required.
+Production-grade invoice data extractor with batch processing, CSV/Excel export, duplicate detection, and category tagging using a local LLM.
 
 ## ✨ Features
 
-- **Structured extraction** — vendor info, invoice number, date, line items,
-  subtotal, tax, grand total, and payment terms.
-- **Multiple output formats** — JSON, Rich table, or CSV.
-- **Local & private** — runs entirely on your machine via Ollama + Gemma 4.
-- **Robust parsing** — tolerates markdown fences and noisy LLM output.
-- **Beautiful CLI** — powered by Rich for colourful, readable output.
-
-## 📋 Prerequisites
-
-- Python 3.10+
-- [Ollama](https://ollama.ai/) running locally (`ollama serve`)
-- The **gemma4** model pulled (`ollama pull gemma4`)
+- **Structured extraction** — vendor, invoice number, dates, line items, totals, tax, payment terms
+- **Batch processing** — Process multiple invoices at once
+- **CSV/JSON export** — Export extracted data for accounting systems
+- **Duplicate detection** — Identify potential duplicate invoices
+- **Category tagging** — Auto-categorize line items (Office Supplies, Software, etc.)
+- **Multiple output formats** — JSON, Rich table, or CSV
+- **Dual Interface** — CLI + Streamlit Web UI
+- **Local & private** — All processing via local Ollama
 
 ## 🚀 Installation
 
 ```bash
 cd 15-invoice-extractor
 pip install -r requirements.txt
+ollama serve && ollama pull gemma4
 ```
 
-## 📖 Usage
+## 📋 CLI Usage
 
 ```bash
-# JSON output (default)
-python app.py --file invoice.txt
+# Extract single invoice
+python -m src.invoice_extractor.cli extract --file invoice.txt --output table
 
-# Rich table output
-python app.py --file invoice.txt --output table
+# Batch process multiple invoices
+python -m src.invoice_extractor.cli batch --files inv1.txt --files inv2.txt --export output.csv
 
-# CSV output (pipe-friendly)
-python app.py --file invoice.txt --output csv
+# Categorize line items
+python -m src.invoice_extractor.cli categorize --file invoice.txt
 ```
 
-### CLI Options
+## 🌐 Web UI (Streamlit)
 
-| Option | Short | Description | Default |
-|--------|-------|-------------|---------|
-| `--file` | `-f` | Path to invoice text file (required) | — |
-| `--output` | `-o` | Output format: `json`, `table`, `csv` | `json` |
-
-## 📄 Example Output
-
-### JSON
-
-```json
-{
-  "vendor": {
-    "name": "ACME Corporation",
-    "address": "123 Business Ave, Suite 100, New York, NY 10001",
-    "phone": null,
-    "email": null
-  },
-  "invoice_number": "INV-2024-0042",
-  "date": "2024-03-15",
-  "due_date": "2024-04-15",
-  "line_items": [
-    { "description": "Widget A", "quantity": 2, "unit_price": 25.00, "total": 50.00 },
-    { "description": "Widget B", "quantity": 5, "unit_price": 10.00, "total": 50.00 }
-  ],
-  "subtotal": 250.00,
-  "tax": 20.00,
-  "grand_total": 270.00,
-  "currency": "USD",
-  "payment_terms": "Net 30"
-}
+```bash
+streamlit run src/invoice_extractor/web_ui.py
 ```
 
-### Table
-
-```
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃       🧾 Invoice Details            ┃
-┡━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━┩
-│ Vendor        │ ACME Corporation    │
-│ Invoice #     │ INV-2024-0042       │
-│ Date          │ 2024-03-15          │
-│ Payment Terms │ Net 30              │
-└───────────────┴─────────────────────┘
-```
+Features: Multi-file uploader, extracted data table, duplicate detection, category tagging, CSV/JSON export buttons.
 
 ## 🧪 Running Tests
 
 ```bash
-pytest test_app.py -v
+python -m pytest tests/ -v
 ```
 
-## 🏗️ Project Structure
+## 📁 Project Structure
 
 ```
 15-invoice-extractor/
-├── app.py              # Main application & CLI
-├── test_app.py         # Pytest test suite
-├── requirements.txt    # Python dependencies
-└── README.md           # This file
+├── src/invoice_extractor/
+│   ├── __init__.py, core.py, cli.py, web_ui.py, config.py, utils.py
+├── tests/
+│   ├── __init__.py, test_core.py, test_cli.py
+├── config.yaml, setup.py, requirements.txt, Makefile, .env.example, README.md
 ```
 
-## 📝 License
+## Part of
 
-Part of the **90 Local LLM Projects** collection.
+[90 Local LLM Projects](../README.md) — A collection of projects powered by local language models.

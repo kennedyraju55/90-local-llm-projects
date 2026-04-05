@@ -1,0 +1,22 @@
+# Medical Literature Summarizer Configuration
+
+llm:
+  model: "gemma4"
+  temperature: 0.3
+  max_tokens: 1024
+
+processing:
+  max_paper_chars: 15000
+
+detail_levels:
+  brief: "Provide a concise 1-2 sentence summary. Focus on the most critical points."
+  standard: "Provide a clear and thorough summary with moderate detail."
+  comprehensive: "Provide an in-depth analysis. Include specific data points and context."
+
+citation:
+  default_style: "APA"
+  available_styles:
+    - "APA"
+    - "MLA"
+    - "Chicago"
+    - "Vancouver"
