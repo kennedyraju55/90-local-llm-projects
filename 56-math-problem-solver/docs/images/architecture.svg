@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06d6a0"/>
+      <stop offset="100%" style="stop-color:#118ab2"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+  <rect x="0" y="390" width="800" height="10" fill="url(#accent)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#06d6a0" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold">SYSTEM ARCHITECTURE</text>
+
+  <!-- User Box -->
+  <rect x="30" y="60" width="110" height="50" rx="8" fill="#2a2a4a" stroke="#06d6a0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="85" y="82" text-anchor="middle" fill="#06d6a0" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="bold">👤 User</text>
+  <text x="85" y="100" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Input Problem</text>
+
+  <!-- Arrow: User → CLI -->
+  <line x1="140" y1="85" x2="180" y2="85" stroke="#06d6a0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- CLI Box -->
+  <rect x="180" y="55" width="130" height="60" rx="8" fill="#2a2a4a" stroke="#118ab2" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="245" y="77" text-anchor="middle" fill="#118ab2" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="bold">💻 CLI (Click)</text>
+  <text x="245" y="93" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">solve • formulas</text>
+  <text x="245" y="106" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">practice</text>
+
+  <!-- Streamlit Box -->
+  <rect x="180" y="130" width="130" height="50" rx="8" fill="#2a2a4a" stroke="#e76f51" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="245" y="152" text-anchor="middle" fill="#e76f51" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="bold">🌐 Streamlit UI</text>
+  <text x="245" y="170" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Web Interface</text>
+
+  <!-- Arrow: User → Streamlit -->
+  <path d="M 140 95 L 160 95 L 160 155 L 180 155" fill="none" stroke="#e76f51" stroke-width="1.5" marker-end="url(#arrowhead2)"/>
+
+  <!-- Arrow: CLI → Core -->
+  <line x1="310" y1="85" x2="370" y2="130" stroke="#06d6a0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow: Streamlit → Core -->
+  <line x1="310" y1="155" x2="370" y2="145" stroke="#e76f51" stroke-width="1.5" marker-end="url(#arrowhead2)"/>
+
+  <!-- MathSolver Core Box -->
+  <rect x="370" y="105" width="160" height="70" rx="10" fill="#1e3a5f" stroke="#06d6a0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="130" text-anchor="middle" fill="#06d6a0" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">⚙️ MathSolver Core</text>
+  <text x="450" y="148" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">solve_problem()</text>
+  <text x="450" y="163" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">core.py</text>
+
+  <!-- Arrow: Core → Ollama -->
+  <line x1="530" y1="140" x2="600" y2="85" stroke="#ffd166" stroke-width="2" marker-end="url(#arrowhead3)"/>
+
+  <!-- Ollama/Gemma Box -->
+  <rect x="600" y="55" width="170" height="60" rx="8" fill="#2a2a4a" stroke="#ffd166" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="685" y="77" text-anchor="middle" fill="#ffd166" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="bold">🦙 Ollama / Gemma 3</text>
+  <text x="685" y="93" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Local LLM Engine</text>
+  <text x="685" y="106" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">localhost:11434</text>
+
+  <!-- Output Components - Row -->
+  <!-- Step-by-Step -->
+  <rect x="50" y="230" width="155" height="55" rx="8" fill="#2a2a4a" stroke="#06d6a0" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="127" y="252" text-anchor="middle" fill="#06d6a0" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold">📝 Step-by-Step</text>
+  <text x="127" y="268" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">SolutionStep model</text>
+  <text x="127" y="280" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="8">work + explanation</text>
+
+  <!-- Formula Library -->
+  <rect x="225" y="230" width="155" height="55" rx="8" fill="#2a2a4a" stroke="#118ab2" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="302" y="252" text-anchor="middle" fill="#118ab2" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold">📐 Formula Library</text>
+  <text x="302" y="268" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">10+ Built-in Formulas</text>
+  <text x="302" y="280" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="8">+ LLM Extended</text>
+
+  <!-- Practice Generator -->
+  <rect x="400" y="230" width="155" height="55" rx="8" fill="#2a2a4a" stroke="#e76f51" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="477" y="252" text-anchor="middle" fill="#e76f51" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold">🏋️ Practice Gen</text>
+  <text x="477" y="268" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">3 Difficulty Levels</text>
+  <text x="477" y="280" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="8">basic → advanced</text>
+
+  <!-- LaTeX Output -->
+  <rect x="575" y="230" width="155" height="55" rx="8" fill="#2a2a4a" stroke="#ffd166" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="652" y="252" text-anchor="middle" fill="#ffd166" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold">📄 LaTeX Output</text>
+  <text x="652" y="268" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Publication-Ready</text>
+  <text x="652" y="280" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="8">Math Notation</text>
+
+  <!-- Arrows: Core → Output components -->
+  <line x1="410" y1="175" x2="127" y2="230" stroke="#06d6a0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="430" y1="175" x2="302" y2="230" stroke="#118ab2" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="470" y1="175" x2="477" y2="230" stroke="#e76f51" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="490" y1="175" x2="652" y2="230" stroke="#ffd166" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Data Models Row -->
+  <rect x="100" y="310" width="600" height="55" rx="8" fill="#1a1a2e" stroke="#444466" stroke-width="1"/>
+  <text x="400" y="332" text-anchor="middle" fill="#06d6a0" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="bold">📦 Data Models</text>
+  <text x="400" y="350" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">MathProblemResult  •  Solution  •  SolutionStep  •  YAML Config  •  JSON Output</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" fill="#06d6a0">
+      <polygon points="0 0, 10 3.5, 0 7"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" fill="#e76f51">
+      <polygon points="0 0, 10 3.5, 0 7"/>
+    </marker>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" fill="#ffd166">
+      <polygon points="0 0, 10 3.5, 0 7"/>
+    </marker>
+  </defs>
+</svg>

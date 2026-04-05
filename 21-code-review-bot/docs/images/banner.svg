@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#ff6b6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" fill="url(#bg)" rx="12"/>
+  <rect y="190" width="800" height="10" fill="url(#accent)" rx="0 0 12 12"/>
+  <!-- Icon -->
+  <g transform="translate(60, 55)">
+    <circle cx="45" cy="45" r="40" fill="none" stroke="#e94560" stroke-width="2.5" opacity="0.3"/>
+    <circle cx="45" cy="45" r="28" fill="none" stroke="#e94560" stroke-width="2"/>
+    <path d="M35 45 L42 52 L58 36" stroke="#e94560" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30 25 L60 25" stroke="#e94560" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+    <path d="M25 32 L65 32" stroke="#e94560" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/>
+  </g>
+  <!-- Title -->
+  <text x="170" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">Code Review Bot</text>
+  <!-- Tagline -->
+  <text x="170" y="120" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#8b949e">AI-Powered Automated Code Review with Local LLMs</text>
+  <!-- Badges -->
+  <rect x="170" y="138" width="70" height="22" rx="11" fill="#e94560" opacity="0.15"/>
+  <text x="205" y="153" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle">Python</text>
+  <rect x="250" y="138" width="70" height="22" rx="11" fill="#e94560" opacity="0.15"/>
+  <text x="285" y="153" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle">Ollama</text>
+  <rect x="330" y="138" width="90" height="22" rx="11" fill="#e94560" opacity="0.15"/>
+  <text x="375" y="153" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle">Streamlit</text>
+</svg>

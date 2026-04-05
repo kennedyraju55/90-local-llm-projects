@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946"/>
+      <stop offset="100%" style="stop-color:#ff6b6b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Border accent line -->
+  <rect x="0" y="0" width="800" height="4" fill="url(#accentGrad)" rx="2"/>
+
+  <!-- Decorative envelope elements - left side -->
+  <g transform="translate(60, 65)" opacity="0.12">
+    <rect x="0" y="0" width="60" height="42" rx="4" fill="#e63946" stroke="#e63946" stroke-width="1.5"/>
+    <polyline points="0,0 30,22 60,0" fill="none" stroke="#ff6b6b" stroke-width="1.5"/>
+    <line x1="0" y1="42" x2="24" y2="22" stroke="#ff6b6b" stroke-width="1" opacity="0.6"/>
+    <line x1="60" y1="42" x2="36" y2="22" stroke="#ff6b6b" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <g transform="translate(45, 110)" opacity="0.08">
+    <rect x="0" y="0" width="45" height="32" rx="3" fill="#e63946" stroke="#e63946" stroke-width="1"/>
+    <polyline points="0,0 22.5,16 45,0" fill="none" stroke="#ff6b6b" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative envelope elements - right side -->
+  <g transform="translate(680, 45)" opacity="0.1">
+    <rect x="0" y="0" width="55" height="38" rx="4" fill="#e63946" stroke="#e63946" stroke-width="1.5"/>
+    <polyline points="0,0 27.5,20 55,0" fill="none" stroke="#ff6b6b" stroke-width="1.5"/>
+    <line x1="0" y1="38" x2="22" y2="20" stroke="#ff6b6b" stroke-width="1" opacity="0.6"/>
+    <line x1="55" y1="38" x2="33" y2="20" stroke="#ff6b6b" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <g transform="translate(700, 120)" opacity="0.06">
+    <rect x="0" y="0" width="40" height="28" rx="3" fill="#e63946" stroke="#e63946" stroke-width="1"/>
+    <polyline points="0,0 20,14 40,0" fill="none" stroke="#ff6b6b" stroke-width="1"/>
+  </g>
+
+  <!-- Scattered small envelopes -->
+  <g transform="translate(150, 40)" opacity="0.06">
+    <rect x="0" y="0" width="28" height="20" rx="2" fill="#e63946"/>
+    <polyline points="0,0 14,10 28,0" fill="none" stroke="#ff6b6b" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(620, 140)" opacity="0.07">
+    <rect x="0" y="0" width="32" height="22" rx="2" fill="#e63946"/>
+    <polyline points="0,0 16,11 32,0" fill="none" stroke="#ff6b6b" stroke-width="0.8"/>
+  </g>
+
+  <!-- Dotted connection lines -->
+  <line x1="130" y1="100" x2="230" y2="100" stroke="#e63946" stroke-width="1" stroke-dasharray="3,5" opacity="0.15"/>
+  <line x1="570" y1="100" x2="670" y2="100" stroke="#e63946" stroke-width="1" stroke-dasharray="3,5" opacity="0.15"/>
+
+  <!-- Email icon beside title -->
+  <g transform="translate(235, 58)" filter="url(#glow)">
+    <rect x="0" y="0" width="36" height="26" rx="4" fill="none" stroke="#e63946" stroke-width="2"/>
+    <polyline points="0,0 18,14 36,0" fill="none" stroke="#e63946" stroke-width="2"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="82" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" filter="url(#softShadow)">
+    Sales Email Generator
+  </text>
+
+  <!-- Accent underline -->
+  <rect x="280" y="95" width="240" height="3" rx="1.5" fill="url(#accentGrad)" opacity="0.8"/>
+
+  <!-- Tagline -->
+  <text x="400" y="128" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#8b949e">
+    AI-Powered Sales Outreach &amp; Personalization
+  </text>
+
+  <!-- Small decorative dots -->
+  <circle cx="310" cy="155" r="2" fill="#e63946" opacity="0.3"/>
+  <circle cx="400" cy="155" r="2" fill="#e63946" opacity="0.4"/>
+  <circle cx="490" cy="155" r="2" fill="#e63946" opacity="0.3"/>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="196" width="800" height="4" fill="url(#accentGrad)" rx="2"/>
+</svg>

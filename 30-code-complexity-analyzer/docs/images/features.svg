@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+  <text x="400" y="35" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">Key Features</text>
+  
+  <rect x="30" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">🔄</text>
+  <text x="80" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#f72585">Cyclomatic Complexity</text>
+  <text x="50" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Count independent paths</text>
+  <text x="50" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">through code: if, while,</text>
+  <text x="50" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">for, boolean operators</text>
+  <text x="50" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">LOW &lt;5 | MEDIUM 5-10 | HIGH &gt;10</text>
+
+  <rect x="283" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="303" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">🧠</text>
+  <text x="333" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#f72585">Cognitive Complexity</text>
+  <text x="303" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Measure mental effort</text>
+  <text x="303" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">needed to understand code</text>
+  <text x="303" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">with nesting depth weight</text>
+  <text x="303" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Depth-adjusted scoring</text>
+
+  <rect x="536" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="556" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">📐</text>
+  <text x="586" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#f72585">Halstead Volume</text>
+  <text x="556" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Operator and operand</text>
+  <text x="556" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">analysis: N * log2(n)</text>
+  <text x="556" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">program size estimation</text>
+  <text x="556" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Information content metric</text>
+
+  <rect x="30" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">📊</text>
+  <text x="80" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#f72585">Maintainability Index</text>
+  <text x="50" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Combined 0-100 score:</text>
+  <text x="50" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Good (65+), Moderate</text>
+  <text x="50" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">(35-65), Poor (&lt;35)</text>
+  <text x="50" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Industry-standard formula</text>
+
+  <rect x="283" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="303" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">🤖</text>
+  <text x="333" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#f72585">AI Suggestions</text>
+  <text x="303" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">LLM-powered refactoring</text>
+  <text x="303" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">suggestions and design</text>
+  <text x="303" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">pattern recommendations</text>
+  <text x="303" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Skip with --no-ai flag</text>
+
+  <rect x="536" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="556" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">📈</text>
+  <text x="586" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#f72585">Trend Tracking</text>
+  <text x="556" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Track complexity over</text>
+  <text x="556" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">time with JSON-based</text>
+  <text x="556" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">trend data persistence</text>
+  <text x="556" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Monitor code health</text>
+</svg>

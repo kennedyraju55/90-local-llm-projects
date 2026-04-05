@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4361ee"/>
+      <stop offset="100%" style="stop-color:#7209b7"/>
+    </linearGradient>
+    <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef233c"/>
+      <stop offset="50%" style="stop-color:#f8961e"/>
+      <stop offset="100%" style="stop-color:#06d6a0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" rx="12" fill="url(#bg)"/>
+  <rect x="0" y="196" width="800" height="4" rx="2" fill="url(#accent)"/>
+
+  <!-- Decorative grid dots -->
+  <g opacity="0.06">
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff"/>
+    </pattern>
+    <rect width="800" height="200" fill="url(#dots)"/>
+  </g>
+
+  <!-- Left decorative gauge -->
+  <g transform="translate(90, 100)">
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#21262d" stroke-width="3"/>
+    <path d="M -42 16 A 45 45 0 1 1 42 16" fill="none" stroke="url(#gaugeGrad)" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="14" y2="-32" stroke="#4361ee" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="5" fill="#4361ee"/>
+    <text x="0" y="36" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" font-weight="600">KPI</text>
+  </g>
+
+  <!-- Right decorative chart -->
+  <g transform="translate(680, 55)">
+    <rect x="0" y="0" width="80" height="90" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+    <!-- Bar chart bars -->
+    <rect x="10" y="50" width="10" height="30" rx="2" fill="#4361ee" opacity="0.5"/>
+    <rect x="24" y="35" width="10" height="45" rx="2" fill="#4361ee" opacity="0.7"/>
+    <rect x="38" y="20" width="10" height="60" rx="2" fill="#4361ee" opacity="0.85"/>
+    <rect x="52" y="40" width="10" height="40" rx="2" fill="#4361ee" opacity="0.6"/>
+    <!-- Trend line -->
+    <polyline points="15,48 29,32 43,18 57,38" fill="none" stroke="#06d6a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="15" cy="48" r="2.5" fill="#06d6a0"/>
+    <circle cx="29" cy="32" r="2.5" fill="#06d6a0"/>
+    <circle cx="43" cy="18" r="2.5" fill="#06d6a0"/>
+    <circle cx="57" cy="38" r="2.5" fill="#06d6a0"/>
+    <!-- Arrow up indicator -->
+    <polygon points="67,22 72,12 77,22" fill="#06d6a0" opacity="0.8"/>
+  </g>
+
+  <!-- Dashboard icon -->
+  <g transform="translate(160, 60)">
+    <rect x="0" y="0" width="20" height="12" rx="2" fill="#4361ee" opacity="0.3"/>
+    <rect x="0" y="16" width="20" height="20" rx="2" fill="#4361ee" opacity="0.2"/>
+    <rect x="24" y="0" width="20" height="20" rx="2" fill="#4361ee" opacity="0.2"/>
+    <rect x="24" y="24" width="20" height="12" rx="2" fill="#4361ee" opacity="0.3"/>
+  </g>
+
+  <!-- Main Title -->
+  <text x="400" y="82" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif" font-size="36" font-weight="700" letter-spacing="1">
+    📊 KPI Dashboard Reporter
+  </text>
+
+  <!-- Tagline -->
+  <text x="400" y="118" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400" letter-spacing="0.5">
+    AI-Powered KPI Tracking &amp; Anomaly Detection
+  </text>
+
+  <!-- Accent pills -->
+  <g transform="translate(255, 138)">
+    <rect x="0" y="0" width="72" height="22" rx="11" fill="#4361ee" opacity="0.15"/>
+    <text x="36" y="15" text-anchor="middle" fill="#4361ee" font-family="Arial, sans-serif" font-size="10" font-weight="600">Trends</text>
+  </g>
+  <g transform="translate(338, 138)">
+    <rect x="0" y="0" width="72" height="22" rx="11" fill="#06d6a0" opacity="0.15"/>
+    <text x="36" y="15" text-anchor="middle" fill="#06d6a0" font-family="Arial, sans-serif" font-size="10" font-weight="600">Goals</text>
+  </g>
+  <g transform="translate(421, 138)">
+    <rect x="0" y="0" width="72" height="22" rx="11" fill="#f8961e" opacity="0.15"/>
+    <text x="36" y="15" text-anchor="middle" fill="#f8961e" font-family="Arial, sans-serif" font-size="10" font-weight="600">Anomalies</text>
+  </g>
+  <g transform="translate(504, 138)">
+    <rect x="0" y="0" width="72" height="22" rx="11" fill="#ef233c" opacity="0.15"/>
+    <text x="36" y="15" text-anchor="middle" fill="#ef233c" font-family="Arial, sans-serif" font-size="10" font-weight="600">Alerts</text>
+  </g>
+</svg>

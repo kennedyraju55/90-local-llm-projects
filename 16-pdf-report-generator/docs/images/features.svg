@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="featBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="featAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06d6a0"/>
+      <stop offset="100%" style="stop-color:#04b888"/>
+    </linearGradient>
+    <filter id="featCardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="iconGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="12" fill="url(#featBg)"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff">Key Features</text>
+  <rect x="330" y="40" width="140" height="2" rx="1" fill="url(#featAccent)" opacity="0.5"/>
+
+  <!-- Row 1 -->
+  <!-- Card 1: Template System -->
+  <g transform="translate(40, 60)" filter="url(#featCardShadow)">
+    <rect width="230" height="115" rx="10" fill="#1a2332" stroke="#06d6a0" stroke-width="1" stroke-opacity="0.35"/>
+    <rect width="230" height="3" rx="1.5" fill="#06d6a0" opacity="0.8"/>
+    <!-- Icon: stacked docs -->
+    <g transform="translate(28, 30)" filter="url(#iconGlow)">
+      <rect x="-10" y="-8" width="20" height="24" rx="3" fill="none" stroke="#06d6a0" stroke-width="1.5"/>
+      <rect x="-7" y="-11" width="20" height="24" rx="3" fill="#1a2332" stroke="#06d6a0" stroke-width="1" opacity="0.5"/>
+    </g>
+    <text x="55" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Template System</text>
+    <text x="20" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Three built-in report templates:</text>
+    <g transform="translate(20, 68)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Executive — full business report</text>
+    </g>
+    <g transform="translate(20, 82)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Technical — deep statistical analysis</text>
+    </g>
+    <g transform="translate(20, 96)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Summary — concise 3-5 sentence brief</text>
+    </g>
+  </g>
+
+  <!-- Card 2: Statistical Analysis -->
+  <g transform="translate(285, 60)" filter="url(#featCardShadow)">
+    <rect width="230" height="115" rx="10" fill="#1a2332" stroke="#06d6a0" stroke-width="1" stroke-opacity="0.35"/>
+    <rect width="230" height="3" rx="1.5" fill="#06d6a0" opacity="0.8"/>
+    <!-- Icon: bar chart -->
+    <g transform="translate(28, 30)" filter="url(#iconGlow)">
+      <rect x="-12" y="2" width="7" height="12" rx="1.5" fill="#06d6a0" opacity="0.6"/>
+      <rect x="-3" y="-6" width="7" height="20" rx="1.5" fill="#06d6a0" opacity="0.8"/>
+      <rect x="6" y="-2" width="7" height="16" rx="1.5" fill="#06d6a0"/>
+    </g>
+    <text x="55" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Statistical Analysis</text>
+    <text x="20" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Automatic column profiling:</text>
+    <g transform="translate(20, 68)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Min, Max, Mean, Median</text>
+    </g>
+    <g transform="translate(20, 82)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Standard deviation &amp; Sum</text>
+    </g>
+    <g transform="translate(20, 96)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Unique values &amp; frequency counts</text>
+    </g>
+  </g>
+
+  <!-- Card 3: Multi-Format Output -->
+  <g transform="translate(530, 60)" filter="url(#featCardShadow)">
+    <rect width="230" height="115" rx="10" fill="#1a2332" stroke="#06d6a0" stroke-width="1" stroke-opacity="0.35"/>
+    <rect width="230" height="3" rx="1.5" fill="#06d6a0" opacity="0.8"/>
+    <!-- Icon: file formats -->
+    <g transform="translate(28, 30)" filter="url(#iconGlow)">
+      <rect x="-14" y="-8" width="28" height="18" rx="3" fill="none" stroke="#06d6a0" stroke-width="1.5"/>
+      <text x="0" y="5" text-anchor="middle" font-family="monospace" font-size="7" fill="#06d6a0" font-weight="700">.md</text>
+    </g>
+    <text x="55" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Multi-Format Output</text>
+    <text x="20" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Export to any format:</text>
+    <g transform="translate(20, 68)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Markdown — with YAML frontmatter</text>
+    </g>
+    <g transform="translate(20, 82)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">HTML — styled, self-contained</text>
+    </g>
+    <g transform="translate(20, 96)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Plain text — universal compatibility</text>
+    </g>
+  </g>
+
+  <!-- Row 2 -->
+  <!-- Card 4: Chart Descriptions -->
+  <g transform="translate(40, 195)" filter="url(#featCardShadow)">
+    <rect width="230" height="115" rx="10" fill="#1a2332" stroke="#06d6a0" stroke-width="1" stroke-opacity="0.35"/>
+    <rect width="230" height="3" rx="1.5" fill="#06d6a0" opacity="0.8"/>
+    <!-- Icon: chart with sparkle -->
+    <g transform="translate(28, 30)" filter="url(#iconGlow)">
+      <polyline points="-10,8 -3,-2 3,4 10,-8" fill="none" stroke="#06d6a0" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="10" cy="-8" r="3" fill="#06d6a0" opacity="0.5"/>
+    </g>
+    <text x="55" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Chart Descriptions</text>
+    <text x="20" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">AI-generated visualizations:</text>
+    <g transform="translate(20, 68)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Describes ideal chart types for data</text>
+    </g>
+    <g transform="translate(20, 82)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Bar, line, pie recommendations</text>
+    </g>
+    <g transform="translate(20, 96)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Ready-to-implement specifications</text>
+    </g>
+  </g>
+
+  <!-- Card 5: YAML Frontmatter -->
+  <g transform="translate(285, 195)" filter="url(#featCardShadow)">
+    <rect width="230" height="115" rx="10" fill="#1a2332" stroke="#06d6a0" stroke-width="1" stroke-opacity="0.35"/>
+    <rect width="230" height="3" rx="1.5" fill="#06d6a0" opacity="0.8"/>
+    <!-- Icon: yaml brackets -->
+    <g transform="translate(28, 30)" filter="url(#iconGlow)">
+      <text x="0" y="5" text-anchor="middle" font-family="monospace" font-size="16" fill="#06d6a0" font-weight="700">---</text>
+    </g>
+    <text x="55" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">YAML Frontmatter</text>
+    <text x="20" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Professional metadata headers:</text>
+    <g transform="translate(20, 68)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Title, timestamp, generator tag</text>
+    </g>
+    <g transform="translate(20, 82)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Compatible with static site gens</text>
+    </g>
+    <g transform="translate(20, 96)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Auto-injected on every export</text>
+    </g>
+  </g>
+
+  <!-- Card 6: 100% Private -->
+  <g transform="translate(530, 195)" filter="url(#featCardShadow)">
+    <rect width="230" height="115" rx="10" fill="#1a2332" stroke="#06d6a0" stroke-width="1" stroke-opacity="0.35"/>
+    <rect width="230" height="3" rx="1.5" fill="#06d6a0" opacity="0.8"/>
+    <!-- Icon: shield lock -->
+    <g transform="translate(28, 30)" filter="url(#iconGlow)">
+      <path d="M0,-12 L10,-7 L10,3 Q10,12 0,14 Q-10,12 -10,3 L-10,-7 Z" fill="none" stroke="#06d6a0" stroke-width="1.5"/>
+      <circle cx="0" cy="2" r="3" fill="none" stroke="#06d6a0" stroke-width="1.2"/>
+      <line x1="0" y1="5" x2="0" y2="8" stroke="#06d6a0" stroke-width="1.5"/>
+    </g>
+    <text x="55" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">100% Private</text>
+    <text x="20" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Your data never leaves your machine:</text>
+    <g transform="translate(20, 68)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Local LLM via Ollama — no cloud</text>
+    </g>
+    <g transform="translate(20, 82)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Business data stays on your device</text>
+    </g>
+    <g transform="translate(20, 96)">
+      <circle cx="5" cy="4" r="2" fill="#06d6a0"/><text x="12" y="7" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Zero API keys or subscriptions</text>
+    </g>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="347" width="800" height="3" rx="1.5" fill="url(#featAccent)" opacity="0.4"/>
+</svg>

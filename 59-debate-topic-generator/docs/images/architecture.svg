@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4361ee"/>
+      <stop offset="100%" style="stop-color:#3a0ca3"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold">SYSTEM ARCHITECTURE</text>
+
+  <!-- User Box -->
+  <rect x="30" y="55" width="110" height="50" rx="8" fill="#2d2d44" stroke="#4361ee" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="85" y="76" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="bold">👤 User</text>
+  <text x="85" y="93" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Input &amp; Config</text>
+
+  <!-- Arrow User → Interfaces -->
+  <line x1="140" y1="80" x2="175" y2="80" stroke="#4361ee" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4361ee"/>
+    </marker>
+  </defs>
+
+  <!-- CLI Box -->
+  <rect x="180" y="45" width="120" height="35" rx="6" fill="#2d2d44" stroke="#4361ee" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="240" y="67" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="bold">💻 CLI (Click)</text>
+
+  <!-- Streamlit Box -->
+  <rect x="180" y="85" width="120" height="35" rx="6" fill="#2d2d44" stroke="#4361ee" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="240" y="107" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="bold">🌐 Streamlit</text>
+
+  <!-- Arrow Interfaces → Core -->
+  <line x1="300" y1="80" x2="345" y2="80" stroke="#4361ee" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Core Engine Box -->
+  <rect x="350" y="50" width="150" height="60" rx="8" fill="#1e1e38" stroke="#4361ee" stroke-width="2" filter="url(#shadow)"/>
+  <text x="425" y="73" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">⚙️ DebateGen</text>
+  <text x="425" y="93" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Core Engine</text>
+
+  <!-- Arrow Core → LLM -->
+  <line x1="500" y1="80" x2="545" y2="80" stroke="#4361ee" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Ollama/Gemma Box -->
+  <rect x="550" y="50" width="140" height="60" rx="8" fill="#2d2d44" stroke="#e07c24" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="620" y="73" text-anchor="middle" fill="#e07c24" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🦙 Ollama</text>
+  <text x="620" y="93" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Gemma 3 Model</text>
+
+  <!-- Config Box -->
+  <rect x="700" y="55" width="85" height="50" rx="6" fill="#2d2d44" stroke="#666" stroke-width="1" filter="url(#shadow)"/>
+  <text x="742" y="76" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold">📄 config</text>
+  <text x="742" y="92" text-anchor="middle" fill="#666" font-family="Segoe UI,Arial,sans-serif" font-size="9">.yaml</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="130" x2="760" y2="130" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="400" y="148" text-anchor="middle" fill="#555" font-family="Segoe UI,Arial,sans-serif" font-size="10">PIPELINE MODULES</text>
+
+  <!-- Module 1: Topic Generator -->
+  <rect x="30" y="165" width="220" height="90" rx="8" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="140" y="188" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🎯 Topic Generator</text>
+  <text x="140" y="208" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Balanced Pro/Con Arguments</text>
+  <text x="140" y="225" text-anchor="middle" fill="#666" font-family="Segoe UI,Arial,sans-serif" font-size="9">generate_debate_topics()</text>
+  <text x="140" y="245" text-anchor="middle" fill="#555" font-family="Segoe UI,Arial,sans-serif" font-size="9">→ DebateSet with DebateTopics</text>
+
+  <!-- Module 2: Counterargument Engine -->
+  <rect x="270" y="165" width="220" height="90" rx="8" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="380" y="188" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">⚔️ Counterargument Engine</text>
+  <text x="380" y="208" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Argument → Counter → Rebuttal</text>
+  <text x="380" y="225" text-anchor="middle" fill="#666" font-family="Segoe UI,Arial,sans-serif" font-size="9">CounterargumentPair chains</text>
+  <text x="380" y="245" text-anchor="middle" fill="#555" font-family="Segoe UI,Arial,sans-serif" font-size="9">→ Structured debate flow</text>
+
+  <!-- Module 3: Judging Criteria Builder -->
+  <rect x="510" y="165" width="220" height="90" rx="8" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="620" y="188" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🏆 Judging Criteria</text>
+  <text x="620" y="208" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Weighted Evaluation Rubrics</text>
+  <text x="620" y="225" text-anchor="middle" fill="#666" font-family="Segoe UI,Arial,sans-serif" font-size="9">JudgingCriteria with weights</text>
+  <text x="620" y="245" text-anchor="middle" fill="#555" font-family="Segoe UI,Arial,sans-serif" font-size="9">→ Fair scoring framework</text>
+
+  <!-- Module 4: Moderator Guide -->
+  <rect x="30" y="275" width="220" height="90" rx="8" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="140" y="298" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📋 Moderator Guide</text>
+  <text x="140" y="318" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Opening, Timing, Closing</text>
+  <text x="140" y="335" text-anchor="middle" fill="#666" font-family="Segoe UI,Arial,sans-serif" font-size="9">generate_moderator_guide()</text>
+  <text x="140" y="355" text-anchor="middle" fill="#555" font-family="Segoe UI,Arial,sans-serif" font-size="9">→ ModeratorGuide object</text>
+
+  <!-- Module 5: Evidence Strength Rater -->
+  <rect x="270" y="275" width="220" height="90" rx="8" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="380" y="298" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📊 Evidence Rater</text>
+  <text x="380" y="318" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Weak / Moderate / Strong</text>
+  <text x="380" y="335" text-anchor="middle" fill="#666" font-family="Segoe UI,Arial,sans-serif" font-size="9">rate_evidence_strength()</text>
+  <text x="380" y="355" text-anchor="middle" fill="#555" font-family="Segoe UI,Arial,sans-serif" font-size="9">→ Quality classification</text>
+
+  <!-- Module 6: Data Models -->
+  <rect x="510" y="275" width="220" height="90" rx="8" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="620" y="298" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🗂️ Data Models</text>
+  <text x="620" y="318" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Typed Dataclasses</text>
+  <text x="620" y="335" text-anchor="middle" fill="#666" font-family="Segoe UI,Arial,sans-serif" font-size="9">DebateTopic, Argument, etc.</text>
+  <text x="620" y="355" text-anchor="middle" fill="#555" font-family="Segoe UI,Arial,sans-serif" font-size="9">→ Serializable via to_dict()</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="390" width="800" height="10" fill="url(#accent)" rx="0"/>
+</svg>

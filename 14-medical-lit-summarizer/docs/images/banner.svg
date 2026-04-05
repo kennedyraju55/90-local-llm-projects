@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="900" height="250">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="50%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#ff8c42"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="250" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Decorative border -->
+  <rect x="2" y="2" width="896" height="246" rx="14" fill="none" stroke="url(#accentGrad)" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03" stroke="#ff6b35">
+    <line x1="0" y1="50" x2="900" y2="50"/>
+    <line x1="0" y1="100" x2="900" y2="100"/>
+    <line x1="0" y1="150" x2="900" y2="150"/>
+    <line x1="0" y1="200" x2="900" y2="200"/>
+    <line x1="150" y1="0" x2="150" y2="250"/>
+    <line x1="300" y1="0" x2="300" y2="250"/>
+    <line x1="450" y1="0" x2="450" y2="250"/>
+    <line x1="600" y1="0" x2="600" y2="250"/>
+    <line x1="750" y1="0" x2="750" y2="250"/>
+  </g>
+
+  <!-- Left decorative element — medical cross -->
+  <g transform="translate(80, 125)" filter="url(#glow)">
+    <rect x="-18" y="-6" width="36" height="12" rx="3" fill="#ff6b35" opacity="0.9"/>
+    <rect x="-6" y="-18" width="12" height="36" rx="3" fill="#ff6b35" opacity="0.9"/>
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#ff6b35" stroke-width="1.5" opacity="0.3"/>
+    <circle cx="0" cy="0" r="36" fill="none" stroke="#ff6b35" stroke-width="0.8" opacity="0.15"/>
+  </g>
+
+  <!-- Right decorative element — DNA helix hint -->
+  <g transform="translate(820, 125)" opacity="0.2">
+    <path d="M-15,-40 Q0,-25 15,-20 Q0,-15 -15,-10 Q0,-5 15,0 Q0,5 -15,10 Q0,15 15,20 Q0,25 -15,30 Q0,35 15,40" fill="none" stroke="#ff6b35" stroke-width="2"/>
+    <path d="M15,-40 Q0,-25 -15,-20 Q0,-15 15,-10 Q0,-5 -15,0 Q0,5 15,10 Q0,15 -15,20 Q0,25 15,30 Q0,35 -15,40" fill="none" stroke="#ff8c42" stroke-width="2"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="95" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="38" font-weight="700" fill="#ffffff" filter="url(#softShadow)">
+    <tspan fill="#ff6b35">&#x1F3E5;</tspan> Medical Literature Summarizer
+  </text>
+
+  <!-- Accent line under title -->
+  <rect x="200" y="112" width="500" height="2.5" rx="1.25" fill="url(#accentGrad)" opacity="0.6"/>
+
+  <!-- Tagline -->
+  <text x="450" y="148" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="17" fill="#8b949e" letter-spacing="0.5">
+    AI-Powered Research Analysis, PICO Extraction &amp; Evidence Grading
+  </text>
+
+  <!-- Tech badges row -->
+  <g transform="translate(450, 190)">
+    <!-- Gemma 4 badge -->
+    <g transform="translate(-200, 0)">
+      <rect x="-48" y="-12" width="96" height="24" rx="12" fill="#ff6b35" opacity="0.15"/>
+      <rect x="-48" y="-12" width="96" height="24" rx="12" fill="none" stroke="#ff6b35" stroke-width="0.8" opacity="0.4"/>
+      <text x="0" y="5" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#ff6b35" font-weight="600">Gemma 4</text>
+    </g>
+    <!-- Ollama badge -->
+    <g transform="translate(-80, 0)">
+      <rect x="-42" y="-12" width="84" height="24" rx="12" fill="#238636" opacity="0.15"/>
+      <rect x="-42" y="-12" width="84" height="24" rx="12" fill="none" stroke="#238636" stroke-width="0.8" opacity="0.4"/>
+      <text x="0" y="5" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#3fb950" font-weight="600">Ollama</text>
+    </g>
+    <!-- Python badge -->
+    <g transform="translate(30, 0)">
+      <rect x="-42" y="-12" width="84" height="24" rx="12" fill="#3572A5" opacity="0.15"/>
+      <rect x="-42" y="-12" width="84" height="24" rx="12" fill="none" stroke="#3572A5" stroke-width="0.8" opacity="0.4"/>
+      <text x="0" y="5" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#79b8ff" font-weight="600">Python</text>
+    </g>
+    <!-- Private badge -->
+    <g transform="translate(140, 0)">
+      <rect x="-52" y="-12" width="104" height="24" rx="12" fill="#8957e5" opacity="0.15"/>
+      <rect x="-52" y="-12" width="104" height="24" rx="12" fill="none" stroke="#8957e5" stroke-width="0.8" opacity="0.4"/>
+      <text x="0" y="5" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#bc8cff" font-weight="600">100% Private</text>
+    </g>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="244" width="900" height="6" rx="0 0 16 16" fill="url(#accentGrad)" opacity="0.5"/>
+</svg>

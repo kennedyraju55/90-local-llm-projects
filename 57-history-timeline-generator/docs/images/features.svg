@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#fb8500" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">✨ FEATURE HIGHLIGHTS</text>
+
+  <!-- Row 1 -->
+
+  <!-- Feature 1: Timeline Generation -->
+  <rect x="30" y="55" width="235" height="120" rx="10" fill="#1e2a45" stroke="#fb8500" stroke-width="1.5"/>
+  <text x="147" y="85" text-anchor="middle" fill="#fb8500" font-family="Segoe UI,Arial,sans-serif" font-size="26">📅</text>
+  <text x="147" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Timeline Generation</text>
+  <text x="147" y="130" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Generate 5–25 chronological events</text>
+  <text x="147" y="146" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">with dates, descriptions &amp; significance</text>
+  <text x="147" y="165" text-anchor="middle" fill="#fb8500" font-family="Segoe UI,Arial,sans-serif" font-size="9">Brief • Medium • Detailed</text>
+
+  <!-- Feature 2: 6 Event Categories -->
+  <rect x="282" y="55" width="235" height="120" rx="10" fill="#1e2a45" stroke="#e76f51" stroke-width="1.5"/>
+  <text x="399" y="85" text-anchor="middle" fill="#e76f51" font-family="Segoe UI,Arial,sans-serif" font-size="26">🏷️</text>
+  <text x="399" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">6 Event Categories</text>
+  <text x="399" y="130" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Political • Military • Social</text>
+  <text x="399" y="146" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Economic • Cultural • Scientific</text>
+  <text x="399" y="165" text-anchor="middle" fill="#e76f51" font-family="Segoe UI,Arial,sans-serif" font-size="9">Color-coded classification</text>
+
+  <!-- Feature 3: Key Figure Profiles -->
+  <rect x="534" y="55" width="235" height="120" rx="10" fill="#1e2a45" stroke="#2a9d8f" stroke-width="1.5"/>
+  <text x="651" y="85" text-anchor="middle" fill="#2a9d8f" font-family="Segoe UI,Arial,sans-serif" font-size="26">👤</text>
+  <text x="651" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Key Figure Profiles</text>
+  <text x="651" y="130" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Detailed biographies with roles,</text>
+  <text x="651" y="146" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">era context &amp; key contributions</text>
+  <text x="651" y="165" text-anchor="middle" fill="#2a9d8f" font-family="Segoe UI,Arial,sans-serif" font-size="9">Auto-extracted from timelines</text>
+
+  <!-- Row 2 -->
+
+  <!-- Feature 4: Cause-Effect Analysis -->
+  <rect x="30" y="195" width="235" height="120" rx="10" fill="#1e2a45" stroke="#e9c46a" stroke-width="1.5"/>
+  <text x="147" y="225" text-anchor="middle" fill="#e9c46a" font-family="Segoe UI,Arial,sans-serif" font-size="26">🔗</text>
+  <text x="147" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Cause-Effect Chains</text>
+  <text x="147" y="270" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Trace how events connect through</text>
+  <text x="147" y="286" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">cause → event → effect → impact</text>
+  <text x="147" y="305" text-anchor="middle" fill="#e9c46a" font-family="Segoe UI,Arial,sans-serif" font-size="9">Long-term impact analysis</text>
+
+  <!-- Feature 5: Era Grouping -->
+  <rect x="282" y="195" width="235" height="120" rx="10" fill="#1e2a45" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="399" y="225" text-anchor="middle" fill="#a78bfa" font-family="Segoe UI,Arial,sans-serif" font-size="26">🏛️</text>
+  <text x="399" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Era Grouping</text>
+  <text x="399" y="270" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Automatic periodization of events</text>
+  <text x="399" y="286" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">into meaningful historical eras</text>
+  <text x="399" y="305" text-anchor="middle" fill="#a78bfa" font-family="Segoe UI,Arial,sans-serif" font-size="9">Contextual era navigation</text>
+
+  <!-- Feature 6: Legacy & Further Reading -->
+  <rect x="534" y="195" width="235" height="120" rx="10" fill="#1e2a45" stroke="#64b5f6" stroke-width="1.5"/>
+  <text x="651" y="225" text-anchor="middle" fill="#64b5f6" font-family="Segoe UI,Arial,sans-serif" font-size="26">📚</text>
+  <text x="651" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Legacy &amp; Further Reading</text>
+  <text x="651" y="270" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Curated reading recommendations</text>
+  <text x="651" y="286" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">&amp; historical legacy summaries</text>
+  <text x="651" y="305" text-anchor="middle" fill="#64b5f6" font-family="Segoe UI,Arial,sans-serif" font-size="9">Deepen your understanding</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="340" width="800" height="10" fill="#fb8500" rx="0"/>
+</svg>

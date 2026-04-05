@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="50%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06d6a0"/>
+      <stop offset="100%" style="stop-color:#04b888"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" rx="12" fill="url(#bgGrad)"/>
+
+  <!-- Accent border top -->
+  <rect x="0" y="0" width="800" height="4" rx="2" fill="url(#accentGrad)"/>
+
+  <!-- Decorative grid dots -->
+  <g opacity="0.06" fill="#06d6a0">
+    <circle cx="40" cy="40" r="1.5"/><circle cx="80" cy="40" r="1.5"/><circle cx="120" cy="40" r="1.5"/>
+    <circle cx="160" cy="40" r="1.5"/><circle cx="200" cy="40" r="1.5"/><circle cx="240" cy="40" r="1.5"/>
+    <circle cx="40" cy="60" r="1.5"/><circle cx="80" cy="60" r="1.5"/><circle cx="120" cy="60" r="1.5"/>
+    <circle cx="160" cy="60" r="1.5"/><circle cx="200" cy="60" r="1.5"/><circle cx="240" cy="60" r="1.5"/>
+    <circle cx="560" cy="140" r="1.5"/><circle cx="600" cy="140" r="1.5"/><circle cx="640" cy="140" r="1.5"/>
+    <circle cx="680" cy="140" r="1.5"/><circle cx="720" cy="140" r="1.5"/><circle cx="760" cy="140" r="1.5"/>
+    <circle cx="560" cy="160" r="1.5"/><circle cx="600" cy="160" r="1.5"/><circle cx="640" cy="160" r="1.5"/>
+    <circle cx="680" cy="160" r="1.5"/><circle cx="720" cy="160" r="1.5"/><circle cx="760" cy="160" r="1.5"/>
+  </g>
+
+  <!-- Chart icon -->
+  <g transform="translate(60, 55)" filter="url(#glow)">
+    <rect x="0" y="50" width="16" height="40" rx="3" fill="#06d6a0" opacity="0.7"/>
+    <rect x="22" y="30" width="16" height="60" rx="3" fill="#06d6a0" opacity="0.85"/>
+    <rect x="44" y="10" width="16" height="80" rx="3" fill="#06d6a0"/>
+    <rect x="66" y="38" width="16" height="52" rx="3" fill="#06d6a0" opacity="0.75"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="82" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="38" font-weight="700" fill="#ffffff" filter="url(#softShadow)">
+    📊 PDF Report Generator
+  </text>
+
+  <!-- Tagline -->
+  <text x="400" y="120" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#8b949e" letter-spacing="0.5">
+    AI-Powered Data Analysis, Statistical Summaries &amp; Professional Reports
+  </text>
+
+  <!-- Accent underline -->
+  <rect x="220" y="134" width="360" height="2" rx="1" fill="url(#accentGrad)" opacity="0.5"/>
+
+  <!-- Tech badges -->
+  <g transform="translate(400, 165)" text-anchor="middle">
+    <g transform="translate(-180, 0)">
+      <rect x="-40" y="-12" width="80" height="22" rx="11" fill="#06d6a0" opacity="0.15" stroke="#06d6a0" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text y="4" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#06d6a0" text-anchor="middle">Gemma 4</text>
+    </g>
+    <g transform="translate(-72, 0)">
+      <rect x="-40" y="-12" width="80" height="22" rx="11" fill="#06d6a0" opacity="0.15" stroke="#06d6a0" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text y="4" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#06d6a0" text-anchor="middle">Ollama</text>
+    </g>
+    <g transform="translate(36, 0)">
+      <rect x="-45" y="-12" width="90" height="22" rx="11" fill="#06d6a0" opacity="0.15" stroke="#06d6a0" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text y="4" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#06d6a0" text-anchor="middle">Python 3.10+</text>
+    </g>
+    <g transform="translate(144, 0)">
+      <rect x="-40" y="-12" width="80" height="22" rx="11" fill="#06d6a0" opacity="0.15" stroke="#06d6a0" stroke-width="0.5" stroke-opacity="0.3"/>
+      <text y="4" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#06d6a0" text-anchor="middle">Click CLI</text>
+    </g>
+  </g>
+
+  <!-- Accent border bottom -->
+  <rect x="0" y="196" width="800" height="4" rx="2" fill="url(#accentGrad)"/>
+</svg>

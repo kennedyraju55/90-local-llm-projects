@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00b4d8"/>
+      <stop offset="100%" style="stop-color:#48cae4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" fill="url(#bg)" rx="12"/>
+  <rect y="190" width="800" height="10" fill="url(#accent)" rx="0 0 12 12"/>
+  <g transform="translate(60, 55)">
+    <circle cx="45" cy="45" r="40" fill="none" stroke="#00b4d8" stroke-width="2.5" opacity="0.3"/>
+    <circle cx="45" cy="45" r="28" fill="none" stroke="#00b4d8" stroke-width="2"/>
+    <circle cx="45" cy="30" r="6" fill="#00b4d8"/>
+    <circle cx="45" cy="50" r="6" fill="#00b4d8"/>
+    <circle cx="45" cy="70" r="6" fill="#00b4d8" opacity="0.5"/>
+    <line x1="45" y1="36" x2="45" y2="44" stroke="#00b4d8" stroke-width="2"/>
+    <line x1="45" y1="56" x2="45" y2="64" stroke="#00b4d8" stroke-width="2" opacity="0.5"/>
+  </g>
+  <text x="170" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700" fill="#ffffff">Commit Message Generator</text>
+  <text x="170" y="120" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#8b949e">AI-Powered Conventional Commits from Git Diffs</text>
+  <rect x="170" y="138" width="55" height="22" rx="11" fill="#00b4d8" opacity="0.15"/>
+  <text x="197" y="153" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#00b4d8" text-anchor="middle">Git</text>
+  <rect x="235" y="138" width="70" height="22" rx="11" fill="#00b4d8" opacity="0.15"/>
+  <text x="270" y="153" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#00b4d8" text-anchor="middle">Ollama</text>
+  <rect x="315" y="138" width="60" height="22" rx="11" fill="#00b4d8" opacity="0.15"/>
+  <text x="345" y="153" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#00b4d8" text-anchor="middle">CLI</text>
+</svg>

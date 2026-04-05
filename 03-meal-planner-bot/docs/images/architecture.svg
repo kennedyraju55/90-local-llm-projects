@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2e1a"/>
+      <stop offset="100%" style="stop-color:#0f3a34"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#2ec4b6"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+  <text x="400" y="30" text-anchor="middle" fill="#2ec4b6" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">System Architecture</text>
+
+  <!-- User Preferences -->
+  <rect x="30" y="55" width="150" height="70" rx="10" fill="#1e293b" stroke="#2ec4b6" stroke-width="2"/>
+  <text x="105" y="80" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">👤 User Preferences</text>
+  <text x="105" y="97" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Diet Type (10 options)</text>
+  <text x="105" y="112" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Allergies • Calories</text>
+
+  <line x1="180" y1="90" x2="220" y2="90" stroke="#2ec4b6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Meal Plan Generator -->
+  <rect x="225" y="50" width="170" height="80" rx="10" fill="#1e293b" stroke="#2ec4b6" stroke-width="2"/>
+  <text x="310" y="75" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🍽️ Plan Generator</text>
+  <text x="310" y="93" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">generate_meal_plan()</text>
+  <text x="310" y="108" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">7-14 day plans</text>
+  <text x="310" y="123" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Breakfast/Lunch/Dinner/Snack</text>
+
+  <line x1="395" y1="90" x2="435" y2="90" stroke="#2ec4b6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- LLM -->
+  <rect x="440" y="55" width="155" height="70" rx="10" fill="#20a39e" stroke="#2ec4b6" stroke-width="2"/>
+  <text x="517" y="82" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">🤖 Gemma 4</text>
+  <text x="517" y="102" text-anchor="middle" fill="#d1fae5" font-family="Segoe UI,Arial,sans-serif" font-size="11">Ollama Local LLM</text>
+
+  <!-- Recipe Details -->
+  <rect x="30" y="170" width="150" height="60" rx="10" fill="#1e293b" stroke="#20a39e" stroke-width="2"/>
+  <text x="105" y="195" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📖 Recipe Details</text>
+  <text x="105" y="215" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">get_recipe_details()</text>
+
+  <!-- Shopping List -->
+  <rect x="225" y="170" width="170" height="60" rx="10" fill="#1e293b" stroke="#20a39e" stroke-width="2"/>
+  <text x="310" y="195" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🛒 Shopping List</text>
+  <text x="310" y="215" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">generate_shopping_list()</text>
+
+  <!-- Nutrition -->
+  <rect x="440" y="170" width="155" height="60" rx="10" fill="#1e293b" stroke="#20a39e" stroke-width="2"/>
+  <text x="517" y="195" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📊 Nutrition Info</text>
+  <text x="517" y="215" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">parse_calories_from_plan()</text>
+
+  <!-- Storage -->
+  <rect x="640" y="120" width="130" height="120" rx="10" fill="#1e293b" stroke="#2ec4b6" stroke-width="2"/>
+  <text x="705" y="148" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">💾 Storage</text>
+  <text x="705" y="170" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">saved_recipes.json</text>
+  <text x="705" y="186" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">shopping_list.json</text>
+  <text x="705" y="202" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">save_recipe()</text>
+  <text x="705" y="218" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">JSON persistence</text>
+
+  <!-- Interfaces -->
+  <rect x="30" y="280" width="200" height="70" rx="10" fill="#1e293b" stroke="#2ec4b6" stroke-width="2"/>
+  <text x="130" y="305" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🖥️ CLI Interface</text>
+  <text x="130" y="322" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">--diet --days --allergies --calories</text>
+  <text x="130" y="338" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Interactive: recipe | shop | save</text>
+
+  <rect x="280" y="280" width="200" height="70" rx="10" fill="#1e293b" stroke="#2ec4b6" stroke-width="2"/>
+  <text x="380" y="305" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🌐 Web UI</text>
+  <text x="380" y="322" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Streamlit • 3 Tabs</text>
+  <text x="380" y="338" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Plan | Shopping | Recipe Lookup</text>
+
+  <text x="400" y="385" text-anchor="middle" fill="#4a5568" font-family="Segoe UI,Arial,sans-serif" font-size="11">Meal Planner Bot — 10 Diet Types • Shopping Lists • Nutrition Tracking</text>
+</svg>

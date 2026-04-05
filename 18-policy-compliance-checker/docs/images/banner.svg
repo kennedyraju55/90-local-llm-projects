@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946"/>
+      <stop offset="100%" style="stop-color:#ff6b6b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" rx="12" fill="url(#bgGrad)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="800" height="4" rx="2" fill="url(#accentGrad)"/>
+
+  <!-- Shield icon -->
+  <g transform="translate(80, 55)" filter="url(#glow)">
+    <path d="M0 10 L25 0 L50 10 L50 35 C50 55 25 70 25 70 C25 70 0 55 0 35 Z"
+          fill="none" stroke="#e63946" stroke-width="2.5" opacity="0.9"/>
+    <path d="M18 30 L23 35 L35 22" fill="none" stroke="#e63946" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Title -->
+  <text x="155" y="88" font-family="'Segoe UI', Arial, sans-serif" font-size="32"
+        font-weight="700" fill="#ffffff" letter-spacing="0.5">
+    Policy Compliance Checker
+  </text>
+
+  <!-- Tagline -->
+  <text x="155" y="120" font-family="'Segoe UI', Arial, sans-serif" font-size="14"
+        fill="#8b949e" letter-spacing="0.3">
+    AI-Powered Document Compliance Analysis, Violation Detection &amp; Remediation
+  </text>
+
+  <!-- Badges row -->
+  <g transform="translate(155, 140)">
+    <!-- Gemma 4 badge -->
+    <rect x="0" y="0" width="80" height="24" rx="4" fill="#e63946" opacity="0.15"/>
+    <rect x="0" y="0" width="80" height="24" rx="4" fill="none" stroke="#e63946" stroke-width="1" opacity="0.4"/>
+    <text x="40" y="16" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+          fill="#e63946" text-anchor="middle" font-weight="600">Gemma 4</text>
+
+    <!-- Ollama badge -->
+    <rect x="90" y="0" width="68" height="24" rx="4" fill="#3fb950" opacity="0.15"/>
+    <rect x="90" y="0" width="68" height="24" rx="4" fill="none" stroke="#3fb950" stroke-width="1" opacity="0.4"/>
+    <text x="124" y="16" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+          fill="#3fb950" text-anchor="middle" font-weight="600">Ollama</text>
+
+    <!-- Python badge -->
+    <rect x="168" y="0" width="72" height="24" rx="4" fill="#58a6ff" opacity="0.15"/>
+    <rect x="168" y="0" width="72" height="24" rx="4" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.4"/>
+    <text x="204" y="16" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+          fill="#58a6ff" text-anchor="middle" font-weight="600">Python</text>
+
+    <!-- CLI badge -->
+    <rect x="250" y="0" width="56" height="24" rx="4" fill="#d2a8ff" opacity="0.15"/>
+    <rect x="250" y="0" width="56" height="24" rx="4" fill="none" stroke="#d2a8ff" stroke-width="1" opacity="0.4"/>
+    <text x="278" y="16" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+          fill="#d2a8ff" text-anchor="middle" font-weight="600">CLI</text>
+
+    <!-- Private badge -->
+    <rect x="316" y="0" width="92" height="24" rx="4" fill="#f0883e" opacity="0.15"/>
+    <rect x="316" y="0" width="92" height="24" rx="4" fill="none" stroke="#f0883e" stroke-width="1" opacity="0.4"/>
+    <text x="362" y="16" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+          fill="#f0883e" text-anchor="middle" font-weight="600">100% Private</text>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="196" width="800" height="4" rx="2" fill="url(#accentGrad)"/>
+</svg>

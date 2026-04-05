@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+  <text x="400" y="35" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">Key Features</text>
+  
+  <!-- Row 1 -->
+  <!-- Feature 1: Multi-Language -->
+  <rect x="30" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">🌐</text>
+  <text x="80" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e94560">Multi-Language</text>
+  <text x="50" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Review Python, JavaScript,</text>
+  <text x="50" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">TypeScript, Java, Go, Rust</text>
+  <text x="50" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">and more with auto-detection</text>
+  <text x="50" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Auto-detects from file extension</text>
+
+  <!-- Feature 2: Auto-Fix -->
+  <rect x="283" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="303" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">🔧</text>
+  <text x="333" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e94560">Auto-Fix Generation</text>
+  <text x="303" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Generate corrected code</text>
+  <text x="303" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">based on review findings</text>
+  <text x="303" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">with one-click apply</text>
+  <text x="303" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">LLM generates fixed version</text>
+
+  <!-- Feature 3: Severity -->
+  <rect x="536" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="556" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">⚠️</text>
+  <text x="586" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e94560">Severity Scoring</text>
+  <text x="556" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Issues categorized as</text>
+  <text x="556" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Critical, Warning, or Info</text>
+  <text x="556" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">with actionable suggestions</text>
+  <text x="556" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Prioritize fixes by impact</text>
+
+  <!-- Row 2 -->
+  <!-- Feature 4: Focus Areas -->
+  <rect x="30" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">🎯</text>
+  <text x="80" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e94560">Focus Areas</text>
+  <text x="50" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Target specific aspects:</text>
+  <text x="50" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">security, performance,</text>
+  <text x="50" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">readability, best practices</text>
+  <text x="50" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Customizable review criteria</text>
+
+  <!-- Feature 5: Export -->
+  <rect x="283" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="303" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">📋</text>
+  <text x="333" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e94560">Export Reports</text>
+  <text x="303" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Export reviews as Markdown</text>
+  <text x="303" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">or JSON format for CI/CD</text>
+  <text x="303" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">integration and sharing</text>
+  <text x="303" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Structured output formats</text>
+
+  <!-- Feature 6: Directory -->
+  <rect x="536" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="556" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">📁</text>
+  <text x="586" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e94560">Directory Scanning</text>
+  <text x="556" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Batch review entire</text>
+  <text x="556" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">directories with glob</text>
+  <text x="556" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">pattern file filtering</text>
+  <text x="556" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Review full projects at once</text>
+</svg>

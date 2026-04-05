@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#162d4a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a4a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#13382c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a2a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d1f4a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a3a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#382c13;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ec4b6;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#2ec4b6;stop-opacity:0.1" />
+    </linearGradient>
+    <filter id="archGlow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.4" />
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" fill="#2ec4b6">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" rx="12" fill="url(#archBg)" />
+  <rect x="1" y="1" width="798" height="398" rx="12" fill="none" stroke="#2ec4b6" stroke-width="1" stroke-opacity="0.2" />
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">System Architecture</text>
+  <rect x="310" y="42" width="180" height="2" rx="1" fill="#2ec4b6" opacity="0.5" />
+
+  <!-- Stage 1: Meeting Transcript (Input) -->
+  <g filter="url(#archGlow)">
+    <rect x="20" y="120" width="120" height="160" rx="10" fill="url(#boxGrad1)" stroke="#3b82f6" stroke-width="1.5" />
+    <text x="80" y="80" font-family="Segoe UI Emoji, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">📄</text>
+    <text x="80" y="105" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">INPUT</text>
+    <text x="80" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Meeting</text>
+    <text x="80" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Transcript</text>
+    <text x="80" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">.txt / .md</text>
+    <text x="80" y="222" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">paste / upload</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="140" y1="200" x2="175" y2="200" stroke="#2ec4b6" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- Stage 2: Text Processing -->
+  <g filter="url(#archGlow)">
+    <rect x="180" y="120" width="120" height="160" rx="10" fill="url(#boxGrad2)" stroke="#2ec4b6" stroke-width="1.5" />
+    <text x="240" y="80" font-family="Segoe UI Emoji, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">⚙️</text>
+    <text x="240" y="105" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">PROCESSING</text>
+    <text x="240" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Text</text>
+    <text x="240" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Processing</text>
+    <text x="240" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">max 15K chars</text>
+    <text x="240" y="222" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">cleanup &amp; trim</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="300" y1="200" x2="335" y2="200" stroke="#2ec4b6" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- Stage 3: Gemma 4 via Ollama (LLM) -->
+  <g filter="url(#archGlow)">
+    <rect x="340" y="75" width="140" height="250" rx="10" fill="url(#boxGrad3)" stroke="#a78bfa" stroke-width="1.5" />
+    <text x="410" y="68" font-family="Segoe UI Emoji, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">🤖</text>
+    <text x="410" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="middle">Gemma 4</text>
+    <text x="410" y="117" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a78bfa" text-anchor="middle">via Ollama</text>
+
+    <!-- Sub-tasks -->
+    <rect x="355" y="132" width="110" height="28" rx="6" fill="#a78bfa" fill-opacity="0.15" stroke="#a78bfa" stroke-width="0.8" />
+    <text x="410" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#c4b5fd" text-anchor="middle">Summarize</text>
+
+    <rect x="355" y="168" width="110" height="28" rx="6" fill="#a78bfa" fill-opacity="0.15" stroke="#a78bfa" stroke-width="0.8" />
+    <text x="410" y="186" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#c4b5fd" text-anchor="middle">Speakers</text>
+
+    <rect x="355" y="204" width="110" height="28" rx="6" fill="#a78bfa" fill-opacity="0.15" stroke="#a78bfa" stroke-width="0.8" />
+    <text x="410" y="222" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#c4b5fd" text-anchor="middle">Decisions</text>
+
+    <rect x="355" y="240" width="110" height="28" rx="6" fill="#a78bfa" fill-opacity="0.15" stroke="#a78bfa" stroke-width="0.8" />
+    <text x="410" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#c4b5fd" text-anchor="middle">Follow-ups</text>
+
+    <text x="410" y="295" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">temp: 0.3 | 4096 tokens</text>
+    <text x="410" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">100% local inference</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <line x1="480" y1="200" x2="515" y2="200" stroke="#2ec4b6" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- Stage 4: Structured Reports -->
+  <g filter="url(#archGlow)">
+    <rect x="520" y="120" width="120" height="160" rx="10" fill="url(#boxGrad4)" stroke="#f59e0b" stroke-width="1.5" />
+    <text x="580" y="80" font-family="Segoe UI Emoji, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">📊</text>
+    <text x="580" y="105" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">REPORTS</text>
+    <text x="580" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Structured</text>
+    <text x="580" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Reports</text>
+    <text x="580" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Rich tables</text>
+    <text x="580" y="222" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">formatted panels</text>
+  </g>
+
+  <!-- Arrow 4 -->
+  <line x1="640" y1="200" x2="675" y2="200" stroke="#2ec4b6" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- Stage 5: Export -->
+  <g filter="url(#archGlow)">
+    <rect x="680" y="120" width="100" height="160" rx="10" fill="url(#boxGrad5)" stroke="#2ec4b6" stroke-width="1.5" />
+    <text x="730" y="80" font-family="Segoe UI Emoji, sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">💾</text>
+    <text x="730" y="105" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">EXPORT</text>
+    <text x="730" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Export</text>
+    <text x="730" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Markdown</text>
+    <text x="730" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">.md files</text>
+    <text x="730" y="222" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">save_summary()</text>
+  </g>
+
+  <!-- Bottom flow label -->
+  <text x="400" y="365" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle" font-style="italic">
+    All processing happens locally — no data leaves your machine
+  </text>
+
+  <!-- Privacy lock icon -->
+  <text x="400" y="385" font-family="Segoe UI Emoji, sans-serif" font-size="14" text-anchor="middle" fill="#2ec4b6">🔒</text>
+</svg>

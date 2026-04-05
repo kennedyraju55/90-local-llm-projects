@@ -1,0 +1,868 @@
+Perfect! Now I have all the information. Let me compile the comprehensive report for all 10 projects:
+
+---
+
+# COMPREHENSIVE SOURCE CODE ANALYSIS: 10 LOCAL LLM PROJECTS
+
+## **PROJECT 1: 11-Legal-Document-Summarizer**
+
+### File Paths
+- **core.py**: `C:\Users\raguthik\projects\90-local-llm-projects\11-legal-doc-summarizer\src\legal_summarizer\core.py`
+- **cli.py**: `C:\Users\raguthik\projects\90-local-llm-projects\11-legal-doc-summarizer\src\legal_summarizer\cli.py`
+- **web_ui.py**: `C:\Users\raguthik\projects\90-local-llm-projects\11-legal-doc-summarizer\src\legal_summarizer\web_ui.py`
+
+### Configuration Files
+- **config.yaml**: Present (Located at project root)
+- **.env.example**: Present
+
+### Documentation
+- **README.md**: Present (20+ lines with project header)
+- **docs/images/**: Not present
+
+### CORE.PY - Classes & Functions
+
+**Functions:**
+
+1. **`summarize_document(text: str, output_format: str = "bullet", config: dict | None = None) -> str`**
+   - Sends document text to LLM for analysis and summarization
+   - Parameters: text (document), output_format (bullet/narrative/detailed), config (optional)
+   - Returns: LLM-generated summary string
+   - Supports truncation with max_document_chars (default 12000)
+
+2. **`extract_clauses(text: str, config: dict | None = None) -> str`**
+   - Extracts and categorizes individual clauses from legal documents
+   - Categorizes by: Payment, Termination, Confidentiality, Liability, IP, Compliance, Other
+   - Returns: Structured clause extraction with risk levels (Low/Medium/High)
+
+3. **`score_risks(text: str, config: dict | None = None) -> str`**
+   - Analyzes document for risk factors and returns risk scores (0-10 scale)
+   - Categories: Financial Risk, Termination Risk, IP Risk, Compliance Risk, Confidentiality Risk
+   - Returns: Risk scores with justifications and top 3 risk concerns
+
+4. **`compare_documents(file_paths: list[str], config: dict | None = None) -> str`**
+   - Compares multiple legal documents side by side
+   - Parameters: List of file paths to documents
+   - Returns: Structured comparison analysis with most favorable terms
+
+5. **`generate_export_markdown(summary: str, clauses: str | None = None, risk_analysis: str | None = None, filepath: str = "") -> str`**
+   - Generates PDF-ready markdown export combining all analyses
+   - Returns: Complete markdown document with sections for summary, clauses, and risk analysis
+
+### CLI.PY - Commands & Options
+
+**Main CLI Group**: `cli(ctx, verbose, config_path)`
+- **Global Options**:
+  - `--verbose, -v` (flag): Enable verbose logging
+  - `--config` (path): Path to config.yaml
+
+**Commands:**
+
+1. **`summarize`** - Summarize a legal document
+   - `--file, -f` (required, path): Document file path
+   - `--format, -fmt` (choice: bullet/narrative/detailed, default: bullet): Output format
+   - `--export, -e` (path): Export results to markdown file
+
+2. **`clauses`** - Extract and categorize clauses
+   - `--file, -f` (required, path): Legal document path
+
+3. **`risks`** - Score risk factors
+   - `--file, -f` (required, path): Legal document path
+
+4. **`compare`** - Compare multiple legal documents
+   - `--files, -f` (required, multiple, path): Documents to compare (minimum 2)
+
+5. **`export`** - Generate comprehensive PDF-ready markdown report
+   - `--file, -f` (required, path): Document path
+   - `--output, -o` (required, path): Output markdown file path
+   - `--format, -fmt` (choice: bullet/narrative/detailed, default: detailed): Summary format
+
+### Key Features
+- Legal document analysis and summarization
+- Clause extraction with categorization and risk scoring
+- Risk assessment (Financial, Termination, IP, Compliance, Confidentiality)
+- Multi-document comparison
+- Export to markdown for PDF conversion
+- Streamlit web UI available
+- Rich console formatting for output
+
+### config.yaml Settings
+```yaml
+llm: model=gemma4, temperature=0.3, max_tokens=4096
+processing: max_document_chars=12000
+risk_scoring: high_risk_keywords, medium_risk_keywords lists
+output: default_format=bullet, available_formats=[bullet, narrative, detailed]
+```
+
+---
+
+## **PROJECT 2: 12-Resume-Analyzer**
+
+### File Paths
+- **core.py**: `C:\Users\raguthik\projects\90-local-llm-projects\12-resume-analyzer\src\resume_analyzer\core.py`
+- **cli.py**: `C:\Users\raguthik\projects\90-local-llm-projects\12-resume-analyzer\src\resume_analyzer\cli.py`
+- **web_ui.py**: `C:\Users\raguthik\projects\90-local-llm-projects\12-resume-analyzer\src\resume_analyzer\web_ui.py`
+
+### Configuration Files
+- **config.yaml**: Present
+- **.env.example**: Present
+
+### Documentation
+- **README.md**: Present (20+ lines)
+- **docs/images/**: Not present
+
+### CORE.PY - Classes & Functions
+
+**Functions:**
+
+1. **`analyze_resume(resume_text: str, config: dict | None = None) -> dict`**
+   - Performs general analysis of a resume
+   - Returns dict with keys: skills, experience_summary, education, achievements, strengths, weaknesses, formatting_suggestions, content_suggestions, overall_score (0-100)
+
+2. **`score_against_jd(resume_text: str, jd_text: str, config: dict | None = None) -> dict`**
+   - Scores resume against a specific job description
+   - Returns dict with: match_percentage (0-100), matching_skills, missing_skills, experience_alignment, suggestions, keyword_gaps, overall_assessment, priority_improvements
+
+3. **`simulate_ats_score(resume_text: str, jd_text: str, config: dict | None = None) -> dict`**
+   - Simulates Applicant Tracking System (ATS) evaluation
+   - Returns dict with: ats_score, keyword_match_score, experience_match_score, education_match_score, formatting_score, matched_keywords, missing_keywords, formatting_issues, recommendations
+
+4. **`compare_resumes(resume_texts: list[tuple[str, str]], jd_text: str | None = None, config: dict | None = None) -> dict`**
+   - Compares multiple resumes, optionally against a job description
+   - Parameters: List of (name, text) tuples, optional JD text
+   - Returns: ranking, comparison_table, recommendation, key_differences
+
+5. **`generate_improvement_suggestions(resume_text: str, config: dict | None = None) -> dict`**
+   - Generates detailed improvement suggestions section-by-section
+   - Returns: summary_section, experience_section, skills_section, education_section, overall_suggestions, power_words_to_add, sections_to_add
+
+### CLI.PY - Commands & Options
+
+**Main CLI Group**: `cli(ctx, verbose, config_path)`
+- **Global Options**:
+  - `--verbose, -v` (flag): Enable verbose logging
+  - `--config` (path): Path to config.yaml
+
+**Commands:**
+
+1. **`analyze`** - Perform general resume analysis
+   - `--resume` (required, path): Resume text file path
+
+2. **`score`** - Score resume against a job description
+   - `--resume` (required, path): Resume file path
+   - `--jd` (required, path): Job description file path
+
+3. **`ats`** - Simulate ATS evaluation
+   - `--resume` (required, path): Resume file path
+   - `--jd` (required, path): Job description file path
+
+4. **`improve`** - Get detailed improvement suggestions
+   - `--resume` (required, path): Resume file path
+
+### Key Features
+- General resume analysis with skill extraction and scoring
+- Resume-JD matching with skill comparison
+- ATS (Applicant Tracking System) simulation and scoring
+- Multi-resume comparison
+- Detailed improvement suggestions with power words
+- JSON output format for structured data
+- Streamlit web UI available
+
+### config.yaml Settings
+```yaml
+llm: model=gemma4, temperature=0.3, max_tokens=4096
+ats: keyword_weight=0.4, experience_weight=0.3, education_weight=0.15, formatting_weight=0.15
+output: default_format=rich
+```
+
+---
+
+## **PROJECT 3: 13-Meeting-Summarizer**
+
+### File Paths
+- **core.py**: `C:\Users\raguthik\projects\90-local-llm-projects\13-meeting-summarizer\src\meeting_summarizer\core.py`
+- **cli.py**: `C:\Users\raguthik\projects\90-local-llm-projects\13-meeting-summarizer\src\meeting_summarizer\cli.py`
+- **web_ui.py**: `C:\Users\raguthik\projects\90-local-llm-projects\13-meeting-summarizer\src\meeting_summarizer\web_ui.py`
+
+### Configuration Files
+- **config.yaml**: Present
+- **.env.example**: Present
+
+### Documentation
+- **README.md**: Present (20+ lines)
+- **docs/images/**: Not present
+
+### CORE.PY - Classes & Functions
+
+**Functions:**
+
+1. **`summarize_meeting(transcript: str, config: dict | None = None) -> str`**
+   - Analyzes meeting transcript and extracts structured summary
+   - Returns formatted string with sections: ATTENDEES, AGENDA TOPICS, KEY DECISIONS, ACTION ITEMS (table), FOLLOW-UPS, SUMMARY
+
+2. **`identify_speakers(transcript: str, config: dict | None = None) -> str`**
+   - Identifies and profiles all speakers from transcript
+   - Returns: Speaker names, roles, number of times spoken, key contributions/topics
+
+3. **`extract_decision_log(transcript: str, config: dict | None = None) -> str`**
+   - Extracts detailed decision log from transcript
+   - Returns: Decision number, description, proposer, approver, conditions/caveats, impact assessment
+
+4. **`generate_followup_reminders(transcript: str, config: dict | None = None) -> str`**
+   - Generates follow-up reminder schedule with priorities and deadlines
+   - Returns: Description, responsible person, suggested deadline, priority (High/Medium/Low), dependencies
+
+5. **`save_summary(summary: str, output_path: str) -> None`**
+   - Saves the meeting summary to a file
+
+### CLI.PY - Commands & Options
+
+**Main CLI Group**: `cli(ctx, verbose, config_path)`
+- **Global Options**:
+  - `--verbose, -v` (flag): Enable verbose logging
+  - `--config` (path): Path to config.yaml
+
+**Commands:**
+
+1. **`summarize`** - Summarize a meeting transcript
+   - `--transcript` (required, path): Transcript file path
+   - `--output` (optional, path): Save summary to file
+
+2. **`speakers`** - Identify and profile speakers
+   - `--transcript` (required, path): Transcript file path
+
+3. **`decisions`** - Extract decision log
+   - `--transcript` (required, path): Transcript file path
+
+4. **`followups`** - Generate follow-up reminders
+   - `--transcript` (required, path): Transcript file path
+
+### Key Features
+- Meeting transcript parsing and summarization
+- Attendee identification with roles
+- Action items extraction in table format (Who/What/When)
+- Decision log with metadata
+- Follow-up reminder generation with priority levels
+- Speaker profiling with contribution tracking
+- Markdown output for easy sharing
+- Streamlit web UI available
+
+### config.yaml Settings
+```yaml
+llm: model=gemma4, temperature=0.3, max_tokens=4096
+processing: max_transcript_length=15000
+output: default_format=structured
+```
+
+---
+
+## **PROJECT 4: 14-Medical-Literature-Summarizer**
+
+### File Paths
+- **core.py**: `C:\Users\raguthik\projects\90-local-llm-projects\14-medical-lit-summarizer\src\medical_summarizer\core.py`
+- **cli.py**: `C:\Users\raguthik\projects\90-local-llm-projects\14-medical-lit-summarizer\src\medical_summarizer\cli.py`
+- **web_ui.py**: `C:\Users\raguthik\projects\90-local-llm-projects\14-medical-lit-summarizer\src\medical_summarizer\web_ui.py`
+
+### Configuration Files
+- **config.yaml**: Present
+- **.env.example**: Present
+
+### Documentation
+- **README.md**: Present (20+ lines)
+- **docs/images/**: Not present
+
+### CORE.PY - Classes & Functions
+
+**Functions:**
+
+1. **`extract_section(paper_text: str, section_key: str, section_prompt: str, detail_level: str, config: dict | None = None) -> str`**
+   - Extracts a specific section from a paper using LLM
+   - Detail levels: brief, standard, comprehensive
+   - Returns: Extracted section content as markdown
+
+2. **`summarize_paper(paper_text: str, detail_level: str = "standard", config: dict | None = None) -> dict`**
+   - Summarizes medical paper into structured sections
+   - Extracts 8 sections: title_authors, abstract_summary, methodology, key_findings, statistical_results, conclusions, limitations, future_work
+   - Returns: Dict with section keys mapped to extracted content
+
+3. **`extract_pico(paper_text: str, config: dict | None = None) -> str`**
+   - Extracts PICO framework elements (Population, Intervention, Comparison, Outcome)
+   - Returns: Structured PICO analysis
+
+4. **`rate_evidence_quality(paper_text: str, config: dict | None = None) -> str`**
+   - Rates quality of evidence in medical paper
+   - Assesses: Study Design (1-5), Sample Size (1-5), Methodology Rigor (1-5), Statistical Analysis (1-5), Bias Risk (1-5)
+   - Returns: Quality ratings with justifications and Oxford CEBM evidence level
+
+5. **`format_citation(paper_text: str, style: str = "APA", config: dict | None = None) -> str`**
+   - Formats citation in specified style
+   - Supported styles: APA, MLA, Chicago, Vancouver
+   - Returns: Formatted citation string
+
+### CLI.PY - Commands & Options
+
+**Main CLI Group**: `cli(ctx, verbose, config_path)`
+- **Global Options**:
+  - `--verbose, -v` (flag): Enable verbose logging
+  - `--config` (path): Path to config.yaml
+
+**Commands:**
+
+1. **`summarize`** - Summarize a medical/scientific paper
+   - `--paper` (required, path): Paper text file path
+   - `--detail` (choice: brief/standard/comprehensive, default: standard): Detail level
+
+2. **`pico`** - Extract PICO framework elements
+   - `--paper` (required, path): Paper text file path
+
+3. **`evidence`** - Rate quality of evidence
+   - `--paper` (required, path): Paper text file path
+
+4. **`cite`** - Format a citation
+   - `--paper` (required, path): Paper text file path
+   - `--style` (choice: APA/MLA/Chicago/Vancouver, default: APA): Citation style
+
+### Key Features
+- Medical/scientific paper analysis
+- Structured extraction of 8 key sections
+- PICO framework analysis for evidence-based medicine
+- Evidence quality rating (1-5 scales)
+- Multiple citation format support
+- Detail level customization (brief/standard/comprehensive)
+- Streamlit web UI available
+- Markdown formatted output
+
+### config.yaml Settings
+```yaml
+llm: model=gemma4, temperature=0.3, max_tokens=1024
+processing: max_paper_chars=15000
+detail_levels: brief, standard, comprehensive (with instructions)
+citation: default_style=APA, available_styles=[APA, MLA, Chicago, Vancouver]
+```
+
+---
+
+## **PROJECT 5: 15-Invoice-Extractor**
+
+### File Paths
+- **core.py**: `C:\Users\raguthik\projects\90-local-llm-projects\15-invoice-extractor\src\invoice_extractor\core.py`
+- **cli.py**: `C:\Users\raguthik\projects\90-local-llm-projects\15-invoice-extractor\src\invoice_extractor\cli.py`
+- **web_ui.py**: `C:\Users\raguthik\projects\90-local-llm-projects\15-invoice-extractor\src\invoice_extractor\web_ui.py`
+
+### Configuration Files
+- **config.yaml**: Present
+- **.env.example**: Present
+
+### Documentation
+- **README.md**: Present (20+ lines)
+- **docs/images/**: Not present
+
+### CORE.PY - Classes & Functions
+
+**Functions:**
+
+1. **`extract_invoice_data(text: str, config: dict | None = None) -> dict`**
+   - Sends invoice text to LLM and parses structured JSON response
+   - Returns JSON with: vendor (name, address, phone, email), invoice_number, date, due_date, line_items (description, quantity, unit_price, total), subtotal, tax, grand_total, currency, payment_terms
+
+2. **`batch_extract(file_paths: list[str], config: dict | None = None) -> list[dict]`**
+   - Extracts data from multiple invoice files
+   - Returns list of dicts with 'file', 'data' (or 'error') keys
+
+3. **`detect_duplicates(invoices: list[dict], threshold: float = 0.9) -> list[tuple[int, int, str]]`**
+   - Detects potential duplicate invoices by invoice number and vendor
+   - Checks: invoice number match, vendor+total match
+   - Returns: List of (index1, index2, reason) tuples
+
+4. **`categorize_items(invoice_data: dict, config: dict | None = None) -> dict`**
+   - Categorizes invoice line items using LLM
+   - Uses configured categories (Office Supplies, Software, Hardware, Consulting, Travel, Utilities, Marketing, Other)
+   - Returns: Dict with categorized_items list
+
+5. **`export_to_csv(invoices: list[dict]) -> str`**
+   - Exports extracted invoice data to CSV format string
+   - Columns: Source File, Vendor, Invoice #, Date, Due Date, Description, Qty, Unit Price, Line Total, Subtotal, Tax, Grand Total, Currency, Payment Terms
+   - Returns: CSV formatted string
+
+### CLI.PY - Commands & Options
+
+**Main CLI Group**: `cli(ctx, verbose, config_path)`
+- **Global Options**:
+  - `--verbose, -v` (flag): Enable verbose logging
+  - `--config` (path): Path to config.yaml
+
+**Commands:**
+
+1. **`extract`** - Extract data from a single invoice
+   - `--file, -f` (required, path, must exist): Invoice file path
+   - `--output, -o` (choice: json/table/csv, default: json): Output format
+
+2. **`batch`** - Process multiple invoices in batch
+   - `--files, -f` (required, multiple, path): Invoice files to process
+   - `--export, -e` (optional, path): Export CSV to file
+
+3. **`categorize`** - Categorize invoice line items
+   - `--file, -f` (required, path): Invoice file path
+
+### Key Features
+- Invoice text extraction to structured JSON
+- Batch processing of multiple invoices
+- Duplicate detection by invoice number and vendor+total
+- Line item categorization with LLM
+- CSV export for spreadsheet analysis
+- Multiple output formats (JSON, table, CSV)
+- Comprehensive invoice metadata extraction
+- Streamlit web UI available
+
+### config.yaml Settings
+```yaml
+llm: model=gemma4, temperature=0.1, max_tokens=4096
+processing: batch_size=10, duplicate_threshold=0.9
+categories: [Office Supplies, Software, Hardware, Consulting, Travel, Utilities, Marketing, Other]
+output: default_format=json, csv_delimiter=","
+```
+
+---
+
+## **PROJECT 6: 16-PDF-Report-Generator**
+
+### File Paths
+- **core.py**: `C:\Users\raguthik\projects\90-local-llm-projects\16-pdf-report-generator\src\report_generator\core.py`
+- **cli.py**: `C:\Users\raguthik\projects\90-local-llm-projects\16-pdf-report-generator\src\report_generator\cli.py` (Note: CLI is `main()` function)
+- **web_ui.py**: `C:\Users\raguthik\projects\90-local-llm-projects\16-pdf-report-generator\src\report_generator\web_ui.py`
+
+### Configuration Files
+- **config.yaml**: Present
+- **.env.example**: Present
+
+### Documentation
+- **README.md**: Present (20+ lines)
+- **docs/images/**: Not present
+
+### CORE.PY - Classes & Functions
+
+**Functions:**
+
+1. **`read_csv_data(filepath: str) -> tuple[list[str], list[dict]]`**
+   - Reads CSV file and returns headers and rows
+   - Returns: Tuple of (column_names, list_of_row_dicts)
+   - Raises FileNotFoundError or ValueError if empty/malformed
+
+2. **`summarize_data(headers: list[str], rows: list[dict]) -> str`**
+   - Builds statistical summary of CSV data for LLM context
+   - Calculates: min, max, mean, sum, stdev, median for numeric columns
+   - Extracts: unique values and frequency counts for text columns
+   - Returns: Formatted summary string
+
+3. **`generate_report(topic: str, data_summary: str, template: str = "executive", config: dict = None) -> str`**
+   - Uses LLM to generate structured markdown report
+   - Templates: executive, technical, summary
+   - Returns: Markdown-formatted report string
+
+4. **`save_report(content: str, output_path: str, topic: str, fmt: str = "markdown") -> str`**
+   - Saves generated report to file with metadata header
+   - Formats: markdown, html, text
+   - Returns: Absolute path of saved file
+
+5. **`_to_html(content: str, topic: str, timestamp: str) -> str`**
+   - Converts markdown content to basic HTML
+   - Returns: HTML formatted string
+
+### CLI.PY - Main Command
+
+**Single Command**: `main(topic, data, output, template, fmt, config_path, verbose)`
+
+**Options:**
+- `--topic` (required, str): Report topic or title
+- `--data` (required, path): CSV data file path
+- `--output` (path, default: "report.md"): Output file path
+- `--template` (choice: executive/technical/summary, default: executive): Report template style
+- `--format` (choice: markdown/html/text, default: markdown): Output format
+- `--config` (path): Path to config.yaml
+- `--verbose` (flag): Enable verbose logging
+
+### Key Features
+- CSV data reading and analysis
+- Statistical summarization (min, max, mean, stdev, median, counts)
+- LLM-powered report generation from structured data
+- Three report templates: Executive, Technical, Summary
+- Multiple output formats: Markdown, HTML, Text
+- Data preview with configurable row count
+- PDF generation ready (via markdown)
+- Streamlit web UI available
+- Rich console output with progress indicators
+
+### config.yaml Settings
+```yaml
+llm: model=gemma4, temperature=0.5, max_tokens=4096
+report: default_output=report.md, preview_length=2000, templates=[executive, technical, summary], default_template=executive, formats=[markdown, html, text], default_format=markdown
+data: max_rows_preview=5, numeric_threshold=0.5, max_categorical_display=10
+```
+
+---
+
+## **PROJECT 7: 17-Textbook-Summarizer**
+
+### File Paths
+- **core.py**: `C:\Users\raguthik\projects\90-local-llm-projects\17-textbook-summarizer\src\textbook_summarizer\core.py`
+- **cli.py**: `C:\Users\raguthik\projects\90-local-llm-projects\17-textbook-summarizer\src\textbook_summarizer\cli.py` (Note: CLI is `main()` function)
+- **web_ui.py**: `C:\Users\raguthik\projects\90-local-llm-projects\17-textbook-summarizer\src\textbook_summarizer\web_ui.py`
+
+### Configuration Files
+- **config.yaml**: Present
+- **.env.example**: Present
+
+### Documentation
+- **README.md**: Present (20+ lines)
+- **docs/images/**: Not present
+
+### CORE.PY - Classes & Functions
+
+**Functions:**
+
+1. **`read_chapter_file(filepath: str) -> str`**
+   - Reads and returns contents of a textbook chapter file
+   - Raises FileNotFoundError if file doesn't exist
+
+2. **`detect_chapter_info(text: str) -> str`**
+   - Attempts to detect chapter number and title from text
+   - Patterns: "Chapter X", "Chapter X: Title", "Unit X", "Lesson X"
+   - Returns: Detected chapter info or "Unknown Chapter"
+
+3. **`summarize_chapter(text: str, style: str = "concise", config: dict = None) -> str`**
+   - Generates structured summary of textbook chapter using LLM
+   - Styles: concise, detailed, study-guide
+   - Returns: LLM-generated summary with chapter title, concepts, definitions, formulas, summary, review questions
+
+4. **`summarize_multi_chapter(filepath: str, style: str = "concise", config: dict = None) -> list[dict]`**
+   - Summarizes all chapters found in multi-chapter file
+   - Returns: List of dicts with 'title', 'summary', 'word_count' keys
+
+5. **`generate_glossary(text: str, config: dict = None) -> str`**
+   - Generates key terms glossary from chapter text
+   - Returns: Glossary as markdown string (Term: Definition format)
+
+6. **`generate_concept_map(text: str, config: dict = None) -> str`**
+   - Generates concept map showing relationships between key concepts
+   - Returns: Concept map as markdown string (Main → Related format)
+
+7. **`generate_study_questions(text: str, num_questions: int = 5, config: dict = None) -> str`**
+   - Generates study/quiz questions from chapter content
+   - Mix of: multiple choice, short answer, critical thinking questions
+   - Returns: Study questions with answers as markdown string
+
+### CLI.PY - Main Command
+
+**Single Command**: `main(filepath, style, multi_chapter, glossary, concept_map, quiz, num_questions, config_path, verbose)`
+
+**Options:**
+- `--file` (required, path): Textbook chapter text file path
+- `--style` (choice: concise/detailed/study-guide, default: concise): Summary style
+- `--multi-chapter` (flag): Process as multi-chapter file
+- `--glossary` (flag): Generate key terms glossary
+- `--concept-map` (flag): Generate concept map
+- `--quiz` (flag): Generate study questions
+- `--num-questions` (int, default: 5): Number of quiz questions
+- `--config` (path): Path to config.yaml
+- `--verbose` (flag): Enable verbose logging
+
+### Key Features
+- Textbook chapter summarization in three styles
+- Multi-chapter file processing
+- Chapter title and number detection
+- Key terms glossary generation
+- Concept map creation showing concept relationships
+- Study question generation (mixed question types)
+- Markdown formatted output for easy sharing
+- Word count tracking
+- Streamlit web UI available
+
+### config.yaml Settings
+```yaml
+llm: model=gemma4, temperature=0.4, max_tokens=4096
+summarizer: styles=[concise, detailed, study-guide], default_style=concise, max_chapter_words=50000, generate_glossary=true, generate_concept_map=true, generate_study_questions=true, num_study_questions=5
+```
+
+---
+
+## **PROJECT 8: 18-Policy-Compliance-Checker**
+
+### File Paths
+- **core.py**: `C:\Users\raguthik\projects\90-local-llm-projects\18-policy-compliance-checker\src\compliance_checker\core.py`
+- **cli.py**: `C:\Users\raguthik\projects\90-local-llm-projects\18-policy-compliance-checker\src\compliance_checker\cli.py` (Note: CLI is `main()` function)
+- **web_ui.py**: `C:\Users\raguthik\projects\90-local-llm-projects\18-policy-compliance-checker\src\compliance_checker\web_ui.py`
+
+### Configuration Files
+- **config.yaml**: Present
+- **.env.example**: Present
+
+### Documentation
+- **README.md**: Present (20+ lines)
+- **docs/images/**: Not present
+
+### CORE.PY - Classes & Functions
+
+**Functions:**
+
+1. **`read_file(filepath: str) -> str`**
+   - Reads and returns file contents
+   - Raises click.ClickException for FileNotFoundError, PermissionError
+
+2. **`check_compliance(document: str, policy: str, config: dict = None) -> dict`**
+   - Sends document and policy to LLM for compliance analysis
+   - Returns dict with: compliance_score (0-100), violations (with rule, severity, description, location, remediation), compliant_areas, recommendations, summary
+
+3. **`parse_compliance_response(response: str) -> dict`**
+   - Parses LLM JSON response into compliance report dict
+   - Handles malformed JSON gracefully
+   - Guarantees keys: compliance_score, summary, violations, compliant_areas, recommendations
+
+4. **`_fallback_report(raw: str) -> dict`**
+   - Returns fallback report when LLM output cannot be parsed
+   - Returns minimal viable compliance report structure
+
+5. **`filter_violations(violations: list, severity: str) -> list`**
+   - Filters violations by severity level
+   - Severity options: all, high, medium, low
+   - Returns: Filtered list of violations
+
+6. **`get_score_color(score: int) -> str`**
+   - Gets display color for compliance score
+   - Green (≥80), Yellow (≥50), Red (<50)
+
+7. **`get_score_label(score: int, config: dict = None) -> str`**
+   - Gets human-readable label for compliance score
+   - Returns: PASS, WARNING, or FAIL based on thresholds
+
+### CLI.PY - Main Command
+
+**Single Command**: `main(document, policy, severity, export_path, export_format, config_path, verbose)`
+
+**Options:**
+- `--document` (required, path): Document to check
+- `--policy` (required, path): Policy rules file
+- `--severity` (choice: all/high/medium/low, default: all): Violation severity filter
+- `--export` (path): Export report to file
+- `--export-format` (choice: json/markdown/csv, default: json): Export format
+- `--config` (path): Path to config.yaml
+- `--verbose` (flag): Enable verbose logging
+
+### Key Features
+- Document compliance checking against policy rules
+- Severity-based violation filtering (High/Medium/Low)
+- Compliance scoring (0-100 scale)
+- Detailed violation report with remediation guidance
+- Compliant areas identification
+- Actionable recommendations
+- Multiple export formats (JSON, Markdown, CSV)
+- Streamlit web UI available
+- Rich console output with progress bars and tables
+
+### config.yaml Settings
+```yaml
+llm: model=gemma4, temperature=0.3, max_tokens=4096
+compliance: severity_levels=[high, medium, low], score_thresholds={pass: 80, warning: 50}, export_formats=[json, markdown, csv], default_severity_filter=all
+```
+
+---
+
+## **PROJECT 9: 19-News-Digest-Generator**
+
+### File Paths
+- **core.py**: `C:\Users\raguthik\projects\90-local-llm-projects\19-news-digest-generator\src\news_digest\core.py`
+- **cli.py**: `C:\Users\raguthik\projects\90-local-llm-projects\19-news-digest-generator\src\news_digest\cli.py` (Note: CLI is `main()` function)
+- **web_ui.py**: `C:\Users\raguthik\projects\90-local-llm-projects\19-news-digest-generator\src\news_digest\web_ui.py`
+
+### Configuration Files
+- **config.yaml**: Present
+- **.env.example**: Present
+
+### Documentation
+- **README.md**: Present (20+ lines)
+- **docs/images/**: Not present
+
+### CORE.PY - Classes & Functions
+
+**Functions:**
+
+1. **`read_news_files(sources_dir: str) -> list[dict]`**
+   - Reads all .txt files from sources directory
+   - Returns list of dicts with 'filename' and 'content' keys
+   - Raises FileNotFoundError or ValueError if no files found
+
+2. **`categorize_articles(articles: list[dict], num_topics: int, config: dict = None) -> str`**
+   - Sends articles to LLM for topic categorization
+   - Groups articles into exactly num_topics categories
+   - Optionally uses configured categories hint
+   - Returns: LLM response with categorized articles and summaries
+
+3. **`generate_digest(articles: list[dict], categorization: str, digest_format: str = "daily", config: dict = None) -> str`**
+   - Generates overall news digest from categorized articles
+   - Digest format: daily or weekly
+   - Includes: Key Headlines, Topic Summaries, Sentiment Analysis (optional), Trending Themes (optional), Outlook
+   - Returns: Professional news digest as string
+
+4. **`analyze_sentiment(articles: list[dict], config: dict = None) -> str`**
+   - Analyzes sentiment across articles
+   - Returns: Sentiment analysis with filename and sentiment (Positive/Negative/Neutral) for each article
+
+5. **`save_output(filepath: str, categorization: str, digest: str) -> None`**
+   - Saves digest output to file
+   - Writes categorization and full digest sections
+
+### CLI.PY - Main Command
+
+**Single Command**: `main(sources, topics, output, digest_format, sentiment, config_path, verbose)`
+
+**Options:**
+- `--sources` (required, path): Folder containing .txt news files
+- `--topics` (int, default: 5): Number of topic groups
+- `--output` (path): Optional file path to save digest
+- `--format` (choice: daily/weekly, default: daily): Digest format
+- `--sentiment` (flag): Include sentiment analysis
+- `--config` (path): Path to config.yaml
+- `--verbose` (flag): Enable verbose logging
+
+### Key Features
+- News article reading from .txt files
+- Topic categorization and grouping
+- Daily or weekly digest format generation
+- Key headlines extraction
+- Sentiment analysis (optional)
+- Trending themes identification
+- Multiple article processing
+- Forward-looking outlook generation
+- Markdown formatted output
+- Streamlit web UI available
+
+### config.yaml Settings
+```yaml
+llm: model=gemma4, temperature=0.4, max_tokens=4096
+digest: default_topics=5, formats=[daily, weekly], default_format=daily, categories=[Technology, Business, Politics, Science, Sports, Health, Entertainment, World], enable_sentiment=true, enable_trends=true
+```
+
+---
+
+## **PROJECT 10: 20-Research-Paper-QA**
+
+### File Paths
+- **core.py**: `C:\Users\raguthik\projects\90-local-llm-projects\20-research-paper-qa\src\research_qa\core.py`
+- **cli.py**: `C:\Users\raguthik\projects\90-local-llm-projects\20-research-paper-qa\src\research_qa\cli.py` (Note: CLI is `main()` function)
+- **web_ui.py**: `C:\Users\raguthik\projects\90-local-llm-projects\20-research-paper-qa\src\research_qa\web_ui.py`
+
+### Configuration Files
+- **config.yaml**: Present
+- **.env.example**: Present
+
+### Documentation
+- **README.md**: Present (20+ lines)
+- **docs/images/**: Not present
+
+### CORE.PY - Classes & Functions
+
+**Functions:**
+
+1. **`load_paper(paper_path: str) -> str`**
+   - Loads and returns contents of a research paper text file
+   - Raises FileNotFoundError or ValueError if empty
+
+2. **`load_multiple_papers(paper_paths: list[str]) -> dict[str, str]`**
+   - Loads multiple research papers
+   - Returns: Dict mapping filenames to content strings
+
+3. **`build_system_prompt(paper_content: str) -> str`**
+   - Builds system prompt with paper content embedded
+   - Returns: Formatted system prompt string
+
+4. **`build_multi_paper_content(papers: dict[str, str]) -> str`**
+   - Builds combined content from multiple papers with separators
+   - Returns: Combined paper content (Paper: filename format)
+
+5. **`ask_question(question: str, conversation_history: list[dict], system_prompt: str, config: dict = None) -> str`**
+   - Sends question to LLM with full conversation context
+   - Maintains conversation history
+   - Returns: LLM's response string
+
+6. **`suggest_followup_questions(conversation_history: list[dict], system_prompt: str, num_suggestions: int = 3, config: dict = None) -> str`**
+   - Generates follow-up question suggestions based on conversation
+   - Configurable number of suggestions
+   - Returns: Suggestions as string
+
+7. **`extract_citations(answer: str) -> list[str]`**
+   - Extracts citation references from answer
+   - Pattern matching for [Paper: ...], [Section: ...], [... et al. ...]
+   - Returns: List of citation strings
+
+### CLI.PY - Main Command
+
+**Single Command**: `main(paper, config_path, verbose)`
+
+**Options:**
+- `--paper` (required, path, multiple): Research paper text file(s)
+- `--config` (path): Path to config.yaml
+- `--verbose` (flag): Enable verbose logging
+
+**Interactive Q&A Commands** (within session):
+- Type question: Ask about the paper
+- `suggest`: Get follow-up question suggestions
+- `history`: View conversation history
+- `export [filepath]`: Export notes to file
+- `clear`: Reset conversation context
+- `quit`: Exit application
+
+### Key Features
+- Single or multiple research paper loading
+- Interactive Q&A session with conversation memory
+- Citation extraction and tracking
+- Follow-up question suggestions
+- Conversation history viewing
+- Session context clearing
+- Notes export (Markdown/JSON/Text)
+- Academic formatting with citation support
+- Streamlit web UI available
+- Multi-paper unified search capability
+
+### config.yaml Settings
+```yaml
+llm: model=gemma4, temperature=0.3, max_tokens=2048
+qa: max_papers=10, max_history=50, enable_citations=true, enable_followup_suggestions=true, num_followup_suggestions=3, export_formats=[markdown, json, text]
+```
+
+---
+
+## **SUMMARY TABLE**
+
+| Project | Core Functions | CLI Commands | Web UI | Config | Features |
+|---------|---|---|---|---|---|
+| 11-Legal-Doc | 5 functions | 5 commands | ✓ Streamlit | ✓ yaml | Summarize, extract clauses, risk scoring, document comparison |
+| 12-Resume | 5 functions | 4 commands | ✓ Streamlit | ✓ yaml | Analyze, score against JD, ATS simulation, improvement suggestions |
+| 13-Meeting | 5 functions | 4 commands | ✓ Streamlit | ✓ yaml | Summarize, identify speakers, decisions, follow-ups |
+| 14-Medical | 5 functions | 4 commands | ✓ Streamlit | ✓ yaml | Paper summary, PICO, evidence rating, citations |
+| 15-Invoice | 5 functions | 3 commands | ✓ Streamlit | ✓ yaml | Extract, batch process, detect duplicates, categorize, export |
+| 16-PDF-Report | 5 functions | 1 main() | ✓ Streamlit | ✓ yaml | Read CSV, summarize data, generate reports (3 templates), export |
+| 17-Textbook | 7 functions | 1 main() | ✓ Streamlit | ✓ yaml | Summarize (3 styles), glossary, concept map, study questions |
+| 18-Compliance | 7 functions | 1 main() | ✓ Streamlit | ✓ yaml | Check compliance, filter violations, score, export reports |
+| 19-News-Digest | 5 functions | 1 main() | ✓ Streamlit | ✓ yaml | Categorize articles, generate digest (daily/weekly), sentiment analysis |
+| 20-Research-QA | 7 functions | 1 main() (interactive) | ✓ Streamlit | ✓ yaml | Load papers, interactive QA, citations, follow-up suggestions |
+
+---
+
+## **KEY OBSERVATIONS**
+
+1. **Consistent Architecture**: All 10 projects follow the same structure:
+   - `src/<project_name>/core.py` - Core business logic
+   - `src/<project_name>/cli.py` - CLI interface
+   - `src/<project_name>/web_ui.py` - Streamlit web UI
+   - `config.yaml` - Configuration file
+   - `README.md` - Documentation
+
+2. **No docs/images directories** found in any project (may be optional)
+
+3. **All use Streamlit** for web UI and Click for CLI
+
+4. **All use Ollama with Gemma4 model** for local LLM inference
+
+5. **Configuration management** via YAML files with customizable temperature, max_tokens, and domain-specific settings
+
+6. **JSON output parsing** is central to most projects (Resume, Invoice, Compliance scoring)
+
+7. **Markdown output** is standard for text-based summaries and reports

@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946"/>
+      <stop offset="100%" style="stop-color:#ff6b6b"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e63946" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" rx="12" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="800" height="3" fill="url(#accentGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="16"
+        font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+    ARCHITECTURE
+  </text>
+  <line x1="340" y1="42" x2="460" y2="42" stroke="#e63946" stroke-width="2" opacity="0.6"/>
+
+  <!-- Stage 1: Input -->
+  <g filter="url(#cardShadow)">
+    <rect x="20" y="70" width="130" height="120" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="20" y="70" width="130" height="3" rx="2" fill="#58a6ff"/>
+    <text x="85" y="95" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
+          font-weight="700" fill="#58a6ff" text-anchor="middle">INPUT</text>
+    <!-- Document icon -->
+    <rect x="45" y="110" width="30" height="36" rx="3" fill="none" stroke="#8b949e" stroke-width="1.5"/>
+    <line x1="52" y1="120" x2="68" y2="120" stroke="#8b949e" stroke-width="1" opacity="0.5"/>
+    <line x1="52" y1="126" x2="68" y2="126" stroke="#8b949e" stroke-width="1" opacity="0.5"/>
+    <line x1="52" y1="132" x2="62" y2="132" stroke="#8b949e" stroke-width="1" opacity="0.5"/>
+    <text x="60" y="160" font-family="'Segoe UI', Arial, sans-serif" font-size="9"
+          fill="#8b949e" text-anchor="middle">Document</text>
+    <!-- Policy icon -->
+    <rect x="90" y="110" width="30" height="36" rx="3" fill="none" stroke="#8b949e" stroke-width="1.5"/>
+    <path d="M100 115 L105 112 L110 115" fill="none" stroke="#e63946" stroke-width="1.2"/>
+    <line x1="97" y1="122" x2="113" y2="122" stroke="#8b949e" stroke-width="1" opacity="0.5"/>
+    <line x1="97" y1="128" x2="113" y2="128" stroke="#8b949e" stroke-width="1" opacity="0.5"/>
+    <line x1="97" y1="134" x2="107" y2="134" stroke="#8b949e" stroke-width="1" opacity="0.5"/>
+    <text x="105" y="160" font-family="'Segoe UI', Arial, sans-serif" font-size="9"
+          fill="#8b949e" text-anchor="middle">Policy Rules</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="155" y1="130" x2="185" y2="130" stroke="#e63946" stroke-width="1.5"
+        marker-end="url(#arrow)" opacity="0.7"/>
+
+  <!-- Stage 2: Text Processing -->
+  <g filter="url(#cardShadow)">
+    <rect x="190" y="85" width="120" height="90" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="190" y="85" width="120" height="3" rx="2" fill="#d2a8ff"/>
+    <text x="250" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+          font-weight="700" fill="#d2a8ff" text-anchor="middle">TEXT PROCESSING</text>
+    <text x="250" y="130" font-family="'Segoe UI', Arial, sans-serif" font-size="9"
+          fill="#8b949e" text-anchor="middle">read_file()</text>
+    <text x="250" y="145" font-family="'Segoe UI', Arial, sans-serif" font-size="9"
+          fill="#8b949e" text-anchor="middle">Prompt Assembly</text>
+    <text x="250" y="160" font-family="'Segoe UI', Arial, sans-serif" font-size="9"
+          fill="#8b949e" text-anchor="middle">System Prompt</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="315" y1="130" x2="345" y2="130" stroke="#e63946" stroke-width="1.5"
+        marker-end="url(#arrow)" opacity="0.7"/>
+
+  <!-- Stage 3: LLM (larger, center) -->
+  <g filter="url(#cardShadow)">
+    <rect x="350" y="60" width="160" height="150" rx="10" fill="#161b22" stroke="#e63946" stroke-width="1.5"/>
+    <rect x="350" y="60" width="160" height="3" rx="2" fill="#e63946"/>
+    <text x="430" y="85" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+          font-weight="700" fill="#e63946" text-anchor="middle">Gemma 4 via Ollama</text>
+    <!-- Sub items -->
+    <rect x="368" y="100" width="124" height="24" rx="4" fill="#e63946" opacity="0.1"/>
+    <text x="430" y="116" font-family="'Segoe UI', Arial, sans-serif" font-size="10"
+          fill="#e6e6e6" text-anchor="middle">Compliance Analysis</text>
+    <rect x="368" y="130" width="124" height="24" rx="4" fill="#e63946" opacity="0.1"/>
+    <text x="430" y="146" font-family="'Segoe UI', Arial, sans-serif" font-size="10"
+          fill="#e6e6e6" text-anchor="middle">Violation Detection</text>
+    <rect x="368" y="160" width="124" height="24" rx="4" fill="#e63946" opacity="0.1"/>
+    <text x="430" y="176" font-family="'Segoe UI', Arial, sans-serif" font-size="10"
+          fill="#e6e6e6" text-anchor="middle">Severity Grading</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <line x1="515" y1="130" x2="545" y2="130" stroke="#e63946" stroke-width="1.5"
+        marker-end="url(#arrow)" opacity="0.7"/>
+
+  <!-- Stage 4: Report -->
+  <g filter="url(#cardShadow)">
+    <rect x="550" y="70" width="120" height="130" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="550" y="70" width="120" height="3" rx="2" fill="#3fb950"/>
+    <text x="610" y="95" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+          font-weight="700" fill="#3fb950" text-anchor="middle">COMPLIANCE REPORT</text>
+    <text x="610" y="118" font-family="'Segoe UI', Arial, sans-serif" font-size="10"
+          fill="#8b949e" text-anchor="middle">📊 Score (0–100)</text>
+    <text x="610" y="138" font-family="'Segoe UI', Arial, sans-serif" font-size="10"
+          fill="#8b949e" text-anchor="middle">⚠️ Violations</text>
+    <text x="610" y="158" font-family="'Segoe UI', Arial, sans-serif" font-size="10"
+          fill="#8b949e" text-anchor="middle">✅ Compliant Areas</text>
+    <text x="610" y="178" font-family="'Segoe UI', Arial, sans-serif" font-size="10"
+          fill="#8b949e" text-anchor="middle">🔧 Remediation</text>
+  </g>
+
+  <!-- Arrow 4 -->
+  <line x1="675" y1="130" x2="705" y2="130" stroke="#e63946" stroke-width="1.5"
+        marker-end="url(#arrow)" opacity="0.7"/>
+
+  <!-- Stage 5: Export -->
+  <g filter="url(#cardShadow)">
+    <rect x="710" y="85" width="70" height="90" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="710" y="85" width="70" height="3" rx="2" fill="#f0883e"/>
+    <text x="745" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="11"
+          font-weight="700" fill="#f0883e" text-anchor="middle">EXPORT</text>
+    <text x="745" y="130" font-family="'Segoe UI', Arial, sans-serif" font-size="10"
+          fill="#8b949e" text-anchor="middle">JSON</text>
+    <text x="745" y="146" font-family="'Segoe UI', Arial, sans-serif" font-size="10"
+          fill="#8b949e" text-anchor="middle">Markdown</text>
+    <text x="745" y="162" font-family="'Segoe UI', Arial, sans-serif" font-size="10"
+          fill="#8b949e" text-anchor="middle">CSV</text>
+  </g>
+
+  <!-- Bottom: Function mapping -->
+  <rect x="30" y="240" width="740" height="140" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1" opacity="0.6"/>
+  <text x="400" y="265" font-family="'Segoe UI', Arial, sans-serif" font-size="12"
+        font-weight="700" fill="#8b949e" text-anchor="middle" letter-spacing="1">FUNCTION PIPELINE</text>
+
+  <!-- Function boxes -->
+  <rect x="50" y="280" width="120" height="32" rx="5" fill="#e63946" opacity="0.12"/>
+  <text x="110" y="300" font-family="'Consolas', monospace" font-size="10"
+        fill="#e63946" text-anchor="middle">read_file()</text>
+
+  <line x1="175" y1="296" x2="195" y2="296" stroke="#e63946" stroke-width="1" marker-end="url(#arrow)" opacity="0.5"/>
+
+  <rect x="200" y="280" width="150" height="32" rx="5" fill="#e63946" opacity="0.12"/>
+  <text x="275" y="300" font-family="'Consolas', monospace" font-size="10"
+        fill="#e63946" text-anchor="middle">check_compliance()</text>
+
+  <line x1="355" y1="296" x2="375" y2="296" stroke="#e63946" stroke-width="1" marker-end="url(#arrow)" opacity="0.5"/>
+
+  <rect x="380" y="280" width="180" height="32" rx="5" fill="#e63946" opacity="0.12"/>
+  <text x="470" y="300" font-family="'Consolas', monospace" font-size="10"
+        fill="#e63946" text-anchor="middle">parse_compliance_response()</text>
+
+  <line x1="565" y1="296" x2="585" y2="296" stroke="#e63946" stroke-width="1" marker-end="url(#arrow)" opacity="0.5"/>
+
+  <rect x="590" y="280" width="160" height="32" rx="5" fill="#e63946" opacity="0.12"/>
+  <text x="670" y="300" font-family="'Consolas', monospace" font-size="10"
+        fill="#e63946" text-anchor="middle">filter_violations()</text>
+
+  <!-- Second row -->
+  <rect x="50" y="325" width="140" height="32" rx="5" fill="#3fb950" opacity="0.12"/>
+  <text x="120" y="345" font-family="'Consolas', monospace" font-size="10"
+        fill="#3fb950" text-anchor="middle">get_score_color()</text>
+
+  <rect x="210" y="325" width="140" height="32" rx="5" fill="#3fb950" opacity="0.12"/>
+  <text x="280" y="345" font-family="'Consolas', monospace" font-size="10"
+        fill="#3fb950" text-anchor="middle">get_score_label()</text>
+
+  <rect x="370" y="325" width="140" height="32" rx="5" fill="#f0883e" opacity="0.12"/>
+  <text x="440" y="345" font-family="'Consolas', monospace" font-size="10"
+        fill="#f0883e" text-anchor="middle">export_report()</text>
+
+  <rect x="530" y="325" width="140" height="32" rx="5" fill="#f0883e" opacity="0.12"/>
+  <text x="600" y="345" font-family="'Consolas', monospace" font-size="10"
+        fill="#f0883e" text-anchor="middle">display_report()</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="397" width="800" height="3" fill="url(#accentGrad)"/>
+</svg>

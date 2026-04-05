@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0e17;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="archAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4361ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7209b7;stop-opacity:1" />
+    </linearGradient>
+    <filter id="archGlow">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="shadowSm">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" rx="12" fill="url(#archBg)" />
+  <rect x="0" y="0" width="800" height="3" fill="url(#archAccent)" />
+
+  <!-- Title -->
+  <text x="400" y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+    ARCHITECTURE
+  </text>
+  <line x1="340" y1="46" x2="460" y2="46" stroke="#4361ee" stroke-width="2" opacity="0.5" />
+
+  <!-- ════════ STAGE 1: News Articles ════════ -->
+  <g transform="translate(30, 80)" filter="url(#shadowSm)">
+    <rect width="120" height="120" rx="10" fill="#1a1a2e" stroke="#4361ee" stroke-width="1.5" />
+    <!-- Stacked file icons -->
+    <g transform="translate(35, 18)">
+      <rect x="8" y="0" width="40" height="50" rx="3" fill="#4361ee" opacity="0.12" stroke="#4361ee" stroke-width="1" />
+      <rect x="4" y="5" width="40" height="50" rx="3" fill="#4361ee" opacity="0.18" stroke="#4361ee" stroke-width="1" />
+      <rect x="0" y="10" width="40" height="50" rx="3" fill="#4361ee" opacity="0.25" stroke="#4361ee" stroke-width="1" />
+      <rect x="6" y="18" width="28" height="2" rx="1" fill="#4361ee" opacity="0.7" />
+      <rect x="6" y="24" width="24" height="2" rx="1" fill="#4361ee" opacity="0.5" />
+      <rect x="6" y="30" width="26" height="2" rx="1" fill="#4361ee" opacity="0.4" />
+      <rect x="6" y="36" width="20" height="2" rx="1" fill="#4361ee" opacity="0.3" />
+    </g>
+    <text x="60" y="95" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">News Articles</text>
+    <text x="60" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#a0a0c0" text-anchor="middle">(.txt files)</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g filter="url(#archGlow)">
+    <line x1="155" y1="140" x2="190" y2="140" stroke="#4361ee" stroke-width="2" />
+    <polygon points="190,135 200,140 190,145" fill="#4361ee" />
+  </g>
+
+  <!-- ════════ STAGE 2: File Reader ════════ -->
+  <g transform="translate(200, 80)" filter="url(#shadowSm)">
+    <rect width="120" height="120" rx="10" fill="#1a1a2e" stroke="#4361ee" stroke-width="1.5" />
+    <!-- Gear/cog icon -->
+    <g transform="translate(38, 18)">
+      <circle cx="22" cy="25" r="16" fill="none" stroke="#4361ee" stroke-width="2" opacity="0.7" />
+      <circle cx="22" cy="25" r="8" fill="#4361ee" opacity="0.25" />
+      <rect x="18" y="2" width="8" height="8" rx="2" fill="#4361ee" opacity="0.5" />
+      <rect x="18" y="40" width="8" height="8" rx="2" fill="#4361ee" opacity="0.5" />
+      <rect x="0" y="21" width="8" height="8" rx="2" fill="#4361ee" opacity="0.5" />
+      <rect x="36" y="21" width="8" height="8" rx="2" fill="#4361ee" opacity="0.5" />
+    </g>
+    <text x="60" y="95" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">File Reader</text>
+    <text x="60" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#a0a0c0" text-anchor="middle">(Glob)</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g filter="url(#archGlow)">
+    <line x1="325" y1="140" x2="360" y2="140" stroke="#4361ee" stroke-width="2" />
+    <polygon points="360,135 370,140 360,145" fill="#4361ee" />
+  </g>
+
+  <!-- ════════ STAGE 3: LLM Processing (larger box) ════════ -->
+  <g transform="translate(370, 60)" filter="url(#shadowSm)">
+    <rect width="170" height="280" rx="12" fill="#1a1a2e" stroke="#4361ee" stroke-width="2" />
+    <!-- Header bar -->
+    <rect x="0" y="0" width="170" height="36" rx="12" fill="#4361ee" opacity="0.15" />
+    <text x="85" y="16" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#4361ee" text-anchor="middle">Gemma 4</text>
+    <text x="85" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#a0a0c0" text-anchor="middle">via Ollama</text>
+
+    <!-- Sub-tasks -->
+    <g transform="translate(15, 50)">
+      <rect width="140" height="32" rx="6" fill="#4361ee" opacity="0.08" stroke="#4361ee" stroke-width="1" />
+      <circle cx="16" cy="16" r="6" fill="#4361ee" opacity="0.3" />
+      <text x="30" y="20" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e0e0ff">Categorize</text>
+    </g>
+    <g transform="translate(15, 95)">
+      <rect width="140" height="32" rx="6" fill="#4361ee" opacity="0.08" stroke="#4361ee" stroke-width="1" />
+      <circle cx="16" cy="16" r="6" fill="#4361ee" opacity="0.3" />
+      <text x="30" y="20" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e0e0ff">Summarize</text>
+    </g>
+    <g transform="translate(15, 140)">
+      <rect width="140" height="32" rx="6" fill="#4361ee" opacity="0.08" stroke="#4361ee" stroke-width="1" />
+      <circle cx="16" cy="16" r="6" fill="#4361ee" opacity="0.3" />
+      <text x="30" y="20" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e0e0ff">Sentiment</text>
+    </g>
+    <g transform="translate(15, 185)">
+      <rect width="140" height="32" rx="6" fill="#4361ee" opacity="0.08" stroke="#4361ee" stroke-width="1" />
+      <circle cx="16" cy="16" r="6" fill="#4361ee" opacity="0.3" />
+      <text x="30" y="20" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e0e0ff">Trends</text>
+    </g>
+
+    <!-- Connecting dots -->
+    <circle cx="85" cy="87" r="2" fill="#4361ee" opacity="0.4" />
+    <circle cx="85" cy="132" r="2" fill="#4361ee" opacity="0.4" />
+    <circle cx="85" cy="177" r="2" fill="#4361ee" opacity="0.4" />
+
+    <text x="85" y="265" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#a0a0c0" text-anchor="middle">100% Local Processing</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <g filter="url(#archGlow)">
+    <line x1="545" y1="200" x2="580" y2="200" stroke="#4361ee" stroke-width="2" />
+    <polygon points="580,195 590,200 580,205" fill="#4361ee" />
+  </g>
+
+  <!-- ════════ STAGE 4: Structured Digest ════════ -->
+  <g transform="translate(590, 130)" filter="url(#shadowSm)">
+    <rect width="120" height="140" rx="10" fill="#1a1a2e" stroke="#4361ee" stroke-width="1.5" />
+    <!-- Document structure icon -->
+    <g transform="translate(30, 12)">
+      <rect x="0" y="0" width="60" height="70" rx="4" fill="#4361ee" opacity="0.1" stroke="#4361ee" stroke-width="1" />
+      <rect x="8" y="8" width="30" height="3" rx="1" fill="#4361ee" opacity="0.8" />
+      <rect x="8" y="16" width="44" height="2" rx="1" fill="#a0a0c0" opacity="0.4" />
+      <rect x="8" y="22" width="40" height="2" rx="1" fill="#a0a0c0" opacity="0.35" />
+      <line x1="8" y1="30" x2="52" y2="30" stroke="#4361ee" stroke-width="0.5" opacity="0.3" />
+      <rect x="8" y="35" width="26" height="3" rx="1" fill="#4361ee" opacity="0.6" />
+      <rect x="8" y="42" width="44" height="2" rx="1" fill="#a0a0c0" opacity="0.3" />
+      <rect x="8" y="48" width="38" height="2" rx="1" fill="#a0a0c0" opacity="0.25" />
+      <line x1="8" y1="56" x2="52" y2="56" stroke="#4361ee" stroke-width="0.5" opacity="0.3" />
+      <rect x="8" y="60" width="20" height="3" rx="1" fill="#4361ee" opacity="0.5" />
+    </g>
+    <text x="60" y="105" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Structured</text>
+    <text x="60" y="120" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Digest</text>
+    <text x="60" y="134" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#a0a0c0" text-anchor="middle">(Markdown)</text>
+  </g>
+
+  <!-- ════════ Flow label ════════ -->
+  <text x="400" y="385" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0" text-anchor="middle" letter-spacing="2">
+    read_news_files → categorize_articles → generate_digest → save_output
+  </text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="397" width="800" height="3" fill="url(#archAccent)" />
+</svg>

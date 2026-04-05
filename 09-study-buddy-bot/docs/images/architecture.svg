@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1a3e"/>
+      <stop offset="100%" style="stop-color:#1a2755"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#4361ee"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+  <text x="400" y="30" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">System Architecture</text>
+
+  <!-- Student -->
+  <rect x="30" y="55" width="150" height="80" rx="10" fill="#1e293b" stroke="#4361ee" stroke-width="2"/>
+  <text x="105" y="78" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🎓 Student</text>
+  <text x="105" y="95" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Subject • Topic</text>
+  <text x="105" y="110" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">5 Study Modes</text>
+  <text x="105" y="125" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Follow-up Questions</text>
+
+  <line x1="180" y1="95" x2="220" y2="95" stroke="#4361ee" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Study Engine -->
+  <rect x="225" y="40" width="180" height="110" rx="10" fill="#1e293b" stroke="#4361ee" stroke-width="2"/>
+  <text x="315" y="65" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📚 Study Engine</text>
+  <text x="315" y="83" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">generate_quiz()</text>
+  <text x="315" y="98" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">explain_concept()</text>
+  <text x="315" y="113" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">create_study_plan()</text>
+  <text x="315" y="128" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">generate_flashcards()</text>
+  <text x="315" y="143" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">ask_question()</text>
+
+  <line x1="405" y1="95" x2="445" y2="95" stroke="#4361ee" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- LLM -->
+  <rect x="450" y="60" width="155" height="70" rx="10" fill="#3a0ca3" stroke="#4361ee" stroke-width="2"/>
+  <text x="527" y="87" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">🤖 Gemma 4</text>
+  <text x="527" y="107" text-anchor="middle" fill="#c7d2fe" font-family="Segoe UI,Arial,sans-serif" font-size="11">Ollama Local LLM</text>
+
+  <!-- Flashcards -->
+  <rect x="30" y="180" width="150" height="60" rx="10" fill="#1e293b" stroke="#3a0ca3" stroke-width="2"/>
+  <text x="105" y="205" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🃏 Flashcards</text>
+  <text x="105" y="225" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">save/get_flashcard_set()</text>
+
+  <!-- Pomodoro -->
+  <rect x="225" y="180" width="180" height="60" rx="10" fill="#1e293b" stroke="#3a0ca3" stroke-width="2"/>
+  <text x="315" y="205" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">⏱️ Pomodoro Timer</text>
+  <text x="315" y="225" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">25-min focus + 5-min break</text>
+
+  <!-- Progress -->
+  <rect x="450" y="180" width="155" height="60" rx="10" fill="#1e293b" stroke="#3a0ca3" stroke-width="2"/>
+  <text x="527" y="205" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📊 Progress Stats</text>
+  <text x="527" y="225" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">record/get_study_stats()</text>
+
+  <!-- Storage -->
+  <rect x="645" y="140" width="130" height="100" rx="10" fill="#1e293b" stroke="#4361ee" stroke-width="2"/>
+  <text x="710" y="165" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">💾 Storage</text>
+  <text x="710" y="185" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">flashcards.json</text>
+  <text x="710" y="201" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">study_progress.json</text>
+  <text x="710" y="217" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Subject-wise stats</text>
+
+  <!-- Interfaces -->
+  <rect x="30" y="285" width="230" height="70" rx="10" fill="#1e293b" stroke="#4361ee" stroke-width="2"/>
+  <text x="145" y="310" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🖥️ CLI (Multi-command)</text>
+  <text x="145" y="327" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">study --subject --topic --mode</text>
+  <text x="145" y="343" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">timer | stats | flashcard-list</text>
+
+  <rect x="300" y="285" width="230" height="70" rx="10" fill="#1e293b" stroke="#4361ee" stroke-width="2"/>
+  <text x="415" y="310" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🌐 Web UI (5 Tabs)</text>
+  <text x="415" y="327" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Study | Quiz | Flashcards | Timer | Progress</text>
+  <text x="415" y="343" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Feynman Technique • Active Recall</text>
+
+  <text x="400" y="385" text-anchor="middle" fill="#4a5568" font-family="Segoe UI,Arial,sans-serif" font-size="11">Study Buddy Bot — 5 Modes • Quizzes • Flashcards • Pomodoro • Progress Analytics</text>
+</svg>

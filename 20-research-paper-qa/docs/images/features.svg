@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f72585;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7209b7;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="12" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="798" height="348" rx="12" fill="none" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Key Features</text>
+  <rect x="325" y="43" width="150" height="2" rx="1" fill="url(#accentGrad)" opacity="0.6"/>
+
+  <!-- ==================== ROW 1 ==================== -->
+
+  <!-- Feature 1: Interactive Q&A -->
+  <g filter="url(#shadow)" transform="translate(30, 65)">
+    <rect width="235" height="110" rx="8" fill="#1c2333" stroke="#f72585" stroke-width="1.2" stroke-opacity="0.4"/>
+    <!-- Icon circle -->
+    <circle cx="35" cy="30" r="18" fill="#f72585" opacity="0.12"/>
+    <text x="35" y="36" text-anchor="middle" font-size="20">💬</text>
+    <!-- Title -->
+    <text x="65" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#f72585">Interactive Q&amp;A</text>
+    <!-- Divider -->
+    <rect x="15" y="44" width="205" height="1" rx="0.5" fill="#f72585" opacity="0.15"/>
+    <!-- Description -->
+    <text x="15" y="62" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">Ask questions about your papers</text>
+    <text x="15" y="78" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">and get cited answers with full</text>
+    <text x="15" y="94" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">conversation context.</text>
+  </g>
+
+  <!-- Feature 2: Multi-Paper Support -->
+  <g filter="url(#shadow)" transform="translate(283, 65)">
+    <rect width="235" height="110" rx="8" fill="#1c2333" stroke="#b5179e" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="35" cy="30" r="18" fill="#b5179e" opacity="0.12"/>
+    <text x="35" y="36" text-anchor="middle" font-size="20">📚</text>
+    <text x="65" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#b5179e">Multi-Paper Support</text>
+    <rect x="15" y="44" width="205" height="1" rx="0.5" fill="#b5179e" opacity="0.15"/>
+    <text x="15" y="62" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">Load and cross-reference multiple</text>
+    <text x="15" y="78" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">research papers simultaneously for</text>
+    <text x="15" y="94" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">comparative analysis.</text>
+  </g>
+
+  <!-- Feature 3: Citation Tracking -->
+  <g filter="url(#shadow)" transform="translate(536, 65)">
+    <rect width="235" height="110" rx="8" fill="#1c2333" stroke="#7209b7" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="35" cy="30" r="18" fill="#7209b7" opacity="0.12"/>
+    <text x="35" y="36" text-anchor="middle" font-size="20">📎</text>
+    <text x="65" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#7209b7">Citation Tracking</text>
+    <rect x="15" y="44" width="205" height="1" rx="0.5" fill="#7209b7" opacity="0.15"/>
+    <text x="15" y="62" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">Automatic extraction in structured</text>
+    <text x="15" y="78" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">[Paper, Section] format so you can</text>
+    <text x="15" y="94" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">verify every claim.</text>
+  </g>
+
+  <!-- ==================== ROW 2 ==================== -->
+
+  <!-- Feature 4: Follow-up Suggestions -->
+  <g filter="url(#shadow)" transform="translate(30, 195)">
+    <rect width="235" height="110" rx="8" fill="#1c2333" stroke="#f72585" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="35" cy="30" r="18" fill="#f72585" opacity="0.12"/>
+    <text x="35" y="36" text-anchor="middle" font-size="20">💡</text>
+    <text x="65" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#f72585">Follow-up Suggestions</text>
+    <rect x="15" y="44" width="205" height="1" rx="0.5" fill="#f72585" opacity="0.15"/>
+    <text x="15" y="62" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">AI-generated next questions to</text>
+    <text x="15" y="78" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">guide deeper exploration of the</text>
+    <text x="15" y="94" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">research material.</text>
+  </g>
+
+  <!-- Feature 5: Conversation Memory -->
+  <g filter="url(#shadow)" transform="translate(283, 195)">
+    <rect width="235" height="110" rx="8" fill="#1c2333" stroke="#b5179e" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="35" cy="30" r="18" fill="#b5179e" opacity="0.12"/>
+    <text x="35" y="36" text-anchor="middle" font-size="20">🧠</text>
+    <text x="65" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#b5179e">Conversation Memory</text>
+    <rect x="15" y="44" width="205" height="1" rx="0.5" fill="#b5179e" opacity="0.15"/>
+    <text x="15" y="62" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">Full context maintained across</text>
+    <text x="15" y="78" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">your entire session for coherent</text>
+    <text x="15" y="94" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">multi-turn dialogue.</text>
+  </g>
+
+  <!-- Feature 6: 100% Private -->
+  <g filter="url(#shadow)" transform="translate(536, 195)">
+    <rect width="235" height="110" rx="8" fill="#1c2333" stroke="#7209b7" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="35" cy="30" r="18" fill="#7209b7" opacity="0.12"/>
+    <text x="35" y="36" text-anchor="middle" font-size="20">🔒</text>
+    <text x="65" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#7209b7">100% Private</text>
+    <rect x="15" y="44" width="205" height="1" rx="0.5" fill="#7209b7" opacity="0.15"/>
+    <text x="15" y="62" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">Your research data never leaves</text>
+    <text x="15" y="78" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">your machine. Runs 100% locally</text>
+    <text x="15" y="94" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">via Ollama — no cloud APIs.</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="400" y="338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#484f58">research_qa · Built with Gemma 4, Click, Rich &amp; Ollama</text>
+</svg>

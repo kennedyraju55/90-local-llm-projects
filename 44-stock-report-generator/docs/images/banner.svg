@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#ff9f1c"/>
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#bgGrad)" rx="12"/>
+  <rect x="1" y="1" width="798" height="198" fill="none" stroke="#ff6b35" stroke-opacity="0.15" rx="12"/>
+
+  <!-- Decorative grid lines -->
+  <g opacity="0.05" stroke="#ffffff">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="200" y1="0" x2="200" y2="200"/>
+    <line x1="400" y1="0" x2="400" y2="200"/>
+    <line x1="600" y1="0" x2="600" y2="200"/>
+  </g>
+
+  <!-- Decorative stock chart - left side -->
+  <g transform="translate(30, 30)" opacity="0.25">
+    <polyline points="0,120 20,100 40,110 60,80 80,90 100,60 120,70 140,40 160,50 180,30 200,45 220,20"
+      fill="none" stroke="#ff6b35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="0,120 20,100 40,110 60,80 80,90 100,60 120,70 140,40 160,50 180,30 200,45 220,20 220,140 0,140"
+      fill="url(#chartGrad)"/>
+    <!-- Candlesticks -->
+    <g stroke="#ff6b35" stroke-width="1.5">
+      <line x1="240" y1="30" x2="240" y2="90"/>
+      <rect x="236" y="45" width="8" height="25" fill="#ff6b35" rx="1"/>
+      <line x1="260" y1="50" x2="260" y2="110"/>
+      <rect x="256" y="60" width="8" height="30" fill="none" rx="1"/>
+      <line x1="280" y1="35" x2="280" y2="95"/>
+      <rect x="276" y="40" width="8" height="30" fill="#ff6b35" rx="1"/>
+    </g>
+  </g>
+
+  <!-- Decorative stock chart - right side -->
+  <g transform="translate(580, 50)" opacity="0.2">
+    <polyline points="0,100 25,85 50,90 75,60 100,70 125,45 150,55 175,30 200,40"
+      fill="none" stroke="#ff6b35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="0,100 25,85 50,90 75,60 100,70 125,45 150,55 175,30 200,40 200,120 0,120"
+      fill="url(#chartGrad)"/>
+  </g>
+
+  <!-- Chart icon -->
+  <g transform="translate(250, 55)" filter="url(#glow)">
+    <rect x="0" y="0" width="40" height="40" fill="none" stroke="#ff6b35" stroke-width="1.5" rx="8" opacity="0.6"/>
+    <polyline points="8,30 16,18 24,24 32,10" fill="none" stroke="#ff6b35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="32" cy="10" r="2.5" fill="#ff6b35"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="82" text-anchor="middle" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" fill="#ffffff" letter-spacing="-0.5">
+    Stock Report Generator
+  </text>
+
+  <!-- Accent underline -->
+  <rect x="260" y="94" width="280" height="3" fill="url(#accentGrad)" rx="1.5"/>
+
+  <!-- Tagline -->
+  <text x="400" y="125" text-anchor="middle" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="16" fill="#8b949e" letter-spacing="0.5">
+    AI-Powered Technical Analysis &amp; Risk Assessment
+  </text>
+
+  <!-- Bottom badges -->
+  <g transform="translate(255, 148)">
+    <rect x="0" y="0" width="72" height="22" fill="#ff6b35" fill-opacity="0.15" rx="11" stroke="#ff6b35" stroke-opacity="0.3" stroke-width="0.5"/>
+    <text x="36" y="15" text-anchor="middle" font-family="'Segoe UI', monospace" font-size="10" fill="#ff6b35" font-weight="600">RSI</text>
+
+    <rect x="82" y="0" width="72" height="22" fill="#ff6b35" fill-opacity="0.15" rx="11" stroke="#ff6b35" stroke-opacity="0.3" stroke-width="0.5"/>
+    <text x="118" y="15" text-anchor="middle" font-family="'Segoe UI', monospace" font-size="10" fill="#ff6b35" font-weight="600">MACD</text>
+
+    <rect x="164" y="0" width="72" height="22" fill="#ff6b35" fill-opacity="0.15" rx="11" stroke="#ff6b35" stroke-opacity="0.3" stroke-width="0.5"/>
+    <text x="200" y="15" text-anchor="middle" font-family="'Segoe UI', monospace" font-size="10" fill="#ff6b35" font-weight="600">Bollinger</text>
+
+    <rect x="246" y="0" width="72" height="22" fill="#ff6b35" fill-opacity="0.15" rx="11" stroke="#ff6b35" stroke-opacity="0.3" stroke-width="0.5"/>
+    <text x="282" y="15" text-anchor="middle" font-family="'Segoe UI', monospace" font-size="10" fill="#ff6b35" font-weight="600">Risk AI</text>
+  </g>
+</svg>

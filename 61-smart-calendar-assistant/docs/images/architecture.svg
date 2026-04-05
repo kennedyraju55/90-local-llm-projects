@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 280" width="800" height="400">
+  <defs>
+    <linearGradient id="archbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e94560"/>
+    </marker>
+  </defs>
+  <rect width="720" height="280" fill="url(#archbg)" rx="12"/>
+  <text x="360" y="30" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" text-transform="uppercase" letter-spacing="2">ARCHITECTURE</text>
+  <rect x="50" y="50" width="160" height="60" rx="8" fill="#e94560" fill-opacity="0.15" stroke="#e94560" stroke-width="2"/>
+  <text x="130" y="85" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">Schedule JSON</text>
+  <rect x="280" y="50" width="160" height="60" rx="8" fill="#ff6b6b" fill-opacity="0.15" stroke="#ff6b6b" stroke-width="2"/>
+  <text x="360" y="85" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">Event Parser</text>
+  <rect x="510" y="50" width="160" height="60" rx="8" fill="#e94560" fill-opacity="0.15" stroke="#e94560" stroke-width="2"/>
+  <text x="590" y="85" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">Conflict Engine</text>
+  <rect x="50" y="170" width="160" height="60" rx="8" fill="#ff6b6b" fill-opacity="0.15" stroke="#ff6b6b" stroke-width="2"/>
+  <text x="130" y="205" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">Priority Scorer</text>
+  <rect x="280" y="170" width="160" height="60" rx="8" fill="#e94560" fill-opacity="0.15" stroke="#e94560" stroke-width="2"/>
+  <text x="360" y="205" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">Gemma 4 / Ollama</text>
+  <rect x="510" y="170" width="160" height="60" rx="8" fill="#ff6b6b" fill-opacity="0.15" stroke="#ff6b6b" stroke-width="2"/>
+  <text x="590" y="205" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">Optimized Output</text>
+  <line x1="210" y1="80" x2="280" y2="80" stroke="#e94560" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="440" y1="80" x2="510" y2="80" stroke="#e94560" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="130" y1="110" x2="130" y2="170" stroke="#e94560" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="360" y1="110" x2="360" y2="170" stroke="#e94560" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="440" y1="200" x2="510" y2="200" stroke="#e94560" stroke-width="2" marker-end="url(#arrowhead)"/>
+</svg>

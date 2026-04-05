@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#21262d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b81;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" fill="#e94560">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" rx="12" fill="url(#bgGrad)" />
+  <rect x="1" y="1" width="798" height="398" rx="12" fill="none" stroke="#e94560" stroke-width="1" opacity="0.15" />
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">Architecture Pipeline</text>
+  <rect x="300" y="42" width="200" height="2" rx="1" fill="url(#accentGrad)" opacity="0.6" />
+
+  <!-- Row 1: CSV File → Load & Parse → Column Type Detection → Statistical Analysis -->
+
+  <!-- Box 1: CSV File -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="75" width="140" height="60" rx="8" fill="url(#boxGrad)" stroke="#e94560" stroke-width="1.5" />
+    <text x="100" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">📄</text>
+    <text x="100" y="118" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle" font-weight="600">CSV File</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="170" y1="105" x2="210" y2="105" stroke="#e94560" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8" />
+
+  <!-- Box 2: Load & Parse -->
+  <g filter="url(#shadow)">
+    <rect x="215" y="75" width="140" height="60" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1" />
+    <text x="285" y="98" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">load_csv()</text>
+    <text x="285" y="118" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Load &amp; Parse</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="355" y1="105" x2="395" y2="105" stroke="#e94560" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8" />
+
+  <!-- Box 3: Column Type Detection -->
+  <g filter="url(#shadow)">
+    <rect x="400" y="75" width="160" height="60" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1" />
+    <text x="480" y="98" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">detect_column_types()</text>
+    <text x="480" y="118" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Column Type Detection</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <line x1="560" y1="105" x2="600" y2="105" stroke="#e94560" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8" />
+
+  <!-- Box 4: Statistical Analysis -->
+  <g filter="url(#shadow)">
+    <rect x="605" y="75" width="165" height="60" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1" />
+    <text x="687" y="98" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">generate_statistical_summary()</text>
+    <text x="687" y="118" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Statistical Analysis</text>
+  </g>
+
+  <!-- Arrow 4 down to row 2 -->
+  <line x1="687" y1="135" x2="687" y2="180" stroke="#e94560" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8" />
+
+  <!-- Row 2: Correlation Engine ← Chart Suggestions ← LLM Analysis (right to left) -->
+
+  <!-- Box 5: Correlation Engine -->
+  <g filter="url(#shadow)">
+    <rect x="605" y="185" width="165" height="60" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1" />
+    <text x="687" y="208" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">compute_correlations()</text>
+    <text x="687" y="228" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Correlation Engine</text>
+  </g>
+
+  <!-- Arrow 5→6 (left) -->
+  <line x1="605" y1="215" x2="565" y2="215" stroke="#e94560" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8" />
+
+  <!-- Box 6: Chart Suggestions -->
+  <g filter="url(#shadow)">
+    <rect x="400" y="185" width="160" height="60" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1" />
+    <text x="480" y="208" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">suggest_charts()</text>
+    <text x="480" y="228" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Chart Suggestions</text>
+  </g>
+
+  <!-- Arrow 6→7 (left) -->
+  <line x1="400" y1="215" x2="360" y2="215" stroke="#e94560" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8" />
+
+  <!-- Box 7: LLM Analysis -->
+  <g filter="url(#shadow)">
+    <rect x="215" y="185" width="140" height="60" rx="8" fill="url(#boxGrad)" stroke="#e94560" stroke-width="1.5" />
+    <text x="285" y="208" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">analyze_data()</text>
+    <text x="285" y="228" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">LLM Analysis</text>
+  </g>
+
+  <!-- Arrow 7 down to row 3 -->
+  <line x1="285" y1="245" x2="285" y2="290" stroke="#e94560" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8" />
+
+  <!-- Row 3: Output options -->
+
+  <!-- Box 8: Rich Console Output -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="295" width="160" height="60" rx="8" fill="url(#boxGrad)" stroke="#e94560" stroke-width="1.5" />
+    <text x="200" y="318" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">Rich Console</text>
+    <text x="200" y="338" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Tables &amp; Panels</text>
+  </g>
+
+  <!-- Box 9: JSON Export -->
+  <g filter="url(#shadow)">
+    <rect x="310" y="295" width="160" height="60" rx="8" fill="url(#boxGrad)" stroke="#e94560" stroke-width="1.5" />
+    <text x="390" y="318" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#e94560" text-anchor="middle" font-weight="bold">export_insights()</text>
+    <text x="390" y="338" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">JSON Export</text>
+  </g>
+
+  <!-- Arrow to Rich Console -->
+  <line x1="265" y1="280" x2="220" y2="295" stroke="#e94560" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8" />
+
+  <!-- Arrow to JSON Export -->
+  <line x1="305" y1="280" x2="370" y2="295" stroke="#e94560" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8" />
+
+  <!-- Data flow label -->
+  <text x="100" y="175" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#484f58" text-anchor="middle" font-style="italic">Data Flow →</text>
+
+  <!-- Decorative elements -->
+  <g opacity="0.06" fill="#ffffff">
+    <circle cx="40" cy="350" r="1.5" /><circle cx="55" cy="350" r="1.5" /><circle cx="70" cy="350" r="1.5" />
+    <circle cx="40" cy="365" r="1.5" /><circle cx="55" cy="365" r="1.5" /><circle cx="70" cy="365" r="1.5" />
+    <circle cx="40" cy="380" r="1.5" /><circle cx="55" cy="380" r="1.5" /><circle cx="70" cy="380" r="1.5" />
+    <circle cx="730" cy="350" r="1.5" /><circle cx="745" cy="350" r="1.5" /><circle cx="760" cy="350" r="1.5" />
+    <circle cx="730" cy="365" r="1.5" /><circle cx="745" cy="365" r="1.5" /><circle cx="760" cy="365" r="1.5" />
+    <circle cx="730" cy="380" r="1.5" /><circle cx="745" cy="380" r="1.5" /><circle cx="760" cy="380" r="1.5" />
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(560, 310)">
+    <rect x="0" y="0" width="200" height="65" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1" opacity="0.8" />
+    <text x="100" y="18" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle" font-weight="600">LEGEND</text>
+    <rect x="15" y="27" width="14" height="10" rx="3" fill="url(#boxGrad)" stroke="#e94560" stroke-width="1" />
+    <text x="38" y="36" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e">Key Stage</text>
+    <rect x="105" y="27" width="14" height="10" rx="3" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1" />
+    <text x="128" y="36" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e">Processing</text>
+    <line x1="15" y1="50" x2="40" y2="50" stroke="#e94560" stroke-width="1.5" marker-end="url(#arrowhead)" />
+    <text x="52" y="54" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e">Data Flow</text>
+  </g>
+</svg>

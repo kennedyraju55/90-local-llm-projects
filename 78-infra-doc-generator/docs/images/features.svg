@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+  <!-- Card 1 -->
+  <rect x="20" y="20" width="240" height="145" rx="10" fill="#16213e" stroke="#e63946" stroke-width="1.5" opacity="0.95"/>
+  <rect x="20" y="20" width="240" height="4" rx="2" fill="#e63946"/>
+  <text x="140" y="60" text-anchor="middle" font-size="28">🔍</text>
+  <text x="140" y="88" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Auto-Detection</text>
+    <text x="140" y="115" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Terraform, K8s, Docker,</text>
+    <text x="140" y="133" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Ansible, CloudFormation</text>
+
+  <!-- Card 2 -->
+  <rect x="280" y="20" width="240" height="145" rx="10" fill="#16213e" stroke="#e63946" stroke-width="1.5" opacity="0.95"/>
+  <rect x="280" y="20" width="240" height="4" rx="2" fill="#e63946"/>
+  <text x="400" y="60" text-anchor="middle" font-size="28">📊</text>
+  <text x="400" y="88" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Dependency Maps</text>
+    <text x="400" y="115" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Extract service & resource</text>
+    <text x="400" y="133" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">dependencies automatically</text>
+
+  <!-- Card 3 -->
+  <rect x="540" y="20" width="240" height="145" rx="10" fill="#16213e" stroke="#e63946" stroke-width="1.5" opacity="0.95"/>
+  <rect x="540" y="20" width="240" height="4" rx="2" fill="#e63946"/>
+  <text x="660" y="60" text-anchor="middle" font-size="28">🏗️</text>
+  <text x="660" y="88" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Architecture Diagrams</text>
+    <text x="660" y="115" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Text-based diagrams</text>
+    <text x="660" y="133" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">showing component topology</text>
+
+  <!-- Card 4 -->
+  <rect x="20" y="185" width="240" height="145" rx="10" fill="#16213e" stroke="#e63946" stroke-width="1.5" opacity="0.95"/>
+  <rect x="20" y="185" width="240" height="4" rx="2" fill="#e63946"/>
+  <text x="140" y="225" text-anchor="middle" font-size="28">📝</text>
+  <text x="140" y="253" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Multi-Format</text>
+    <text x="140" y="280" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Output as markdown,</text>
+    <text x="140" y="298" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">HTML, or plain text</text>
+
+  <!-- Card 5 -->
+  <rect x="280" y="185" width="240" height="145" rx="10" fill="#16213e" stroke="#e63946" stroke-width="1.5" opacity="0.95"/>
+  <rect x="280" y="185" width="240" height="4" rx="2" fill="#e63946"/>
+  <text x="400" y="225" text-anchor="middle" font-size="28">🔗</text>
+  <text x="400" y="253" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Link Analysis</text>
+    <text x="400" y="280" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Network topology,</text>
+    <text x="400" y="298" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">volumes & port mapping</text>
+
+  <!-- Card 6 -->
+  <rect x="540" y="185" width="240" height="145" rx="10" fill="#16213e" stroke="#e63946" stroke-width="1.5" opacity="0.95"/>
+  <rect x="540" y="185" width="240" height="4" rx="2" fill="#e63946"/>
+  <text x="660" y="225" text-anchor="middle" font-size="28">📋</text>
+  <text x="660" y="253" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Operational Notes</text>
+    <text x="660" y="280" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Maintenance, monitoring</text>
+    <text x="660" y="298" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">and backup procedures</text>
+
+</svg>

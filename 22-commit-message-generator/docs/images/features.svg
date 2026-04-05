@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+  <text x="400" y="35" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">Key Features</text>
+  
+  <rect x="30" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">📋</text>
+  <text x="80" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#00b4d8">Conventional Commits</text>
+  <text x="50" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Follows the Conventional</text>
+  <text x="50" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Commits specification with</text>
+  <text x="50" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">type(scope): description</text>
+  <text x="50" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">feat, fix, docs, style, refactor</text>
+
+  <rect x="283" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="303" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">🎨</text>
+  <text x="333" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#00b4d8">Emoji Prefixes</text>
+  <text x="303" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Optional emoji mapping</text>
+  <text x="303" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">for visual commit types</text>
+  <text x="303" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">✨ feat 🐛 fix 📝 docs</text>
+  <text x="303" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Disable with --no-emoji</text>
+
+  <rect x="536" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="556" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">📦</text>
+  <text x="586" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#00b4d8">Batch Mode</text>
+  <text x="556" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Generate messages for</text>
+  <text x="556" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">multiple diffs at once</text>
+  <text x="556" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">with batch processing</text>
+  <text x="556" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Process entire changelogs</text>
+
+  <rect x="30" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">🏷️</text>
+  <text x="80" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#00b4d8">Type Selection</text>
+  <text x="50" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Specify commit type:</text>
+  <text x="50" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">feat, fix, docs, refactor,</text>
+  <text x="50" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">perf, test, build, ci, chore</text>
+  <text x="50" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Auto-detected if not specified</text>
+
+  <rect x="283" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="303" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">📄</text>
+  <text x="333" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#00b4d8">Diff From File</text>
+  <text x="303" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Read diffs from file or</text>
+  <text x="303" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">paste directly as text</text>
+  <text x="303" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">for flexible workflows</text>
+  <text x="303" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Works outside git repos</text>
+
+  <rect x="536" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="556" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">💡</text>
+  <text x="586" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#00b4d8">Multiple Suggestions</text>
+  <text x="556" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Get multiple ranked</text>
+  <text x="556" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">commit message options</text>
+  <text x="556" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">to choose the best fit</text>
+  <text x="556" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Configurable suggestion count</text>
+</svg>

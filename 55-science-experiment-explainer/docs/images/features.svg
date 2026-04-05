@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7209b7"/>
+      <stop offset="100%" style="stop-color:#3a0ca3"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#7209b7" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold">KEY FEATURES</text>
+
+  <!-- Row 1 -->
+  <!-- Feature 1: Detailed Experiment Guides -->
+  <rect x="30" y="50" width="235" height="120" rx="10" fill="#2d2d44" stroke="#7209b7" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="147" y="80" text-anchor="middle" fill="#7209b7" font-family="Segoe UI,Arial,sans-serif" font-size="28">🔬</text>
+  <text x="147" y="102" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Detailed Experiment</text>
+  <text x="147" y="118" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Guides</text>
+  <text x="147" y="140" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Step-by-step procedures</text>
+  <text x="147" y="155" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">with tips &amp; timing</text>
+
+  <!-- Feature 2: Safety Database -->
+  <rect x="283" y="50" width="235" height="120" rx="10" fill="#2d2d44" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="80" text-anchor="middle" fill="#e74c3c" font-family="Segoe UI,Arial,sans-serif" font-size="28">🛡️</text>
+  <text x="400" y="102" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Safety Database</text>
+  <text x="400" y="125" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">10+ chemicals with risk levels</text>
+  <text x="400" y="140" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">PPE requirements &amp; grade</text>
+  <text x="400" y="155" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">restrictions built in</text>
+
+  <!-- Feature 3: Equipment Management -->
+  <rect x="535" y="50" width="235" height="120" rx="10" fill="#2d2d44" stroke="#2ecc71" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="652" y="80" text-anchor="middle" fill="#2ecc71" font-family="Segoe UI,Arial,sans-serif" font-size="28">🔧</text>
+  <text x="652" y="102" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Equipment Management</text>
+  <text x="652" y="125" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">15+ items with costs &amp;</text>
+  <text x="652" y="140" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">household alternatives</text>
+  <text x="652" y="155" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">for budget-friendly labs</text>
+
+  <!-- Row 2 -->
+  <!-- Feature 4: Grade-Level Adaptation -->
+  <rect x="30" y="190" width="235" height="120" rx="10" fill="#2d2d44" stroke="#f39c12" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="147" y="220" text-anchor="middle" fill="#f39c12" font-family="Segoe UI,Arial,sans-serif" font-size="28">🎓</text>
+  <text x="147" y="242" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Grade-Level Adaptation</text>
+  <text x="147" y="265" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Elementary through college</text>
+  <text x="147" y="280" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">with age-appropriate</text>
+  <text x="147" y="295" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">explanations &amp; safety</text>
+
+  <!-- Feature 5: Alternative Experiments -->
+  <rect x="283" y="190" width="235" height="120" rx="10" fill="#2d2d44" stroke="#3498db" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="220" text-anchor="middle" fill="#3498db" font-family="Segoe UI,Arial,sans-serif" font-size="28">🔄</text>
+  <text x="400" y="242" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Alternative Experiments</text>
+  <text x="400" y="265" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">LLM-powered suggestions</text>
+  <text x="400" y="280" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">for related experiments</text>
+  <text x="400" y="295" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">at matching difficulty</text>
+
+  <!-- Feature 6: Multiple Exports -->
+  <rect x="535" y="190" width="235" height="120" rx="10" fill="#2d2d44" stroke="#9b59b6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="652" y="220" text-anchor="middle" fill="#9b59b6" font-family="Segoe UI,Arial,sans-serif" font-size="28">📤</text>
+  <text x="652" y="242" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Multiple Export Formats</text>
+  <text x="652" y="265" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">JSON for machine use</text>
+  <text x="652" y="280" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Markdown for docs</text>
+  <text x="652" y="295" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Checklist for printable use</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="340" width="800" height="10" fill="url(#accent)" rx="0"/>
+</svg>

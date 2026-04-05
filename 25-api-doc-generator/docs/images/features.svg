@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+  <text x="400" y="35" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">Key Features</text>
+  
+  <rect x="30" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">🌳</text>
+  <text x="80" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#7209b7">AST-Powered Parsing</text>
+  <text x="50" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Parse Python source code</text>
+  <text x="50" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">using AST to extract all</text>
+  <text x="50" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">functions, classes, args</text>
+  <text x="50" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Accurate code analysis</text>
+
+  <rect x="283" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="303" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">📋</text>
+  <text x="333" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#7209b7">OpenAPI 3.0</text>
+  <text x="303" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Generate OpenAPI 3.0 YAML</text>
+  <text x="303" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">specifications from your</text>
+  <text x="303" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">source code automatically</text>
+  <text x="303" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Industry-standard format</text>
+
+  <rect x="536" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="556" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">📝</text>
+  <text x="586" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#7209b7">Markdown Docs</text>
+  <text x="556" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Rich Markdown API docs</text>
+  <text x="556" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">with parameters, returns,</text>
+  <text x="556" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">examples, and descriptions</text>
+  <text x="556" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Ready for GitHub/docs sites</text>
+
+  <rect x="30" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">🔍</text>
+  <text x="80" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#7209b7">Structure Inspection</text>
+  <text x="50" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Inspect code structure</text>
+  <text x="50" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">without generating docs</text>
+  <text x="50" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">in a clean table format</text>
+  <text x="50" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Quick code overview</text>
+
+  <rect x="283" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="303" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">📁</text>
+  <text x="333" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#7209b7">File/Directory Support</text>
+  <text x="303" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Document a single file</text>
+  <text x="303" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">or an entire directory</text>
+  <text x="303" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">of Python source files</text>
+  <text x="303" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Batch documentation</text>
+
+  <rect x="536" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="556" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">💾</text>
+  <text x="586" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#7209b7">Export Options</text>
+  <text x="556" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Export to .md or .yaml</text>
+  <text x="556" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">files with customizable</text>
+  <text x="556" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">output paths</text>
+  <text x="556" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Flexible output formats</text>
+</svg>

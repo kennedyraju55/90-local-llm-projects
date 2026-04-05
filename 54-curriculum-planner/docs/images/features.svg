@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg-feat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent-feat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#d62828"/>
+    </linearGradient>
+    <filter id="card-shadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#bg-feat)" rx="12"/>
+  <rect x="0" y="340" width="800" height="10" fill="url(#accent-feat)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">KEY FEATURES</text>
+
+  <!-- Row 1 -->
+  <!-- Card 1: Weekly Plan Generation -->
+  <rect x="30" y="55" width="230" height="120" rx="10" fill="#2a2a4a" stroke="#ff6b35" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="145" y="85" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="28">📅</text>
+  <text x="145" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Weekly Plan Generation</text>
+  <text x="145" y="130" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">AI-generated week-by-week</text>
+  <text x="145" y="145" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">course breakdowns (up to 52 wks)</text>
+  <text x="145" y="162" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="9">Topics • Goals • Activities</text>
+
+  <!-- Card 2: Bloom's Taxonomy Outcomes -->
+  <rect x="285" y="55" width="230" height="120" rx="10" fill="#2a2a4a" stroke="#00b894" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="400" y="85" text-anchor="middle" fill="#00b894" font-family="Segoe UI,Arial,sans-serif" font-size="28">🎯</text>
+  <text x="400" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Bloom's Taxonomy Outcomes</text>
+  <text x="400" y="130" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Map learning outcomes to</text>
+  <text x="400" y="145" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Bloom's cognitive levels</text>
+  <text x="400" y="162" text-anchor="middle" fill="#00b894" font-family="Segoe UI,Arial,sans-serif" font-size="9">Remember → Create (6 levels)</text>
+
+  <!-- Card 3: Assessment Planning -->
+  <rect x="540" y="55" width="230" height="120" rx="10" fill="#2a2a4a" stroke="#fdcb6e" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="655" y="85" text-anchor="middle" fill="#fdcb6e" font-family="Segoe UI,Arial,sans-serif" font-size="28">📊</text>
+  <text x="655" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Assessment Planning</text>
+  <text x="655" y="130" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Balanced assessment schedules</text>
+  <text x="655" y="145" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">with weighted scoring</text>
+  <text x="655" y="162" text-anchor="middle" fill="#fdcb6e" font-family="Segoe UI,Arial,sans-serif" font-size="9">Quiz • Assignment • Project • Exam</text>
+
+  <!-- Row 2 -->
+  <!-- Card 4: Resource Suggestions -->
+  <rect x="30" y="195" width="230" height="120" rx="10" fill="#2a2a4a" stroke="#74b9ff" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="145" y="225" text-anchor="middle" fill="#74b9ff" font-family="Segoe UI,Arial,sans-serif" font-size="28">📚</text>
+  <text x="145" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Resource Suggestions</text>
+  <text x="145" y="270" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">AI-curated learning resources</text>
+  <text x="145" y="285" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">categorized by type</text>
+  <text x="145" y="302" text-anchor="middle" fill="#74b9ff" font-family="Segoe UI,Arial,sans-serif" font-size="9">Books • Videos • Articles • Labs</text>
+
+  <!-- Card 5: Prerequisite Tracking -->
+  <rect x="285" y="195" width="230" height="120" rx="10" fill="#2a2a4a" stroke="#a29bfe" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="400" y="225" text-anchor="middle" fill="#a29bfe" font-family="Segoe UI,Arial,sans-serif" font-size="28">🔗</text>
+  <text x="400" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Prerequisite Tracking</text>
+  <text x="400" y="270" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Dependency trees with</text>
+  <text x="400" y="285" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">alternative path suggestions</text>
+  <text x="400" y="302" text-anchor="middle" fill="#a29bfe" font-family="Segoe UI,Arial,sans-serif" font-size="9">Required • Optional • Alternatives</text>
+
+  <!-- Card 6: Outcome Coverage Matrix -->
+  <rect x="540" y="195" width="230" height="120" rx="10" fill="#2a2a4a" stroke="#e84393" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="655" y="225" text-anchor="middle" fill="#e84393" font-family="Segoe UI,Arial,sans-serif" font-size="28">🗺️</text>
+  <text x="655" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Outcome Coverage Matrix</text>
+  <text x="655" y="270" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Visual mapping of outcomes</text>
+  <text x="655" y="285" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">across all course weeks</text>
+  <text x="655" y="302" text-anchor="middle" fill="#e84393" font-family="Segoe UI,Arial,sans-serif" font-size="9">Coverage Gaps • Alignment Check</text>
+</svg>

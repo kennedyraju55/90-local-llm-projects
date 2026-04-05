@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00b4d8"/>
+      <stop offset="100%" style="stop-color:#0090b0"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00b4d8"/>
+    </marker>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">System Architecture</text>
+
+  <!-- Layer 1: Input Sources (left) -->
+  <rect x="20" y="70" width="130" height="110" rx="8" fill="#1e2a45" stroke="#00b4d8" stroke-width="1.5"/>
+  <text x="85" y="95" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📄 Input</text>
+  <text x="85" y="118" text-anchor="middle" fill="#c0c0d0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Resume File</text>
+  <text x="85" y="135" text-anchor="middle" fill="#c0c0d0" font-family="Segoe UI,Arial,sans-serif" font-size="10">(.txt / paste)</text>
+  <text x="85" y="158" text-anchor="middle" fill="#c0c0d0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Job Description</text>
+  <text x="85" y="172" text-anchor="middle" fill="#c0c0d0" font-family="Segoe UI,Arial,sans-serif" font-size="10">(optional)</text>
+
+  <!-- Arrow: Input → Interface -->
+  <line x1="155" y1="125" x2="192" y2="125" stroke="#00b4d8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 2: Interface Layer -->
+  <rect x="195" y="60" width="120" height="130" rx="8" fill="#1e2a45" stroke="#00b4d8" stroke-width="1.5"/>
+  <text x="255" y="85" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🖥️ Interface</text>
+  <rect x="207" y="97" width="96" height="24" rx="4" fill="#2a3a5c"/>
+  <text x="255" y="113" text-anchor="middle" fill="#e0e0f0" font-family="Segoe UI,Arial,sans-serif" font-size="10">CLI (Click)</text>
+  <rect x="207" y="127" width="96" height="24" rx="4" fill="#2a3a5c"/>
+  <text x="255" y="143" text-anchor="middle" fill="#e0e0f0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Web (Streamlit)</text>
+  <rect x="207" y="157" width="96" height="24" rx="4" fill="#2a3a5c"/>
+  <text x="255" y="173" text-anchor="middle" fill="#e0e0f0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Python API</text>
+
+  <!-- Arrow: Interface → Core -->
+  <line x1="320" y1="125" x2="357" y2="125" stroke="#00b4d8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 3: Core Engine (center, larger) -->
+  <rect x="360" y="50" width="200" height="150" rx="8" fill="#1e2a45" stroke="#00b4d8" stroke-width="2" filter="url(#glow)"/>
+  <text x="460" y="75" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">⚙️ Core Engine</text>
+  <text x="460" y="92" text-anchor="middle" fill="#808090" font-family="Segoe UI,Arial,sans-serif" font-size="9">resume_analyzer.core</text>
+
+  <rect x="372" y="100" width="88" height="20" rx="4" fill="#2a3a5c"/>
+  <text x="416" y="114" text-anchor="middle" fill="#e0e0f0" font-family="Segoe UI,Arial,sans-serif" font-size="9">analyze_resume</text>
+
+  <rect x="468" y="100" width="84" height="20" rx="4" fill="#2a3a5c"/>
+  <text x="510" y="114" text-anchor="middle" fill="#e0e0f0" font-family="Segoe UI,Arial,sans-serif" font-size="9">score_against_jd</text>
+
+  <rect x="372" y="126" width="88" height="20" rx="4" fill="#2a3a5c"/>
+  <text x="416" y="140" text-anchor="middle" fill="#e0e0f0" font-family="Segoe UI,Arial,sans-serif" font-size="9">simulate_ats_score</text>
+
+  <rect x="468" y="126" width="84" height="20" rx="4" fill="#2a3a5c"/>
+  <text x="510" y="140" text-anchor="middle" fill="#e0e0f0" font-family="Segoe UI,Arial,sans-serif" font-size="9">compare_resumes</text>
+
+  <rect x="372" y="152" width="180" height="20" rx="4" fill="#2a3a5c"/>
+  <text x="462" y="166" text-anchor="middle" fill="#e0e0f0" font-family="Segoe UI,Arial,sans-serif" font-size="9">generate_improvement_suggestions</text>
+
+  <!-- Arrow: Core → LLM -->
+  <line x1="565" y1="125" x2="602" y2="125" stroke="#00b4d8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Layer 4: LLM Layer (right) -->
+  <rect x="605" y="65" width="170" height="120" rx="8" fill="#1e2a45" stroke="#00b4d8" stroke-width="1.5"/>
+  <text x="690" y="90" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🤖 LLM Backend</text>
+  <rect x="617" y="100" width="146" height="24" rx="4" fill="#2a3a5c"/>
+  <text x="690" y="116" text-anchor="middle" fill="#e0e0f0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Ollama API (local)</text>
+  <rect x="617" y="130" width="146" height="24" rx="4" fill="#2a3a5c"/>
+  <text x="690" y="146" text-anchor="middle" fill="#e0e0f0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Gemma 4 Model</text>
+  <rect x="617" y="160" width="146" height="18" rx="4" fill="#2a3a5c"/>
+  <text x="690" y="173" text-anchor="middle" fill="#808090" font-family="Segoe UI,Arial,sans-serif" font-size="9">localhost:11434</text>
+
+  <!-- Layer 5: Output (bottom) -->
+  <rect x="175" y="240" width="450" height="70" rx="8" fill="#1e2a45" stroke="#00b4d8" stroke-width="1.5"/>
+  <text x="400" y="265" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📊 Structured JSON Output</text>
+  <text x="400" y="285" text-anchor="middle" fill="#c0c0d0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Scores (0-100)  •  Skill Gaps  •  ATS Breakdown  •  Rankings  •  Suggestions</text>
+  <text x="400" y="300" text-anchor="middle" fill="#808090" font-family="Segoe UI,Arial,sans-serif" font-size="9">Rendered via Rich (CLI) or Streamlit (Web UI)</text>
+
+  <!-- Arrow: Core → Output -->
+  <line x1="460" y1="205" x2="460" y2="235" stroke="#00b4d8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Config box (bottom-right) -->
+  <rect x="640" y="240" width="140" height="70" rx="8" fill="#1e2a45" stroke="#533483" stroke-width="1.5"/>
+  <text x="710" y="265" text-anchor="middle" fill="#533483" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="bold">🔧 Config</text>
+  <text x="710" y="282" text-anchor="middle" fill="#c0c0d0" font-family="Segoe UI,Arial,sans-serif" font-size="9">config.yaml</text>
+  <text x="710" y="296" text-anchor="middle" fill="#c0c0d0" font-family="Segoe UI,Arial,sans-serif" font-size="9">.env / ENV vars</text>
+
+  <!-- Arrow: Config → Core -->
+  <line x1="710" y1="235" x2="530" y2="205" stroke="#533483" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+
+  <!-- Data flow label -->
+  <rect x="20" y="340" width="760" height="45" rx="8" fill="#0d1b2a" stroke="#2a3a5c" stroke-width="1"/>
+  <text x="400" y="360" text-anchor="middle" fill="#808090" font-family="Segoe UI,Arial,sans-serif" font-size="11">
+    Data Flow:  Resume File → Text Extraction → Gemma 4 via Ollama → Analysis Pipeline → Structured JSON → Rich / Streamlit Output
+  </text>
+  <text x="400" y="378" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold">100% Local  •  Zero Cloud Dependencies  •  Your Data Never Leaves Your Machine</text>
+</svg>

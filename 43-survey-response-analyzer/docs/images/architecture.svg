@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c2333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#151c28;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ec4b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a9e93;stop-opacity:1" />
+    </linearGradient>
+    <filter id="boxShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2ec4b6" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#archBg)" rx="12" />
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    System Architecture
+  </text>
+  <rect x="300" y="42" width="200" height="2" rx="1" fill="#2ec4b6" opacity="0.6"/>
+
+  <!-- ========== ROW 1: Input & Detection (y=65) ========== -->
+
+  <!-- Box 1: Survey CSV -->
+  <g filter="url(#boxShadow)">
+    <rect x="30" y="65" width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#2ec4b6" stroke-width="1.5"/>
+    <text x="95" y="92" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2ec4b6" text-anchor="middle">📄</text>
+    <text x="95" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#e6edf3" text-anchor="middle">Survey CSV</text>
+    <text x="95" y="124" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Input Data</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="160" y1="97" x2="195" y2="97" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.8"/>
+
+  <!-- Box 2: Column Detection -->
+  <g filter="url(#boxShadow)">
+    <rect x="200" y="65" width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1.5"/>
+    <text x="265" y="92" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2ec4b6" text-anchor="middle">🔍</text>
+    <text x="265" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#e6edf3" text-anchor="middle">Column Detection</text>
+    <text x="265" y="124" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Text &amp; Demographics</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="330" y1="97" x2="365" y2="97" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.8"/>
+
+  <!-- Box 3: Text Extraction -->
+  <g filter="url(#boxShadow)">
+    <rect x="370" y="65" width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1.5"/>
+    <text x="435" y="92" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2ec4b6" text-anchor="middle">📝</text>
+    <text x="435" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#e6edf3" text-anchor="middle">Text Extraction</text>
+    <text x="435" y="124" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Free-text Responses</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <line x1="500" y1="97" x2="535" y2="97" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.8"/>
+
+  <!-- Box 4: Theme Engine (LLM) - highlighted -->
+  <g filter="url(#boxShadow)">
+    <rect x="540" y="65" width="140" height="65" rx="8" fill="url(#boxGrad)" stroke="#2ec4b6" stroke-width="2"/>
+    <text x="610" y="92" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2ec4b6" text-anchor="middle">🤖</text>
+    <text x="610" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#2ec4b6" text-anchor="middle">Theme Engine</text>
+    <text x="610" y="124" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">LLM-Powered Analysis</text>
+  </g>
+
+  <!-- Vertical arrow from Theme Engine down -->
+  <line x1="610" y1="130" x2="610" y2="170" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.8"/>
+
+  <!-- ========== ROW 2: Processing (y=175) ========== -->
+
+  <!-- Box 5: Theme Clustering -->
+  <g filter="url(#boxShadow)">
+    <rect x="100" y="175" width="140" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1.5"/>
+    <text x="170" y="202" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2ec4b6" text-anchor="middle">🏗️</text>
+    <text x="170" y="220" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#e6edf3" text-anchor="middle">Theme Clustering</text>
+    <text x="170" y="234" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Higher-level Groups</text>
+  </g>
+
+  <!-- Box 6: Demographic Crosstabs -->
+  <g filter="url(#boxShadow)">
+    <rect x="270" y="175" width="155" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1.5"/>
+    <text x="347" y="202" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2ec4b6" text-anchor="middle">📊</text>
+    <text x="347" y="220" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#e6edf3" text-anchor="middle">Demographic Crosstabs</text>
+    <text x="347" y="234" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Group-level Analysis</text>
+  </g>
+
+  <!-- Box 7: Verbatim Highlighting -->
+  <g filter="url(#boxShadow)">
+    <rect x="455" y="175" width="155" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1.5"/>
+    <text x="532" y="202" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2ec4b6" text-anchor="middle">📌</text>
+    <text x="532" y="220" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#e6edf3" text-anchor="middle">Verbatim Highlighting</text>
+    <text x="532" y="234" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Impact-scored Quotes</text>
+  </g>
+
+  <!-- Arrow connections from Theme Engine to Row 2 -->
+  <line x1="610" y1="175" x2="170" y2="175" stroke="#2ec4b6" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="170" y1="175" x2="170" y2="175" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.8"/>
+
+  <line x1="610" y1="175" x2="347" y2="175" stroke="#2ec4b6" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <line x1="610" y1="175" x2="532" y2="175" stroke="#2ec4b6" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- Box 8: Recommendations -->
+  <g filter="url(#boxShadow)">
+    <rect x="540" y="175" width="140" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1.5"/>
+    <text x="610" y="202" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#2ec4b6" text-anchor="middle">💡</text>
+    <text x="610" y="220" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#e6edf3" text-anchor="middle">Recommendations</text>
+    <text x="610" y="234" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Priority / Effort / Impact</text>
+  </g>
+
+  <!-- ========== ROW 3: Output (y=285) ========== -->
+
+  <!-- Arrows from Row 2 down to output -->
+  <line x1="170" y1="240" x2="170" y2="270" stroke="#2ec4b6" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="347" y1="240" x2="347" y2="270" stroke="#2ec4b6" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="532" y1="240" x2="532" y2="270" stroke="#2ec4b6" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="610" y1="240" x2="610" y2="270" stroke="#2ec4b6" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- Horizontal connector -->
+  <line x1="170" y1="270" x2="610" y2="270" stroke="#2ec4b6" stroke-width="1.5" opacity="0.5"/>
+  <line x1="400" y1="270" x2="400" y2="290" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.8"/>
+
+  <!-- Box 9: Rich Report Output -->
+  <g filter="url(#boxShadow)">
+    <rect x="275" y="295" width="250" height="70" rx="8" fill="url(#boxGrad)" stroke="#2ec4b6" stroke-width="2"/>
+    <text x="400" y="322" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#2ec4b6" text-anchor="middle">📋</text>
+    <text x="400" y="340" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#2ec4b6" text-anchor="middle">Rich Report Output</text>
+    <text x="400" y="356" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">CLI Tables · Web Dashboard · Markdown</text>
+  </g>
+
+  <!-- Output branches -->
+  <!-- CLI -->
+  <g>
+    <rect x="60" y="310" width="95" height="40" rx="6" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1" filter="url(#boxShadow)"/>
+    <text x="107" y="335" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#e6edf3" text-anchor="middle">⚡ CLI</text>
+  </g>
+  <line x1="155" y1="330" x2="275" y2="330" stroke="#30363d" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+
+  <!-- Web UI -->
+  <g>
+    <rect x="645" y="310" width="95" height="40" rx="6" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1" filter="url(#boxShadow)"/>
+    <text x="692" y="335" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="bold" fill="#e6edf3" text-anchor="middle">🌐 Web UI</text>
+  </g>
+  <line x1="525" y1="330" x2="645" y2="330" stroke="#30363d" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+
+  <!-- Footer accent -->
+  <rect x="0" y="392" width="800" height="8" rx="0" fill="url(#accentLine)" opacity="0.5"/>
+
+  <!-- Border -->
+  <rect width="800" height="400" fill="none" stroke="#30363d" stroke-width="1" rx="12" />
+</svg>

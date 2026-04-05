@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2332;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#141c26;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+    <filter id="iconGlow">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="12" fill="url(#bgGrad)" />
+  <rect x="1" y="1" width="798" height="348" rx="12" fill="none" stroke="#06d6a0" stroke-opacity="0.15" stroke-width="1" />
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#06d6a0">Core Features</text>
+
+  <!-- ROW 1 -->
+  <!-- Card 1: Smart Classification -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="52" width="235" height="120" rx="10" fill="url(#cardGrad)" stroke="#06d6a0" stroke-width="1.2" />
+    <circle cx="65" cy="82" r="16" fill="#06d6a0" opacity="0.15" />
+    <text x="65" y="88" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#06d6a0" filter="url(#iconGlow)">🤖</text>
+    <text x="90" y="87" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">Smart Classification</text>
+    <line x1="45" y1="98" x2="245" y2="98" stroke="#06d6a0" stroke-width="0.5" opacity="0.3" />
+    <text x="45" y="115" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Category detection via LLM</text>
+    <text x="45" y="130" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Priority assignment (4 levels)</text>
+    <text x="45" y="145" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Confidence scoring (0–1)</text>
+    <text x="45" y="160" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• JSON-structured responses</text>
+  </g>
+
+  <!-- Card 2: Priority Queue Management -->
+  <g filter="url(#cardShadow)">
+    <rect x="283" y="52" width="235" height="120" rx="10" fill="url(#cardGrad)" stroke="#06d6a0" stroke-width="1.2" />
+    <circle cx="318" cy="82" r="16" fill="#06d6a0" opacity="0.15" />
+    <text x="318" y="88" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#06d6a0" filter="url(#iconGlow)">🚨</text>
+    <text x="343" y="87" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">Priority Queue</text>
+    <line x1="298" y1="98" x2="498" y2="98" stroke="#06d6a0" stroke-width="0.5" opacity="0.3" />
+    <text x="298" y="115" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Weighted priority sorting</text>
+    <text x="298" y="130" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Critical=4, High=3, Med=2, Low=1</text>
+    <text x="298" y="145" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Confidence-based tiebreaker</text>
+    <text x="298" y="160" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Real-time queue positioning</text>
+  </g>
+
+  <!-- Card 3: SLA Deadline Tracking -->
+  <g filter="url(#cardShadow)">
+    <rect x="536" y="52" width="235" height="120" rx="10" fill="url(#cardGrad)" stroke="#06d6a0" stroke-width="1.2" />
+    <circle cx="571" cy="82" r="16" fill="#06d6a0" opacity="0.15" />
+    <text x="571" y="88" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#06d6a0" filter="url(#iconGlow)">⏱️</text>
+    <text x="596" y="87" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">SLA Tracking</text>
+    <line x1="551" y1="98" x2="751" y2="98" stroke="#06d6a0" stroke-width="0.5" opacity="0.3" />
+    <text x="551" y="115" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Per-priority deadlines</text>
+    <text x="551" y="130" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Critical=1h, High=4h, Med=8h</text>
+    <text x="551" y="145" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Remaining hours calculation</text>
+    <text x="551" y="160" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• SLA compliance monitoring</text>
+  </g>
+
+  <!-- ROW 2 -->
+  <!-- Card 4: Team Routing Engine -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="190" width="235" height="120" rx="10" fill="url(#cardGrad)" stroke="#06d6a0" stroke-width="1.2" />
+    <circle cx="65" cy="220" r="16" fill="#06d6a0" opacity="0.15" />
+    <text x="65" y="226" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#06d6a0" filter="url(#iconGlow)">🏢</text>
+    <text x="90" y="225" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">Team Routing</text>
+    <line x1="45" y1="236" x2="245" y2="236" stroke="#06d6a0" stroke-width="0.5" opacity="0.3" />
+    <text x="45" y="253" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Category → Team mapping</text>
+    <text x="45" y="268" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• billing → finance-team</text>
+    <text x="45" y="283" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• technical → engineering-team</text>
+    <text x="45" y="298" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Configurable routing rules</text>
+  </g>
+
+  <!-- Card 5: Auto-Response Generator -->
+  <g filter="url(#cardShadow)">
+    <rect x="283" y="190" width="235" height="120" rx="10" fill="url(#cardGrad)" stroke="#06d6a0" stroke-width="1.2" />
+    <circle cx="318" cy="220" r="16" fill="#06d6a0" opacity="0.15" />
+    <text x="318" y="226" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#06d6a0" filter="url(#iconGlow)">💬</text>
+    <text x="343" y="225" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">Auto-Response</text>
+    <line x1="298" y1="236" x2="498" y2="236" stroke="#06d6a0" stroke-width="0.5" opacity="0.3" />
+    <text x="298" y="253" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Customer-facing reply drafts</text>
+    <text x="298" y="268" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Priority-aware messaging</text>
+    <text x="298" y="283" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• SLA timeframe included</text>
+    <text x="298" y="298" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• LLM-suggested responses</text>
+  </g>
+
+  <!-- Card 6: Analytics Dashboard -->
+  <g filter="url(#cardShadow)">
+    <rect x="536" y="190" width="235" height="120" rx="10" fill="url(#cardGrad)" stroke="#06d6a0" stroke-width="1.2" />
+    <circle cx="571" cy="220" r="16" fill="#06d6a0" opacity="0.15" />
+    <text x="571" y="226" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#06d6a0" filter="url(#iconGlow)">📊</text>
+    <text x="596" y="225" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">Analytics Dashboard</text>
+    <line x1="551" y1="236" x2="751" y2="236" stroke="#06d6a0" stroke-width="0.5" opacity="0.3" />
+    <text x="551" y="253" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Category distribution charts</text>
+    <text x="551" y="268" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Priority breakdown metrics</text>
+    <text x="551" y="283" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• Average confidence scoring</text>
+    <text x="551" y="298" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">• SLA compliance percentage</text>
+  </g>
+
+  <!-- Bottom accent -->
+  <rect x="300" y="330" width="200" height="2" rx="1" fill="#06d6a0" opacity="0.3" />
+  <text x="400" y="345" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e">All features powered by local LLM via Ollama</text>
+</svg>

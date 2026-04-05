@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+  <!-- Card 1 -->
+  <rect x="20" y="20" width="240" height="145" rx="10" fill="#16213e" stroke="#06d6a0" stroke-width="1.5" opacity="0.95"/>
+  <rect x="20" y="20" width="240" height="4" rx="2" fill="#06d6a0"/>
+  <text x="140" y="60" text-anchor="middle" font-size="28">📦</text>
+  <text x="140" y="88" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Service Catalog</text>
+    <text x="140" y="115" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">20+ services: databases,</text>
+    <text x="140" y="133" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">proxies, messaging, runtimes</text>
+
+  <!-- Card 2 -->
+  <rect x="280" y="20" width="240" height="145" rx="10" fill="#16213e" stroke="#06d6a0" stroke-width="1.5" opacity="0.95"/>
+  <rect x="280" y="20" width="240" height="4" rx="2" fill="#06d6a0"/>
+  <text x="400" y="60" text-anchor="middle" font-size="28">🏗️</text>
+  <text x="400" y="88" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Stack Templates</text>
+    <text x="400" y="115" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">MEAN, MERN, LAMP, Django,</text>
+    <text x="400" y="133" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Rails, WordPress, ELK</text>
+
+  <!-- Card 3 -->
+  <rect x="540" y="20" width="240" height="145" rx="10" fill="#16213e" stroke="#06d6a0" stroke-width="1.5" opacity="0.95"/>
+  <rect x="540" y="20" width="240" height="4" rx="2" fill="#06d6a0"/>
+  <text x="660" y="60" text-anchor="middle" font-size="28">🌍</text>
+  <text x="660" y="88" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Env Profiles</text>
+    <text x="660" y="115" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Dev, staging, production</text>
+    <text x="660" y="133" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">with auto-configuration</text>
+
+  <!-- Card 4 -->
+  <rect x="20" y="185" width="240" height="145" rx="10" fill="#16213e" stroke="#06d6a0" stroke-width="1.5" opacity="0.95"/>
+  <rect x="20" y="185" width="240" height="4" rx="2" fill="#06d6a0"/>
+  <text x="140" y="225" text-anchor="middle" font-size="28">🔍</text>
+  <text x="140" y="253" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Compose Explainer</text>
+    <text x="140" y="280" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Understand any existing</text>
+    <text x="140" y="298" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">compose file with AI</text>
+
+  <!-- Card 5 -->
+  <rect x="280" y="185" width="240" height="145" rx="10" fill="#16213e" stroke="#06d6a0" stroke-width="1.5" opacity="0.95"/>
+  <rect x="280" y="185" width="240" height="4" rx="2" fill="#06d6a0"/>
+  <text x="400" y="225" text-anchor="middle" font-size="28">✅</text>
+  <text x="400" y="253" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">YAML Validation</text>
+    <text x="400" y="280" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Auto-validate generated</text>
+    <text x="400" y="298" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">compose configurations</text>
+
+  <!-- Card 6 -->
+  <rect x="540" y="185" width="240" height="145" rx="10" fill="#16213e" stroke="#06d6a0" stroke-width="1.5" opacity="0.95"/>
+  <rect x="540" y="185" width="240" height="4" rx="2" fill="#06d6a0"/>
+  <text x="660" y="225" text-anchor="middle" font-size="28">🌐</text>
+  <text x="660" y="253" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Network Templates</text>
+    <text x="660" y="280" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">Simple, isolated, overlay</text>
+    <text x="660" y="298" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#a0aec0">network modes</text>
+
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 340" width="800" height="350">
+  <defs>
+    <linearGradient id="featbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="770" height="340" fill="url(#featbg)" rx="12"/>
+  <text x="385" y="28" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="2">FEATURES</text>
+  <rect x="20" y="40" width="230" height="125" rx="10" fill="#ff6b35" fill-opacity="0.1" stroke="#ff6b35" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="135" y="75" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="22">◆</text>
+  <text x="135" y="100" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Budget Analysis</text>
+  <text x="135" y="122" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">AI-powered spending pattern analysis with sav</text>
+  <text x="135" y="137" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">ings tips</text>
+  <rect x="270" y="40" width="230" height="125" rx="10" fill="#ff6b35" fill-opacity="0.1" stroke="#ff6b35" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="385" y="75" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="22">◈</text>
+  <text x="385" y="100" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Auto-Categorization</text>
+  <text x="385" y="122" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Rule-based expense categorization from descri</text>
+  <text x="385" y="137" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">ptions</text>
+  <rect x="520" y="40" width="230" height="125" rx="10" fill="#ff6b35" fill-opacity="0.1" stroke="#ff6b35" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="635" y="75" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="22">▣</text>
+  <text x="635" y="100" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Budget vs Actual</text>
+  <text x="635" y="122" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Compare spending against budget limits by cat</text>
+  <text x="635" y="137" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">egory</text>
+  <rect x="20" y="185" width="230" height="125" rx="10" fill="#ff6b35" fill-opacity="0.1" stroke="#ff6b35" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="135" y="220" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="22">◉</text>
+  <text x="135" y="245" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Savings Goals</text>
+  <text x="135" y="267" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Track progress with completion date estimatio</text>
+  <text x="135" y="282" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">n (SavingsGoal)</text>
+  <rect x="270" y="185" width="230" height="125" rx="10" fill="#ff6b35" fill-opacity="0.1" stroke="#ff6b35" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="385" y="220" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="22">⬡</text>
+  <text x="385" y="245" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Recurring Detection</text>
+  <text x="385" y="267" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Identify subscriptions and recurring charges </text>
+  <text x="385" y="282" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">automatically</text>
+  <rect x="520" y="185" width="230" height="125" rx="10" fill="#ff6b35" fill-opacity="0.1" stroke="#ff6b35" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="635" y="220" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="22">◎</text>
+  <text x="635" y="245" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Monthly Trends</text>
+  <text x="635" y="267" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Chronological spending trends with month-over</text>
+  <text x="635" y="282" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">-month comparison</text>
+</svg>

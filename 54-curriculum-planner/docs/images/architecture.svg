@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg-arch" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent-arch" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#d62828"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg-arch)" rx="12"/>
+  <rect x="0" y="390" width="800" height="10" fill="url(#accent-arch)"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold">SYSTEM ARCHITECTURE</text>
+
+  <!-- User Box -->
+  <rect x="30" y="55" width="120" height="50" rx="8" fill="#2a2a4a" stroke="#ff6b35" stroke-width="2" filter="url(#shadow)"/>
+  <text x="90" y="75" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">👤 User</text>
+  <text x="90" y="93" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Educator</text>
+
+  <!-- Arrow: User → CLI/Streamlit -->
+  <line x1="150" y1="80" x2="195" y2="80" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6b35"/>
+    </marker>
+  </defs>
+
+  <!-- CLI Box -->
+  <rect x="200" y="48" width="130" height="30" rx="6" fill="#2a2a4a" stroke="#4ecdc4" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="265" y="68" text-anchor="middle" fill="#4ecdc4" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="bold">⌨️ CLI (Click)</text>
+
+  <!-- Streamlit Box -->
+  <rect x="200" y="85" width="130" height="30" rx="6" fill="#2a2a4a" stroke="#e84393" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="265" y="105" text-anchor="middle" fill="#e84393" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="bold">🌐 Streamlit UI</text>
+
+  <!-- Arrow: CLI/Streamlit → Core -->
+  <line x1="330" y1="80" x2="375" y2="80" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Core Engine Box -->
+  <rect x="380" y="50" width="170" height="60" rx="8" fill="#ff6b35" fill-opacity="0.15" stroke="#ff6b35" stroke-width="2" filter="url(#shadow)"/>
+  <text x="465" y="72" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">⚙️ Core Engine</text>
+  <text x="465" y="90" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">generate_curriculum()</text>
+  <text x="465" y="103" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">build_course_design()</text>
+
+  <!-- Arrow: Core → Ollama -->
+  <line x1="550" y1="80" x2="600" y2="80" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Ollama/Gemma Box -->
+  <rect x="605" y="50" width="160" height="60" rx="8" fill="#2a2a4a" stroke="#6c5ce7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="685" y="72" text-anchor="middle" fill="#6c5ce7" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🤖 Ollama</text>
+  <text x="685" y="90" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Gemma 3 LLM</text>
+  <text x="685" y="103" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Local Inference</text>
+
+  <!-- Divider Line -->
+  <line x1="30" y1="135" x2="770" y2="135" stroke="#3a3a5a" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="400" y="155" text-anchor="middle" fill="#606080" font-family="Segoe UI,Arial,sans-serif" font-size="11">DOWNSTREAM MODULES</text>
+
+  <!-- Vertical arrows from Core to each module -->
+  <line x1="420" y1="110" x2="130" y2="185" stroke="#ff6b35" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowhead)"/>
+  <line x1="440" y1="110" x2="310" y2="185" stroke="#ff6b35" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowhead)"/>
+  <line x1="465" y1="110" x2="465" y2="185" stroke="#ff6b35" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowhead)"/>
+  <line x1="490" y1="110" x2="620" y2="185" stroke="#ff6b35" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrowhead)"/>
+
+  <!-- OutcomeMapper Box -->
+  <rect x="45" y="185" width="170" height="70" rx="8" fill="#2a2a4a" stroke="#00b894" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="130" y="208" text-anchor="middle" fill="#00b894" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🎯 OutcomeMapper</text>
+  <text x="130" y="225" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Bloom's Taxonomy</text>
+  <text x="130" y="238" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">map_outcomes_to_weeks()</text>
+  <text x="130" y="249" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">generate_outcome_matrix()</text>
+
+  <!-- AssessmentPlanner Box -->
+  <rect x="230" y="185" width="170" height="70" rx="8" fill="#2a2a4a" stroke="#fdcb6e" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="315" y="208" text-anchor="middle" fill="#fdcb6e" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📊 AssessmentPlanner</text>
+  <text x="315" y="225" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Weighted Scoring</text>
+  <text x="315" y="238" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">plan_assessments()</text>
+  <text x="315" y="249" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">get_assessment_calendar()</text>
+
+  <!-- ResourceSuggester Box -->
+  <rect x="415" y="185" width="170" height="70" rx="8" fill="#2a2a4a" stroke="#74b9ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="500" y="208" text-anchor="middle" fill="#74b9ff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📚 ResourceSuggester</text>
+  <text x="500" y="225" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Smart Recommendations</text>
+  <text x="500" y="238" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">suggest_resources()</text>
+  <text x="500" y="249" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">categorize_resources()</text>
+
+  <!-- PrerequisiteTracker Box -->
+  <rect x="600" y="185" width="170" height="70" rx="8" fill="#2a2a4a" stroke="#a29bfe" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="685" y="208" text-anchor="middle" fill="#a29bfe" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🔗 PrerequisiteTracker</text>
+  <text x="685" y="225" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Dependency Trees</text>
+  <text x="685" y="238" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">check_prerequisites()</text>
+  <text x="685" y="249" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">generate_prerequisite_tree()</text>
+
+  <!-- Divider Line 2 -->
+  <line x1="30" y1="280" x2="770" y2="280" stroke="#3a3a5a" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="400" y="300" text-anchor="middle" fill="#606080" font-family="Segoe UI,Arial,sans-serif" font-size="11">EXPORT &amp; OUTPUT</text>
+
+  <!-- Export Boxes -->
+  <rect x="150" y="315" width="140" height="50" rx="8" fill="#2a2a4a" stroke="#55efc4" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="220" y="338" text-anchor="middle" fill="#55efc4" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📄 JSON Export</text>
+  <text x="220" y="355" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Structured Data</text>
+
+  <rect x="330" y="315" width="140" height="50" rx="8" fill="#2a2a4a" stroke="#fab1a0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="338" text-anchor="middle" fill="#fab1a0" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📝 Markdown</text>
+  <text x="400" y="355" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Documentation</text>
+
+  <rect x="510" y="315" width="140" height="50" rx="8" fill="#2a2a4a" stroke="#dfe6e9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="338" text-anchor="middle" fill="#dfe6e9" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📋 Config YAML</text>
+  <text x="580" y="355" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Settings &amp; Defaults</text>
+
+  <!-- Arrows from modules to export -->
+  <line x1="130" y1="255" x2="220" y2="315" stroke="#55efc4" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="315" y1="255" x2="400" y2="315" stroke="#fab1a0" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="500" y1="255" x2="400" y2="315" stroke="#fab1a0" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="685" y1="255" x2="580" y2="315" stroke="#dfe6e9" stroke-width="1" stroke-opacity="0.4"/>
+</svg>

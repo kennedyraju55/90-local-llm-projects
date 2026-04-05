@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg-feat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent-feat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f72585"/>
+      <stop offset="100%" style="stop-color:#b5179e"/>
+    </linearGradient>
+    <filter id="card-shadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#bg-feat)" rx="12"/>
+  <rect x="0" y="340" width="800" height="10" fill="url(#accent-feat)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#f72585" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">✨ KEY FEATURES</text>
+
+  <!-- Row 1 -->
+  <!-- Card 1: Level-Calibrated Passages -->
+  <rect x="25" y="55" width="235" height="120" rx="10" fill="#2a2a4a" stroke="#f72585" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="142" y="82" text-anchor="middle" fill="#f72585" font-family="Segoe UI,Arial,sans-serif" font-size="24">📖</text>
+  <text x="142" y="105" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">Level-Calibrated</text>
+  <text x="142" y="122" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">Passages</text>
+  <text x="142" y="143" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Elementary → College</text>
+  <text x="142" y="158" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">200–700 words auto-scaled</text>
+
+  <!-- Card 2: 5 Question Types -->
+  <rect x="282" y="55" width="235" height="120" rx="10" fill="#2a2a4a" stroke="#7b2ff7" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="400" y="82" text-anchor="middle" fill="#7b2ff7" font-family="Segoe UI,Arial,sans-serif" font-size="24">❓</text>
+  <text x="400" y="105" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">5 Question Types</text>
+  <text x="400" y="128" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Factual • Inferential</text>
+  <text x="400" y="143" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Analytical • Vocabulary</text>
+  <text x="400" y="158" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Main-Idea</text>
+
+  <!-- Card 3: Interactive Quiz Mode -->
+  <rect x="540" y="55" width="235" height="120" rx="10" fill="#2a2a4a" stroke="#4cc9f0" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="657" y="82" text-anchor="middle" fill="#4cc9f0" font-family="Segoe UI,Arial,sans-serif" font-size="24">🎮</text>
+  <text x="657" y="105" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">Interactive Quiz</text>
+  <text x="657" y="122" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">Mode</text>
+  <text x="657" y="143" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">CLI --interactive flag</text>
+  <text x="657" y="158" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Answer + score in terminal</text>
+
+  <!-- Row 2 -->
+  <!-- Card 4: Scoring Rubric -->
+  <rect x="25" y="195" width="235" height="120" rx="10" fill="#2a2a4a" stroke="#4cc9f0" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="142" y="222" text-anchor="middle" fill="#4cc9f0" font-family="Segoe UI,Arial,sans-serif" font-size="24">🏆</text>
+  <text x="142" y="245" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">Scoring Rubric</text>
+  <text x="142" y="268" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Excellent • Good</text>
+  <text x="142" y="283" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Fair • Needs Improvement</text>
+  <text x="142" y="298" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Percentage-based scoring</text>
+
+  <!-- Card 5: Vocabulary Extraction -->
+  <rect x="282" y="195" width="235" height="120" rx="10" fill="#2a2a4a" stroke="#f72585" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="400" y="222" text-anchor="middle" fill="#f72585" font-family="Segoe UI,Arial,sans-serif" font-size="24">📝</text>
+  <text x="400" y="245" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">Vocabulary</text>
+  <text x="400" y="262" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">Extraction</text>
+  <text x="400" y="283" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Auto-extracted key terms</text>
+  <text x="400" y="298" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Word + definition pairs</text>
+
+  <!-- Card 6: Answer Explanations -->
+  <rect x="540" y="195" width="235" height="120" rx="10" fill="#2a2a4a" stroke="#7b2ff7" stroke-width="1.5" filter="url(#card-shadow)"/>
+  <text x="657" y="222" text-anchor="middle" fill="#7b2ff7" font-family="Segoe UI,Arial,sans-serif" font-size="24">🔑</text>
+  <text x="657" y="245" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">Detailed Answer</text>
+  <text x="657" y="262" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">Explanations</text>
+  <text x="657" y="283" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Why each answer is correct</text>
+  <text x="657" y="298" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Passage annotations</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 340" width="800" height="350">
+  <defs>
+    <linearGradient id="featbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="770" height="340" fill="url(#featbg)" rx="12"/>
+  <text x="385" y="28" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="2">FEATURES</text>
+  <rect x="20" y="40" width="230" height="125" rx="10" fill="#00b4d8" fill-opacity="0.1" stroke="#00b4d8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="135" y="75" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="22">◆</text>
+  <text x="135" y="100" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Semantic Search</text>
+  <text x="135" y="122" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">AI-powered search finds conceptually related </text>
+  <text x="135" y="137" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">notes</text>
+  <rect x="270" y="40" width="230" height="125" rx="10" fill="#00b4d8" fill-opacity="0.1" stroke="#00b4d8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="385" y="75" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="22">◈</text>
+  <text x="385" y="100" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Backlink Discovery</text>
+  <text x="385" y="122" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Automatic cross-reference detection between n</text>
+  <text x="385" y="137" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">otes</text>
+  <rect x="520" y="40" width="230" height="125" rx="10" fill="#00b4d8" fill-opacity="0.1" stroke="#00b4d8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="635" y="75" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="22">▣</text>
+  <text x="635" y="100" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Tag Cloud</text>
+  <text x="635" y="122" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Visual tag frequency analysis across your kno</text>
+  <text x="635" y="137" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">wledge base</text>
+  <rect x="20" y="185" width="230" height="125" rx="10" fill="#00b4d8" fill-opacity="0.1" stroke="#00b4d8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="135" y="220" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="22">◉</text>
+  <text x="135" y="245" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Note Templates</text>
+  <text x="135" y="267" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Pre-built templates: meeting notes, book revi</text>
+  <text x="135" y="282" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">ew, project plan</text>
+  <rect x="270" y="185" width="230" height="125" rx="10" fill="#00b4d8" fill-opacity="0.1" stroke="#00b4d8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="385" y="220" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="22">⬡</text>
+  <text x="385" y="245" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Full-Text Search</text>
+  <text x="385" y="267" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Fast keyword search across titles, content, a</text>
+  <text x="385" y="282" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">nd tags</text>
+  <rect x="520" y="185" width="230" height="125" rx="10" fill="#00b4d8" fill-opacity="0.1" stroke="#00b4d8" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="635" y="220" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="22">◎</text>
+  <text x="635" y="245" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Markdown Export</text>
+  <text x="635" y="267" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Export/import entire knowledge base as Markdo</text>
+  <text x="635" y="282" text-anchor="middle" fill="#a0a0b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">wn</text>
+</svg>

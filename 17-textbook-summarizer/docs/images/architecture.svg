@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fb8500"/>
+      <stop offset="100%" style="stop-color:#ffb703"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#fb8500"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" rx="12" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#fb8500" letter-spacing="1">ARCHITECTURE</text>
+  <line x1="320" y1="44" x2="480" y2="44" stroke="#fb8500" stroke-width="2" opacity="0.4"/>
+
+  <!-- Stage 1: Textbook Chapter -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="120" width="120" height="100" rx="10" fill="#1e2a45" stroke="#fb8500" stroke-width="2"/>
+    <text x="80" y="105" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#a0a0b8" font-weight="600" text-transform="uppercase" letter-spacing="1">INPUT</text>
+    <text x="80" y="155" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28">📄</text>
+    <text x="80" y="180" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="600">Textbook</text>
+    <text x="80" y="196" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="600">Chapter</text>
+    <text x="80" y="212" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#a0a0b8">.txt file</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="140" y1="170" x2="175" y2="170" stroke="#fb8500" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 2: Chapter Detection -->
+  <g filter="url(#shadow)">
+    <rect x="180" y="120" width="130" height="100" rx="10" fill="#1e2a45" stroke="#3b82f6" stroke-width="2"/>
+    <text x="245" y="105" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#a0a0b8" font-weight="600" letter-spacing="1">DETECTION</text>
+    <text x="245" y="155" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28">🔍</text>
+    <text x="245" y="180" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="600">Chapter</text>
+    <text x="245" y="196" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="600">Detection</text>
+    <text x="245" y="212" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#3b82f6">Regex Patterns</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="310" y1="170" x2="345" y2="170" stroke="#fb8500" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 3: Gemma 4 via Ollama (larger box with sub-items) -->
+  <g filter="url(#shadow)">
+    <rect x="350" y="70" width="170" height="200" rx="10" fill="#1e2a45" stroke="#fb8500" stroke-width="2.5"/>
+    <text x="435" y="58" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#a0a0b8" font-weight="600" letter-spacing="1">LLM ENGINE</text>
+    <text x="435" y="100" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28">🤖</text>
+    <text x="435" y="122" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#fb8500" font-weight="700">Gemma 4 via Ollama</text>
+
+    <!-- Sub-features inside LLM box -->
+    <rect x="370" y="135" width="130" height="24" rx="6" fill="#fb8500" opacity="0.15"/>
+    <text x="435" y="152" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#ffffff">📝 Summarize</text>
+
+    <rect x="370" y="163" width="130" height="24" rx="6" fill="#fb8500" opacity="0.15"/>
+    <text x="435" y="180" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#ffffff">📖 Glossary</text>
+
+    <rect x="370" y="191" width="130" height="24" rx="6" fill="#fb8500" opacity="0.15"/>
+    <text x="435" y="208" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#ffffff">🗺️ Concept Map</text>
+
+    <rect x="370" y="219" width="130" height="24" rx="6" fill="#fb8500" opacity="0.15"/>
+    <text x="435" y="236" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#ffffff">❓ Quiz Generator</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <line x1="520" y1="170" x2="555" y2="170" stroke="#fb8500" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 4: Study Materials -->
+  <g filter="url(#shadow)">
+    <rect x="560" y="120" width="120" height="100" rx="10" fill="#1e2a45" stroke="#2ecc71" stroke-width="2"/>
+    <text x="620" y="105" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#a0a0b8" font-weight="600" letter-spacing="1">OUTPUT</text>
+    <text x="620" y="155" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28">📋</text>
+    <text x="620" y="180" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="600">Study</text>
+    <text x="620" y="196" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="600">Materials</text>
+    <text x="620" y="212" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#2ecc71">Rich Terminal</text>
+  </g>
+
+  <!-- Arrow 4 -->
+  <line x1="680" y1="170" x2="715" y2="170" stroke="#fb8500" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 5: Export -->
+  <g filter="url(#shadow)">
+    <rect x="720" y="130" width="60" height="80" rx="10" fill="#1e2a45" stroke="#a855f7" stroke-width="2"/>
+    <text x="750" y="163" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24">📤</text>
+    <text x="750" y="186" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#ffffff" font-weight="600">Export</text>
+    <text x="750" y="200" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#a855f7">Markdown</text>
+  </g>
+
+  <!-- Pipeline label -->
+  <g transform="translate(0, 300)">
+    <rect x="60" y="0" width="680" height="40" rx="8" fill="#fb8500" opacity="0.08" stroke="#fb8500" stroke-width="1" stroke-dasharray="6,4" opacity="0.3"/>
+    <text x="400" y="18" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">
+      read_chapter_file() → detect_chapter_info() → summarize_chapter() → generate_glossary() / generate_concept_map() / generate_study_questions()
+    </text>
+    <text x="400" y="34" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#fb8500" opacity="0.7">All processing happens locally — no data leaves your machine</text>
+  </g>
+
+  <!-- Bottom labels -->
+  <text x="80" y="380" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#fb8500" opacity="0.6">read_chapter_file()</text>
+  <text x="245" y="380" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#3b82f6" opacity="0.6">detect_chapter_info()</text>
+  <text x="435" y="380" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#fb8500" opacity="0.6">summarize_chapter()</text>
+  <text x="620" y="380" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#2ecc71" opacity="0.6">Rich Console</text>
+  <text x="750" y="380" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#a855f7" opacity="0.6">Markdown</text>
+</svg>

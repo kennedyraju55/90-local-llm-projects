@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a2e1a"/>
+      <stop offset="100%" style="stop-color:#064e3b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+  <text x="400" y="35" text-anchor="middle" fill="#06d6a0" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold">✨ Key Features</text>
+
+  <rect x="20" y="55" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="140" y="85" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">🌍</text>
+  <text x="140" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">15 Languages</text>
+  <text x="140" y="130" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Spanish, French, Japanese,</text>
+  <text x="140" y="145" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Korean, Arabic, and 10 more</text>
+
+  <rect x="280" y="55" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="85" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">💬</text>
+  <text x="400" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">AI Conversations</text>
+  <text x="400" y="130" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Practice speaking with an AI</text>
+  <text x="400" y="145" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">tutor that adapts to your level</text>
+
+  <rect x="540" y="55" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="660" y="85" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">📖</text>
+  <text x="660" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">Vocabulary Builder</text>
+  <text x="660" y="130" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Save words with translations,</text>
+  <text x="660" y="145" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">examples, and notes</text>
+
+  <rect x="20" y="195" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="140" y="225" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">🗣️</text>
+  <text x="140" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">Pronunciation Tips</text>
+  <text x="140" y="270" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Phonetic guidance and</text>
+  <text x="140" y="285" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">pronunciation breakdowns</text>
+
+  <rect x="280" y="195" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="225" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">📝</text>
+  <text x="400" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">Lesson Plans</text>
+  <text x="400" y="270" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Multi-week structured</text>
+  <text x="400" y="285" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">learning curricula</text>
+
+  <rect x="540" y="195" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="660" y="225" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">📊</text>
+  <text x="660" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">Progress Tracking</text>
+  <text x="660" y="270" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Session history, vocab count,</text>
+  <text x="660" y="285" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">and learning statistics</text>
+
+  <text x="400" y="340" text-anchor="middle" fill="#4a5568" font-family="Segoe UI,Arial,sans-serif" font-size="11">Language Learning Bot — Built with Python • Click CLI • Streamlit Web UI</text>
+</svg>

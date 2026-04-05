@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2a45"/>
+      <stop offset="100%" style="stop-color:#192035"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">✨ Feature Overview</text>
+
+  <!-- Row 1 -->
+  <!-- Card 1: Resume Analysis -->
+  <rect x="20" y="55" width="240" height="120" rx="8" fill="url(#cardBg)" stroke="#00b4d8" stroke-width="1.5"/>
+  <circle cx="45" cy="80" r="14" fill="#00b4d8" opacity="0.15"/>
+  <text x="45" y="85" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="16">📊</text>
+  <text x="68" y="84" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Resume Analysis</text>
+  <text x="35" y="106" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Skills extraction &amp; experience mapping</text>
+  <text x="35" y="122" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Strengths &amp; weaknesses detection</text>
+  <text x="35" y="138" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold">Overall Score: 0–100</text>
+  <text x="35" y="155" fill="#808090" font-family="Segoe UI,Arial,sans-serif" font-size="9">analyze_resume()</text>
+
+  <!-- Card 2: JD Matching -->
+  <rect x="280" y="55" width="240" height="120" rx="8" fill="url(#cardBg)" stroke="#00b4d8" stroke-width="1.5"/>
+  <circle cx="305" cy="80" r="14" fill="#00b4d8" opacity="0.15"/>
+  <text x="305" y="85" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="16">🎯</text>
+  <text x="328" y="84" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">JD Matching</text>
+  <text x="295" y="106" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Matching &amp; missing skills detection</text>
+  <text x="295" y="122" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Keyword gap analysis</text>
+  <text x="295" y="138" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold">Match Percentage: 0–100</text>
+  <text x="295" y="155" fill="#808090" font-family="Segoe UI,Arial,sans-serif" font-size="9">score_against_jd()</text>
+
+  <!-- Card 3: ATS Simulation -->
+  <rect x="540" y="55" width="240" height="120" rx="8" fill="url(#cardBg)" stroke="#00b4d8" stroke-width="1.5"/>
+  <circle cx="565" cy="80" r="14" fill="#00b4d8" opacity="0.15"/>
+  <text x="565" y="85" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="16">🤖</text>
+  <text x="588" y="84" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">ATS Simulation</text>
+  <text x="555" y="106" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">5-dimension compatibility scoring</text>
+  <text x="555" y="122" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Keyword, experience, education,</text>
+  <text x="555" y="136" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">formatting sub-scores</text>
+  <text x="555" y="155" fill="#808090" font-family="Segoe UI,Arial,sans-serif" font-size="9">simulate_ats_score()</text>
+
+  <!-- Row 2 -->
+  <!-- Card 4: Multi-Resume Compare -->
+  <rect x="20" y="195" width="240" height="120" rx="8" fill="url(#cardBg)" stroke="#00b4d8" stroke-width="1.5"/>
+  <circle cx="45" cy="220" r="14" fill="#00b4d8" opacity="0.15"/>
+  <text x="45" y="225" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="16">⚖️</text>
+  <text x="68" y="224" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Multi-Resume Compare</text>
+  <text x="35" y="246" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Side-by-side candidate ranking</text>
+  <text x="35" y="262" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Comparison table &amp; key differences</text>
+  <text x="35" y="278" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold">Ranked Recommendations</text>
+  <text x="35" y="295" fill="#808090" font-family="Segoe UI,Arial,sans-serif" font-size="9">compare_resumes()</text>
+
+  <!-- Card 5: Improvement Engine -->
+  <rect x="280" y="195" width="240" height="120" rx="8" fill="url(#cardBg)" stroke="#00b4d8" stroke-width="1.5"/>
+  <circle cx="305" cy="220" r="14" fill="#00b4d8" opacity="0.15"/>
+  <text x="305" y="225" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="16">💡</text>
+  <text x="328" y="224" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Improvement Engine</text>
+  <text x="295" y="246" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Section-by-section suggestions</text>
+  <text x="295" y="262" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Power words &amp; sections to add</text>
+  <text x="295" y="278" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold">Actionable Feedback</text>
+  <text x="295" y="295" fill="#808090" font-family="Segoe UI,Arial,sans-serif" font-size="9">generate_improvement_suggestions()</text>
+
+  <!-- Card 6: 100% Private -->
+  <rect x="540" y="195" width="240" height="120" rx="8" fill="url(#cardBg)" stroke="#533483" stroke-width="1.5"/>
+  <circle cx="565" cy="220" r="14" fill="#533483" opacity="0.15"/>
+  <text x="565" y="225" text-anchor="middle" fill="#533483" font-family="Segoe UI,Arial,sans-serif" font-size="16">🔒</text>
+  <text x="588" y="224" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">100% Private</text>
+  <text x="555" y="246" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Local AI via Ollama — no cloud</text>
+  <text x="555" y="262" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Your data never leaves your machine</text>
+  <text x="555" y="278" fill="#533483" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="bold">Zero External API Calls</text>
+  <text x="555" y="295" fill="#808090" font-family="Segoe UI,Arial,sans-serif" font-size="9">Powered by Ollama + Gemma 4</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="340" width="800" height="10" rx="0" fill="#00b4d8" opacity="0.3"/>
+</svg>

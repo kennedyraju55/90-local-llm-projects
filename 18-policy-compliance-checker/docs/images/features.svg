@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946"/>
+      <stop offset="100%" style="stop-color:#ff6b6b"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="12" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="800" height="3" fill="url(#accentGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="16"
+        font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+    KEY FEATURES
+  </text>
+  <line x1="345" y1="42" x2="455" y2="42" stroke="#e63946" stroke-width="2" opacity="0.6"/>
+
+  <!-- Row 1 -->
+
+  <!-- Feature 1: Compliance Scoring -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="60" width="230" height="115" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="30" y="60" width="230" height="3" rx="2" fill="#e63946"/>
+    <!-- Icon: gauge -->
+    <circle cx="64" cy="98" r="16" fill="none" stroke="#e63946" stroke-width="2" opacity="0.8"/>
+    <line x1="64" y1="98" x2="74" y2="90" stroke="#e63946" stroke-width="2" stroke-linecap="round"/>
+    <text x="90" y="96" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+          font-weight="700" fill="#ffffff">Compliance Scoring</text>
+    <text x="48" y="125" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      Quantified 0–100 score with automatic
+    </text>
+    <text x="48" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      PASS / WARNING / FAIL classification
+    </text>
+    <rect x="48" y="150" width="38" height="16" rx="3" fill="#3fb950" opacity="0.2"/>
+    <text x="67" y="162" font-family="'Segoe UI', Arial, sans-serif" font-size="9"
+          fill="#3fb950" text-anchor="middle" font-weight="600">PASS</text>
+    <rect x="92" y="150" width="56" height="16" rx="3" fill="#d29922" opacity="0.2"/>
+    <text x="120" y="162" font-family="'Segoe UI', Arial, sans-serif" font-size="9"
+          fill="#d29922" text-anchor="middle" font-weight="600">WARNING</text>
+    <rect x="154" y="150" width="34" height="16" rx="3" fill="#e63946" opacity="0.2"/>
+    <text x="171" y="162" font-family="'Segoe UI', Arial, sans-serif" font-size="9"
+          fill="#e63946" text-anchor="middle" font-weight="600">FAIL</text>
+  </g>
+
+  <!-- Feature 2: Violation Detection -->
+  <g filter="url(#cardShadow)">
+    <rect x="285" y="60" width="230" height="115" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="285" y="60" width="230" height="3" rx="2" fill="#f0883e"/>
+    <!-- Icon: magnifying glass -->
+    <circle cx="319" cy="95" r="12" fill="none" stroke="#f0883e" stroke-width="2" opacity="0.8"/>
+    <line x1="328" y1="103" x2="336" y2="111" stroke="#f0883e" stroke-width="2" stroke-linecap="round"/>
+    <text x="345" y="96" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+          font-weight="700" fill="#ffffff">Violation Detection</text>
+    <text x="303" y="125" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      Rule-by-rule analysis identifies every
+    </text>
+    <text x="303" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      non-compliant section with its location
+    </text>
+    <text x="303" y="155" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      and detailed context in the document
+    </text>
+  </g>
+
+  <!-- Feature 3: Severity Grading -->
+  <g filter="url(#cardShadow)">
+    <rect x="540" y="60" width="230" height="115" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="540" y="60" width="230" height="3" rx="2" fill="#d2a8ff"/>
+    <!-- Icon: levels -->
+    <rect x="558" y="105" width="20" height="10" rx="2" fill="#e63946" opacity="0.7"/>
+    <rect x="558" y="92" width="20" height="10" rx="2" fill="#d29922" opacity="0.7"/>
+    <rect x="558" y="79" width="20" height="10" rx="2" fill="#58a6ff" opacity="0.7"/>
+    <text x="590" y="96" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+          font-weight="700" fill="#ffffff">Severity Grading</text>
+    <text x="558" y="130" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      High / Medium / Low classification
+    </text>
+    <text x="558" y="145" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      with color-coded display. Filter by
+    </text>
+    <text x="558" y="160" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      severity to focus on critical issues
+    </text>
+  </g>
+
+  <!-- Row 2 -->
+
+  <!-- Feature 4: Remediation Suggestions -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="195" width="230" height="115" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="30" y="195" width="230" height="3" rx="2" fill="#3fb950"/>
+    <!-- Icon: wrench -->
+    <path d="M55 230 C55 220, 70 218, 72 228 L68 240 L58 240 Z" fill="none" stroke="#3fb950"
+          stroke-width="2" opacity="0.8"/>
+    <text x="85" y="234" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+          font-weight="700" fill="#ffffff">Remediation Tips</text>
+    <text x="48" y="262" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      Actionable fix recommendations for
+    </text>
+    <text x="48" y="277" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      every violation detected. Step-by-step
+    </text>
+    <text x="48" y="292" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      guidance to achieve full compliance
+    </text>
+  </g>
+
+  <!-- Feature 5: Multi-Format Export -->
+  <g filter="url(#cardShadow)">
+    <rect x="285" y="195" width="230" height="115" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="285" y="195" width="230" height="3" rx="2" fill="#58a6ff"/>
+    <!-- Icon: file export -->
+    <rect x="303" y="222" width="22" height="28" rx="3" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
+    <path d="M310 235 L318 235 M310 241 L315 241" stroke="#58a6ff" stroke-width="1" opacity="0.5"/>
+    <text x="338" y="234" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+          font-weight="700" fill="#ffffff">Multi-Format Export</text>
+    <text x="303" y="262" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      Export compliance reports as JSON,
+    </text>
+    <text x="303" y="277" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      Markdown, or CSV for integration
+    </text>
+    <text x="303" y="292" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      with existing audit workflows
+    </text>
+  </g>
+
+  <!-- Feature 6: 100% Private -->
+  <g filter="url(#cardShadow)">
+    <rect x="540" y="195" width="230" height="115" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="540" y="195" width="230" height="3" rx="2" fill="#e63946"/>
+    <!-- Icon: lock -->
+    <rect x="558" y="230" width="22" height="18" rx="3" fill="none" stroke="#e63946" stroke-width="2" opacity="0.8"/>
+    <path d="M562 230 L562 224 C562 218 574 218 574 224 L574 230" fill="none" stroke="#e63946"
+          stroke-width="2" opacity="0.8"/>
+    <circle cx="569" cy="239" r="2" fill="#e63946" opacity="0.8"/>
+    <text x="590" y="234" font-family="'Segoe UI', Arial, sans-serif" font-size="13"
+          font-weight="700" fill="#ffffff">100% Private</text>
+    <text x="558" y="262" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      All processing runs locally through
+    </text>
+    <text x="558" y="277" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      Ollama. Policy documents and data
+    </text>
+    <text x="558" y="292" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      never leave your machine
+    </text>
+  </g>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="347" width="800" height="3" fill="url(#accentGrad)"/>
+</svg>

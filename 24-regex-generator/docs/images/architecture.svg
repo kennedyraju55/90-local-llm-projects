@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#ff6b35"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+  <text x="400" y="35" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">Architecture Overview</text>
+  
+  <!-- Generate Flow -->
+  <text x="60" y="65" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#ff6b35">Generate Mode</text>
+  <rect x="30" y="75" width="140" height="50" rx="8" fill="#1a1e2e" stroke="#ff6b35" stroke-width="1.5"/>
+  <text x="100" y="97" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ff6b35" text-anchor="middle">📝 NL Description</text>
+  <text x="100" y="113" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">"match email addresses"</text>
+
+  <line x1="170" y1="100" x2="210" y2="100" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <rect x="215" y="75" width="120" height="50" rx="8" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="275" y="97" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Prompt Builder</text>
+  <text x="275" y="113" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Flavor context</text>
+
+  <line x1="335" y1="100" x2="375" y2="100" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <rect x="380" y="75" width="150" height="50" rx="8" fill="#1a1e2e" stroke="#ff6b35" stroke-width="2"/>
+  <text x="455" y="97" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#ff6b35" text-anchor="middle">🤖 Ollama LLM</text>
+  <text x="455" y="113" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Pattern generation</text>
+
+  <line x1="530" y1="100" x2="570" y2="100" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <rect x="575" y="75" width="120" height="50" rx="8" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="635" y="97" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Pattern Extractor</text>
+  <text x="635" y="113" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Parse regex output</text>
+
+  <line x1="635" y1="125" x2="635" y2="155" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <rect x="575" y="160" width="120" height="50" rx="8" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="635" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Test Runner</text>
+  <text x="635" y="198" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Validate patterns</text>
+
+  <!-- Explain Flow -->
+  <text x="60" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#ff6b35">Explain Mode</text>
+  <rect x="30" y="195" width="140" height="50" rx="8" fill="#1a1e2e" stroke="#ff6b35" stroke-width="1.5"/>
+  <text x="100" y="217" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ff6b35" text-anchor="middle">🔤 Regex Pattern</text>
+  <text x="100" y="233" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">^[a-z]+@[a-z]+$</text>
+
+  <line x1="170" y1="220" x2="375" y2="220" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <rect x="380" y="195" width="150" height="50" rx="8" fill="#1a1e2e" stroke="#ff6b35" stroke-width="2"/>
+  <text x="455" y="217" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#ff6b35" text-anchor="middle">🤖 Ollama LLM</text>
+  <text x="455" y="233" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Explanation engine</text>
+
+  <!-- Library Flow -->
+  <text x="60" y="290" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#ff6b35">Library Mode</text>
+  <rect x="30" y="300" width="140" height="50" rx="8" fill="#1a1e2e" stroke="#ff6b35" stroke-width="1.5"/>
+  <text x="100" y="322" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ff6b35" text-anchor="middle">📚 Pattern Library</text>
+  <text x="100" y="338" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Built-in patterns</text>
+
+  <line x1="170" y1="325" x2="210" y2="325" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <rect x="215" y="300" width="120" height="50" rx="8" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="275" y="322" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Pattern Lookup</text>
+  <text x="275" y="338" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">email, url, ip, etc.</text>
+
+  <!-- Output -->
+  <rect x="580" y="280" width="170" height="60" rx="10" fill="#1a1e2e" stroke="#ff6b35" stroke-width="1.5"/>
+  <text x="665" y="305" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#ff6b35" text-anchor="middle">📊 Rich Output</text>
+  <text x="665" y="325" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Pattern + explanation + tests</text>
+
+  <line x1="530" y1="220" x2="580" y2="300" stroke="#ff6b35" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="635" y1="210" x2="665" y2="280" stroke="#ff6b35" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="335" y1="325" x2="580" y2="315" stroke="#ff6b35" stroke-width="1" marker-end="url(#arrowhead)"/>
+
+  <rect x="30" y="360" width="740" height="30" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
+  <text x="400" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">🔒 100% Local • Multi-Flavor Support (Python, JS, PCRE, Ruby, Go, Java) • Built-in Pattern Library</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4361ee"/>
+      <stop offset="100%" style="stop-color:#3a0ca3"/>
+    </linearGradient>
+    <filter id="glow">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#4361ee" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold">FEATURE OVERVIEW</text>
+
+  <!-- Row 1 -->
+  <!-- Feature 1: Balanced Pro/Con Arguments -->
+  <rect x="25" y="50" width="240" height="120" rx="10" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="145" y="78" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="24">⚖️</text>
+  <text x="145" y="100" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Balanced Pro/Con</text>
+  <text x="145" y="118" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Arguments</text>
+  <text x="145" y="140" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Equal-weight arguments for</text>
+  <text x="145" y="155" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">both sides of every motion</text>
+
+  <!-- Feature 2: Counterargument & Rebuttal Pairs -->
+  <rect x="280" y="50" width="240" height="120" rx="10" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="400" y="78" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="24">⚔️</text>
+  <text x="400" y="100" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Counterargument</text>
+  <text x="400" y="118" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">&amp; Rebuttal Pairs</text>
+  <text x="400" y="140" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Structured argument → counter</text>
+  <text x="400" y="155" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">→ rebuttal debate chains</text>
+
+  <!-- Feature 3: Weighted Judging Criteria -->
+  <rect x="535" y="50" width="240" height="120" rx="10" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="655" y="78" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="24">🏆</text>
+  <text x="655" y="100" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Weighted Judging</text>
+  <text x="655" y="118" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Criteria</text>
+  <text x="655" y="140" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Customizable scoring rubrics</text>
+  <text x="655" y="155" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">with percentage-based weights</text>
+
+  <!-- Row 2 -->
+  <!-- Feature 4: Moderator Guide Generation -->
+  <rect x="25" y="185" width="240" height="120" rx="10" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="145" y="213" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="24">📋</text>
+  <text x="145" y="235" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Moderator Guide</text>
+  <text x="145" y="253" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Generation</text>
+  <text x="145" y="275" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Opening statements, timing,</text>
+  <text x="145" y="290" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">key questions &amp; closing</text>
+
+  <!-- Feature 5: Evidence Strength Ratings -->
+  <rect x="280" y="185" width="240" height="120" rx="10" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="400" y="213" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="24">📊</text>
+  <text x="400" y="235" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Evidence Strength</text>
+  <text x="400" y="253" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Ratings</text>
+  <text x="400" y="275" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Automatic weak / moderate /</text>
+  <text x="400" y="290" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">strong classification</text>
+
+  <!-- Feature 6: 3 Complexity Levels -->
+  <rect x="535" y="185" width="240" height="120" rx="10" fill="#1e1e38" stroke="#4361ee" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="655" y="213" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="24">🎯</text>
+  <text x="655" y="235" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">3 Complexity</text>
+  <text x="655" y="253" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Levels</text>
+  <text x="655" y="275" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Basic, Intermediate &amp;</text>
+  <text x="655" y="290" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Advanced topic generation</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="340" width="800" height="10" fill="url(#accent)"/>
+</svg>

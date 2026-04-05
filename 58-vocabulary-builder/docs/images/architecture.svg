@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946"/>
+      <stop offset="100%" style="stop-color:#a8201a"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+  <rect x="0" y="390" width="800" height="10" fill="url(#accent)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#e63946" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">SYSTEM ARCHITECTURE</text>
+
+  <!-- User Box -->
+  <rect x="30" y="160" width="100" height="50" rx="8" fill="#2a2a4a" stroke="#e63946" stroke-width="2" filter="url(#shadow)"/>
+  <text x="80" y="182" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">👤 User</text>
+  <text x="80" y="198" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Learner</text>
+
+  <!-- CLI Box -->
+  <rect x="190" y="120" width="120" height="45" rx="8" fill="#2a2a4a" stroke="#457b9d" stroke-width="2" filter="url(#shadow)"/>
+  <text x="250" y="140" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">💻 CLI</text>
+  <text x="250" y="155" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Click + Rich</text>
+
+  <!-- Streamlit Box -->
+  <rect x="190" y="200" width="120" height="45" rx="8" fill="#2a2a4a" stroke="#457b9d" stroke-width="2" filter="url(#shadow)"/>
+  <text x="250" y="220" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🌐 Streamlit</text>
+  <text x="250" y="235" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Web UI</text>
+
+  <!-- Core Box -->
+  <rect x="370" y="140" width="140" height="90" rx="10" fill="#2a2a4a" stroke="#e63946" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="440" y="168" text-anchor="middle" fill="#e63946" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">⚙️ Core Engine</text>
+  <text x="440" y="188" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">VocabBuilder</text>
+  <text x="440" y="202" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Business Logic</text>
+  <text x="440" y="216" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">core.py</text>
+
+  <!-- Ollama Box -->
+  <rect x="370" y="275" width="140" height="50" rx="8" fill="#2a2a4a" stroke="#f4a261" stroke-width="2" filter="url(#shadow)"/>
+  <text x="440" y="297" text-anchor="middle" fill="#f4a261" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🦙 Ollama</text>
+  <text x="440" y="314" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Gemma 3 LLM</text>
+
+  <!-- Word Generator -->
+  <rect x="580" y="60" width="180" height="55" rx="8" fill="#2a2a4a" stroke="#2a9d8f" stroke-width="2" filter="url(#shadow)"/>
+  <text x="670" y="82" text-anchor="middle" fill="#2a9d8f" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📝 Word Generator</text>
+  <text x="670" y="100" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Etymology • Mnemonics • Families</text>
+
+  <!-- Spaced Repetition -->
+  <rect x="580" y="135" width="180" height="55" rx="8" fill="#2a2a4a" stroke="#e9c46a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="670" y="157" text-anchor="middle" fill="#e9c46a" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🧠 Spaced Repetition</text>
+  <text x="670" y="175" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">SM-2 Algorithm</text>
+
+  <!-- Quiz Engine -->
+  <rect x="580" y="210" width="180" height="55" rx="8" fill="#2a2a4a" stroke="#e76f51" stroke-width="2" filter="url(#shadow)"/>
+  <text x="670" y="232" text-anchor="middle" fill="#e76f51" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🎯 Quiz Engine</text>
+  <text x="670" y="250" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Interactive Testing</text>
+
+  <!-- Progress Tracker -->
+  <rect x="580" y="285" width="180" height="55" rx="8" fill="#2a2a4a" stroke="#264653" stroke-width="2" filter="url(#shadow)"/>
+  <text x="670" y="307" text-anchor="middle" fill="#83c5be" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📊 Progress Tracker</text>
+  <text x="670" y="325" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Stats • Streaks • Mastery</text>
+
+  <!-- Arrows: User → CLI / Streamlit -->
+  <line x1="130" y1="175" x2="188" y2="145" stroke="#a0a0b0" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="130" y1="195" x2="188" y2="218" stroke="#a0a0b0" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrows: CLI/Streamlit → Core -->
+  <line x1="310" y1="142" x2="368" y2="170" stroke="#a0a0b0" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="310" y1="222" x2="368" y2="200" stroke="#a0a0b0" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow: Core → Ollama -->
+  <line x1="440" y1="230" x2="440" y2="273" stroke="#f4a261" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrows: Core → Modules -->
+  <line x1="510" y1="160" x2="578" y2="88" stroke="#a0a0b0" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="510" y1="175" x2="578" y2="162" stroke="#a0a0b0" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="510" y1="195" x2="578" y2="235" stroke="#a0a0b0" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="510" y1="210" x2="578" y2="310" stroke="#a0a0b0" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#a0a0b0"/>
+    </marker>
+  </defs>
+</svg>

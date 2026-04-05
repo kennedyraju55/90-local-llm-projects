@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350">
+  <defs>
+    <linearGradient id="featBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c2333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#141b27;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#featBg)" rx="12" />
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" letter-spacing="1">Features</text>
+  <rect x="350" y="39" width="100" height="2" rx="1" fill="#00b4d8" opacity="0.5" />
+
+  <!-- Row 1 -->
+
+  <!-- Card 1: Sentiment Classification -->
+  <rect x="25" y="58" width="240" height="120" rx="10" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1" filter="url(#cardShadow)" />
+  <rect x="25" y="58" width="240" height="4" rx="2" fill="#00b4d8" opacity="0.7" />
+  <text x="145" y="88" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#00b4d8">🎯</text>
+  <text x="145" y="112" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">Sentiment Classification</text>
+  <text x="145" y="132" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Positive, negative, neutral</text>
+  <text x="145" y="148" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">with confidence scores (0-1)</text>
+
+  <!-- Card 2: Trend Analysis -->
+  <rect x="280" y="58" width="240" height="120" rx="10" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1" filter="url(#cardShadow)" />
+  <rect x="280" y="58" width="240" height="4" rx="2" fill="#00b4d8" opacity="0.7" />
+  <text x="400" y="88" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#00b4d8">📈</text>
+  <text x="400" y="112" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">Trend Analysis</text>
+  <text x="400" y="132" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Sliding window sentiment</text>
+  <text x="400" y="148" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">tracking over time</text>
+
+  <!-- Card 3: Word Cloud Data -->
+  <rect x="535" y="58" width="240" height="120" rx="10" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1" filter="url(#cardShadow)" />
+  <rect x="535" y="58" width="240" height="4" rx="2" fill="#00b4d8" opacity="0.7" />
+  <text x="655" y="88" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#00b4d8">☁️</text>
+  <text x="655" y="112" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">Word Cloud Data</text>
+  <text x="655" y="132" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Top 50 key phrases with</text>
+  <text x="655" y="148" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">frequency counts</text>
+
+  <!-- Row 2 -->
+
+  <!-- Card 4: Multi-Source Compare -->
+  <rect x="25" y="198" width="240" height="120" rx="10" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1" filter="url(#cardShadow)" />
+  <rect x="25" y="198" width="240" height="4" rx="2" fill="#00b4d8" opacity="0.7" />
+  <text x="145" y="228" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#00b4d8">🔄</text>
+  <text x="145" y="252" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">Multi-Source Compare</text>
+  <text x="145" y="272" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Compare sentiment across</text>
+  <text x="145" y="288" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">different files</text>
+
+  <!-- Card 5: Batch Processing -->
+  <rect x="280" y="198" width="240" height="120" rx="10" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1" filter="url(#cardShadow)" />
+  <rect x="280" y="198" width="240" height="4" rx="2" fill="#00b4d8" opacity="0.7" />
+  <text x="400" y="228" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#00b4d8">⚡</text>
+  <text x="400" y="252" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">Batch Processing</text>
+  <text x="400" y="272" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Process multiple files with</text>
+  <text x="400" y="288" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">progress tracking</text>
+
+  <!-- Card 6: Export Reports -->
+  <rect x="535" y="198" width="240" height="120" rx="10" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1" filter="url(#cardShadow)" />
+  <rect x="535" y="198" width="240" height="4" rx="2" fill="#00b4d8" opacity="0.7" />
+  <text x="655" y="228" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#00b4d8">📥</text>
+  <text x="655" y="252" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#e6edf3">Export Reports</text>
+  <text x="655" y="272" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Full JSON reports with</text>
+  <text x="655" y="288" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">all analysis data</text>
+</svg>

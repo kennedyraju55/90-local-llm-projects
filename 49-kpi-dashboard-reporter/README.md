@@ -1,163 +1,151 @@
-# 📊 KPI Dashboard Reporter
+<div align="center">
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](#testing)
-[![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)](#testing)
+<img src="docs/images/banner.svg" alt="KPI Dashboard Reporter Banner" width="800"/>
 
-> **Production-grade KPI reporting system** with trend analysis, goal tracking, anomaly detection, and LLM-powered narrative insights — powered by a local Ollama LLM.
+<br/>
+
+<!-- ═══════════════════════ BADGES ═══════════════════════ -->
+
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10+-3776ab?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![Ollama](https://img.shields.io/badge/Ollama-Gemma_3-ff6f00?style=for-the-badge&logo=google&logoColor=white)](https://ollama.ai/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Web_UI-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Click CLI](https://img.shields.io/badge/Click-CLI-06d6a0?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://click.palletsprojects.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-f8961e?style=for-the-badge)](LICENSE)
+
+<br/>
+
+[![Tests](https://img.shields.io/github/actions/workflow/status/kennedyraju55/kpi-dashboard-reporter/tests.yml?label=tests&style=flat-square&logo=githubactions&logoColor=white)](https://github.com/kennedyraju55/kpi-dashboard-reporter/actions)
+[![Coverage](https://img.shields.io/badge/coverage-95%25-06d6a0?style=flat-square)](https://github.com/kennedyraju55/kpi-dashboard-reporter)
+[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000?style=flat-square)](https://github.com/psf/black)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-4361ee?style=flat-square)](https://github.com/kennedyraju55/kpi-dashboard-reporter/pulls)
+
+<br/>
+
+**Production-grade KPI reporting system** with trend analysis, goal tracking,<br/>
+anomaly detection, and LLM-powered narrative insights — powered by a local Ollama LLM.
+
+<br/>
+
+<strong>Part of the <a href="https://github.com/kennedyraju55/90-local-llm-projects">90 Local LLM Projects</a> collection • Project #49</strong>
+
+<br/>
+
+[Quick Start](#-quick-start) •
+[CLI Commands](#-cli-reference) •
+[Web UI](#-web-ui-streamlit) •
+[Architecture](#-architecture) •
+[API Reference](#-api-reference) •
+[Config](#%EF%B8%8F-configuration-reference) •
+[FAQ](#-frequently-asked-questions)
+
+</div>
+
+<br/>
 
 ---
 
-## 🏗️ Architecture
+<br/>
 
-```
-49-kpi-dashboard-reporter/
-├── src/kpi_reporter/
-│   ├── __init__.py          # Package metadata & version
-│   ├── core.py              # Business logic (trends, goals, anomalies, reports)
-│   ├── cli.py               # Click CLI with report/dashboard/goals/anomalies commands
-│   └── web_ui.py            # Streamlit web dashboard
-├── tests/
-│   ├── test_core.py         # Core logic unit tests
-│   └── test_cli.py          # CLI integration tests
-├── config.yaml              # Configuration (targets, thresholds, model settings)
-├── setup.py                 # Package installer
-├── requirements.txt         # Python dependencies
-├── Makefile                 # Build/test/run shortcuts
-├── .env.example             # Environment variable template
-└── README.md                # This file
-```
+## 🤔 Why KPI Dashboard Reporter?
+
+<table>
+<tr>
+<td width="50%">
+
+### ❌ Without This Tool
+- Manual spreadsheet analysis every period
+- No automated anomaly detection
+- Copy-pasting numbers into reports
+- Inconsistent report formatting
+- Hours spent on executive summaries
+- No alert system for critical changes
+
+</td>
+<td width="50%">
+
+### ✅ With KPI Dashboard Reporter
+- **One command** generates full narrative reports
+- **Automatic anomaly detection** using σ thresholds
+- **LLM-generated insights** with specific numbers
+- **Consistent, professional** Rich-formatted output
+- **3-5 bullet executive summaries** in seconds
+- **Real-time alerts** for significant KPI changes
+
+</td>
+</tr>
+</table>
+
+<br/>
 
 ---
+
+<br/>
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| 📈 **Trend Analysis** | Automatic period-over-period comparison with ↑↓→ indicators |
-| 🎯 **Goal Tracking** | Compare KPI actuals vs configured targets with status labels |
-| 🔍 **Anomaly Detection** | Flag values > N standard deviations from the mean |
-| 📊 **Moving Averages** | Configurable sliding-window smoothing for trend charts |
-| 🔔 **Alert System** | Flags KPIs with changes exceeding configurable thresholds |
-| 📋 **Narrative Reports** | LLM-generated professional insights and recommendations |
-| 🏢 **Executive Summaries** | C-suite–ready bullet-point summaries |
-| 🌐 **Web Dashboard** | Interactive Streamlit UI with metric cards, charts, and progress bars |
-| ⚙️ **Config-Driven** | YAML-based configuration for targets, thresholds, and model settings |
-| 📝 **Structured Logging** | File and console logging with configurable levels |
+<div align="center">
+<img src="docs/images/features.svg" alt="Key Features" width="800"/>
+</div>
+
+<br/>
+
+| Feature | Description | Module |
+|---------|-------------|--------|
+| 📈 **KPI Trend Analysis** | Automatic period-over-period comparison with ↑ ↓ → trend arrows, change amounts, change percentages, averages, min/max values | `core.py` |
+| 🎯 **Goal Tracking** | Compare actual KPI values vs configured targets; status labels: `achieved` · `on_track` · `at_risk` · `behind` with progress bars | `core.py` |
+| ⚡ **Anomaly Detection** | Standard-deviation-based detection — flags any value > Nσ from the mean; configurable threshold (default 2.0σ) | `core.py` |
+| 🔔 **Alert Generation** | Automatic alerts for KPIs with period-over-period changes exceeding a configurable percentage threshold | `core.py` |
+| 📊 **Moving Average** | Sliding-window smoothing for trend visualization; configurable window size; handles edge cases for early periods | `core.py` |
+| 🤖 **LLM Narrative Reports** | Full professional KPI reports generated by a local Ollama model — highlights wins, flags concerns, provides recommendations | `core.py` |
+| 📋 **Executive Summaries** | Concise 3-5 bullet C-suite-ready summaries combining trends, goals, and anomalies | `core.py` |
+| 💻 **Rich CLI** | Beautiful terminal output with formatted tables, color-coded status, progress bars, and markdown panels via Rich | `cli.py` |
+| 🌐 **Streamlit Web UI** | Interactive web dashboard with file upload, metric cards, goal progress bars, trend charts, and anomaly warnings | `web_ui.py` |
+| ⚙️ **YAML Configuration** | Single `config.yaml` for model settings, KPI targets, anomaly thresholds, alert thresholds, and logging | `core.py` |
+| 🔍 **Auto Period Detection** | Automatically detects period/date column from CSV headers — supports `period`, `month`, `date`, `week`, `quarter`, `year` | `core.py` |
+| 📝 **Structured Logging** | Dual-handler logging (file + console) with configurable levels; production-ready log format | `core.py` |
+| 📦 **Installable Package** | Full `setup.py` with `console_scripts` entry point, extras_require for dev dependencies, proper package structure | `setup.py` |
+
+<br/>
 
 ---
 
-## 📋 Prerequisites
+<br/>
 
-- **Python 3.10+**
-- **[Ollama](https://ollama.ai/)** running locally with the `gemma3` model (or configured model)
-- The `common/` shared module (from the parent project)
+## 🚀 Quick Start
 
----
+### Prerequisites
 
-## 🚀 Installation
+| Requirement | Version | Purpose |
+|-------------|---------|---------|
+| **Python** | 3.10+ | Runtime |
+| **Ollama** | Latest | Local LLM inference |
+| **gemma3** | Via Ollama | Default language model |
+| **common/** | From parent repo | Shared LLM client module |
+
+### Installation
 
 ```bash
-# Install dependencies
+# 1. Clone the repository
+git clone https://github.com/kennedyraju55/kpi-dashboard-reporter.git
+cd kpi-dashboard-reporter
+
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# Or install as a package (editable mode)
+# 3. Or install as an editable package (recommended)
 pip install -e ".[dev]"
-```
 
-### Environment Setup
-
-```bash
+# 4. Copy environment template
 cp .env.example .env
-# Edit .env with your settings
+
+# 5. Make sure Ollama is running with the gemma3 model
+ollama serve &
+ollama pull gemma3
 ```
 
----
+### Your First Report
 
-## 💻 CLI Usage
-
-The CLI provides four commands via a Click command group:
-
-### `report` — Full Narrative KPI Report
-
-```bash
-# Monthly report with alerts
-python -m src.kpi_reporter.cli report --file kpis.csv --period monthly
-
-# Quarterly report without alerts
-python -m src.kpi_reporter.cli report -f kpis.csv -p Q1-2024 --no-alerts
-
-# With custom config
-python -m src.kpi_reporter.cli --config custom.yaml report -f kpis.csv
-```
-
-### `dashboard` — KPI Dashboard Table
-
-```bash
-python -m src.kpi_reporter.cli dashboard --file kpis.csv
-```
-
-### `goals` — Goal Tracking Progress
-
-```bash
-python -m src.kpi_reporter.cli goals --file kpis.csv
-```
-
-Shows each KPI's actual vs target with progress bars and status indicators:
-- ✅ **Achieved** (≥100% of target)
-- 📈 **On Track** (≥80%)
-- ⚠️ **At Risk** (≥50%)
-- 🔴 **Behind** (<50%)
-
-### `anomalies` — Anomaly Detection
-
-```bash
-# Default threshold (2.0σ)
-python -m src.kpi_reporter.cli anomalies --file kpis.csv
-
-# Custom threshold
-python -m src.kpi_reporter.cli anomalies -f kpis.csv --threshold 1.5
-```
-
-### Global Options
-
-| Option | Description |
-|--------|-------------|
-| `--config`, `-c` | Path to config YAML (default: `config.yaml`) |
-| `--help` | Show help message |
-
----
-
-## 🌐 Web UI (Streamlit)
-
-Launch the interactive web dashboard:
-
-```bash
-streamlit run src/kpi_reporter/web_ui.py
-```
-
-### Web UI Tabs
-
-| Tab | Description |
-|-----|-------------|
-| 📄 **KPI Upload** | Upload CSV, preview raw data |
-| 📊 **Metric Cards** | `st.metric` cards with delta indicators for each KPI |
-| 🎯 **Goal Progress** | Progress bars showing actual vs target for each KPI |
-| 📈 **Trend Charts** | Line charts with moving averages and anomaly warnings |
-
-### Sidebar Controls
-
-- **File Upload**: Drag-and-drop CSV upload
-- **Period Selection**: Monthly / Quarterly / Yearly
-- **Target Inputs**: Set/override KPI targets dynamically
-- **Anomaly Threshold**: Adjustable σ slider (1.0 – 4.0)
-
----
-
-## 📊 Input Format
-
-CSV with a period column and numeric KPI columns:
+Create a sample CSV file:
 
 ```csv
 month,revenue,customers,churn_rate,nps_score
@@ -167,68 +155,18 @@ Mar,105000,510,5.5,70
 Apr,120000,550,4.2,78
 ```
 
-The period column is auto-detected (looks for `period`, `month`, `date`, `week`, `quarter`, `year` in column names).
-
----
-
-## ⚙️ Configuration
-
-Edit `config.yaml` to customize behavior:
-
-```yaml
-model:
-  name: "gemma3"          # Ollama model name
-  temperature: 0.3        # LLM creativity (0.0-1.0)
-  max_tokens: 3500        # Max response length
-
-targets:                  # KPI target values for goal tracking
-  revenue: 120000
-  customers: 600
-  churn_rate: 3.0
-  nps_score: 80
-
-anomaly_detection:
-  enabled: true           # Enable/disable anomaly detection
-  threshold: 2.0          # Standard deviations for flagging
-
-moving_average:
-  window: 3               # Sliding window size
-
-alert_threshold_pct: 10   # % change threshold for alerts
-
-logging:
-  level: "INFO"           # DEBUG, INFO, WARNING, ERROR
-  file: "kpi_reporter.log"
-```
-
----
-
-## 🧪 Testing
+Run the report command:
 
 ```bash
-# Run all tests
-python -m pytest tests/ -v
-
-# Run with coverage
-python -m pytest tests/ -v --cov=src/kpi_reporter --cov-report=term-missing
-
-# Run specific test class
-python -m pytest tests/test_core.py::TestTrackGoals -v
+python -m src.kpi_reporter.cli report --file kpis.csv --period monthly
 ```
 
-### Test Coverage
-
-| Module | Tests |
-|--------|-------|
-| `core.py` | SafeFloat, LoadKpiData, ComputeKpiTrends, TrackGoals, DetectAnomalies, ComputeMovingAverage, GenerateAlertSummary, GenerateExecutiveSummary, GenerateKpiReport, ComputeAnalytics, LoadConfig |
-| `cli.py` | Report, Dashboard, Goals, Anomalies, MainGroup |
-
----
-
-## 📋 Example Output
+**Expected output:**
 
 ```
-📊 KPI Dashboard Reporter - monthly
+╭──────────────────────────────────────────────────╮
+│ 📊 KPI Dashboard Reporter - monthly             │
+╰──────────────────────────────────────────────────╯
 ✓ Loaded 4 periods from kpis.csv
 
 ┌──────────────┬──────────┬──────────┬──────────┬─────────┬───────┬──────────┐
@@ -240,20 +178,906 @@ python -m pytest tests/test_core.py::TestTrackGoals -v
 │ nps_score    │   78.00  │   70.00  │   +8.00  │ +11.4%  │  ↑    │   73.75  │
 └──────────────┴──────────┴──────────┴──────────┴─────────┴───────┴──────────┘
 
-🔔 Alerts
-  ⚠️ revenue increased by 14.3%
-  ⚠️ churn_rate decreased by 23.6%
-  ⚠️ nps_score increased by 11.4%
+╭─────────────────── 🔔 Alerts ───────────────────╮
+│ ## 🔔 Alerts                                     │
+│                                                   │
+│ ⚠️ revenue increased by 14.3%                    │
+│ ⚠️ churn_rate decreased by 23.6%                 │
+│ ⚠️ nps_score increased by 11.4%                  │
+╰───────────────────────────────────────────────────╯
 
-🎯 Goal Tracking
-  revenue:    ✅ Achieved (100.0%)
-  customers:  📈 On Track (91.7%)
-  churn_rate:  🔴 Behind (140.0% — lower is better)
-  nps_score:  📈 On Track (97.5%)
+╭────────── 📋 KPI Report - monthly ──────────────╮
+│  ## Performance Highlights                        │
+│  - Revenue reached $120,000 (+14.3%), exceeding   │
+│    the quarterly target by $0.                    │
+│  - Customer base grew to 550 (+7.8%).             │
+│  - Churn rate improved to 4.2% (-23.6%).          │
+│                                                   │
+│  ## Key Takeaways & Recommendations               │
+│  - Continue customer acquisition momentum.        │
+│  - Monitor churn rate for sustained improvement.  │
+│  - NPS trending toward target at 78 (+11.4%).     │
+╰───────────────────────────────────────────────────╯
+```
+
+<br/>
+
+---
+
+<br/>
+
+## 💻 CLI Reference
+
+The CLI is built with [Click](https://click.palletsprojects.com/) and uses [Rich](https://rich.readthedocs.io/) for formatted terminal output.
+
+### Command Group
+
+```bash
+python -m src.kpi_reporter.cli [GLOBAL OPTIONS] COMMAND [COMMAND OPTIONS]
+```
+
+### Global Options
+
+| Option | Short | Default | Description |
+|--------|-------|---------|-------------|
+| `--config` | `-c` | `config.yaml` | Path to YAML configuration file |
+| `--help` | | | Show help message and exit |
+
+<br/>
+
+### `report` — Full Narrative KPI Report
+
+Generates a complete KPI analysis with trend table, alerts, and LLM-powered narrative report.
+
+```bash
+python -m src.kpi_reporter.cli report --file kpis.csv --period monthly
+```
+
+| Option | Short | Default | Description |
+|--------|-------|---------|-------------|
+| `--file` | `-f` | *required* | Path to KPI data CSV file |
+| `--period` | `-p` | `monthly` | Reporting period label (e.g., `monthly`, `Q1-2024`, `yearly`) |
+| `--alerts / --no-alerts` | | `--alerts` | Enable or disable the alert summary section |
+
+**What it does:**
+1. Loads CSV data and auto-detects period column
+2. Computes trends (latest, previous, change, change_pct, avg, min, max, trend arrow)
+3. Displays formatted dashboard table
+4. Generates alert summary for changes exceeding threshold
+5. Calls LLM to generate a professional narrative report
+
+```bash
+# Examples
+python -m src.kpi_reporter.cli report -f data.csv -p "Q1 2024"
+python -m src.kpi_reporter.cli report -f data.csv -p monthly --no-alerts
+python -m src.kpi_reporter.cli --config prod.yaml report -f data.csv
+```
+
+<br/>
+
+### `dashboard` — KPI Dashboard Table
+
+Displays a formatted Rich table with all KPI trends at a glance.
+
+```bash
+python -m src.kpi_reporter.cli dashboard --file kpis.csv
+```
+
+| Option | Short | Default | Description |
+|--------|-------|---------|-------------|
+| `--file` | `-f` | *required* | Path to KPI data CSV file |
+
+**Output includes:** KPI name, latest value, previous value, change (color-coded green/red), change percentage, trend arrow (↑↓→), and period average.
+
+<br/>
+
+### `goals` — Goal Tracking Progress
+
+Compares actual KPI values against targets defined in `config.yaml` and shows progress bars.
+
+```bash
+python -m src.kpi_reporter.cli goals --file kpis.csv
+```
+
+| Option | Short | Default | Description |
+|--------|-------|---------|-------------|
+| `--file` | `-f` | *required* | Path to KPI data CSV file |
+
+**Status indicators:**
+
+| Status | Icon | Threshold |
+|--------|------|-----------|
+| Achieved | ✅ | ≥ 100% of target |
+| On Track | 📈 | ≥ 80% of target |
+| At Risk | ⚠️ | ≥ 50% of target |
+| Behind | 🔴 | < 50% of target |
+
+**Sample output:**
+
+```
+┌──────────────┬──────────┬──────────┬──────────┬──────────────────┐
+│ KPI          │   Actual │   Target │ % of Goal│ Status           │
+├──────────────┼──────────┼──────────┼──────────┼──────────────────┤
+│ revenue      │ 120,000  │ 120,000  │  100.0%  │ ✅ Achieved      │
+│ customers    │     550  │     600  │   91.7%  │ 📈 On Track      │
+│ churn_rate   │    4.20  │    3.00  │  140.0%  │ ✅ Achieved      │
+│ nps_score    │   78.00  │   80.00  │   97.5%  │ 📈 On Track      │
+└──────────────┴──────────┴──────────┴──────────┴──────────────────┘
+
+revenue      ████████████████████████████████████████ 100%
+customers    ████████████████████████████████████░░░░  92%
+churn_rate   ████████████████████████████████████████ 100%
+nps_score    ███████████████████████████████████████░  98%
+```
+
+<br/>
+
+### `anomalies` — Anomaly Detection
+
+Scans KPI data for statistically anomalous values using standard deviation analysis.
+
+```bash
+python -m src.kpi_reporter.cli anomalies --file kpis.csv --threshold 1.5
+```
+
+| Option | Short | Default | Description |
+|--------|-------|---------|-------------|
+| `--file` | `-f` | *required* | Path to KPI data CSV file |
+| `--threshold` | `-t` | From config (2.0) | Standard deviation threshold for flagging anomalies |
+
+**How anomaly detection works:**
+1. For each KPI, compute the mean and standard deviation across all periods
+2. For each value, compute the σ deviation: `|value - mean| / std_dev`
+3. If deviation exceeds the threshold, flag as anomalous
+4. Display results in a formatted table with KPI, period, value, mean, std_dev, and σ deviation
+
+```bash
+# Use default threshold from config.yaml (2.0σ)
+python -m src.kpi_reporter.cli anomalies -f data.csv
+
+# Use a more sensitive threshold
+python -m src.kpi_reporter.cli anomalies -f data.csv -t 1.5
+
+# Use a less sensitive threshold
+python -m src.kpi_reporter.cli anomalies -f data.csv --threshold 3.0
+```
+
+<br/>
+
+### Makefile Shortcuts
+
+| Command | Description |
+|---------|-------------|
+| `make install` | Install production dependencies |
+| `make dev` | Install dev dependencies + editable package |
+| `make test` | Run all tests with verbose output |
+| `make test-cov` | Run tests with coverage report (terminal + HTML) |
+| `make lint` | Run syntax checks on all source files |
+| `make format` | Format code with Black |
+| `make run FILE=data.csv PERIOD=monthly` | Run KPI report |
+| `make dashboard FILE=data.csv` | Show dashboard table |
+| `make goals FILE=data.csv` | Show goal tracking |
+| `make anomalies FILE=data.csv` | Run anomaly detection |
+| `make web` | Launch Streamlit web UI |
+| `make clean` | Remove generated/cache files |
+
+<br/>
+
+---
+
+<br/>
+
+## 🌐 Web UI (Streamlit)
+
+Launch the interactive web dashboard:
+
+```bash
+streamlit run src/kpi_reporter/web_ui.py
+
+# Or use the Makefile shortcut
+make web
+```
+
+### Web UI Tabs
+
+| Tab | Description |
+|-----|-------------|
+| 📄 **KPI Upload** | Drag-and-drop CSV upload with raw data preview |
+| 📊 **Metric Cards** | `st.metric` cards with delta indicators for each KPI — green for improvements, red for declines |
+| 🎯 **Goal Progress** | Visual progress bars showing actual vs target for each configured KPI |
+| 📈 **Trend Charts** | Interactive line charts with moving average overlay and anomaly warning markers |
+
+### Sidebar Controls
+
+| Control | Description |
+|---------|-------------|
+| **File Upload** | Drag-and-drop CSV file upload widget |
+| **Period Selection** | Dropdown for monthly / quarterly / yearly periods |
+| **Target Inputs** | Dynamic number inputs to set or override KPI targets |
+| **Anomaly Threshold** | Slider to adjust σ threshold (range: 1.0 – 4.0) |
+
+<br/>
+
+---
+
+<br/>
+
+## 🏗️ Architecture
+
+<div align="center">
+<img src="docs/images/architecture.svg" alt="System Architecture" width="800"/>
+</div>
+
+<br/>
+
+### Data Flow
+
+```
+┌─────────┐     ┌──────────────────┐     ┌──────────────┐
+│ KPI CSV │────▶│ Period Detection  │────▶│ Trend Engine │
+└─────────┘     └──────────────────┘     └──────┬───────┘
+                                                │
+                    ┌───────────────────────────────────────────────┐
+                    │                       │                       │
+              ┌─────▼──────┐    ┌──────────▼────────┐   ┌────────▼────────┐
+              │Goal Tracker │    │ Anomaly Detector  │   │ Alert Generator │
+              └─────┬──────┘    └──────────┬────────┘   └────────┬────────┘
+                    │                       │                       │
+                    └───────────────────────┼───────────────────────┘
+                                            │
+                                   ┌────────▼────────┐
+                                   │  LLM Report     │
+                                   │  Engine (Ollama) │
+                                   └────────┬────────┘
+                                            │
+                              ┌─────────────┼─────────────┐
+                              │                           │
+                    ┌─────────▼─────────┐    ┌───────────▼──────────┐
+                    │Executive Summary  │    │ CLI + Web Dashboard  │
+                    └───────────────────┘    └──────────────────────┘
+```
+
+### Project Structure
+
+```
+49-kpi-dashboard-reporter/
+├── src/
+│   └── kpi_reporter/
+│       ├── __init__.py            # Package metadata (__version__ = "1.0.0")
+│       ├── core.py                # Business logic (780+ lines)
+│       │   ├── load_config()      # YAML config with deep merge + defaults
+│       │   ├── load_kpi_data()    # CSV → list[dict] with validation
+│       │   ├── safe_float()       # Robust numeric conversion ($, %, commas)
+│       │   ├── _detect_period_column()  # Auto-detect period/date column
+│       │   ├── compute_kpi_trends()     # Full trend computation engine
+│       │   ├── track_goals()      # Actual vs target comparison
+│       │   ├── detect_anomalies() # Standard deviation anomaly detection
+│       │   ├── compute_moving_average() # Sliding window smoothing
+│       │   ├── generate_kpi_report()    # LLM narrative report
+│       │   ├── generate_executive_summary()  # C-suite bullet summary
+│       │   ├── generate_alert_summary()      # Threshold-based alerts
+│       │   ├── compute_analytics()      # Aggregate KPI analytics
+│       │   └── setup_logging()    # Dual-handler logging configuration
+│       ├── cli.py                 # Click CLI (250+ lines)
+│       │   ├── main()             # Click group with --config option
+│       │   ├── report()           # Full narrative report command
+│       │   ├── dashboard()        # Dashboard table command
+│       │   ├── goals()            # Goal tracking command
+│       │   └── anomalies()        # Anomaly detection command
+│       └── web_ui.py              # Streamlit web dashboard
+│           ├── File upload widget
+│           ├── Metric cards with deltas
+│           ├── Goal progress bars
+│           └── Trend charts with moving averages
+├── tests/
+│   ├── __init__.py
+│   ├── test_core.py               # Comprehensive core logic tests
+│   └── test_cli.py                # CLI integration tests
+├── common/                        # Shared LLM client (parent project)
+│   └── llm_client.py              # chat(), check_ollama_running()
+├── docs/
+│   └── images/
+│       ├── banner.svg             # Project banner
+│       ├── architecture.svg       # System architecture diagram
+│       └── features.svg           # Feature overview grid
+├── config.yaml                    # Default configuration
+├── setup.py                       # Package configuration
+├── requirements.txt               # Python dependencies
+├── Makefile                       # Build/test/run shortcuts
+├── conftest.py                    # Pytest configuration
+├── .env.example                   # Environment template
+└── README.md                      # This file
+```
+
+### Module Dependency Graph
+
+```
+cli.py ──────────▶ core.py ──────────▶ common/llm_client.py
+  │                   │                        │
+  │ (Click, Rich)     │ (csv, yaml, math)      │ (requests)
+  │                   │                        │
+  ▼                   ▼                        ▼
+Terminal Output    Business Logic          Ollama API
+                                          (localhost:11434)
+
+web_ui.py ───────▶ core.py
+  │
+  │ (Streamlit, Pandas)
+  │
+  ▼
+Web Browser
+```
+
+<br/>
+
+---
+
+<br/>
+
+## 📚 API Reference
+
+### `load_kpi_data(file_path: str) → list[dict]`
+
+Load KPI data from a CSV file into a list of row dictionaries.
+
+```python
+from src.kpi_reporter.core import load_kpi_data
+
+data = load_kpi_data("kpis.csv")
+# [{"month": "Jan", "revenue": "100000", "customers": "500", ...}, ...]
+```
+
+**Raises:**
+- `FileNotFoundError` — if the file does not exist
+- `ValueError` — if the file is empty or unreadable
+
+---
+
+### `safe_float(val: Any) → float`
+
+Safely convert a value to float, stripping `$`, `%`, and commas. Returns `0.0` on failure.
+
+```python
+from src.kpi_reporter.core import safe_float
+
+safe_float("$120,000")   # → 120000.0
+safe_float("95.5%")      # → 95.5
+safe_float("N/A")        # → 0.0
 ```
 
 ---
 
+### `compute_kpi_trends(data: list[dict]) → dict`
+
+Compute trends for each numeric KPI column. Requires ≥ 2 rows of data.
+
+```python
+from src.kpi_reporter.core import load_kpi_data, compute_kpi_trends
+
+data = load_kpi_data("kpis.csv")
+trends = compute_kpi_trends(data)
+
+# trends["revenue"] = {
+#     "latest": 120000.0,
+#     "previous": 105000.0,
+#     "change": 15000.0,
+#     "change_pct": 14.285...,
+#     "average": 108750.0,
+#     "min": 100000.0,
+#     "max": 120000.0,
+#     "trend": "↑",
+#     "periods": ["Jan", "Feb", "Mar", "Apr"],
+#     "values": [100000.0, 110000.0, 105000.0, 120000.0]
+# }
+```
+
+---
+
+### `track_goals(trends: dict, targets: dict) → dict`
+
+Compare actual KPI values against target values.
+
+```python
+from src.kpi_reporter.core import track_goals
+
+targets = {"revenue": 120000, "customers": 600}
+goals = track_goals(trends, targets)
+
+# goals["revenue"] = {
+#     "actual": 120000.0,
+#     "target": 120000.0,
+#     "pct_of_goal": 100.0,
+#     "status": "achieved"
+# }
+```
+
+**Status thresholds:** `achieved` (≥100%) · `on_track` (≥80%) · `at_risk` (≥50%) · `behind` (<50%)
+
+---
+
+### `detect_anomalies(trends: dict, threshold: float = 2.0) → list[dict]`
+
+Detect statistically anomalous KPI values using standard deviation. Requires ≥ 3 data points per KPI.
+
+```python
+from src.kpi_reporter.core import detect_anomalies
+
+anomalies = detect_anomalies(trends, threshold=1.5)
+
+# [{"kpi": "churn_rate", "period": "Mar", "value": 5.5,
+#   "mean": 4.925, "std_dev": 0.478, "deviation": 1.2}, ...]
+```
+
+---
+
+### `compute_moving_average(values: list[float], window: int = 3) → list[float]`
+
+Compute a simple moving average. Early values use available data (partial windows).
+
+```python
+from src.kpi_reporter.core import compute_moving_average
+
+values = [100, 110, 105, 120]
+ma = compute_moving_average(values, window=3)
+# [100.0, 105.0, 105.0, 111.67]
+```
+
+---
+
+### `generate_kpi_report(data, trends, period) → str`
+
+Generate a full narrative KPI report using the configured LLM. Returns markdown-formatted text.
+
+```python
+from src.kpi_reporter.core import generate_kpi_report
+
+report = generate_kpi_report(data, trends, "Q1 2024")
+print(report)
+# ## Performance Highlights
+# - Revenue reached $120,000 (+14.3%)...
+```
+
+---
+
+### `generate_executive_summary(trends, goals, anomalies) → str`
+
+Generate a concise 3-5 bullet executive summary via LLM.
+
+```python
+from src.kpi_reporter.core import generate_executive_summary
+
+summary = generate_executive_summary(trends, goals, anomalies)
+```
+
+---
+
+### `generate_alert_summary(trends, threshold_pct=10.0) → str`
+
+Generate markdown alert text for KPIs with significant period-over-period changes.
+
+```python
+from src.kpi_reporter.core import generate_alert_summary
+
+alerts = generate_alert_summary(trends, threshold_pct=10)
+# "## 🔔 Alerts\n\n⚠️ **revenue** increased by 14.3% (105,000.00 → 120,000.00)"
+```
+
+---
+
+### `compute_analytics(trends, goals) → dict`
+
+Compute aggregate analytics across all KPIs.
+
+```python
+from src.kpi_reporter.core import compute_analytics
+
+analytics = compute_analytics(trends, goals)
+# {
+#     "total_kpis": 4,
+#     "improving": 3,
+#     "declining": 1,
+#     "stable": 0,
+#     "avg_change_pct": 2.225,
+#     "goals_summary": {
+#         "total": 4, "achieved": 2, "on_track": 2,
+#         "at_risk": 0, "behind": 0
+#     }
+# }
+```
+
+---
+
+### `load_config(path: str = "config.yaml") → dict`
+
+Load YAML configuration with deep merge over defaults.
+
+```python
+from src.kpi_reporter.core import load_config
+
+config = load_config("custom.yaml")
+# Falls back to DEFAULT_CONFIG for any missing keys
+```
+
+<br/>
+
+---
+
+<br/>
+
+## ⚙️ Configuration Reference
+
+All configuration lives in `config.yaml`. Every key has a sensible default built into the application.
+
+```yaml
+# ═══════════════════════════════════════════════════════
+# KPI Dashboard Reporter — Configuration
+# ═══════════════════════════════════════════════════════
+
+# ── LLM Model Settings ─────────────────────────────────
+model:
+  name: "gemma3"            # Ollama model name (gemma3, llama3, mistral, etc.)
+  temperature: 0.3          # LLM creativity (0.0 = deterministic, 1.0 = creative)
+  max_tokens: 3500          # Maximum response length for generated reports
+
+# ── KPI Target Values ──────────────────────────────────
+# Define target values for goal tracking.
+# Keys must match CSV column names exactly.
+targets:
+  revenue: 120000           # Revenue target ($)
+  customers: 600            # Customer count target
+  churn_rate: 3.0           # Churn rate target (%) — lower is better
+  nps_score: 80             # NPS score target (0-100)
+
+# ── Anomaly Detection ──────────────────────────────────
+anomaly_detection:
+  enabled: true             # Set to false to disable anomaly detection
+  threshold: 2.0            # Standard deviations — values beyond this are flagged
+                            #   1.5 = more sensitive (catches more anomalies)
+                            #   2.0 = balanced (recommended)
+                            #   3.0 = less sensitive (only extreme outliers)
+
+# ── Moving Average ──────────────────────────────────────
+moving_average:
+  window: 3                 # Sliding window size for trend smoothing
+                            # Larger values = smoother trends, more lag
+
+# ── Alert Threshold ─────────────────────────────────────
+alert_threshold_pct: 10     # Percentage change that triggers an alert
+                            # Set to 5 for aggressive alerts, 20 for relaxed
+
+# ── Reporting Periods ───────────────────────────────────
+periods:
+  - monthly                 # Available period options for reports
+  - quarterly
+  - yearly
+
+# ── Logging ─────────────────────────────────────────────
+logging:
+  level: "INFO"             # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "kpi_reporter.log"  # Log file path (set to null to disable file logging)
+```
+
+### Default Configuration
+
+If `config.yaml` is missing or a key is not defined, these defaults are used:
+
+```python
+DEFAULT_CONFIG = {
+    "model": {"name": "gemma3", "temperature": 0.3, "max_tokens": 3500},
+    "targets": {},
+    "anomaly_detection": {"enabled": True, "threshold": 2.0},
+    "moving_average": {"window": 3},
+    "alert_threshold_pct": 10,
+    "periods": ["monthly", "quarterly", "yearly"],
+    "logging": {"level": "INFO", "file": "kpi_reporter.log"},
+}
+```
+
+### Using a Custom Config
+
+```bash
+# Point to a different config file
+python -m src.kpi_reporter.cli --config production.yaml report -f data.csv
+
+# Or set per-environment configs
+python -m src.kpi_reporter.cli -c configs/staging.yaml dashboard -f data.csv
+```
+
+<br/>
+
+---
+
+<br/>
+
+## 📊 Input Format
+
+### CSV Requirements
+
+- **First row** must be column headers
+- **One column** must be a period/date identifier (auto-detected)
+- **All other columns** should contain numeric KPI values
+- Values can include `$`, `%`, and commas — they are stripped automatically by `safe_float()`
+
+### Supported Period Column Names
+
+The auto-detection engine (`_detect_period_column`) searches for these keywords (case-insensitive):
+
+| Priority | Keywords |
+|----------|----------|
+| 1 | `period` |
+| 2 | `month` |
+| 3 | `date` |
+| 4 | `week` |
+| 5 | `quarter` |
+| 6 | `year` |
+| Fallback | First column |
+
+### Example CSV Files
+
+**Monthly revenue report:**
+```csv
+month,revenue,customers,churn_rate,nps_score
+Jan,$100,000,500,5.2%,72
+Feb,$110,000,520,4.8%,75
+Mar,$105,000,510,5.5%,70
+Apr,$120,000,550,4.2%,78
+```
+
+**Quarterly SaaS metrics:**
+```csv
+quarter,mrr,arr,ltv,cac,dau
+Q1-2024,45000,540000,2400,180,12000
+Q2-2024,52000,624000,2600,165,14500
+Q3-2024,48000,576000,2500,195,13200
+Q4-2024,61000,732000,2800,150,16800
+```
+
+**Weekly e-commerce KPIs:**
+```csv
+week,orders,aov,conversion_rate,cart_abandonment
+W1,1200,85.50,3.2,68.5
+W2,1350,82.00,3.5,66.2
+W3,1100,90.25,2.9,71.0
+W4,1500,88.00,3.8,64.8
+```
+
+<br/>
+
+---
+
+<br/>
+
+## 🧪 Testing
+
+### Running Tests
+
+```bash
+# Run all tests with verbose output
+python -m pytest tests/ -v
+
+# Run with coverage report
+python -m pytest tests/ -v --cov=src/kpi_reporter --cov-report=term-missing
+
+# Generate HTML coverage report
+python -m pytest tests/ -v --cov=src/kpi_reporter --cov-report=html
+
+# Run specific test file
+python -m pytest tests/test_core.py -v
+
+# Run specific test class
+python -m pytest tests/test_core.py::TestTrackGoals -v
+
+# Run specific test method
+python -m pytest tests/test_core.py::TestSafeFloat::test_dollar_sign -v
+
+# Use Makefile shortcuts
+make test           # Run all tests
+make test-cov       # Run with coverage
+```
+
+### Test Coverage Matrix
+
+| Module | Test Class | What's Tested |
+|--------|-----------|---------------|
+| `core.py` | `TestSafeFloat` | Dollar signs, percentages, commas, invalid values, edge cases |
+| `core.py` | `TestLoadKpiData` | Valid CSV, missing file, empty file, encoding issues |
+| `core.py` | `TestComputeKpiTrends` | Multi-period trends, single row (insufficient data), zero values |
+| `core.py` | `TestTrackGoals` | Achieved/on_track/at_risk/behind status, missing KPIs, zero targets |
+| `core.py` | `TestDetectAnomalies` | Normal data (no anomalies), extreme values, configurable threshold |
+| `core.py` | `TestComputeMovingAverage` | Various window sizes, empty list, window=1, large windows |
+| `core.py` | `TestGenerateAlertSummary` | Alerts above threshold, no alerts (all within range) |
+| `core.py` | `TestGenerateExecutiveSummary` | LLM call with correct parameters (mocked) |
+| `core.py` | `TestGenerateKpiReport` | LLM report generation with correct prompt (mocked) |
+| `core.py` | `TestComputeAnalytics` | Improving/declining/stable counts, goal summaries |
+| `core.py` | `TestLoadConfig` | Valid YAML, missing file (defaults), deep merge behavior |
+| `cli.py` | `TestReport` | Full report command with alerts and without |
+| `cli.py` | `TestDashboard` | Dashboard table rendering |
+| `cli.py` | `TestGoals` | Goal tracking output with progress bars |
+| `cli.py` | `TestAnomalies` | Anomaly detection with default and custom thresholds |
+| `cli.py` | `TestMainGroup` | Click group configuration and context passing |
+
+<br/>
+
+---
+
+<br/>
+
+## 🏠 Local vs ☁️ Cloud LLM
+
+| Aspect | Local (Ollama) | Cloud API |
+|--------|---------------|-----------|
+| **Privacy** | ✅ All data stays on your machine | ❌ Data sent to third-party servers |
+| **Cost** | ✅ Free after hardware investment | 💰 Per-token pricing |
+| **Latency** | ⚡ Low (no network round-trip) | 🌐 Depends on network/provider |
+| **Availability** | ✅ Works offline | ❌ Requires internet connection |
+| **Model Quality** | 🔄 Good (gemma3, llama3, mistral) | ⭐ Excellent (GPT-4, Claude) |
+| **Setup** | `ollama pull gemma3` | API key registration |
+| **Customization** | ✅ Fine-tune locally | Limited to provider options |
+
+This project uses **Ollama** for fully local, private KPI analysis. To switch models, simply update `config.yaml`:
+
+```yaml
+model:
+  name: "llama3"       # Any model available in Ollama
+  temperature: 0.3
+  max_tokens: 3500
+```
+
+<br/>
+
+---
+
+<br/>
+
+## ❓ Frequently Asked Questions
+
+<details>
+<summary><b>1. What CSV format does the tool expect?</b></summary>
+
+The tool expects a standard CSV with headers. One column should contain period identifiers (month, date, quarter, etc.) and all other columns should contain numeric KPI values. The period column is auto-detected by scanning column names for keywords like `period`, `month`, `date`, `week`, `quarter`, or `year`. Numeric values can include `$`, `%`, and commas — they are automatically stripped during parsing.
+</details>
+
+<details>
+<summary><b>2. How does anomaly detection work?</b></summary>
+
+Anomaly detection uses a standard deviation approach. For each KPI:
+1. The mean and standard deviation are computed across all periods
+2. Each value's deviation is calculated as `|value - mean| / std_dev`
+3. Values exceeding the configured threshold (default: 2.0σ) are flagged as anomalies
+4. At least 3 data points are required for meaningful detection
+
+You can adjust sensitivity via `config.yaml` → `anomaly_detection.threshold` or the `--threshold` CLI flag.
+</details>
+
+<details>
+<summary><b>3. Can I use a different LLM model?</b></summary>
+
+Yes! Any model available through Ollama works. Update the `model.name` field in `config.yaml`:
+```yaml
+model:
+  name: "llama3"    # or "mistral", "codellama", "phi3", etc.
+```
+Make sure to pull the model first: `ollama pull llama3`
+</details>
+
+<details>
+<summary><b>4. What if I don't have targets configured?</b></summary>
+
+The tool works fine without targets. Goal tracking (`goals` command) will show a warning that no targets are defined, but all other features — trend analysis, anomaly detection, alerts, dashboard, and narrative reports — function normally. Add targets to `config.yaml` under the `targets` key when ready.
+</details>
+
+<details>
+<summary><b>5. How do I add custom KPIs?</b></summary>
+
+Simply add new columns to your CSV file. The tool automatically discovers all numeric columns and treats them as KPIs. To set targets for new KPIs, add corresponding entries in `config.yaml`:
+```yaml
+targets:
+  revenue: 120000
+  my_new_kpi: 500    # Add your new KPI target here
+```
+Column names in the CSV must match the target keys exactly.
+</details>
+
+<br/>
+
+---
+
+<br/>
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how to get started:
+
+```bash
+# 1. Fork the repository on GitHub
+
+# 2. Clone your fork
+git clone https://github.com/YOUR_USERNAME/kpi-dashboard-reporter.git
+cd kpi-dashboard-reporter
+
+# 3. Install development dependencies
+pip install -r requirements.txt
+pip install -e ".[dev]"
+
+# 4. Create a feature branch
+git checkout -b feature/your-feature-name
+
+# 5. Make your changes and add tests
+
+# 6. Run tests to verify
+python -m pytest tests/ -v --cov=src/kpi_reporter
+
+# 7. Format your code
+black src/ tests/
+
+# 8. Commit and push
+git add .
+git commit -m "feat: description of your change"
+git push origin feature/your-feature-name
+
+# 9. Open a Pull Request on GitHub
+```
+
+### Development Guidelines
+
+- Write tests for all new functionality
+- Maintain or improve test coverage (currently 95%+)
+- Follow existing code style (Black formatting)
+- Update documentation for user-facing changes
+- Keep commits focused and descriptive
+
+<br/>
+
+---
+
+<br/>
+
 ## 📜 License
 
+This project is licensed under the **MIT License**.
+
+```
 MIT License
+
+Copyright (c) 2024 KPI Reporter Team
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+<br/>
+
+---
+
+<div align="center">
+
+<br/>
+
+**📊 KPI Dashboard Reporter** · Built with ❤️ using Python, Ollama, Click, Rich & Streamlit
+
+<br/>
+
+[![Star this repo](https://img.shields.io/github/stars/kennedyraju55/kpi-dashboard-reporter?style=social)](https://github.com/kennedyraju55/kpi-dashboard-reporter)
+&nbsp;&nbsp;
+[![Fork this repo](https://img.shields.io/github/forks/kennedyraju55/kpi-dashboard-reporter?style=social)](https://github.com/kennedyraju55/kpi-dashboard-reporter/fork)
+
+<br/>
+
+<sub>Part of the <a href="https://github.com/kennedyraju55/90-local-llm-projects">90 Local LLM Projects</a> collection · Project #49</sub>
+
+</div>

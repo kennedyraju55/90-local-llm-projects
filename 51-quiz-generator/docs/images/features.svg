@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#533483"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2a4a"/>
+      <stop offset="100%" style="stop-color:#162040"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold">FEATURE HIGHLIGHTS</text>
+
+  <!-- Row 1 -->
+  <!-- Card 1: Multi-Format Quizzes -->
+  <rect x="30" y="52" width="230" height="120" rx="10" fill="url(#cardBg)" stroke="#e94560" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="145" y="82" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="24">📝</text>
+  <text x="145" y="106" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Multi-Format Quizzes</text>
+  <text x="145" y="126" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">Multiple Choice · True/False</text>
+  <text x="145" y="142" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">Short Answer · Mixed Mode</text>
+  <text x="145" y="160" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="9">4 question types supported</text>
+
+  <!-- Card 2: Timed Assessments -->
+  <rect x="285" y="52" width="230" height="120" rx="10" fill="url(#cardBg)" stroke="#533483" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="82" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="24">⏱️</text>
+  <text x="400" y="106" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Timed Assessments</text>
+  <text x="400" y="126" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">Per-question countdown timer</text>
+  <text x="400" y="142" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">Configurable time limits</text>
+  <text x="400" y="160" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="9">Default: 30s per question</text>
+
+  <!-- Card 3: Question Bank -->
+  <rect x="540" y="52" width="230" height="120" rx="10" fill="url(#cardBg)" stroke="#533483" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="655" y="82" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="24">📦</text>
+  <text x="655" y="106" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Question Bank</text>
+  <text x="655" y="126" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">Store &amp; organize questions</text>
+  <text x="655" y="142" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">Filter by topic &amp; difficulty</text>
+  <text x="655" y="160" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="9">Persistent JSON storage</text>
+
+  <!-- Row 2 -->
+  <!-- Card 4: Score Tracking -->
+  <rect x="30" y="195" width="230" height="120" rx="10" fill="url(#cardBg)" stroke="#533483" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="145" y="225" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="24">📊</text>
+  <text x="145" y="249" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Score Tracking</text>
+  <text x="145" y="269" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">Full history &amp; analytics</text>
+  <text x="145" y="285" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">Average &amp; best scores</text>
+  <text x="145" y="303" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="9">Track progress over time</text>
+
+  <!-- Card 5: Multiple Exports -->
+  <rect x="285" y="195" width="230" height="120" rx="10" fill="url(#cardBg)" stroke="#e94560" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="225" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="24">📤</text>
+  <text x="400" y="249" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Multiple Exports</text>
+  <text x="400" y="269" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">JSON · Markdown · PDF-Ready</text>
+  <text x="400" y="285" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">Share &amp; archive quizzes</text>
+  <text x="400" y="303" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="9">3 export formats available</text>
+
+  <!-- Card 6: Difficulty Levels -->
+  <rect x="540" y="195" width="230" height="120" rx="10" fill="url(#cardBg)" stroke="#533483" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="655" y="225" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="24">🎯</text>
+  <text x="655" y="249" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Difficulty Levels</text>
+  <text x="655" y="269" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">Easy · Medium · Hard</text>
+  <text x="655" y="285" text-anchor="middle" fill="#808098" font-family="Segoe UI,Arial,sans-serif" font-size="10">Adaptive question generation</text>
+  <text x="655" y="303" text-anchor="middle" fill="#e94560" font-family="Segoe UI,Arial,sans-serif" font-size="9">DifficultyLevel enum driven</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="338" width="800" height="12" fill="url(#accent)" rx="0 0 12 12"/>
+</svg>

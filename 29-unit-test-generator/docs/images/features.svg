@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+  <text x="400" y="35" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">Key Features</text>
+  
+  <rect x="30" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">🌳</text>
+  <text x="80" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#4361ee">AST Code Analysis</text>
+  <text x="50" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Parse Python source with</text>
+  <text x="50" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">AST to extract functions,</text>
+  <text x="50" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">classes, args, decorators</text>
+  <text x="50" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Complete code understanding</text>
+
+  <rect x="283" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="303" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">🔍</text>
+  <text x="333" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#4361ee">Edge Case Detection</text>
+  <text x="303" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Auto-detect edge cases:</text>
+  <text x="303" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">None, zero, negative,</text>
+  <text x="303" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">empty, exceptions</text>
+  <text x="303" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Comprehensive test coverage</text>
+
+  <rect x="536" y="55" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="556" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="22">📊</text>
+  <text x="586" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#4361ee">Coverage Analysis</text>
+  <text x="556" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Pre-generation coverage</text>
+  <text x="556" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">analysis with testable</text>
+  <text x="556" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">item count estimates</text>
+  <text x="556" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Know what needs testing</text>
+
+  <rect x="30" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">🧪</text>
+  <text x="80" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#4361ee">Framework Support</text>
+  <text x="50" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Generate tests for both</text>
+  <text x="50" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">pytest (with parametrize)</text>
+  <text x="50" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">and unittest frameworks</text>
+  <text x="50" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Choose your preferred style</text>
+
+  <rect x="283" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="303" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">📁</text>
+  <text x="333" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#4361ee">Test Organization</text>
+  <text x="303" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">Suggest test file and</text>
+  <text x="303" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">directory structure for</text>
+  <text x="303" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">organized test suites</text>
+  <text x="303" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Clean test architecture</text>
+
+  <rect x="536" y="195" width="235" height="120" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="556" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="22">👁️</text>
+  <text x="586" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#4361ee">Source Preview</text>
+  <text x="556" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">View source code before</text>
+  <text x="556" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">generating tests with</text>
+  <text x="556" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e">--show-source flag</text>
+  <text x="556" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#484f58">Understand before testing</text>
+</svg>

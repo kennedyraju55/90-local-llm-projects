@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06d6a0"/>
+      <stop offset="100%" style="stop-color:#04b888"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="nodeGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#06d6a0"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" rx="12" fill="url(#archBg)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff">Pipeline Architecture</text>
+  <rect x="300" y="42" width="200" height="2" rx="1" fill="url(#accentLine)" opacity="0.5"/>
+
+  <!-- Stage 1: CSV Data -->
+  <g transform="translate(75, 95)" filter="url(#cardShadow)">
+    <rect width="120" height="110" rx="10" fill="#1a2332" stroke="#06d6a0" stroke-width="1.5" stroke-opacity="0.6"/>
+    <rect width="120" height="3" rx="1.5" fill="#06d6a0"/>
+    <!-- CSV icon -->
+    <g transform="translate(60, 38)">
+      <rect x="-18" y="-14" width="36" height="28" rx="3" fill="none" stroke="#06d6a0" stroke-width="1.5"/>
+      <line x1="-10" y1="-6" x2="10" y2="-6" stroke="#06d6a0" stroke-width="1" opacity="0.6"/>
+      <line x1="-10" y1="0" x2="10" y2="0" stroke="#06d6a0" stroke-width="1" opacity="0.6"/>
+      <line x1="-10" y1="6" x2="10" y2="6" stroke="#06d6a0" stroke-width="1" opacity="0.6"/>
+      <line x1="-2" y1="-14" x2="-2" y2="14" stroke="#06d6a0" stroke-width="0.5" opacity="0.4"/>
+      <line x1="6" y1="-14" x2="6" y2="14" stroke="#06d6a0" stroke-width="0.5" opacity="0.4"/>
+    </g>
+    <text x="60" y="70" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">CSV Data</text>
+    <text x="60" y="86" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e">read_csv_data()</text>
+    <text x="60" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">headers + rows</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="198" y1="150" x2="228" y2="150" stroke="#06d6a0" stroke-width="2" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Stage 2: Statistical Analysis -->
+  <g transform="translate(233, 95)" filter="url(#cardShadow)">
+    <rect width="145" height="110" rx="10" fill="#1a2332" stroke="#06d6a0" stroke-width="1.5" stroke-opacity="0.6"/>
+    <rect width="145" height="3" rx="1.5" fill="#06d6a0"/>
+    <!-- Stats icon -->
+    <g transform="translate(72, 38)">
+      <rect x="-20" y="4" width="10" height="10" rx="2" fill="#06d6a0" opacity="0.5"/>
+      <rect x="-7" y="-4" width="10" height="18" rx="2" fill="#06d6a0" opacity="0.7"/>
+      <rect x="6" y="-10" width="10" height="24" rx="2" fill="#06d6a0" opacity="0.9"/>
+    </g>
+    <text x="72" y="70" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Statistical Analysis</text>
+    <text x="72" y="86" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e">summarize_data()</text>
+    <text x="72" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">min / max / mean / median / stdev</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="381" y1="150" x2="411" y2="150" stroke="#06d6a0" stroke-width="2" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Stage 3: Gemma 4 via Ollama (larger card with sub-sections) -->
+  <g transform="translate(416, 70)" filter="url(#cardShadow)">
+    <rect width="175" height="160" rx="10" fill="#1a2332" stroke="#06d6a0" stroke-width="1.5" stroke-opacity="0.6"/>
+    <rect width="175" height="3" rx="1.5" fill="#06d6a0"/>
+    <!-- AI brain icon -->
+    <g transform="translate(87, 32)">
+      <circle r="12" fill="none" stroke="#06d6a0" stroke-width="1.5"/>
+      <circle r="4" fill="#06d6a0" opacity="0.6"/>
+      <line x1="-8" y1="-8" x2="-4" y2="-4" stroke="#06d6a0" stroke-width="1" opacity="0.4"/>
+      <line x1="8" y1="-8" x2="4" y2="-4" stroke="#06d6a0" stroke-width="1" opacity="0.4"/>
+      <line x1="-8" y1="8" x2="-4" y2="4" stroke="#06d6a0" stroke-width="1" opacity="0.4"/>
+      <line x1="8" y1="8" x2="4" y2="4" stroke="#06d6a0" stroke-width="1" opacity="0.4"/>
+    </g>
+    <text x="87" y="58" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#06d6a0">Gemma 4</text>
+    <text x="87" y="72" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">via Ollama</text>
+
+    <!-- Sub-box: Template Selection -->
+    <rect x="12" y="82" width="151" height="28" rx="5" fill="#0d1117" stroke="#06d6a0" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="87" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Template Selection</text>
+
+    <!-- Sub-box: Report Generation -->
+    <rect x="12" y="116" width="151" height="28" rx="5" fill="#0d1117" stroke="#06d6a0" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="87" y="134" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c9d1d9">Report Generation</text>
+
+    <!-- Internal arrow -->
+    <line x1="87" y1="110" x2="87" y2="116" stroke="#06d6a0" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <line x1="594" y1="150" x2="624" y2="150" stroke="#06d6a0" stroke-width="2" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Stage 4: Formatted Report -->
+  <g transform="translate(629, 95)" filter="url(#cardShadow)">
+    <rect width="140" height="110" rx="10" fill="#1a2332" stroke="#06d6a0" stroke-width="1.5" stroke-opacity="0.6"/>
+    <rect width="140" height="3" rx="1.5" fill="#06d6a0"/>
+    <!-- Document icon -->
+    <g transform="translate(70, 35)">
+      <rect x="-14" y="-12" width="28" height="32" rx="3" fill="none" stroke="#06d6a0" stroke-width="1.5"/>
+      <line x1="-8" y1="-4" x2="8" y2="-4" stroke="#06d6a0" stroke-width="1" opacity="0.6"/>
+      <line x1="-8" y1="2" x2="8" y2="2" stroke="#06d6a0" stroke-width="1" opacity="0.6"/>
+      <line x1="-8" y1="8" x2="4" y2="8" stroke="#06d6a0" stroke-width="1" opacity="0.6"/>
+      <line x1="-8" y1="14" x2="6" y2="14" stroke="#06d6a0" stroke-width="1" opacity="0.6"/>
+    </g>
+    <text x="70" y="70" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Formatted Report</text>
+    <text x="70" y="86" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#8b949e">save_report()</text>
+    <text x="70" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">Markdown / HTML / Text</text>
+  </g>
+
+  <!-- Export with Metadata row below -->
+  <g transform="translate(629, 230)" filter="url(#cardShadow)">
+    <rect width="140" height="75" rx="10" fill="#1a2332" stroke="#06d6a0" stroke-width="1.5" stroke-opacity="0.6"/>
+    <rect width="140" height="3" rx="1.5" fill="#06d6a0"/>
+    <!-- Metadata icon -->
+    <g transform="translate(70, 28)">
+      <rect x="-12" y="-10" width="24" height="20" rx="2" fill="none" stroke="#06d6a0" stroke-width="1"/>
+      <text x="0" y="2" text-anchor="middle" font-family="monospace" font-size="8" fill="#06d6a0">{ }</text>
+    </g>
+    <text x="70" y="52" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Export + Metadata</text>
+    <text x="70" y="66" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">YAML frontmatter</text>
+  </g>
+
+  <!-- Arrow from Formatted Report down to Export -->
+  <line x1="699" y1="208" x2="699" y2="227" stroke="#06d6a0" stroke-width="2" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Flow label bar at bottom -->
+  <g transform="translate(0, 340)">
+    <rect x="40" y="0" width="720" height="40" rx="8" fill="#1a2332" stroke="#06d6a0" stroke-width="0.5" stroke-opacity="0.2"/>
+    <text x="400" y="16" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#06d6a0">DATA PIPELINE FLOW</text>
+    <text x="400" y="32" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">
+      CSV Input  →  Statistical Profiling  →  LLM Report Generation  →  Multi-Format Export
+    </text>
+  </g>
+</svg>

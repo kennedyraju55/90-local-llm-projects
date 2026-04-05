@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f72585;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7209b7;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c2333;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#141b27;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrowPink" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f72585"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7209b7"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" rx="12" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="798" height="398" rx="12" fill="none" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">System Architecture</text>
+  <rect x="300" y="43" width="200" height="2" rx="1" fill="url(#accentGrad)" opacity="0.6"/>
+
+  <!-- ==================== STAGE 1: Research Papers ==================== -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="80" width="120" height="140" rx="8" fill="url(#boxGrad1)" stroke="#f72585" stroke-width="1.5" stroke-opacity="0.5"/>
+    <rect x="20" y="80" width="120" height="28" rx="8" fill="#f72585" opacity="0.15"/>
+    <text x="80" y="99" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#f72585">📄 Research Papers</text>
+    <!-- Paper icons -->
+    <g transform="translate(80, 140)">
+      <rect x="-30" y="-20" width="24" height="30" rx="3" fill="#21262d" stroke="#484f58" stroke-width="1"/>
+      <line x1="-25" y1="-12" x2="-11" y2="-12" stroke="#484f58" stroke-width="1"/>
+      <line x1="-25" y1="-6" x2="-11" y2="-6" stroke="#484f58" stroke-width="1"/>
+      <line x1="-25" y1="0" x2="-17" y2="0" stroke="#484f58" stroke-width="1"/>
+      <text x="-18" y="24" text-anchor="middle" font-size="9" fill="#8b949e">paper1.txt</text>
+
+      <rect x="6" y="-20" width="24" height="30" rx="3" fill="#21262d" stroke="#484f58" stroke-width="1"/>
+      <line x1="11" y1="-12" x2="25" y2="-12" stroke="#484f58" stroke-width="1"/>
+      <line x1="11" y1="-6" x2="25" y2="-6" stroke="#484f58" stroke-width="1"/>
+      <line x1="11" y1="0" x2="19" y2="0" stroke="#484f58" stroke-width="1"/>
+      <text x="18" y="24" text-anchor="middle" font-size="9" fill="#8b949e">paper2.txt</text>
+    </g>
+    <text x="80" y="200" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">.txt / .md files</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="142" y1="150" x2="172" y2="150" stroke="#f72585" stroke-width="2" marker-end="url(#arrowPink)" opacity="0.8"/>
+
+  <!-- ==================== STAGE 2: Paper Loader ==================== -->
+  <g filter="url(#shadow)">
+    <rect x="175" y="80" width="120" height="140" rx="8" fill="url(#boxGrad1)" stroke="#f72585" stroke-width="1.5" stroke-opacity="0.5"/>
+    <rect x="175" y="80" width="120" height="28" rx="8" fill="#f72585" opacity="0.15"/>
+    <text x="235" y="99" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#f72585">📥 Paper Loader</text>
+
+    <rect x="190" y="120" width="90" height="22" rx="4" fill="#f72585" opacity="0.08" stroke="#f72585" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="235" y="135" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3">load_paper()</text>
+
+    <rect x="190" y="150" width="90" height="22" rx="4" fill="#f72585" opacity="0.08" stroke="#f72585" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="235" y="165" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3">load_multiple</text>
+    <text x="235" y="175" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#8b949e">_papers()</text>
+
+    <text x="235" y="205" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">Single / Multi</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="297" y1="150" x2="327" y2="150" stroke="#f72585" stroke-width="2" marker-end="url(#arrowPink)" opacity="0.8"/>
+
+  <!-- ==================== STAGE 3: System Prompt Builder ==================== -->
+  <g filter="url(#shadow)">
+    <rect x="330" y="80" width="120" height="140" rx="8" fill="url(#boxGrad1)" stroke="#b5179e" stroke-width="1.5" stroke-opacity="0.5"/>
+    <rect x="330" y="80" width="120" height="28" rx="8" fill="#b5179e" opacity="0.15"/>
+    <text x="390" y="99" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#b5179e">⚙️ Prompt Builder</text>
+
+    <rect x="345" y="120" width="90" height="22" rx="4" fill="#b5179e" opacity="0.08" stroke="#b5179e" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="390" y="135" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3">build_system</text>
+    <text x="390" y="145" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#8b949e">_prompt()</text>
+
+    <rect x="345" y="155" width="90" height="22" rx="4" fill="#b5179e" opacity="0.08" stroke="#b5179e" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="390" y="170" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3">build_multi</text>
+    <text x="390" y="180" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#8b949e">_paper_content()</text>
+
+    <text x="390" y="205" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">Context Embedding</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <line x1="452" y1="150" x2="482" y2="150" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowPurple)" opacity="0.8"/>
+
+  <!-- ==================== STAGE 4: Gemma 4 via Ollama ==================== -->
+  <g filter="url(#shadow)">
+    <rect x="485" y="65" width="140" height="185" rx="8" fill="url(#boxGrad1)" stroke="#7209b7" stroke-width="2" stroke-opacity="0.6"/>
+    <rect x="485" y="65" width="140" height="32" rx="8" fill="#7209b7" opacity="0.2"/>
+    <text x="555" y="80" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" fill="#c77dff">🤖 Gemma 4 via Ollama</text>
+    <text x="555" y="92" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#6e7681">LLM Engine</text>
+
+    <!-- Sub-modules -->
+    <rect x="500" y="108" width="110" height="24" rx="5" fill="#7209b7" opacity="0.1" stroke="#7209b7" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="555" y="124" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c77dff">💬 Q&amp;A Engine</text>
+    <text x="555" y="138" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#6e7681">ask_question()</text>
+
+    <rect x="500" y="148" width="110" height="24" rx="5" fill="#7209b7" opacity="0.1" stroke="#7209b7" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="555" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c77dff">📎 Citation Extractor</text>
+    <text x="555" y="178" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#6e7681">extract_citations()</text>
+
+    <rect x="500" y="188" width="110" height="24" rx="5" fill="#7209b7" opacity="0.1" stroke="#7209b7" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="555" y="204" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c77dff">💡 Follow-up Suggester</text>
+    <text x="555" y="218" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#6e7681">suggest_followup()</text>
+
+    <text x="555" y="242" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">Local · Private · Fast</text>
+  </g>
+
+  <!-- Arrow 4 -->
+  <line x1="627" y1="150" x2="657" y2="150" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowPurple)" opacity="0.8"/>
+
+  <!-- ==================== STAGE 5: Interactive Session ==================== -->
+  <g filter="url(#shadow)">
+    <rect x="660" y="80" width="120" height="140" rx="8" fill="url(#boxGrad1)" stroke="#f72585" stroke-width="1.5" stroke-opacity="0.5"/>
+    <rect x="660" y="80" width="120" height="28" rx="8" fill="#f72585" opacity="0.15"/>
+    <text x="720" y="99" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#f72585">🖥️ Interactive</text>
+
+    <rect x="675" y="118" width="90" height="20" rx="4" fill="#f72585" opacity="0.08" stroke="#f72585" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="720" y="132" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#e6edf3">📝 History</text>
+
+    <rect x="675" y="146" width="90" height="20" rx="4" fill="#f72585" opacity="0.08" stroke="#f72585" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="720" y="160" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#e6edf3">📤 Export</text>
+
+    <rect x="675" y="174" width="90" height="20" rx="4" fill="#f72585" opacity="0.08" stroke="#f72585" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="720" y="188" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#e6edf3">🔄 Suggest</text>
+
+    <text x="720" y="210" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">Rich CLI / Web UI</text>
+  </g>
+
+  <!-- ==================== Data Flow Labels ==================== -->
+  <text x="400" y="285" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#8b949e">Data Flow</text>
+
+  <!-- Pipeline summary bar -->
+  <g transform="translate(80, 310)">
+    <rect x="0" y="0" width="640" height="50" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+
+    <!-- Step labels -->
+    <text x="60" y="20" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#f72585" font-weight="600">① Load</text>
+    <text x="60" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">Read files</text>
+
+    <text x="12" y="25" font-size="14" fill="#30363d">│</text>
+    <line x1="125" y1="8" x2="125" y2="42" stroke="#30363d" stroke-width="1"/>
+
+    <text x="200" y="20" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#b5179e" font-weight="600">② Build Prompt</text>
+    <text x="200" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">Embed context</text>
+
+    <line x1="275" y1="8" x2="275" y2="42" stroke="#30363d" stroke-width="1"/>
+
+    <text x="360" y="20" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#7209b7" font-weight="600">③ LLM Inference</text>
+    <text x="360" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">Q&amp;A + Citations</text>
+
+    <line x1="445" y1="8" x2="445" y2="42" stroke="#30363d" stroke-width="1"/>
+
+    <text x="540" y="20" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#f72585" font-weight="600">④ Present Results</text>
+    <text x="540" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">Display + Export</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="400" y="388" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#484f58">research_qa · 100% Local Processing · No Data Leaves Your Machine</text>
+</svg>

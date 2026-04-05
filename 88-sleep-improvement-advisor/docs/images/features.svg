@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 390" width="800" height="390">
+  <defs>
+    <linearGradient id="featBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="featAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c1121f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="390" fill="url(#featBg)" rx="12"/>
+  <text x="400" y="38" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Key Features</text>
+  <rect x="300" y="48" width="200" height="3" fill="url(#featAccent)" rx="2"/>
+  
+  <rect x="30" y="65" width="235" height="130" rx="10" fill="#161b22" stroke="#e63946" stroke-width="1.5"/>
+  <text x="50" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">⚡</text>
+  <text x="78" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Sleep Score Calculator</text>
+  <text x="45" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Composite 0-100 score weighing duratio</text>
+  <text x="45" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">n, quality, consistency, and wake freq</text>
+  <text x="45" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">uency</text>
+  <rect x="30" y="185" width="235" height="10" rx="0" ry="5" fill="#e63946" opacity="0.15"/>
+  <rect x="285" y="65" width="235" height="130" rx="10" fill="#161b22" stroke="#e63946" stroke-width="1.5"/>
+  <text x="305" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">🔍</text>
+  <text x="333" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Weekly Pattern Analysis</text>
+  <text x="300" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Day-of-week breakdown, weekday vs week</text>
+  <text x="300" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">end comparison, and trend detection</text>
+  <text x="300" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e"></text>
+  <rect x="285" y="185" width="235" height="10" rx="0" ry="5" fill="#e63946" opacity="0.15"/>
+  <rect x="540" y="65" width="235" height="130" rx="10" fill="#161b22" stroke="#e63946" stroke-width="1.5"/>
+  <text x="560" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">📊</text>
+  <text x="588" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Bedtime Routine Builder</text>
+  <text x="555" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Personalized 2-hour routine with 9 act</text>
+  <text x="555" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">ivities timed from your wake time</text>
+  <text x="555" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e"></text>
+  <rect x="540" y="185" width="235" height="10" rx="0" ry="5" fill="#e63946" opacity="0.15"/>
+  <rect x="30" y="220" width="235" height="130" rx="10" fill="#161b22" stroke="#e63946" stroke-width="1.5"/>
+  <text x="50" y="250" font-family="Segoe UI,Arial,sans-serif" font-size="20">🔄</text>
+  <text x="78" y="252" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Environment Checklist</text>
+  <text x="45" y="278" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">11 optimization items: Light, Sound, T</text>
+  <text x="45" y="295" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">emperature, Bedding, Air Quality, Elec</text>
+  <text x="45" y="312" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">tronics</text>
+  <rect x="30" y="340" width="235" height="10" rx="0" ry="5" fill="#e63946" opacity="0.15"/>
+  <rect x="285" y="220" width="235" height="130" rx="10" fill="#161b22" stroke="#e63946" stroke-width="1.5"/>
+  <text x="305" y="250" font-family="Segoe UI,Arial,sans-serif" font-size="20">🛡️</text>
+  <text x="333" y="252" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">10-Question Assessment</text>
+  <text x="300" y="278" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Comprehensive sleep assessment coverin</text>
+  <text x="300" y="295" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">g bedtime, wake time, quality, caffein</text>
+  <text x="300" y="312" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">e, screens, exercise</text>
+  <rect x="285" y="340" width="235" height="10" rx="0" ry="5" fill="#e63946" opacity="0.15"/>
+  <rect x="540" y="220" width="235" height="130" rx="10" fill="#161b22" stroke="#e63946" stroke-width="1.5"/>
+  <text x="560" y="250" font-family="Segoe UI,Arial,sans-serif" font-size="20">📋</text>
+  <text x="588" y="252" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">CSV Sleep Log Analysis</text>
+  <text x="555" y="278" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Parse and analyze sleep logs with date</text>
+  <text x="555" y="295" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">, bedtime, waketime, quality, and note</text>
+  <text x="555" y="312" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">s</text>
+  <rect x="540" y="340" width="235" height="10" rx="0" ry="5" fill="#e63946" opacity="0.15"/>
+</svg>

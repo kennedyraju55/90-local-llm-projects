@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350">
+  <defs>
+    <linearGradient id="featBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="featAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#ff8c42"/>
+    </linearGradient>
+    <filter id="featShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="12" fill="url(#featBg)"/>
+  <rect x="1" y="1" width="798" height="348" rx="11" fill="none" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="400" y="34" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Core Capabilities</text>
+  <rect x="300" y="41" width="200" height="2" rx="1" fill="url(#featAccent)" opacity="0.5"/>
+
+  <!-- === ROW 1 === -->
+
+  <!-- Card 1: 8-Section Analysis -->
+  <g transform="translate(140, 130)" filter="url(#featShadow)">
+    <rect x="-110" y="-58" width="220" height="116" rx="10" fill="#1c2333"/>
+    <rect x="-110" y="-58" width="220" height="116" rx="10" fill="none" stroke="#30363d" stroke-width="0.8"/>
+    <!-- Top accent bar -->
+    <rect x="-110" y="-58" width="220" height="4" rx="10 10 0 0" fill="#ff6b35" opacity="0.7"/>
+    <!-- Icon: stacked sections -->
+    <g transform="translate(-80, -20)">
+      <rect x="-12" y="-14" width="24" height="6" rx="2" fill="#ff6b35" opacity="0.8"/>
+      <rect x="-12" y="-5" width="24" height="6" rx="2" fill="#ff6b35" opacity="0.6"/>
+      <rect x="-12" y="4" width="24" height="6" rx="2" fill="#ff6b35" opacity="0.4"/>
+      <rect x="-12" y="13" width="24" height="6" rx="2" fill="#ff6b35" opacity="0.25"/>
+    </g>
+    <text x="10" y="-18" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">8-Section Analysis</text>
+    <text x="10" y="-2" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Title to future work</text>
+    <!-- Section list -->
+    <g transform="translate(-95, 18)">
+      <text font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">
+        <tspan x="0" dy="0">&#x2022; Title/Authors &#x2022; Abstract &#x2022; Methods</tspan>
+        <tspan x="0" dy="13">&#x2022; Findings &#x2022; Statistics &#x2022; Conclusions</tspan>
+        <tspan x="0" dy="13">&#x2022; Limitations &#x2022; Future Work</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Card 2: PICO Framework -->
+  <g transform="translate(400, 130)" filter="url(#featShadow)">
+    <rect x="-110" y="-58" width="220" height="116" rx="10" fill="#1c2333"/>
+    <rect x="-110" y="-58" width="220" height="116" rx="10" fill="none" stroke="#30363d" stroke-width="0.8"/>
+    <rect x="-110" y="-58" width="220" height="4" rx="10 10 0 0" fill="#3fb950" opacity="0.7"/>
+    <!-- Icon: target/framework -->
+    <g transform="translate(-80, -18)">
+      <circle cx="0" cy="0" r="14" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#3fb950" stroke-width="1.2" opacity="0.5"/>
+      <circle cx="0" cy="0" r="3" fill="#3fb950" opacity="0.8"/>
+    </g>
+    <text x="10" y="-18" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">PICO Framework</text>
+    <text x="10" y="-2" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Structured evidence extraction</text>
+    <g transform="translate(-95, 18)">
+      <text font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">
+        <tspan x="0" dy="0" fill="#3fb950" font-weight="600">P</tspan><tspan> Population — Who was studied</tspan>
+        <tspan x="0" dy="13" fill="#3fb950" font-weight="600">I</tspan><tspan> Intervention — Treatment applied</tspan>
+        <tspan x="0" dy="13" fill="#3fb950" font-weight="600">C</tspan><tspan> Comparison — Control group</tspan>
+        <tspan x="0" dy="13" fill="#3fb950" font-weight="600">O</tspan><tspan> Outcome — Measured results</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Card 3: Evidence Grading -->
+  <g transform="translate(660, 130)" filter="url(#featShadow)">
+    <rect x="-110" y="-58" width="220" height="116" rx="10" fill="#1c2333"/>
+    <rect x="-110" y="-58" width="220" height="116" rx="10" fill="none" stroke="#30363d" stroke-width="0.8"/>
+    <rect x="-110" y="-58" width="220" height="4" rx="10 10 0 0" fill="#da3633" opacity="0.7"/>
+    <!-- Icon: rating stars/meter -->
+    <g transform="translate(-80, -18)">
+      <rect x="-14" y="-8" width="28" height="16" rx="3" fill="none" stroke="#da3633" stroke-width="1.2" opacity="0.6"/>
+      <rect x="-12" y="-4" width="6" height="8" rx="1" fill="#da3633" opacity="0.3"/>
+      <rect x="-4" y="-6" width="6" height="10" rx="1" fill="#da3633" opacity="0.5"/>
+      <rect x="4" y="-8" width="6" height="12" rx="1" fill="#da3633" opacity="0.8"/>
+    </g>
+    <text x="10" y="-18" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Evidence Grading</text>
+    <text x="10" y="-2" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Oxford CEBM levels, 6 dims</text>
+    <g transform="translate(-95, 18)">
+      <text font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">
+        <tspan x="0" dy="0">&#x2022; Study Design &#x2022; Sample Size</tspan>
+        <tspan x="0" dy="13">&#x2022; Methodology &#x2022; Statistics</tspan>
+        <tspan x="0" dy="13">&#x2022; Bias Risk &#x2022; Overall (1a–5)</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- === ROW 2 === -->
+
+  <!-- Card 4: Citation Generator -->
+  <g transform="translate(140, 280)" filter="url(#featShadow)">
+    <rect x="-110" y="-48" width="220" height="96" rx="10" fill="#1c2333"/>
+    <rect x="-110" y="-48" width="220" height="96" rx="10" fill="none" stroke="#30363d" stroke-width="0.8"/>
+    <rect x="-110" y="-48" width="220" height="4" rx="10 10 0 0" fill="#8957e5" opacity="0.7"/>
+    <!-- Icon: quote marks -->
+    <g transform="translate(-80, -15)">
+      <text font-family="Georgia, serif" font-size="28" fill="#8957e5" opacity="0.7" text-anchor="middle">&#x201C;&#x201D;</text>
+    </g>
+    <text x="10" y="-18" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Citation Generator</text>
+    <text x="10" y="-2" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">4 standard formats</text>
+    <!-- Format badges -->
+    <g transform="translate(0, 24)">
+      <rect x="-95" y="-10" width="42" height="20" rx="4" fill="#8957e5" opacity="0.15"/>
+      <text x="-74" y="4" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#bc8cff" font-weight="600">APA</text>
+      <rect x="-48" y="-10" width="42" height="20" rx="4" fill="#8957e5" opacity="0.15"/>
+      <text x="-27" y="4" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#bc8cff" font-weight="600">MLA</text>
+      <rect x="-1" y="-10" width="56" height="20" rx="4" fill="#8957e5" opacity="0.15"/>
+      <text x="27" y="4" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#bc8cff" font-weight="600">Chicago</text>
+      <rect x="59" y="-10" width="62" height="20" rx="4" fill="#8957e5" opacity="0.15"/>
+      <text x="90" y="4" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#bc8cff" font-weight="600">Vancouver</text>
+    </g>
+  </g>
+
+  <!-- Card 5: 3 Detail Levels -->
+  <g transform="translate(400, 280)" filter="url(#featShadow)">
+    <rect x="-110" y="-48" width="220" height="96" rx="10" fill="#1c2333"/>
+    <rect x="-110" y="-48" width="220" height="96" rx="10" fill="none" stroke="#30363d" stroke-width="0.8"/>
+    <rect x="-110" y="-48" width="220" height="4" rx="10 10 0 0" fill="#1f6feb" opacity="0.7"/>
+    <!-- Icon: slider levels -->
+    <g transform="translate(-80, -15)">
+      <rect x="-14" y="-6" width="28" height="3" rx="1.5" fill="#30363d"/>
+      <circle cx="-6" cy="-4.5" r="5" fill="#1f6feb" opacity="0.5"/>
+      <rect x="-14" y="1" width="28" height="3" rx="1.5" fill="#30363d"/>
+      <circle cx="2" cy="2.5" r="5" fill="#1f6feb" opacity="0.7"/>
+      <rect x="-14" y="8" width="28" height="3" rx="1.5" fill="#30363d"/>
+      <circle cx="10" cy="9.5" r="5" fill="#1f6feb" opacity="0.9"/>
+    </g>
+    <text x="10" y="-18" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">3 Detail Levels</text>
+    <text x="10" y="-2" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Adjustable granularity</text>
+    <!-- Level badges -->
+    <g transform="translate(0, 24)">
+      <rect x="-95" y="-10" width="55" height="20" rx="4" fill="#1f6feb" opacity="0.1"/>
+      <text x="-68" y="4" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#58a6ff">Brief</text>
+      <rect x="-35" y="-10" width="72" height="20" rx="4" fill="#1f6feb" opacity="0.15"/>
+      <text x="1" y="4" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#58a6ff" font-weight="600">Standard</text>
+      <rect x="42" y="-10" width="62" height="20" rx="4" fill="#1f6feb" opacity="0.1"/>
+      <text x="73" y="4" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#58a6ff">Comprehensive</text>
+    </g>
+  </g>
+
+  <!-- Card 6: 100% Private -->
+  <g transform="translate(660, 280)" filter="url(#featShadow)">
+    <rect x="-110" y="-48" width="220" height="96" rx="10" fill="#1c2333"/>
+    <rect x="-110" y="-48" width="220" height="96" rx="10" fill="none" stroke="#30363d" stroke-width="0.8"/>
+    <rect x="-110" y="-48" width="220" height="4" rx="10 10 0 0" fill="#238636" opacity="0.7"/>
+    <!-- Icon: shield/lock -->
+    <g transform="translate(-80, -15)">
+      <path d="M0,-16 L14,-10 L14,4 Q14,14 0,18 Q-14,14 -14,4 L-14,-10 Z" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.6"/>
+      <rect x="-5" y="-3" width="10" height="8" rx="2" fill="#3fb950" opacity="0.5"/>
+      <path d="M-4,-3 L-4,-7 Q-4,-11 0,-11 Q4,-11 4,-7 L4,-3" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="0" cy="1" r="1.5" fill="#0d1117"/>
+    </g>
+    <text x="10" y="-18" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">100% Private</text>
+    <text x="10" y="-2" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#8b949e">Patient data stays local</text>
+    <g transform="translate(-95, 18)">
+      <text font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#6e7681">
+        <tspan x="0" dy="0">&#x2022; No cloud APIs &#x2022; No data transmission</tspan>
+        <tspan x="0" dy="13">&#x2022; Local Ollama &#x2022; Air-gap compatible</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350">
+  <defs>
+    <linearGradient id="featBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="featAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7209b7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9d4edd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#21262d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#7209b7" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="12" fill="url(#featBg)" />
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="800" height="3" rx="1.5" fill="url(#featAccent)" />
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Key Features</text>
+  <rect x="320" y="45" width="160" height="2" rx="1" fill="url(#featAccent)" opacity="0.6" />
+
+  <!-- ROW 1 -->
+  <!-- Card 1: SWOT Analysis -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="65" width="230" height="115" rx="10" fill="url(#cardGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <circle cx="60" cy="95" r="16" fill="#7209b7" opacity="0.2" />
+    <text x="60" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16">📊</text>
+    <text x="85" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="white">SWOT Analysis</text>
+    <text x="50" y="125" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">Comprehensive strengths,</text>
+    <text x="50" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">weaknesses, opportunities</text>
+    <text x="50" y="155" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">&amp; threats with 4-quadrant view</text>
+    <rect x="30" y="173" width="230" height="3" rx="1.5" fill="#7209b7" opacity="0.4" />
+  </g>
+
+  <!-- Card 2: Feature Matrix Comparison -->
+  <g filter="url(#cardShadow)">
+    <rect x="285" y="65" width="230" height="115" rx="10" fill="url(#cardGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <circle cx="315" cy="95" r="16" fill="#7209b7" opacity="0.2" />
+    <text x="315" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16">📋</text>
+    <text x="340" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Feature Matrix</text>
+    <text x="305" y="125" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">Side-by-side comparison</text>
+    <text x="305" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">with ✅❌🔶 indicators</text>
+    <text x="305" y="155" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">across 8-10 key features</text>
+    <rect x="285" y="173" width="230" height="3" rx="1.5" fill="#7209b7" opacity="0.4" />
+  </g>
+
+  <!-- Card 3: Pricing Analysis -->
+  <g filter="url(#cardShadow)">
+    <rect x="540" y="65" width="230" height="115" rx="10" fill="url(#cardGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <circle cx="570" cy="95" r="16" fill="#7209b7" opacity="0.2" />
+    <text x="570" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16">💰</text>
+    <text x="595" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Pricing Analysis</text>
+    <text x="560" y="125" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">Compare pricing models,</text>
+    <text x="560" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">tiers (budget/mid/premium)</text>
+    <text x="560" y="155" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">&amp; value propositions</text>
+    <rect x="540" y="173" width="230" height="3" rx="1.5" fill="#7209b7" opacity="0.4" />
+  </g>
+
+  <!-- ROW 2 -->
+  <!-- Card 4: Market Positioning Map -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="200" width="230" height="115" rx="10" fill="url(#cardGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <circle cx="60" cy="230" r="16" fill="#7209b7" opacity="0.2" />
+    <text x="60" y="235" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16">🗺️</text>
+    <text x="85" y="235" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Market Positioning</text>
+    <text x="50" y="260" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">Price × Quality axis map</text>
+    <text x="50" y="275" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">(1-10 scale) with gap</text>
+    <text x="50" y="290" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">identification &amp; quadrants</text>
+    <rect x="30" y="308" width="230" height="3" rx="1.5" fill="#7209b7" opacity="0.4" />
+  </g>
+
+  <!-- Card 5: Prioritized Action Items -->
+  <g filter="url(#cardShadow)">
+    <rect x="285" y="200" width="230" height="115" rx="10" fill="url(#cardGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <circle cx="315" cy="230" r="16" fill="#7209b7" opacity="0.2" />
+    <text x="315" y="235" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16">🎯</text>
+    <text x="340" y="235" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Action Items</text>
+    <text x="305" y="260" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">5-8 prioritized items with</text>
+    <text x="305" y="275" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">priority, timeline, category</text>
+    <text x="305" y="290" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">&amp; expected outcomes</text>
+    <rect x="285" y="308" width="230" height="3" rx="1.5" fill="#7209b7" opacity="0.4" />
+  </g>
+
+  <!-- Card 6: Strategic Recommendations -->
+  <g filter="url(#cardShadow)">
+    <rect x="540" y="200" width="230" height="115" rx="10" fill="url(#cardGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <circle cx="570" cy="230" r="16" fill="#7209b7" opacity="0.2" />
+    <text x="570" y="235" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16">📝</text>
+    <text x="595" y="235" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Recommendations</text>
+    <text x="560" y="260" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">Top 5 strategic moves with</text>
+    <text x="560" y="275" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">rationale, priority levels</text>
+    <text x="560" y="290" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">&amp; LLM-generated insights</text>
+    <rect x="540" y="308" width="230" height="3" rx="1.5" fill="#7209b7" opacity="0.4" />
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="347" width="800" height="3" rx="1.5" fill="url(#featAccent)" />
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2838"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#00b4d8"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+  <text x="400" y="30" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">System Architecture</text>
+
+  <!-- User -->
+  <rect x="30" y="60" width="140" height="60" rx="10" fill="#1e293b" stroke="#00b4d8" stroke-width="2"/>
+  <text x="100" y="85" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">👤 User</text>
+  <text x="100" y="105" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">IT Issue Report</text>
+
+  <line x1="170" y1="90" x2="210" y2="90" stroke="#00b4d8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Category Router -->
+  <rect x="215" y="60" width="150" height="60" rx="10" fill="#1e293b" stroke="#00b4d8" stroke-width="2"/>
+  <text x="290" y="82" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🏷️ Category Router</text>
+  <text x="290" y="100" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">7 Support Categories</text>
+  <text x="290" y="113" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">HW/SW/Net/Sec/Mail/Print</text>
+
+  <line x1="365" y1="90" x2="405" y2="90" stroke="#00b4d8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Core Engine -->
+  <rect x="410" y="50" width="160" height="80" rx="10" fill="#0a2647" stroke="#00b4d8" stroke-width="2"/>
+  <text x="490" y="78" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">⚙️ Core Engine</text>
+  <text x="490" y="96" text-anchor="middle" fill="#7dd3fc" font-family="Segoe UI,Arial,sans-serif" font-size="10">get_response()</text>
+  <text x="490" y="112" text-anchor="middle" fill="#7dd3fc" font-family="Segoe UI,Arial,sans-serif" font-size="10">Multi-turn + System Prompt</text>
+
+  <line x1="570" y1="90" x2="610" y2="90" stroke="#00b4d8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- LLM -->
+  <rect x="615" y="55" width="155" height="70" rx="10" fill="#0077b6" stroke="#00b4d8" stroke-width="2"/>
+  <text x="692" y="82" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">🤖 Gemma 4</text>
+  <text x="692" y="102" text-anchor="middle" fill="#caf0f8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Ollama Local LLM</text>
+
+  <!-- Knowledge Base -->
+  <rect x="30" y="170" width="140" height="60" rx="10" fill="#1e293b" stroke="#0077b6" stroke-width="2"/>
+  <text x="100" y="195" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📚 Knowledge Base</text>
+  <text x="100" y="215" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">search_knowledge_base()</text>
+
+  <!-- Ticket System -->
+  <rect x="215" y="170" width="150" height="60" rx="10" fill="#1e293b" stroke="#0077b6" stroke-width="2"/>
+  <text x="290" y="195" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🎫 Ticket System</text>
+  <text x="290" y="215" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">save_ticket() / load_tickets()</text>
+
+  <!-- Solution Templates -->
+  <rect x="410" y="170" width="160" height="60" rx="10" fill="#1e293b" stroke="#0077b6" stroke-width="2"/>
+  <text x="490" y="195" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📝 Solution Templates</text>
+  <text x="490" y="215" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">get_solution_template()</text>
+
+  <!-- Interfaces -->
+  <rect x="30" y="280" width="200" height="70" rx="10" fill="#1e293b" stroke="#00b4d8" stroke-width="2"/>
+  <text x="130" y="305" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🖥️ CLI Interface</text>
+  <text x="130" y="322" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Click + Rich • Interactive</text>
+  <text x="130" y="338" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">new | ticket | kb | history</text>
+
+  <rect x="280" y="280" width="200" height="70" rx="10" fill="#1e293b" stroke="#00b4d8" stroke-width="2"/>
+  <text x="380" y="305" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🌐 Web UI</text>
+  <text x="380" y="322" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Streamlit • Tabs</text>
+  <text x="380" y="338" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Chat | KB | Tickets</text>
+
+  <!-- Storage -->
+  <rect x="550" y="280" width="210" height="70" rx="10" fill="#1e293b" stroke="#0077b6" stroke-width="2"/>
+  <text x="655" y="305" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">💾 JSON Storage</text>
+  <text x="655" y="322" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">tickets.json</text>
+  <text x="655" y="338" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">knowledge_base.json</text>
+
+  <text x="400" y="385" text-anchor="middle" fill="#4a5568" font-family="Segoe UI,Arial,sans-serif" font-size="11">IT Helpdesk Bot — Local AI Architecture • 7 Support Categories • Full Ticket Tracking</text>
+</svg>

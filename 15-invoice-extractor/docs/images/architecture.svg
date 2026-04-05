@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a0a2e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="archAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7209b7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#b5179e;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="archGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrowHead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7209b7" opacity="0.8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" rx="14" fill="url(#archBg)"/>
+  <rect x="2" y="2" width="796" height="396" rx="13" fill="none" stroke="url(#archAccent)" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="18" letter-spacing="0.5">Architecture Overview</text>
+  <rect x="310" y="42" width="180" height="2" rx="1" fill="url(#archAccent)" opacity="0.5"/>
+
+  <!-- ===== Stage 1: Invoice Files ===== -->
+  <g transform="translate(30, 80)">
+    <rect x="0" y="0" width="120" height="120" rx="10" fill="#1a1a2e" stroke="#7209b7" stroke-width="1.5"/>
+    <text x="60" y="28" text-anchor="middle" fill="#7209b7" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="13">Invoice Files</text>
+    <!-- PDF icon -->
+    <rect x="15" y="42" width="36" height="28" rx="4" fill="#7209b7" opacity="0.15" stroke="#7209b7" stroke-width="1" opacity="0.4"/>
+    <text x="33" y="60" text-anchor="middle" fill="#d4a5f0" font-family="Consolas, monospace" font-size="10" font-weight="700">PDF</text>
+    <!-- TXT icon -->
+    <rect x="68" y="42" width="36" height="28" rx="4" fill="#7209b7" opacity="0.15" stroke="#7209b7" stroke-width="1" opacity="0.4"/>
+    <text x="86" y="60" text-anchor="middle" fill="#d4a5f0" font-family="Consolas, monospace" font-size="10" font-weight="700">TXT</text>
+    <!-- Labels -->
+    <text x="60" y="90" text-anchor="middle" fill="#888" font-family="Segoe UI, Arial, sans-serif" font-size="10">Single or Batch</text>
+    <text x="60" y="104" text-anchor="middle" fill="#666" font-family="Segoe UI, Arial, sans-serif" font-size="9">--file / --files</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="155" y1="140" x2="190" y2="140" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowHead)" opacity="0.7"/>
+
+  <!-- ===== Stage 2: Text Extraction ===== -->
+  <g transform="translate(195, 80)">
+    <rect x="0" y="0" width="120" height="120" rx="10" fill="#1a1a2e" stroke="#7209b7" stroke-width="1.5"/>
+    <text x="60" y="28" text-anchor="middle" fill="#7209b7" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="13">Text Extract</text>
+    <!-- Gear icon -->
+    <circle cx="60" cy="65" r="20" fill="#7209b7" opacity="0.1" stroke="#7209b7" stroke-width="1" opacity="0.3"/>
+    <text x="60" y="70" text-anchor="middle" fill="#d4a5f0" font-family="Segoe UI Emoji, Arial" font-size="18">📄</text>
+    <text x="60" y="100" text-anchor="middle" fill="#888" font-family="Segoe UI, Arial, sans-serif" font-size="10">PyPDF2</text>
+    <text x="60" y="112" text-anchor="middle" fill="#666" font-family="Segoe UI, Arial, sans-serif" font-size="9">pdfplumber</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="320" y1="140" x2="355" y2="140" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowHead)" opacity="0.7"/>
+
+  <!-- ===== Stage 3: LLM Processing (larger box) ===== -->
+  <g transform="translate(360, 65)">
+    <rect x="0" y="0" width="170" height="150" rx="10" fill="#1a1a2e" stroke="#7209b7" stroke-width="2"/>
+    <!-- Glow effect on border -->
+    <rect x="0" y="0" width="170" height="150" rx="10" fill="none" stroke="#b5179e" stroke-width="1" opacity="0.2"/>
+    <text x="85" y="25" text-anchor="middle" fill="#b5179e" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="14">Gemma 4 via Ollama</text>
+    <!-- Sub-tasks -->
+    <rect x="15" y="38" width="140" height="26" rx="6" fill="#7209b7" opacity="0.12"/>
+    <text x="85" y="55" text-anchor="middle" fill="#d4a5f0" font-family="Segoe UI, Arial, sans-serif" font-size="11">🔍 Extract Data</text>
+
+    <rect x="15" y="70" width="140" height="26" rx="6" fill="#7209b7" opacity="0.12"/>
+    <text x="85" y="87" text-anchor="middle" fill="#d4a5f0" font-family="Segoe UI, Arial, sans-serif" font-size="11">🏷️ Categorize Items</text>
+
+    <rect x="15" y="102" width="140" height="26" rx="6" fill="#7209b7" opacity="0.12"/>
+    <text x="85" y="119" text-anchor="middle" fill="#d4a5f0" font-family="Segoe UI, Arial, sans-serif" font-size="11">🔁 Detect Duplicates</text>
+
+    <text x="85" y="145" text-anchor="middle" fill="#666" font-family="Segoe UI, Arial, sans-serif" font-size="9">100% Local Processing</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <line x1="535" y1="140" x2="570" y2="140" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowHead)" opacity="0.7"/>
+
+  <!-- ===== Stage 4: Structured Output ===== -->
+  <g transform="translate(575, 80)">
+    <rect x="0" y="0" width="120" height="120" rx="10" fill="#1a1a2e" stroke="#7209b7" stroke-width="1.5"/>
+    <text x="60" y="28" text-anchor="middle" fill="#7209b7" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="13">Output</text>
+    <!-- JSON icon -->
+    <rect x="10" y="42" width="44" height="28" rx="4" fill="#7209b7" opacity="0.15" stroke="#7209b7" stroke-width="1" opacity="0.4"/>
+    <text x="32" y="60" text-anchor="middle" fill="#d4a5f0" font-family="Consolas, monospace" font-size="10" font-weight="700">JSON</text>
+    <!-- CSV icon -->
+    <rect x="66" y="42" width="44" height="28" rx="4" fill="#7209b7" opacity="0.15" stroke="#7209b7" stroke-width="1" opacity="0.4"/>
+    <text x="88" y="60" text-anchor="middle" fill="#d4a5f0" font-family="Consolas, monospace" font-size="10" font-weight="700">CSV</text>
+    <text x="60" y="90" text-anchor="middle" fill="#888" font-family="Segoe UI, Arial, sans-serif" font-size="10">Structured Data</text>
+    <text x="60" y="104" text-anchor="middle" fill="#666" font-family="Segoe UI, Arial, sans-serif" font-size="9">Rich Table View</text>
+  </g>
+
+  <!-- ===== Bottom: Data Flow Detail ===== -->
+  <g transform="translate(30, 240)">
+    <rect x="0" y="0" width="740" height="140" rx="10" fill="#12121f" stroke="#7209b7" stroke-width="1" opacity="0.4"/>
+    <text x="370" y="24" text-anchor="middle" fill="#9a7ab5" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="12">Data Flow Details</text>
+
+    <!-- Row 1: extract_invoice_data -->
+    <rect x="15" y="38" width="230" height="40" rx="6" fill="#7209b7" opacity="0.08"/>
+    <text x="25" y="55" fill="#d4a5f0" font-family="Consolas, monospace" font-size="10">extract_invoice_data(text)</text>
+    <text x="25" y="70" fill="#777" font-family="Segoe UI, Arial, sans-serif" font-size="9">→ vendor, dates, line_items, totals</text>
+
+    <!-- Row 2: batch_extract -->
+    <rect x="255" y="38" width="230" height="40" rx="6" fill="#7209b7" opacity="0.08"/>
+    <text x="265" y="55" fill="#d4a5f0" font-family="Consolas, monospace" font-size="10">batch_extract(file_paths)</text>
+    <text x="265" y="70" fill="#777" font-family="Segoe UI, Arial, sans-serif" font-size="9">→ list of {file, data} dicts</text>
+
+    <!-- Row 3: detect_duplicates -->
+    <rect x="495" y="38" width="230" height="40" rx="6" fill="#7209b7" opacity="0.08"/>
+    <text x="505" y="55" fill="#d4a5f0" font-family="Consolas, monospace" font-size="10">detect_duplicates(invoices)</text>
+    <text x="505" y="70" fill="#777" font-family="Segoe UI, Arial, sans-serif" font-size="9">→ (idx1, idx2, reason) tuples</text>
+
+    <!-- Row 4 -->
+    <rect x="15" y="86" width="230" height="40" rx="6" fill="#7209b7" opacity="0.08"/>
+    <text x="25" y="103" fill="#d4a5f0" font-family="Consolas, monospace" font-size="10">categorize_items(invoice_data)</text>
+    <text x="25" y="118" fill="#777" font-family="Segoe UI, Arial, sans-serif" font-size="9">→ categorized line items via LLM</text>
+
+    <rect x="255" y="86" width="230" height="40" rx="6" fill="#7209b7" opacity="0.08"/>
+    <text x="265" y="103" fill="#d4a5f0" font-family="Consolas, monospace" font-size="10">export_to_csv(invoices)</text>
+    <text x="265" y="118" fill="#777" font-family="Segoe UI, Arial, sans-serif" font-size="9">→ CSV string output</text>
+
+    <rect x="495" y="86" width="230" height="40" rx="6" fill="#7209b7" opacity="0.08"/>
+    <text x="505" y="103" fill="#d4a5f0" font-family="Consolas, monospace" font-size="10">CLI: extract | batch | categorize</text>
+    <text x="505" y="118" fill="#777" font-family="Segoe UI, Arial, sans-serif" font-size="9">→ Click commands with Rich output</text>
+  </g>
+</svg>

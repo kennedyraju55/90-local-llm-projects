@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1a3e"/>
+      <stop offset="100%" style="stop-color:#1a2755"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+  <text x="400" y="35" text-anchor="middle" fill="#4361ee" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold">✨ Key Features</text>
+
+  <rect x="20" y="55" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="140" y="85" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">📝</text>
+  <text x="140" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">5 Study Modes</text>
+  <text x="140" y="130" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Quiz, Explain, Plan,</text>
+  <text x="140" y="145" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Summarize, Flashcards</text>
+
+  <rect x="280" y="55" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="85" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">🃏</text>
+  <text x="400" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">Flashcard System</text>
+  <text x="400" y="130" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Generate, save, and review</text>
+  <text x="400" y="145" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Q&amp;A flashcard sets</text>
+
+  <rect x="540" y="55" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="660" y="85" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">⏱️</text>
+  <text x="660" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">Pomodoro Timer</text>
+  <text x="660" y="130" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">25-min focus sessions with</text>
+  <text x="660" y="145" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">5-min breaks (configurable)</text>
+
+  <rect x="20" y="195" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="140" y="225" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">🧠</text>
+  <text x="140" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">Concept Explainer</text>
+  <text x="140" y="270" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Feynman Technique + analogies</text>
+  <text x="140" y="285" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">for deep understanding</text>
+
+  <rect x="280" y="195" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="225" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">📊</text>
+  <text x="400" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">Study Analytics</text>
+  <text x="400" y="270" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Track sessions by subject</text>
+  <text x="400" y="285" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">with time and mode stats</text>
+
+  <rect x="540" y="195" width="240" height="120" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="660" y="225" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="28">📅</text>
+  <text x="660" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">Study Plans</text>
+  <text x="660" y="270" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">Multi-day study schedules</text>
+  <text x="660" y="285" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="11">tailored to your topic</text>
+
+  <text x="400" y="340" text-anchor="middle" fill="#4a5568" font-family="Segoe UI,Arial,sans-serif" font-size="11">Study Buddy Bot — Built with Python • Click CLI • Streamlit Web UI</text>
+</svg>

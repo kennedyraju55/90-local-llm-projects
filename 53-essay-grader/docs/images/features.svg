@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg-feat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent-feat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ec4b6"/>
+      <stop offset="100%" style="stop-color:#1a936f"/>
+    </linearGradient>
+    <filter id="shadow-feat" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#bg-feat)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#2ec4b6" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold">FEATURE OVERVIEW</text>
+
+  <!-- Row 1 -->
+  <!-- Feature 1: Multi-Rubric Grading -->
+  <rect x="25" y="50" width="240" height="120" rx="10" fill="#1e2a45" stroke="#2ec4b6" stroke-width="1.5" filter="url(#shadow-feat)"/>
+  <text x="145" y="78" text-anchor="middle" fill="#2ec4b6" font-family="Segoe UI,Arial,sans-serif" font-size="26">📋</text>
+  <text x="145" y="100" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Multi-Rubric Grading</text>
+  <text x="145" y="118" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">5 built-in rubric presets</text>
+  <text x="145" y="134" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">academic • creative_writing</text>
+  <text x="145" y="148" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">argumentative • narrative • research</text>
+  <line x1="55" y1="88" x2="235" y2="88" stroke="#2ec4b6" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Feature 2: Inline Annotations -->
+  <rect x="280" y="50" width="240" height="120" rx="10" fill="#1e2a45" stroke="#2ec4b6" stroke-width="1.5" filter="url(#shadow-feat)"/>
+  <text x="400" y="78" text-anchor="middle" fill="#2ec4b6" font-family="Segoe UI,Arial,sans-serif" font-size="26">✏️</text>
+  <text x="400" y="100" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Inline Annotations</text>
+  <text x="400" y="118" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Contextual feedback on text</text>
+  <rect x="325" y="128" width="40" height="16" rx="4" fill="#1a936f" opacity="0.6"/>
+  <text x="345" y="140" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="8">info</text>
+  <rect x="372" y="128" width="55" height="16" rx="4" fill="#e6a817" opacity="0.6"/>
+  <text x="400" y="140" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="8">warning</text>
+  <rect x="434" y="128" width="45" height="16" rx="4" fill="#e74c3c" opacity="0.6"/>
+  <text x="456" y="140" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="8">error</text>
+  <line x1="310" y1="88" x2="490" y2="88" stroke="#2ec4b6" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Feature 3: Plagiarism Detection -->
+  <rect x="535" y="50" width="240" height="120" rx="10" fill="#1e2a45" stroke="#2ec4b6" stroke-width="1.5" filter="url(#shadow-feat)"/>
+  <text x="655" y="78" text-anchor="middle" fill="#2ec4b6" font-family="Segoe UI,Arial,sans-serif" font-size="26">🔍</text>
+  <text x="655" y="100" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Plagiarism Detection</text>
+  <text x="655" y="118" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">AI-powered originality check</text>
+  <text x="655" y="134" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Suspicious passage identification</text>
+  <text x="655" y="148" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Score + detailed explanation</text>
+  <line x1="565" y1="88" x2="745" y2="88" stroke="#2ec4b6" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Row 2 -->
+  <!-- Feature 4: Batch Processing -->
+  <rect x="25" y="185" width="240" height="120" rx="10" fill="#1e2a45" stroke="#2ec4b6" stroke-width="1.5" filter="url(#shadow-feat)"/>
+  <text x="145" y="213" text-anchor="middle" fill="#2ec4b6" font-family="Segoe UI,Arial,sans-serif" font-size="26">⚡</text>
+  <text x="145" y="235" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Batch Processing</text>
+  <text x="145" y="253" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Grade entire directories</text>
+  <text x="145" y="269" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Automatic report generation</text>
+  <text x="145" y="283" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Configurable output directory</text>
+  <line x1="55" y1="223" x2="235" y2="223" stroke="#2ec4b6" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Feature 5: Grade Distribution -->
+  <rect x="280" y="185" width="240" height="120" rx="10" fill="#1e2a45" stroke="#2ec4b6" stroke-width="1.5" filter="url(#shadow-feat)"/>
+  <text x="400" y="213" text-anchor="middle" fill="#2ec4b6" font-family="Segoe UI,Arial,sans-serif" font-size="26">📊</text>
+  <text x="400" y="235" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Grade Distribution</text>
+  <text x="400" y="253" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Statistical analysis of scores</text>
+  <text x="400" y="269" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Mean • Median • Std Deviation</text>
+  <text x="400" y="283" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="9">Summary reports for classes</text>
+  <line x1="310" y1="223" x2="490" y2="223" stroke="#2ec4b6" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Feature 6: Detailed Reports -->
+  <rect x="535" y="185" width="240" height="120" rx="10" fill="#1e2a45" stroke="#2ec4b6" stroke-width="1.5" filter="url(#shadow-feat)"/>
+  <text x="655" y="213" text-anchor="middle" fill="#2ec4b6" font-family="Segoe UI,Arial,sans-serif" font-size="26">📄</text>
+  <text x="655" y="235" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Detailed Reports</text>
+  <text x="655" y="253" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="10">Export in multiple formats</text>
+  <rect x="600" y="263" width="50" height="16" rx="4" fill="#1a936f" opacity="0.5"/>
+  <text x="625" y="275" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="8">JSON</text>
+  <rect x="660" y="263" width="65" height="16" rx="4" fill="#2ec4b6" opacity="0.5"/>
+  <text x="692" y="275" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="8">Markdown</text>
+  <line x1="565" y1="223" x2="745" y2="223" stroke="#2ec4b6" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="320" width="800" height="30" rx="0" fill="#0d2137"/>
+  <text x="400" y="340" text-anchor="middle" fill="#2ec4b6" font-family="Segoe UI,Arial,sans-serif" font-size="11">All features run 100% locally — no data leaves your machine</text>
+  <rect x="0" y="345" width="800" height="5" fill="url(#accent-feat)"/>
+</svg>

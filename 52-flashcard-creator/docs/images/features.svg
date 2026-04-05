@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="featuresBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#featuresBg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">KEY FEATURES</text>
+
+  <!-- Row 1 -->
+
+  <!-- Card 1: SM-2 Spaced Repetition -->
+  <rect x="30" y="55" width="230" height="120" rx="10" fill="#0d2137" stroke="#00b4d8" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="145" y="85" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="26">🧠</text>
+  <text x="145" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">SM-2 Spaced Repetition</text>
+  <text x="145" y="130" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">Science-backed review scheduling</text>
+  <text x="145" y="148" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">with adaptive ease factors</text>
+  <text x="145" y="166" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">and graduating intervals</text>
+
+  <!-- Card 2: Deck Management -->
+  <rect x="285" y="55" width="230" height="120" rx="10" fill="#0d2137" stroke="#00b4d8" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="400" y="85" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="26">📚</text>
+  <text x="400" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Deck Management</text>
+  <text x="400" y="130" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">Create, delete, merge, and</text>
+  <text x="400" y="148" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">browse decks with full CRUD</text>
+  <text x="400" y="166" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">operations and JSON persistence</text>
+
+  <!-- Card 3: Interactive Review -->
+  <rect x="540" y="55" width="230" height="120" rx="10" fill="#0d2137" stroke="#00b4d8" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="655" y="85" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="26">🎯</text>
+  <text x="655" y="110" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Interactive Review</text>
+  <text x="655" y="130" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">Flip-card experience with</text>
+  <text x="655" y="148" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">quality ratings (0–5), hints,</text>
+  <text x="655" y="166" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">shuffle, and due-only mode</text>
+
+  <!-- Row 2 -->
+
+  <!-- Card 4: Import / Export -->
+  <rect x="30" y="195" width="230" height="120" rx="10" fill="#0d2137" stroke="#00b4d8" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="145" y="225" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="26">📤</text>
+  <text x="145" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Import / Export</text>
+  <text x="145" y="270" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">Full JSON and CSV support</text>
+  <text x="145" y="288" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">for portability and sharing</text>
+  <text x="145" y="306" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">decks across systems</text>
+
+  <!-- Card 5: Rich Metadata -->
+  <rect x="285" y="195" width="230" height="120" rx="10" fill="#0d2137" stroke="#00b4d8" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="400" y="225" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="26">🏷️</text>
+  <text x="400" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Rich Metadata</text>
+  <text x="400" y="270" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">Hints, tags, difficulty levels,</text>
+  <text x="400" y="288" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">ease factors, intervals, and</text>
+  <text x="400" y="306" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">repetition tracking per card</text>
+
+  <!-- Card 6: Progress Statistics -->
+  <rect x="540" y="195" width="230" height="120" rx="10" fill="#0d2137" stroke="#00b4d8" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="655" y="225" text-anchor="middle" fill="#00b4d8" font-family="Segoe UI,Arial,sans-serif" font-size="26">📊</text>
+  <text x="655" y="250" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">Progress Statistics</text>
+  <text x="655" y="270" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">Track cards reviewed, score</text>
+  <text x="655" y="288" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">percentage, average quality,</text>
+  <text x="655" y="306" text-anchor="middle" fill="#a0a0b0" font-family="Segoe UI,Arial,sans-serif" font-size="11">difficulty breakdown, and more</text>
+</svg>

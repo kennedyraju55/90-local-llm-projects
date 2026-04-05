@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" viewBox="0 0 800 280">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2ec4b6" opacity="0.8"/>
+    </marker>
+  </defs>
+  <rect width="800" height="280" fill="url(#bg)" rx="12"/>
+  <text x="400" y="265" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#666">Architecture · GDPR Compliance Checker</text>
+  <line x1="190" y1="80" x2="250" y2="45" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="190" y1="80" x2="250" y2="115" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="190" y1="80" x2="250" y2="185" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="380" y1="45" x2="440" y2="75" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="380" y1="115" x2="440" y2="80" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="380" y1="185" x2="440" y2="165" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="580" y1="80" x2="640" y2="115" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="580" y1="170" x2="640" y2="125" stroke="#2ec4b6" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <rect x="50" y="50" width="140" height="60" rx="8" fill="#2ec4b6" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="120" y="85" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Document Input</text>
+  <rect x="250" y="20" width="130" height="50" rx="8" fill="#20a39e" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="315" y="50" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Article Scanner</text>
+  <rect x="250" y="90" width="130" height="50" rx="8" fill="#20a39e" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="315" y="120" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Data Flow Mapper</text>
+  <rect x="250" y="160" width="130" height="50" rx="8" fill="#20a39e" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="315" y="190" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Signal Detector</text>
+  <rect x="440" y="50" width="140" height="60" rx="8" fill="#1a1a2e" stroke="#2ec4b6" stroke-width="1.5" opacity="0.9"/>
+  <text x="510" y="85" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">LLM Analyzer</text>
+  <rect x="440" y="140" width="140" height="60" rx="8" fill="#20a39e" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="510" y="175" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">DPO Engine</text>
+  <rect x="640" y="90" width="140" height="60" rx="8" fill="#2ec4b6" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="710" y="125" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Compliance Report</text>
+</svg>

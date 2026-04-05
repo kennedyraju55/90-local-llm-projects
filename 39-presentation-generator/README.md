@@ -1,19 +1,15 @@
 <div align="center">
-
-# Presentation Generator
-
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Powered by Ollama](https://img.shields.io/badge/LLM-Ollama-green.svg)](https://ollama.ai/)
-
-**Generate compelling slide decks with speaker notes, visual suggestions, and timing estimates using AI.**
-
-[Features](#-features) - [Installation](#-installation) - [CLI Usage](#-cli-usage) - [Web UI](#-web-ui) - [Architecture](#-architecture)
-
+<img src="https://img.shields.io/badge/✍️_📊_Presentation_Generator-Local_LLM_Powered-blue?style=for-the-badge&labelColor=1a1a2e&color=16213e" alt="Project Banner" width="600"/>
+<br/>
+<img src="https://img.shields.io/badge/Gemma_4-Ollama-orange?style=flat-square&logo=google&logoColor=white" alt="Gemma 4"/>
+<img src="https://img.shields.io/badge/Python-3.9+-blue?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/Streamlit-Web_UI-red?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
+<img src="https://img.shields.io/badge/Click-CLI-green?style=flat-square&logo=gnu-bash&logoColor=white" alt="Click CLI"/>
+<img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License"/>
+<br/><br/>
+<strong>Part of <a href="https://github.com/kennedyraju55/90-local-llm-projects">90 Local LLM Projects</a> collection</strong>
 </div>
-
----
+<br/>
 
 ## Features
 
@@ -117,6 +113,17 @@ presentation:
 `bash
 make test
 `
+
+## 📸 Screenshots
+<div align="center">
+<table>
+<tr>
+<td><img src="https://via.placeholder.com/400x250/1a1a2e/e94560?text=CLI+Interface" alt="CLI"/></td>
+<td><img src="https://via.placeholder.com/400x250/16213e/e94560?text=Web+UI" alt="Web UI"/></td>
+</tr>
+<tr><td align="center"><em>CLI Interface</em></td><td align="center"><em>Streamlit Web UI</em></td></tr>
+</table>
+</div>
 
 ## License
 

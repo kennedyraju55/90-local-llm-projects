@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" viewBox="0 0 800 280">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6b35" opacity="0.8"/>
+    </marker>
+  </defs>
+  <rect width="800" height="280" fill="url(#bg)" rx="12"/>
+  <text x="400" y="265" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#666">Architecture · Password Strength Advisor</text>
+  <line x1="180" y1="80" x2="240" y2="45" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="180" y1="80" x2="240" y2="115" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="180" y1="80" x2="240" y2="185" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="370" y1="45" x2="430" y2="55" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="370" y1="115" x2="430" y2="125" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="370" y1="185" x2="430" y2="200" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="570" y1="55" x2="630" y2="115" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="570" y1="130" x2="630" y2="120" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <line x1="570" y1="200" x2="630" y2="130" stroke="#ff6b35" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+  <rect x="50" y="50" width="130" height="60" rx="8" fill="#ff6b35" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="115" y="85" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Password Input</text>
+  <rect x="240" y="20" width="130" height="50" rx="8" fill="#e85d26" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="305" y="50" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Entropy Engine</text>
+  <rect x="240" y="90" width="130" height="50" rx="8" fill="#e85d26" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="305" y="120" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Breach Checker</text>
+  <rect x="240" y="160" width="130" height="50" rx="8" fill="#e85d26" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="305" y="190" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Pattern Analyzer</text>
+  <rect x="430" y="30" width="140" height="50" rx="8" fill="#d14e1e" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="500" y="60" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">NIST Policy Engine</text>
+  <rect x="430" y="100" width="140" height="60" rx="8" fill="#1a1a2e" stroke="#ff6b35" stroke-width="1.5" opacity="0.9"/>
+  <text x="500" y="135" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">LLM Advisor</text>
+  <rect x="430" y="180" width="140" height="50" rx="8" fill="#d14e1e" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="500" y="210" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Secure Generator</text>
+  <rect x="630" y="90" width="140" height="60" rx="8" fill="#ff6b35" stroke="none" stroke-width="0" opacity="0.9"/>
+  <text x="700" y="125" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Rich CLI Output</text>
+</svg>

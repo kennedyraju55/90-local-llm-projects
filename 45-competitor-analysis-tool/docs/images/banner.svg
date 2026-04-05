@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7209b7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9d4edd;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" rx="12" fill="url(#bgGrad)" />
+
+  <!-- Accent bar top -->
+  <rect x="0" y="0" width="800" height="4" rx="2" fill="url(#accentGrad)" />
+
+  <!-- Chess/Strategy decorative element - left -->
+  <g transform="translate(60, 55)" opacity="0.15">
+    <!-- Chess king piece -->
+    <rect x="0" y="70" width="40" height="8" rx="2" fill="#7209b7" />
+    <rect x="5" y="50" width="30" height="22" rx="3" fill="#7209b7" />
+    <rect x="10" y="40" width="20" height="14" rx="2" fill="#7209b7" />
+    <rect x="16" y="20" width="8" height="24" rx="1" fill="#7209b7" />
+    <rect x="12" y="16" width="16" height="8" rx="1" fill="#7209b7" />
+    <rect x="18" y="8" width="4" height="12" fill="#7209b7" />
+  </g>
+
+  <!-- Strategy grid - left background -->
+  <g transform="translate(120, 45)" opacity="0.08">
+    <rect x="0" y="0" width="100" height="100" rx="4" stroke="#7209b7" stroke-width="1.5" fill="none" />
+    <line x1="50" y1="0" x2="50" y2="100" stroke="#7209b7" stroke-width="1" />
+    <line x1="0" y1="50" x2="100" y2="50" stroke="#7209b7" stroke-width="1" />
+    <circle cx="25" cy="25" r="8" fill="#7209b7" opacity="0.5" />
+    <circle cx="75" cy="35" r="6" fill="#9d4edd" opacity="0.4" />
+    <circle cx="60" cy="75" r="10" fill="#7209b7" opacity="0.3" />
+  </g>
+
+  <!-- Main title -->
+  <text x="400" y="82" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="36" font-weight="bold" fill="white" filter="url(#glow)">
+    Competitor Analysis Tool
+  </text>
+
+  <!-- Accent underline -->
+  <rect x="220" y="95" width="360" height="3" rx="1.5" fill="url(#accentGrad)" opacity="0.8" />
+
+  <!-- Tagline -->
+  <text x="400" y="128" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#8b949e">
+    AI-Powered Competitive Intelligence &amp; Strategy
+  </text>
+
+  <!-- Badge row -->
+  <g transform="translate(265, 145)">
+    <rect x="0" y="0" width="70" height="22" rx="11" fill="#7209b7" opacity="0.3" />
+    <text x="35" y="15" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c77dff">SWOT</text>
+    <rect x="80" y="0" width="90" height="22" rx="11" fill="#7209b7" opacity="0.3" />
+    <text x="125" y="15" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c77dff">Features</text>
+    <rect x="180" y="0" width="70" height="22" rx="11" fill="#7209b7" opacity="0.3" />
+    <text x="215" y="15" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c77dff">Pricing</text>
+  </g>
+
+  <!-- Strategy decorative - right -->
+  <g transform="translate(640, 40)" opacity="0.12">
+    <!-- Target/bullseye -->
+    <circle cx="50" cy="55" r="45" stroke="#7209b7" stroke-width="1.5" fill="none" />
+    <circle cx="50" cy="55" r="30" stroke="#7209b7" stroke-width="1.5" fill="none" />
+    <circle cx="50" cy="55" r="15" stroke="#7209b7" stroke-width="1.5" fill="none" />
+    <circle cx="50" cy="55" r="4" fill="#7209b7" />
+    <!-- Arrow -->
+    <line x1="75" y1="30" x2="55" y2="50" stroke="#9d4edd" stroke-width="2" />
+    <polygon points="55,50 60,42 63,52" fill="#9d4edd" />
+  </g>
+
+  <!-- Accent bar bottom -->
+  <rect x="0" y="196" width="800" height="4" rx="2" fill="url(#accentGrad)" />
+</svg>

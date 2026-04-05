@@ -1,0 +1,469 @@
+Perfect! I have now read all the source code files for the 10 projects. Let me create a comprehensive summary organized by project:
+
+---
+
+# **Complete Source Code Summary - 10 Local LLM Projects**
+
+## **PROJECT 1: 31-Blog-Post-Generator**
+
+### **Directory Structure**
+```
+31-blog-post-generator/
+├── README.md (badge-based documentation with architecture)
+├── config.yaml
+├── src/blog_gen/
+│   ├── core.py (440 lines)
+│   └── cli.py (186 lines)
+└── tests/
+```
+**docs/images/ exists: NO**
+
+### **core.py Summary**
+- **Main Classes**: `BlogPost` (dataclass for generated posts with metadata)
+- **Key Functions**:
+  - `load_config()` - YAML config loader with defaults (temp: 0.7, max_tokens: 2400)
+  - `setup_logging()` - Configure logging
+  - `build_prompt()` - Creates prompt for blog generation
+  - `generate_blog_post()` - LLM call to generate blog post
+  - `generate_outline()` - Generate outline preview
+  - `generate_multiple_drafts()` - Generate 3-5 alternative drafts with varying temperature
+  - `score_seo()` - Calculate SEO score (0-100) on keyword density, heading structure, meta description, content length
+  - `analyze_tone()` - Heuristic tone analysis (professional, casual, technical, friendly, persuasive)
+  - `export_markdown()` - Export to markdown with YAML frontmatter
+  - `parse_blog_post()` - Parse LLM output into structured BlogPost object
+- **Config**: Default tone "professional", length 800 words, SEO keyword density 1-3%
+- **Tone Options**: professional, casual, technical, friendly, persuasive
+
+### **cli.py Summary**
+- Rich CLI with Click framework
+- **Main Command**: `main()`
+  - Options: `--topic`, `--keywords`, `--tone`, `--length`, `--output`, `--drafts`, `--outline`, `--seo-report`, `--export-md`
+  - Features: Outline preview, multi-draft generation, SEO report table, tone analysis table, markdown export
+- **Helper Functions**: `_render_seo_table()` - Display SEO scores with star ratings
+
+---
+
+## **PROJECT 2: 32-Social-Media-Writer**
+
+### **Directory Structure**
+```
+32-social-media-writer/
+├── README.md (includes full table of contents)
+├── config.yaml
+├── src/social_writer/
+│   ├── core.py (378 lines)
+│   └── cli.py (180 lines)
+└── tests/
+```
+**docs/images/ exists: NO**
+
+### **core.py Summary**
+- **Main Classes**: `SocialPost` (dataclass with platform, content, hashtags, char_count, tone, created_at)
+- **Key Functions**:
+  - `load_config()` - Config loader with platform-specific defaults
+  - `_get_platform_config()` - Get platform config from config.yaml or defaults
+  - `build_prompt()` - Create generation prompt for specific platform
+  - `generate_posts()` - LLM call to generate social posts
+  - `validate_char_count()` - Check character limit compliance
+  - `generate_hashtags()` - Generate platform-specific hashtags via LLM
+  - `suggest_schedule()` - Return best posting times per platform
+  - `generate_ab_variants()` - Generate A/B test variants with different hooks
+  - `format_for_platform()` - Platform-specific formatting (Twitter compact, LinkedIn paragraphs, Instagram emoji-enriched)
+  - `preview_post()` - Return metrics dict with char_count, is_valid, hashtag_count, reach_score (0-100)
+  - `_extract_hashtags()` - Extract hashtags from content
+- **Platforms**: Twitter/X (280 chars, 3 hashtags), LinkedIn (3000 chars, 5 hashtags), Instagram (2200 chars, 15 hashtags)
+- **Tone Options**: professional, casual, excited, informative, humorous
+
+### **cli.py Summary**
+- Rich CLI with Click framework
+- **Main Command**: `main()`
+  - Options: `--platform`, `--topic`, `--tone`, `--variants`, `--output`, `--hashtags`, `--schedule`, `--ab-test`, `--all-platforms`
+  - Features: Multi-platform generation, A/B testing, hashtag generation, posting schedule, preview metrics
+- **Helper**: `_show_preview_table()` - Display post metrics
+
+---
+
+## **PROJECT 3: 33-Email-Campaign-Writer**
+
+### **Directory Structure**
+```
+33-email-campaign-writer/
+├── README.md (features, architecture)
+├── config.yaml
+├── src/email_campaign/
+│   ├── core.py (361 lines)
+│   └── cli.py (159 lines)
+└── tests/
+```
+**docs/images/ exists: NO**
+
+### **core.py Summary**
+- **Main Classes**: 
+  - `Email` (dataclass: subject_a, subject_b, preview_text, body, cta_text, cta_url, send_day, personalization_tokens)
+  - `Campaign` (dataclass: name, product, audience, campaign_type, emails list, created_at)
+- **Key Functions**:
+  - `load_config()` - Config loader
+  - `_get_llm_config()` - Get LLM settings
+  - `_get_campaign_config()` - Get campaign defaults
+  - `setup_logging()` - Configure logging
+  - `build_prompt()` - Create email campaign prompt with AIDA/PAS frameworks
+  - `generate_campaign()` - LLM call with max_tokens 4096
+  - `generate_subject_variants()` - Generate 3+ A/B subject line variants
+  - `build_email_sequence()` - Generate full Campaign object with Email list
+  - `extract_personalization_tokens()` - Find `{{token}}` placeholders in body
+  - `preview_html()` - Wrap email body in responsive HTML template
+  - `render_email()` - Replace personalization tokens with user data
+  - `calculate_sequence_timeline()` - Return list of (day, subject) tuples
+  - `estimate_campaign_metrics()` - Estimate open/click rates per email with decay
+- **Campaign Types**: welcome, promotional, nurture, re-engagement, product-launch
+- **Default Send Days**: Varies by type (welcome: 0,1,3,5,7,10,14,18,21,28)
+
+### **cli.py Summary**
+- Click command group with sub-commands
+- **Main Command**: `generate`
+  - Options: `--product`, `--audience`, `--emails`, `--type`, `--output`, `--subject-test`, `--html-preview`, `--timeline`, `--personalize`
+  - Features: Subject A/B testing, HTML export, timeline visualization, metrics table, personalization
+- **Sub-commands**: (implicit, not shown but in group structure)
+
+---
+
+## **PROJECT 4: 34-Poem-Lyrics-Generator**
+
+### **Directory Structure**
+```
+34-poem-lyrics-generator/
+├── README.md (architecture with detailed structure)
+├── config.yaml
+├── collections/ (for saving poem collections)
+├── src/poem_gen/
+│   ├── config.py (separate config module)
+│   ├── core.py (453 lines)
+│   └── cli.py (196 lines)
+└── tests/
+```
+**docs/images/ exists: NO**
+
+### **core.py Summary**
+- **Main Classes**:
+  - `Poem` (dataclass: title, content, style, mood, theme, rhyme_scheme, syllable_count, created_at)
+  - `PoemCollection` (dataclass: name, poems list, created_at)
+- **Key Functions**:
+  - `build_prompt()` - Create poem generation prompt with style instructions
+  - `generate_poem()` - LLM call for single poem
+  - `generate_with_rhyme_scheme()` - Generate poem following specific rhyme scheme (e.g., ABAB)
+  - `mix_styles()` - Generate poem mixing two styles (e.g., haiku + rap)
+  - `count_syllables()` - Estimate syllable count per line using vowel-cluster heuristic
+  - `_words_rhyme()` - Check if two words rhyme using phonetic endings
+  - `detect_rhyme_scheme()` - Auto-detect rhyme scheme (ABAB, AABB, etc.)
+  - `analyze_poem()` - Return metrics: line_count, word_count, syllables_per_line, detected_rhyme_scheme
+  - `format_poem()` - Apply style-specific formatting (haiku: indented, sonnet: quatrain breaks, limerick: height variation, rap: section tags)
+  - `manage_collection()` - Add/list/remove poems from named JSON collections
+- **Styles**: haiku, sonnet, free-verse, limerick, rap, ballad, acrostic
+- **Moods**: (from config, likely: happy, sad, romantic, melancholic, etc.)
+
+### **cli.py Summary**
+- Rich CLI with Click framework
+- **Main Command**: `main()`
+  - Options: `--theme`, `--style`, `--mood`, `--title`, `--output`, `--rhyme-scheme`, `--mix-styles`, `--analyze`, `--collection`, `--list-collection`
+  - Features: Rhyme scheme control, style mixing, analysis display, collection management
+- **Sub-command**: `--list-collection` - Display poems in collection without generating
+
+---
+
+## **PROJECT 5: 35-Video-Script-Writer**
+
+### **Directory Structure**
+```
+35-video-script-writer/
+├── README.md (features table, architecture)
+├── config.yaml
+├── src/video_script/
+│   ├── core.py (382 lines)
+│   └── cli.py (165 lines)
+└── tests/
+```
+**docs/images/ exists: NO**
+
+### **core.py Summary**
+- **Main Classes**:
+  - `ScriptSection` (dataclass: title, timestamp_start, timestamp_end, script_text, broll_suggestions, onscreen_text)
+  - `VideoScript` (dataclass: topic, style, duration_minutes, sections, hook, thumbnail_ideas, raw_text, created_at)
+- **Key Functions**:
+  - `load_config()` - YAML config loader
+  - `build_prompt()` - Create video script prompt with timestamp requirements
+  - `generate_script()` - LLM call to generate full script (temp: 0.7, max_tokens: 4096)
+  - `generate_scene_breakdown()` - Generate list of ScriptSection objects with detailed format parsing
+  - `suggest_broll()` - Generate 3 B-roll suggestions for a script section
+  - `generate_hook()` - Generate 3 hook options (first 15 seconds)
+  - `generate_thumbnail_ideas()` - Generate 3 thumbnail concepts with visual descriptions
+  - `estimate_duration()` - Estimate duration in minutes (default 150 WPM)
+  - `export_teleprompter()` - Export clean script without B-roll/on-screen markers
+  - `parse_script_sections()` - Parse markdown-style sections (## SCENE:) into ScriptSection objects
+  - `_split_numbered_items()` - Split numbered LLM output into list
+- **Styles**: educational, entertainment, tutorial, review, vlog, documentary
+- **Default Duration**: 10 minutes, max 60 minutes
+
+### **cli.py Summary**
+- Rich CLI with Click framework
+- **Main Command**: `main()`
+  - Options: `--topic`, `--duration`, `--style`, `--audience`, `--output`, `--hooks`, `--thumbnails`, `--scene-breakdown`, `--teleprompter`
+  - Features: Hook generation, thumbnail ideas, scene breakdown table, teleprompter mode
+- **Helper**: `_spinner()` - Create progress spinner context
+
+---
+
+## **PROJECT 6: 36-Newsletter-Editor**
+
+### **Directory Structure**
+```
+36-newsletter-editor/
+├── README.md (features table, architecture)
+├── config.yaml
+├── output/ (export directory)
+├── archive/ (newsletter archive)
+├── src/newsletter_editor/
+│   ├── core.py (262 lines)
+│   └── cli.py (158 lines)
+└── tests/
+```
+**docs/images/ exists: NO**
+
+### **core.py Summary**
+- **Key Data**: 
+  - 6 Section Templates (news_roundup, deep_dive, tips_tricks, spotlight, upcoming_events, reader_qa)
+  - 4 Subscriber Segments (all, new, premium, inactive)
+- **Key Functions**:
+  - `load_config()` - Config with defaults
+  - `read_input_file()` - Read raw notes from file
+  - `get_section_templates()` - Return template dict
+  - `get_subscriber_segments()` - Return segment dict
+  - `build_prompt()` - Create newsletter generation prompt with template/segment hints
+  - `generate_newsletter()` - LLM call (temp: 0.7, max_tokens: 4096)
+  - `export_to_html()` - Convert markdown to styled HTML with CSS
+  - `_md_to_html()` - Simple markdown to HTML conversion
+  - `archive_newsletter()` - Save generated newsletter to archive with timestamp
+  - `list_archive()` - List archived newsletters with metadata
+- **Config**: Default 4 sections, informative tone
+
+### **cli.py Summary**
+- Click command group (decorative style)
+- **Main Commands**:
+  - `generate` - Generate newsletter from input file
+    - Options: `--input`, `--name`, `--sections`, `--tone`, `--template`, `--segment`, `--output`, `--html`, `--archive`
+  - `templates` - List available section templates (sub-command)
+  - `segments` - List available subscriber segments (sub-command)
+  - `archive` - List archived newsletters (sub-command)
+
+---
+
+## **PROJECT 7: 37-Story-Outline-Generator**
+
+### **Directory Structure**
+```
+37-story-outline-generator/
+├── README.md (features table, architecture)
+├── config.yaml
+├── output/ (export directory)
+├── src/story_gen/
+│   ├── core.py (217 lines)
+│   └── cli.py (142 lines)
+└── tests/
+```
+**docs/images/ exists: NO**
+
+### **core.py Summary**
+- **Key Data**:
+  - 6 Character Archetypes (hero, mentor, shadow, trickster, herald, shapeshifter) with traits
+  - 4 Plot Structures (three_act, heros_journey, five_act, save_the_cat) with beat lists
+  - 6 Worldbuilding Categories (geography, politics, culture, technology, history, economy)
+- **Key Functions**:
+  - `load_config()` - Config loader with defaults
+  - `get_character_archetypes()` - Return archetype dict
+  - `get_plot_structures()` - Return structure dict
+  - `get_worldbuilding_categories()` - Return categories dict
+  - `build_prompt()` - Create outline prompt with plot structure/worldbuilding hints
+  - `generate_outline()` - LLM call (temp: 0.8, max_tokens: 4096)
+  - `generate_character_profile()` - Generate single character profile with archetype
+  - `visualize_plot_arc()` - Return list of arc data with tension values
+  - `_calculate_tension()` - Calculate narrative tension at position (builds to 70%, then drops)
+- **Genres**: sci-fi, fantasy, mystery, thriller, romance, horror, literary, historical
+- **Default**: 10 chapters, 4 characters
+
+### **cli.py Summary**
+- Click command group
+- **Main Commands**:
+  - `generate` - Generate story outline
+    - Options: `--genre`, `--premise`, `--chapters`, `--characters`, `--structure`, `--worldbuilding`, `--output`
+  - `character` - Generate single character profile
+    - Options: `--name`, `--role`, `--genre`, `--archetype`
+  - `archetypes` - List character archetypes (sub-command)
+  - `structures` - List plot structures (sub-command)
+
+---
+
+## **PROJECT 8: 38-Product-Description-Writer**
+
+### **Directory Structure**
+```
+38-product-description-writer/
+├── README.md (features table, architecture)
+├── config.yaml
+├── output/ (export directory)
+├── src/product_writer/
+│   ├── core.py (234 lines)
+│   └── cli.py (127 lines)
+└── tests/
+```
+**docs/images/ exists: NO**
+
+### **core.py Summary**
+- **Key Data**:
+  - 5 Platform Configs (Amazon, Shopify, Etsy, eBay, generic) with platform-specific tips and limits
+  - Feature-Benefit Map (waterproof→stay dry, lightweight→carry easily, etc.)
+  - Length Guide (short: 50-100, medium: 150-250, long: 300-500 words)
+- **Key Functions**:
+  - `load_config()` - Config loader
+  - `get_platform_configs()` - Return platform dict
+  - `get_feature_benefit_map()` - Return feature-benefit map
+  - `map_features_to_benefits()` - Convert feature list to benefit list
+  - `calculate_seo_score()` - Calculate SEO score (0-100) with keyword coverage and density
+  - `build_prompt()` - Create description prompt with platform tips and length guide
+  - `generate_descriptions()` - LLM call (temp: 0.7, max_tokens: 4096)
+  - `generate_ab_variants()` - Generate A/B variants (benefits-focused vs features-focused)
+- **Platforms**: Amazon (5 bullets, 200 char title), Shopify (storytelling), Etsy (handmade focus), eBay (specs-focused), generic
+- **Default**: 2 variants, medium length
+
+### **cli.py Summary**
+- Click command group
+- **Main Commands**:
+  - `generate` - Generate product descriptions
+    - Options: `--product`, `--features`, `--platform`, `--length`, `--variants`, `--keywords`, `--output`
+    - Features: SEO score display if keywords provided
+  - `platforms` - List supported e-commerce platforms (sub-command)
+  - `benefits` - Map features to benefits (sub-command)
+    - Option: `--features` (comma-separated)
+
+---
+
+## **PROJECT 9: 39-Presentation-Generator**
+
+### **Directory Structure**
+```
+39-presentation-generator/
+├── README.md (features table, architecture)
+├── config.yaml
+├── output/ (export directory)
+├── src/presentation_gen/
+│   ├── core.py (210 lines)
+│   └── cli.py (133 lines)
+└── tests/
+```
+**docs/images/ exists: NO**
+
+### **core.py Summary**
+- **Key Data**:
+  - 4 Presentation Formats (standard: 180s/slide, pecha-kucha: 20s/slide, lightning: 60s/slide, keynote: 300s/slide)
+  - 9 Slide Templates (title, agenda, content, data, quote, comparison, timeline, qa, closing)
+  - 8 Visual Suggestion Types (bar chart, line chart, pie chart, flow diagram, architecture, hero image, icon grid, screenshot)
+- **Key Functions**:
+  - `load_config()` - Config loader
+  - `get_formats()` - Return format dict
+  - `get_slide_templates()` - Return template dict
+  - `get_visual_suggestions()` - Return suggestion dict
+  - `estimate_timing()` - Return timing dict with total_seconds, total_minutes, formatted string
+  - `build_prompt()` - Create presentation prompt with format/timing constraints
+  - `generate_presentation()` - LLM call (temp: 0.7, max_tokens: 4096)
+  - `export_to_markdown()` - Export to markdown with timestamp header
+  - `generate_speaker_notes_only()` - Extract speaker notes from content
+- **Default**: 12 slides, standard format
+
+### **cli.py Summary**
+- Click command group
+- **Main Commands**:
+  - `generate` - Generate presentation
+    - Options: `--topic`, `--slides`, `--audience`, `--format`, `--output`, `--notes-only`
+  - `formats` - List presentation formats (sub-command)
+  - `slide_types` - List slide templates (sub-command)
+  - `timing` - Estimate presentation timing (sub-command)
+    - Options: `--slides`, `--format`
+
+---
+
+## **PROJECT 10: 40-Cover-Letter-Generator**
+
+### **Directory Structure**
+```
+40-cover-letter-generator/
+├── README.md (features table, architecture)
+├── config.yaml
+├── output/ (export directory)
+├── revisions/ (revision history)
+├── src/cover_letter_gen/
+│   ├── core.py (225 lines)
+│   └── cli.py (167 lines)
+└── tests/
+```
+**docs/images/ exists: NO**
+
+### **core.py Summary**
+- **Key Data**:
+  - 4 Tones (professional, enthusiastic, confident, conversational) with icons and descriptions
+  - 3 Skill Categories (technical: Python/React/AWS/etc., soft: leadership/teamwork/etc., domain: fintech/healthcare/etc.)
+- **Key Functions**:
+  - `load_config()` - Config loader
+  - `get_tones()` - Return tone dict
+  - `read_file()` - Read file content (resume or JD)
+  - `extract_skills()` - Extract and categorize skills from text
+  - `match_skills()` - Create skill matching matrix between resume and JD
+    - Returns: matched/missing/extra skills by category, match_percentage
+  - `build_prompt()` - Create cover letter prompt with skill matching hints
+  - `generate_cover_letter()` - LLM call (temp: 0.7, max_tokens: 2048)
+  - `save_revision()` - Save revision with company name and version number
+  - `list_revisions()` - List saved revisions for a company
+- **Default Tone**: professional
+- **Max Words**: 400
+
+### **cli.py Summary**
+- Click command group
+- **Main Commands**:
+  - `generate` - Generate cover letter
+    - Options: `--resume`, `--job-description`, `--company`, `--tone`, `--name`, `--output`, `--show-skills`
+    - Features: Skill matching table, revision auto-save
+  - `tones` - List available writing tones (sub-command)
+  - `revisions` - List revision history (sub-command)
+    - Option: `--company` (optional filter)
+  - `skills` - Analyze skill match between resume and JD (sub-command)
+    - Options: `--resume`, `--job-description`
+
+---
+
+## **SUMMARY TABLE**
+
+| Project | Package Name | Core Purpose | Key Features | Platforms/Modes |
+|---------|------------|--------------|--------------|-----------------|
+| 31 | blog_gen | SEO blog posts | Multi-draft, outline preview, SEO scoring, tone analysis | CLI, config-based |
+| 32 | social_writer | Social posts | Platform-specific (3 platforms), A/B testing, hashtag generation, reach scoring | CLI, config-based |
+| 33 | email_campaign | Email sequences | A/B subject testing, personalization tokens, HTML preview, metrics | CLI, config-based |
+| 34 | poem_gen | Poems/lyrics | 7 styles, rhyme detection, analysis, collection management, style mixing | CLI, collections |
+| 35 | video_script | YouTube scripts | Timestamps, B-roll suggestions, hooks, thumbnails, scene breakdown | CLI, config-based |
+| 36 | newsletter_editor | Newsletter curation | 6 templates, 4 segments, archiving, HTML export, tone control | CLI command group |
+| 37 | story_gen | Story outlines | 8 genres, character archetypes, 4 plot structures, worldbuilding | CLI command group |
+| 38 | product_writer | Product descriptions | 5 platforms, feature-benefit mapping, SEO scoring, A/B variants | CLI command group |
+| 39 | presentation_gen | Slide decks | 4 formats, timing estimation, speaker notes, visual suggestions | CLI command group |
+| 40 | cover_letter_gen | Cover letters | Skill matching, 4 tones, revision tracking, gap analysis | CLI command group |
+
+---
+
+## **COMMON PATTERNS ACROSS ALL PROJECTS**
+
+1. **Configuration**: All use YAML config with defaults fallback
+2. **LLM Integration**: All use `common.llm_client.chat()` for LLM calls
+3. **Logging**: All have `setup_logging()` functions
+4. **Data Classes**: All use Python dataclasses for structured output
+5. **CLI Framework**: All use Click for CLI
+6. **Rich Display**: All use Rich library for beautiful terminal output
+7. **Code Structure**: Consistent pattern of `core.py` (logic) + `cli.py` (interface)
+8. **Temperature Settings**: Most use 0.7-0.8 for generation, higher for creative tasks
+9. **Max Tokens**: Range from 2048 (cover letter) to 4096 (most others)
+
+**docs/images/ exists in ANY project: NO** - None of the 10 projects have a docs/images directory yet.

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 390" width="800" height="390">
+  <defs>
+    <linearGradient id="featBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="featAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06d6a0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#05a882;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="390" fill="url(#featBg)" rx="12"/>
+  <text x="400" y="38" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Key Features</text>
+  <rect x="300" y="48" width="200" height="3" fill="url(#featAccent)" rx="2"/>
+  
+  <rect x="30" y="65" width="235" height="130" rx="10" fill="#161b22" stroke="#06d6a0" stroke-width="1.5"/>
+  <text x="50" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">⚡</text>
+  <text x="78" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">FDA Daily Values</text>
+  <text x="45" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Calculate %DV for 13 nutrients: calori</text>
+  <text x="45" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">es, fats, cholesterol, sodium, carbs, </text>
+  <text x="45" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">fiber, sugars, protein, vitamins</text>
+  <rect x="30" y="185" width="235" height="10" rx="0" ry="5" fill="#06d6a0" opacity="0.15"/>
+  <rect x="285" y="65" width="235" height="130" rx="10" fill="#161b22" stroke="#06d6a0" stroke-width="1.5"/>
+  <text x="305" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">🔍</text>
+  <text x="333" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Big 9 Allergens</text>
+  <text x="300" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Check against FDA major allergens: mil</text>
+  <text x="300" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">k, eggs, fish, shellfish, tree nuts, p</text>
+  <text x="300" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">eanuts, wheat, soy, sesame</text>
+  <rect x="285" y="185" width="235" height="10" rx="0" ry="5" fill="#06d6a0" opacity="0.15"/>
+  <rect x="540" y="65" width="235" height="130" rx="10" fill="#161b22" stroke="#06d6a0" stroke-width="1.5"/>
+  <text x="560" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">📊</text>
+  <text x="588" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">5 Diet Presets</text>
+  <text x="555" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Balanced, low-carb, high-protein, keto</text>
+  <text x="555" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">, weight-loss with macro percentages</text>
+  <text x="555" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e"></text>
+  <rect x="540" y="185" width="235" height="10" rx="0" ry="5" fill="#06d6a0" opacity="0.15"/>
+  <rect x="30" y="220" width="235" height="130" rx="10" fill="#161b22" stroke="#06d6a0" stroke-width="1.5"/>
+  <text x="50" y="250" font-family="Segoe UI,Arial,sans-serif" font-size="20">🔄</text>
+  <text x="78" y="252" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Meal Tracker</text>
+  <text x="45" y="278" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Daily meal tracking with nutrient tota</text>
+  <text x="45" y="295" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">ls, remaining budget, and meal history</text>
+  <text x="45" y="312" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e"></text>
+  <rect x="30" y="340" width="235" height="10" rx="0" ry="5" fill="#06d6a0" opacity="0.15"/>
+  <rect x="285" y="220" width="235" height="130" rx="10" fill="#161b22" stroke="#06d6a0" stroke-width="1.5"/>
+  <text x="305" y="250" font-family="Segoe UI,Arial,sans-serif" font-size="20">🛡️</text>
+  <text x="333" y="252" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Food Comparison</text>
+  <text x="300" y="278" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Side-by-side nutritional comparison of</text>
+  <text x="300" y="295" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e"> multiple food items</text>
+  <text x="300" y="312" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e"></text>
+  <rect x="285" y="340" width="235" height="10" rx="0" ry="5" fill="#06d6a0" opacity="0.15"/>
+  <rect x="540" y="220" width="235" height="130" rx="10" fill="#161b22" stroke="#06d6a0" stroke-width="1.5"/>
+  <text x="560" y="250" font-family="Segoe UI,Arial,sans-serif" font-size="20">📋</text>
+  <text x="588" y="252" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Label Analysis</text>
+  <text x="555" y="278" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Parse and analyze nutrition label text</text>
+  <text x="555" y="295" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e"> from files</text>
+  <text x="555" y="312" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e"></text>
+  <rect x="540" y="340" width="235" height="10" rx="0" ry="5" fill="#06d6a0" opacity="0.15"/>
+</svg>

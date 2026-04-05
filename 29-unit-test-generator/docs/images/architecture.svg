@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#4361ee"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+  <text x="400" y="35" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">Architecture Overview</text>
+  
+  <!-- Input -->
+  <rect x="30" y="65" width="140" height="55" rx="10" fill="#1a1e2e" stroke="#4361ee" stroke-width="1.5"/>
+  <text x="100" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#4361ee" text-anchor="middle">🐍 Python Source</text>
+  <text x="100" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Source code file</text>
+
+  <line x1="170" y1="92" x2="210" y2="92" stroke="#4361ee" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- AST Parser -->
+  <rect x="215" y="65" width="120" height="55" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="275" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">🌳 AST Parser</text>
+  <text x="275" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Parse source code</text>
+
+  <line x1="335" y1="92" x2="375" y2="92" stroke="#4361ee" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Extractor -->
+  <rect x="380" y="65" width="120" height="55" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="440" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">📋 Extractor</text>
+  <text x="440" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Functions + Classes</text>
+
+  <line x1="500" y1="92" x2="540" y2="92" stroke="#4361ee" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Edge Cases -->
+  <rect x="545" y="65" width="120" height="55" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="605" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">🔍 Edge Cases</text>
+  <text x="605" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">None, zero, empty</text>
+
+  <!-- Arrow down -->
+  <line x1="605" y1="120" x2="605" y2="155" stroke="#4361ee" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Coverage Analyzer -->
+  <rect x="545" y="160" width="120" height="55" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="605" y="183" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">📊 Coverage</text>
+  <text x="605" y="203" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Analysis report</text>
+
+  <line x1="545" y1="187" x2="480" y2="187" stroke="#4361ee" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Prompt Builder -->
+  <rect x="340" y="160" width="135" height="55" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="407" y="183" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">🔨 Prompt Builder</text>
+  <text x="407" y="203" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Framework context</text>
+
+  <line x1="340" y1="187" x2="295" y2="187" stroke="#4361ee" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- LLM -->
+  <rect x="100" y="155" width="190" height="65" rx="10" fill="#1a1e2e" stroke="#4361ee" stroke-width="2"/>
+  <text x="195" y="183" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#4361ee" text-anchor="middle">🤖 Ollama LLM</text>
+  <text x="195" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Test generation engine</text>
+
+  <line x1="195" y1="220" x2="195" y2="260" stroke="#4361ee" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Output Row -->
+  <rect x="30" y="265" width="160" height="55" rx="10" fill="#1a1e2e" stroke="#4361ee" stroke-width="1.5"/>
+  <text x="110" y="288" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#4361ee" text-anchor="middle">✅ Test Code</text>
+  <text x="110" y="308" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">pytest / unittest</text>
+
+  <rect x="210" y="265" width="160" height="55" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="290" y="288" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">📁 File Organization</text>
+  <text x="290" y="308" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Test structure</text>
+
+  <rect x="390" y="265" width="160" height="55" rx="10" fill="#1a1e2e" stroke="#30363d" stroke-width="1"/>
+  <text x="470" y="288" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">📋 Coverage Report</text>
+  <text x="470" y="308" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Testable items count</text>
+
+  <line x1="190" y1="265" x2="110" y2="265" stroke="#4361ee" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="190" y1="292" x2="210" y2="292" stroke="#4361ee" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="370" y1="292" x2="390" y2="292" stroke="#4361ee" stroke-width="1" marker-end="url(#arrowhead)"/>
+
+  <rect x="30" y="345" width="740" height="40" rx="8" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
+  <text x="400" y="370" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">🔒 100% Local • AST-Powered Analysis • Edge Case Detection • pytest + unittest</text>
+</svg>

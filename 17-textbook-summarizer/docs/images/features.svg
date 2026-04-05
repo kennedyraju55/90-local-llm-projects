@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="12" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#fb8500" letter-spacing="1">FEATURES</text>
+  <line x1="340" y1="44" x2="460" y2="44" stroke="#fb8500" stroke-width="2" opacity="0.4"/>
+
+  <!-- Row 1: Cards 1-3 -->
+
+  <!-- Card 1: 3 Summary Styles -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="65" width="230" height="120" rx="10" fill="#1e2a45" stroke="#fb8500" stroke-width="1.5"/>
+    <text x="145" y="98" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26">📝</text>
+    <text x="145" y="120" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700">3 Summary Styles</text>
+    <text x="145" y="140" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">Concise bullets, detailed</text>
+    <text x="145" y="155" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">paragraphs, or study-guide Q&amp;A</text>
+    <rect x="50" y="165" width="55" height="14" rx="7" fill="#fb8500" opacity="0.2"/>
+    <text x="77" y="175" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#fb8500">concise</text>
+    <rect x="110" y="165" width="55" height="14" rx="7" fill="#fb8500" opacity="0.2"/>
+    <text x="137" y="175" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#fb8500">detailed</text>
+    <rect x="170" y="165" width="70" height="14" rx="7" fill="#fb8500" opacity="0.2"/>
+    <text x="205" y="175" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#fb8500">study-guide</text>
+  </g>
+
+  <!-- Card 2: Glossary Generator -->
+  <g filter="url(#cardShadow)">
+    <rect x="285" y="65" width="230" height="120" rx="10" fill="#1e2a45" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="400" y="98" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26">📖</text>
+    <text x="400" y="120" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700">Glossary Generator</text>
+    <text x="400" y="140" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">Automatically extracts key terms</text>
+    <text x="400" y="155" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">with clear definitions</text>
+    <rect x="340" y="165" width="120" height="14" rx="7" fill="#3b82f6" opacity="0.2"/>
+    <text x="400" y="175" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#3b82f6">generate_glossary()</text>
+  </g>
+
+  <!-- Card 3: Concept Maps -->
+  <g filter="url(#cardShadow)">
+    <rect x="540" y="65" width="230" height="120" rx="10" fill="#1e2a45" stroke="#2ecc71" stroke-width="1.5"/>
+    <text x="655" y="98" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26">🗺️</text>
+    <text x="655" y="120" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700">Concept Maps</text>
+    <text x="655" y="140" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">Visual relationship mapping</text>
+    <text x="655" y="155" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">between chapter concepts</text>
+    <rect x="592" y="165" width="126" height="14" rx="7" fill="#2ecc71" opacity="0.2"/>
+    <text x="655" y="175" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#2ecc71">generate_concept_map()</text>
+  </g>
+
+  <!-- Row 2: Cards 4-6 -->
+
+  <!-- Card 4: Quiz Generator -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="205" width="230" height="120" rx="10" fill="#1e2a45" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="145" y="238" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26">❓</text>
+    <text x="145" y="260" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700">Quiz Generator</text>
+    <text x="145" y="280" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">Multiple choice, short answer,</text>
+    <text x="145" y="295" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">and critical thinking questions</text>
+    <rect x="55" y="305" width="180" height="14" rx="7" fill="#a855f7" opacity="0.2"/>
+    <text x="145" y="315" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#a855f7">generate_study_questions()</text>
+  </g>
+
+  <!-- Card 5: Multi-Chapter -->
+  <g filter="url(#cardShadow)">
+    <rect x="285" y="205" width="230" height="120" rx="10" fill="#1e2a45" stroke="#e74c3c" stroke-width="1.5"/>
+    <text x="400" y="238" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26">📚</text>
+    <text x="400" y="260" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700">Multi-Chapter</text>
+    <text x="400" y="280" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">Batch processing of entire</text>
+    <text x="400" y="295" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">textbooks with chapter detection</text>
+    <rect x="315" y="305" width="170" height="14" rx="7" fill="#e74c3c" opacity="0.2"/>
+    <text x="400" y="315" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#e74c3c">summarize_multi_chapter()</text>
+  </g>
+
+  <!-- Card 6: 100% Private -->
+  <g filter="url(#cardShadow)">
+    <rect x="540" y="205" width="230" height="120" rx="10" fill="#1e2a45" stroke="#f1c40f" stroke-width="1.5"/>
+    <text x="655" y="238" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26">🔒</text>
+    <text x="655" y="260" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="700">100% Private</text>
+    <text x="655" y="280" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">All processing runs locally —</text>
+    <text x="655" y="295" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a0a0b8">student data never leaves your machine</text>
+    <rect x="595" y="305" width="120" height="14" rx="7" fill="#f1c40f" opacity="0.2"/>
+    <text x="655" y="315" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="8" fill="#f1c40f">Ollama · Local LLM</text>
+  </g>
+</svg>

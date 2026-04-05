@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="archAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7209b7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9d4edd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#21262d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <filter id="boxShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7209b7" flood-opacity="0.3" />
+    </filter>
+    <marker id="arrowHead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7209b7" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" rx="12" fill="url(#archBg)" />
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Architecture Flow</text>
+  <rect x="300" y="42" width="200" height="2" rx="1" fill="url(#archAccent)" opacity="0.6" />
+
+  <!-- ROW 1: Input → SWOT → Feature Matrix → Pricing -->
+  <!-- Box 1: Company Info (Input) -->
+  <g filter="url(#boxShadow)">
+    <rect x="30" y="70" width="140" height="60" rx="8" fill="url(#boxGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <text x="100" y="95" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#c77dff">📥</text>
+    <text x="100" y="115" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Company Info</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="170" y1="100" x2="210" y2="100" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowHead)" />
+
+  <!-- Box 2: SWOT Engine -->
+  <g filter="url(#boxShadow)">
+    <rect x="220" y="70" width="140" height="60" rx="8" fill="url(#boxGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <text x="290" y="95" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#c77dff">📊</text>
+    <text x="290" y="115" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="white">SWOT Engine</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="360" y1="100" x2="400" y2="100" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowHead)" />
+
+  <!-- Box 3: Feature Matrix -->
+  <g filter="url(#boxShadow)">
+    <rect x="410" y="70" width="140" height="60" rx="8" fill="url(#boxGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <text x="480" y="95" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#c77dff">📋</text>
+    <text x="480" y="115" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Feature Matrix</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <line x1="550" y1="100" x2="590" y2="100" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowHead)" />
+
+  <!-- Box 4: Pricing Analyzer -->
+  <g filter="url(#boxShadow)">
+    <rect x="600" y="70" width="160" height="60" rx="8" fill="url(#boxGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <text x="680" y="95" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#c77dff">💰</text>
+    <text x="680" y="115" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Pricing Analyzer</text>
+  </g>
+
+  <!-- Down arrow from Pricing → Market Positioning -->
+  <line x1="680" y1="130" x2="680" y2="170" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowHead)" />
+
+  <!-- ROW 2: Market Positioning → Action Items → Recommendations -->
+  <!-- Box 5: Market Positioning -->
+  <g filter="url(#boxShadow)">
+    <rect x="590" y="180" width="180" height="60" rx="8" fill="url(#boxGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <text x="680" y="205" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#c77dff">🗺️</text>
+    <text x="680" y="225" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Market Positioning</text>
+  </g>
+
+  <!-- Arrow 5→6 (leftward) -->
+  <line x1="590" y1="210" x2="540" y2="210" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowHead)" />
+
+  <!-- Box 6: Action Items -->
+  <g filter="url(#boxShadow)">
+    <rect x="380" y="180" width="150" height="60" rx="8" fill="url(#boxGrad)" stroke="#7209b7" stroke-width="1.5" />
+    <text x="455" y="205" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#c77dff">🎯</text>
+    <text x="455" y="225" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Action Items</text>
+  </g>
+
+  <!-- Arrow 6→7 (leftward) -->
+  <line x1="380" y1="210" x2="330" y2="210" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowHead)" />
+
+  <!-- Box 7: Strategic Recommendations -->
+  <g filter="url(#boxShadow)">
+    <rect x="120" y="180" width="200" height="60" rx="8" fill="url(#boxGrad)" stroke="#9d4edd" stroke-width="2" />
+    <text x="220" y="205" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#c77dff">📝</text>
+    <text x="220" y="225" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Strategic Recommendations</text>
+  </g>
+
+  <!-- Down arrow from Recommendations → Report -->
+  <line x1="220" y1="240" x2="220" y2="280" stroke="#7209b7" stroke-width="2" marker-end="url(#arrowHead)" />
+
+  <!-- Box 8: Rich Report Output -->
+  <g filter="url(#boxShadow)">
+    <rect x="120" y="290" width="560" height="65" rx="10" fill="url(#boxGrad)" stroke="url(#archAccent)" stroke-width="2" />
+    <text x="400" y="318" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="white">📄 Rich Report Output</text>
+    <text x="400" y="340" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b949e">CLI Tables · Streamlit Dashboard · JSON Export</text>
+  </g>
+
+  <!-- LLM Engine label (side) -->
+  <g>
+    <rect x="30" y="170" width="70" height="80" rx="8" fill="#7209b7" opacity="0.15" stroke="#7209b7" stroke-width="1" stroke-dasharray="4,3" />
+    <text x="65" y="200" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#c77dff">🤖</text>
+    <text x="65" y="215" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#c77dff">Local</text>
+    <text x="65" y="228" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="bold" fill="#c77dff">LLM</text>
+    <text x="65" y="241" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#8b949e">Ollama</text>
+  </g>
+
+  <!-- Dashed lines from LLM to engine boxes -->
+  <line x1="100" y1="200" x2="120" y2="200" stroke="#7209b7" stroke-width="1" stroke-dasharray="3,3" opacity="0.5" />
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="396" width="800" height="4" rx="2" fill="url(#archAccent)" />
+</svg>

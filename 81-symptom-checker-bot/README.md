@@ -1,178 +1,549 @@
+<div align="center">
+
+![Symptom Checker Bot Banner](docs/images/banner.svg)
+
 # 🏥 Symptom Checker Bot
 
-> ⚠️ **MEDICAL DISCLAIMER**: This tool is for **EDUCATIONAL and INFORMATIONAL purposes ONLY**. It is **NOT** a substitute for professional medical advice, diagnosis, or treatment. **ALWAYS** consult a qualified healthcare provider for any health concerns. If you are experiencing a medical emergency, **call emergency services immediately**.
+### AI-Powered Symptom Analysis & Triage
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](../../LICENSE)
-[![Ollama](https://img.shields.io/badge/LLM-Ollama-green.svg)](https://ollama.ai)
-[![Streamlit](https://img.shields.io/badge/UI-Streamlit-red.svg)](https://streamlit.io)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776ab?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-black?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.com)
+[![License](https://img.shields.io/badge/License-MIT-e94560?style=for-the-badge)](LICENSE)
+[![Healthcare](https://img.shields.io/badge/Healthcare-AI_Tool-e94560?style=for-the-badge&logo=heart&logoColor=white)]()
+[![Privacy](https://img.shields.io/badge/Privacy-100%25_Local-success?style=for-the-badge&logo=lock&logoColor=white)]()
 
-An AI-powered symptom analysis tool that provides **educational** health information using local LLMs. Features urgency scoring, body region mapping, medical history tracking, and both CLI and web interfaces.
+</div>
 
 ---
 
-## 🚨 Important Medical Disclaimer
-
-> **This tool is NOT a medical device. It does NOT provide medical advice, diagnosis, or treatment.**
-> 
-> - ❌ Do NOT use this tool to make medical decisions
-> - ❌ Do NOT delay seeking professional medical care based on this tool's output
-> - ✅ ALWAYS consult a qualified healthcare professional for health concerns
-> - ✅ Call emergency services (911) for medical emergencies
+> ## ⚠️ Medical Disclaimer
 >
-> By using this tool, you acknowledge that all information provided is for **educational purposes only**.
+> **This tool is for educational purposes only. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for medical concerns. Never disregard professional medical advice or delay seeking it because of information from this tool.**
+>
+> - 🚨 **Call 911** for medical emergencies
+> - 📞 **Call 988** for mental health crises (Suicide & Crisis Lifeline)
+> - 💬 **Text HOME to 741741** for Crisis Text Line
+>
+> *The developers assume no liability for any actions taken based on this tool's output.*
+
+---
+
+<div align="center">
+
+[✨ Features](#-features) · [🚀 Quick Start](#-quick-start) · [💻 CLI Reference](#-cli-reference) · [🏗️ Architecture](#️-architecture) · [📖 API Reference](#-api-reference) · [❓ FAQ](#-faq)
+
+</div>
+
+---
+
+## 📋 Overview
+
+An intelligent symptom analysis tool that leverages local LLMs to assess symptoms, identify affected body regions, determine urgency levels, and provide preliminary health guidance — all running privately on your machine.
+
+Built as part of the **Local LLM Projects** series (Project #81/90), this tool demonstrates how AI can be applied to healthcare education while maintaining complete data privacy through local model inference.
+
+### Why This Project?
+
+| | Feature | Description |
+|---|---------|-------------|
+| 🔒 | **Complete Privacy** | All symptom data stays on your machine — no cloud uploads |
+| ⚡ | **Instant Triage** | 5-level urgency scoring from Low to Emergency in seconds |
+| 🧠 | **Body Region Mapping** | Automatic identification of 7 affected body regions |
+| 📊 | **Session History** | Track all symptom checks with timestamps and urgency |
+| 💬 | **Multi-Turn Chat** | Interactive conversation for deeper symptom exploration |
+| 🏥 | **Medical Knowledge** | Built-in symptom databases organized by body system |
 
 ---
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| 🔍 **Symptom Analysis** | AI-powered analysis of described symptoms using local LLMs |
-| 📊 **Urgency Scoring** | 5-level urgency assessment (Low → Emergency) with color coding |
-| 🗺️ **Body Region Mapping** | Automatic categorization of symptoms by body region |
-| 📋 **Medical History** | Session-based symptom tracking and history review |
-| 💬 **Interactive Chat** | Multi-turn conversational symptom checking |
-| 🌐 **Web UI** | Beautiful Streamlit interface with visual urgency meters |
-| ⚡ **CLI Tool** | Fast command-line interface for quick checks |
-| 🔒 **Privacy First** | All processing done locally via Ollama - no data leaves your machine |
+<div align="center">
+
+![Features Overview](docs/images/features.svg)
+
+</div>
+
+| Feature | Details |
+|---------|---------|
+| **Urgency Scoring** | 5-level triage system (Low → Emergency) with keyword-based classification |
+| **Body Region Mapping** | Automatic detection of 7 body regions: head, chest, abdomen, limbs, general, skin, mental |
+| **Symptom Database** | Comprehensive symptom lists organized by body system for quick reference |
+| **Medical History Tracking** | Session-based history with timestamps, urgency levels, and LLM responses |
+| **Interactive Chat** | Multi-turn conversational interface for detailed symptom exploration |
+| **Rich Terminal UI** | Beautiful formatted output with color-coded urgency panels |
 
 ---
 
-## 🏗️ Architecture
-
-```
-81-symptom-checker-bot/
-├── src/
-│   └── symptom_checker/
-│       ├── __init__.py          # Package initialization
-│       ├── core.py              # Core logic, symptom DB, urgency scoring
-│       ├── cli.py               # Click CLI interface
-│       └── web_ui.py            # Streamlit web interface
-├── tests/
-│   ├── __init__.py
-│   ├── test_core.py             # Core logic tests
-│   └── test_cli.py              # CLI integration tests
-├── config.yaml                  # Configuration file
-├── setup.py                     # Package setup
-├── requirements.txt             # Dependencies
-├── Makefile                     # Build automation
-├── .env.example                 # Environment template
-└── README.md                    # This file
-```
-
----
-
-## 🚀 Installation
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- Python 3.10+
-- [Ollama](https://ollama.ai) installed and running
-- Gemma 4 model pulled: `ollama pull gemma4`
+| Requirement | Version | Purpose |
+|-------------|---------|---------|
+| **Python** | 3.10+ | Runtime environment |
+| **Ollama** | Latest | Local LLM inference engine |
+| **LLM Model** | llama3.2 | AI model (downloaded via Ollama) |
 
-### Setup
+### Installation
 
-```bash
-# Navigate to project directory
+`ash
+# 1. Clone the repository
+git clone https://github.com/kennedyraju55/symptom-checker-bot.git
 cd 81-symptom-checker-bot
 
-# Install dependencies
-make install
-# OR manually:
+# 2. Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# or
+.\venv\Scripts\activate  # Windows
+
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# Copy environment template
-cp .env.example .env
+# 4. Ensure Ollama is running with a model
+ollama pull llama3.2
+ollama serve
+`
 
-# Verify Ollama is running
-ollama list
-```
+### First Run
+
+`ash
+# Verify installation
+symptom-checker-bot --help
+
+# Run your first command
+symptom-checker-bot check --symptoms "severe headache with blurred vision"
+`
+
+### Expected Output
+
+`
+╭─────────────────────────────────────────────────────────────╮
+│  ⚠️  MEDICAL DISCLAIMER                                     │
+│  This tool is for educational purposes only.                │
+│  Always consult a qualified healthcare provider.            │
+╰─────────────────────────────────────────────────────────────╯
+
+⏳ Analyzing with local LLM...
+
+╭─────────────────────────────────────────────────────────────╮
+│  ✅ Analysis Complete                                        │
+│                                                             │
+│  [AI-generated response based on your input]                │
+│                                                             │
+│  ⚠️  Remember: This is not medical advice.                  │
+╰─────────────────────────────────────────────────────────────╯
+`
 
 ---
 
-## 💻 CLI Usage
+## 💻 CLI Reference
 
-### Quick Symptom Check
-```bash
-python -m symptom_checker.cli check --symptoms "headache, fever, sore throat"
-```
+| Command | Description |
+|---------|-------------|
+| check | Analyze symptoms with urgency scoring and body region mapping |
+| chat | Interactive multi-turn symptom conversation |
+| history | Display session symptom history table |
+| regions | Show all symptom databases by body region |
 
-### Interactive Chat Mode
-```bash
-python -m symptom_checker.cli chat
-```
+### check
 
-### View Body Regions
-```bash
-python -m symptom_checker.cli regions
-```
+`ash
+symptom-checker-bot check --symptoms "severe headache with blurred vision"
+`
 
-### View Symptom History
-```bash
-python -m symptom_checker.cli history
-```
+### chat
+
+`ash
+symptom-checker-bot chat
+`
+
+### history
+
+`ash
+symptom-checker-bot history
+`
+
+### regions
+
+`ash
+symptom-checker-bot regions
+`
+
+### Global Options
+
+`ash
+symptom-checker-bot --help          # Show all commands and options
+symptom-checker-bot --version       # Show version information
+`
 
 ---
 
 ## 🌐 Web UI
 
-Launch the Streamlit web interface:
+This project includes a web-based interface for browser-based interaction.
 
-```bash
-make run-web
-# OR
-streamlit run src/symptom_checker/web_ui.py
-```
+`ash
+# Start the web server
+cd web
+python app.py
 
-### Web UI Features:
-- 🎯 **Symptom Selector**: Multi-select from categorized symptom database
-- 📊 **Urgency Meter**: Visual color-coded urgency assessment
-- 🗺️ **Body Region Display**: See which body regions are affected
-- 📋 **History Tracker**: Review past symptom checks in the session
-- ⚠️ **Disclaimer Banner**: Prominent medical disclaimer always visible
+# Open in browser
+# http://localhost:5000
+`
+
+| Feature | Description |
+|---------|-------------|
+| **Responsive Design** | Works on desktop and mobile browsers |
+| **Real-Time Analysis** | Live streaming responses from local LLM |
+| **Dark Mode** | Easy on the eyes with dark theme support |
+| **Export Results** | Download analysis results as text files |
+
+> ⚠️ **Note**: The web UI connects to your local Ollama instance. No data leaves your machine.
 
 ---
 
-## ⚙️ Configuration
+## 🏗️ Architecture
 
-Edit `config.yaml` to customize:
+<div align="center">
 
-```yaml
-model: "gemma4"           # LLM model to use
-temperature: 0.3          # Response creativity (0.0-1.0)
-max_tokens: 1024          # Maximum response length
-log_level: "INFO"         # Logging level
-```
+![Architecture Diagram](docs/images/architecture.svg)
+
+</div>
+
+### Project Structure
+
+`
+81-symptom-checker-bot/
+├── src/
+│   └── symptom_checker_bot/
+│       ├── __init__.py
+│       ├── core.py          # Core logic and LLM integration
+│       └── cli.py           # Click CLI commands
+├── tests/
+│   ├── __init__.py
+│   └── test_core.py         # Unit tests
+├── docs/
+│   └── images/
+│       ├── banner.svg        # Project banner
+│       ├── architecture.svg  # Architecture diagram
+│       └── features.svg      # Feature grid
+├── config.yaml              # Model configuration
+├── requirements.txt         # Python dependencies
+└── README.md                # This file
+`
+
+### Data Flow
+
+`
+User Input → CLI/Web Interface → Core Engine → LLM (Ollama) → Response
+                                      ↓
+                              Built-in Databases
+                              (patterns, rules, references)
+`
+
+### Technology Stack
+
+| Layer | Technology | Purpose |
+|-------|-----------|---------|
+| **CLI** | Click | Command-line interface framework |
+| **UI** | Rich | Beautiful terminal formatting |
+| **AI** | Ollama | Local LLM inference |
+| **Web** | Flask | Web interface (optional) |
+| **Config** | YAML | Configuration management |
+| **Testing** | pytest | Unit and integration tests |
+
+---
+
+## 📖 API Reference
+
+### Core Functions
+
+`python
+from symptom_checker_bot.core import check_symptoms, assess_urgency, get_body_regions
+
+# Analyze symptoms
+result = check_symptoms("persistent headache with nausea and light sensitivity")
+print(result)
+
+# Get urgency level (1-5)
+urgency = assess_urgency("chest pain difficulty breathing")
+# Returns: 5 (Emergency)
+
+# Identify affected body regions
+regions = get_body_regions("headache with stomach pain")
+# Returns: ["head", "abdomen"]
+`
+
+### Configuration
+
+`yaml
+# config.yaml
+model: llama3.2
+temperature: 0.3
+max_tokens: 1024
+base_url: http://localhost:11434
+`
+
+### Environment Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| OLLAMA_BASE_URL | http://localhost:11434 | Ollama API endpoint |
+| OLLAMA_MODEL | llama3.2 | Default LLM model |
+| LOG_LEVEL | INFO | Logging verbosity |
 
 ---
 
 ## 🧪 Testing
 
-```bash
-make test
-# OR
-pytest tests/ -v
-```
+`ash
+# Run all tests
+pytest
+
+# Run with coverage report
+pytest --cov=src/symptom_checker_bot --cov-report=html
+
+# Run specific test file
+pytest tests/test_core.py -v
+
+# Run with verbose output
+pytest -v --tb=short
+`
+
+### Test Categories
+
+| Category | Description | Command |
+|----------|-------------|---------|
+| **Unit Tests** | Core logic validation | pytest tests/test_core.py |
+| **CLI Tests** | Command-line interface tests | pytest tests/test_cli.py |
+| **Integration** | End-to-end with LLM | pytest tests/test_integration.py |
 
 ---
 
-## 📊 Urgency Levels
+## 🔄 Local vs Cloud Comparison
 
-| Level | Label | Action |
-|-------|-------|--------|
-| 🟢 1 | Low | Self-care likely sufficient |
-| 🟡 2 | Mild | Schedule routine appointment if persistent |
-| 🟠 3 | Moderate | See your healthcare provider soon |
-| 🔴 4 | High | Seek medical attention today |
-| 🚨 5 | Emergency | Call emergency services immediately |
+| Aspect | Local LLM (This Tool) | Cloud API |
+|--------|----------------------|-----------|
+| **Privacy** | ✅ 100% local — data never leaves your machine | ❌ Data sent to external servers |
+| **Cost** | ✅ Free after setup | ❌ Pay per API call |
+| **Speed** | ⚡ Depends on hardware | ⚡ Generally fast |
+| **Internet** | ✅ Works offline | ❌ Requires connection |
+| **Data Control** | ✅ Complete control | ❌ Third-party storage |
+| **HIPAA Concerns** | ✅ No data transmission | ⚠️ BAA required |
+| **Model Updates** | 🔄 Manual model pulls | ✅ Automatic updates |
+| **Scalability** | ⚠️ Limited by hardware | ✅ Cloud-scale |
+
+> 🔒 **For healthcare data, local LLM inference eliminates the risk of sensitive information exposure through network transmission.**
 
 ---
 
-## ⚠️ Disclaimer
+## ❓ FAQ
 
-**This tool is for EDUCATIONAL and INFORMATIONAL purposes ONLY. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of a qualified healthcare provider with any questions you have regarding a medical condition. Never disregard professional medical advice or delay in seeking it because of something you have read or received from this tool.**
+<details>
+<summary><strong>Can this replace a doctor visit?</strong></summary>
+<br>
+
+Absolutely NOT. This is an educational tool only. It provides preliminary symptom analysis to help you prepare for a doctor visit, but it cannot diagnose conditions. Always consult a licensed healthcare provider for medical concerns.
+
+> ⚠️ **Reminder**: This tool is for educational purposes only. Always consult qualified healthcare professionals.
+
+</details>
+
+<details>
+<summary><strong>How accurate is the urgency scoring?</strong></summary>
+<br>
+
+The urgency scoring uses keyword-based classification as a rough guide. It may miss nuances. If you're unsure, always err on the side of caution and seek immediate medical attention.
+
+> ⚠️ **Reminder**: This tool is for educational purposes only. Always consult qualified healthcare professionals.
+
+</details>
+
+<details>
+<summary><strong>Is my symptom data stored anywhere?</strong></summary>
+<br>
+
+No. All data stays in your current session memory and is never transmitted to any server. When you close the application, session history is cleared.
+
+> ⚠️ **Reminder**: This tool is for educational purposes only. Always consult qualified healthcare professionals.
+
+</details>
+
+<details>
+<summary><strong>What LLM models work best?</strong></summary>
+<br>
+
+We recommend llama3.2 or mistral for best medical knowledge. Larger models (13B+) tend to provide more detailed and accurate symptom analysis.
+
+> ⚠️ **Reminder**: This tool is for educational purposes only. Always consult qualified healthcare professionals.
+
+</details>
+
+<details>
+<summary><strong>Can I use this offline?</strong></summary>
+<br>
+
+Yes! Once you have Ollama installed with a downloaded model, the entire application runs 100% offline with no internet required.
+
+> ⚠️ **Reminder**: This tool is for educational purposes only. Always consult qualified healthcare professionals.
+
+</details>
 
 ---
 
-*Part of the [90 Local LLM Projects](../../README.md) collection.*
+
+
+## 🏥 Symptom Database Reference
+
+The built-in symptom database covers **7 body regions** with common symptoms:
+
+<details>
+<summary><strong>Head and Neurological</strong></summary>
+
+- Headache (tension, migraine, cluster)
+- Dizziness and vertigo
+- Blurred or double vision
+- Memory issues and confusion
+- Tinnitus (ringing in ears)
+- Facial pain or numbness
+
+</details>
+
+<details>
+<summary><strong>Chest and Cardiovascular</strong></summary>
+
+- Chest pain or tightness
+- Shortness of breath
+- Heart palpitations
+- Persistent cough
+- Wheezing
+
+</details>
+
+<details>
+<summary><strong>Abdomen and Digestive</strong></summary>
+
+- Abdominal pain (upper, lower, generalized)
+- Nausea and vomiting
+- Diarrhea or constipation
+- Bloating and gas
+- Loss of appetite
+
+</details>
+
+<details>
+<summary><strong>Limbs and Musculoskeletal</strong></summary>
+
+- Joint pain or swelling
+- Muscle weakness
+- Numbness or tingling
+- Limited range of motion
+- Cramping
+
+</details>
+
+<details>
+<summary><strong>General and Systemic</strong></summary>
+
+- Fever and chills
+- Fatigue and malaise
+- Unexplained weight changes
+- Night sweats
+- Swollen lymph nodes
+
+</details>
+
+<details>
+<summary><strong>Skin and Dermatological</strong></summary>
+
+- Rashes and hives
+- Itching (pruritus)
+- Skin discoloration
+- Wound healing issues
+- Unusual moles or growths
+
+</details>
+
+<details>
+<summary><strong>Mental Health</strong></summary>
+
+- Persistent sadness or anxiety
+- Sleep disturbances
+- Difficulty concentrating
+- Loss of interest in activities
+- Irritability or mood swings
+
+> If experiencing thoughts of self-harm, call **988** immediately.
+
+</details>
+
+### Urgency Level Reference
+
+| Level | Indicator | Examples | Action |
+|-------|-----------|----------|--------|
+| 1 | Low | Mild headache, minor rash | Self-care, monitor |
+| 2 | Mild | Persistent cough, mild fever | Schedule appointment |
+| 3 | Moderate | High fever, severe pain | See doctor soon |
+| 4 | High | Chest pain, difficulty breathing | Urgent care / ER |
+| 5 | Emergency | Loss of consciousness, severe bleeding | **Call 911 NOW** |
+
+> The urgency scoring is a rough guide only. When in doubt, always seek immediate medical attention.
+
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. **Fork** the repository
+2. **Create** a feature branch (git checkout -b feature/amazing-feature)
+3. **Commit** your changes (git commit -m 'Add amazing feature')
+4. **Push** to the branch (git push origin feature/amazing-feature)
+5. **Open** a Pull Request
+
+### Development Setup
+
+`ash
+# Clone your fork
+git clone https://github.com/YOUR_USERNAME/symptom-checker-bot.git
+cd 81-symptom-checker-bot
+
+# Install dev dependencies
+pip install -r requirements.txt
+pip install pytest pytest-cov black flake8
+
+# Run linting
+black src/
+flake8 src/
+
+# Run tests before submitting
+pytest -v
+`
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+### ⚠️ Important Reminder
+
+**This tool is for educational and informational purposes only.**
+**It is NOT a substitute for professional medical advice, diagnosis, or treatment.**
+**Always seek the advice of your physician or other qualified health provider.**
+
+---
+
+**Part of the [Local LLM Projects](https://github.com/kennedyraju55) Series — Project #81/90**
+
+Built with ❤️ using [Ollama](https://ollama.com) · [Python](https://python.org) · [Click](https://click.palletsprojects.com) · [Rich](https://rich.readthedocs.io)
+
+*⭐ Star this repo if you find it useful!*
+
+</div>

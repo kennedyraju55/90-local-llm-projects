@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a2e1a"/>
+      <stop offset="100%" style="stop-color:#064e3b"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#06d6a0"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+  <text x="400" y="30" text-anchor="middle" fill="#06d6a0" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">System Architecture</text>
+
+  <!-- Learner -->
+  <rect x="30" y="55" width="150" height="80" rx="10" fill="#1e293b" stroke="#06d6a0" stroke-width="2"/>
+  <text x="105" y="78" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🎓 Learner</text>
+  <text x="105" y="95" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">15 Languages</text>
+  <text x="105" y="110" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">3 Levels</text>
+  <text x="105" y="125" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Conversation Input</text>
+
+  <line x1="180" y1="95" x2="220" y2="95" stroke="#06d6a0" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Conversation Engine -->
+  <rect x="225" y="45" width="180" height="100" rx="10" fill="#1e293b" stroke="#06d6a0" stroke-width="2"/>
+  <text x="315" y="70" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">💬 Conversation Engine</text>
+  <text x="315" y="88" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">get_response() • get_lesson()</text>
+  <text x="315" y="103" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">get_pronunciation_tips()</text>
+  <text x="315" y="118" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">generate_lesson_plan()</text>
+  <text x="315" y="133" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">get_vocabulary_quiz()</text>
+
+  <line x1="405" y1="95" x2="445" y2="95" stroke="#06d6a0" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- LLM -->
+  <rect x="450" y="60" width="155" height="70" rx="10" fill="#00b894" stroke="#06d6a0" stroke-width="2"/>
+  <text x="527" y="87" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">🤖 Gemma 4</text>
+  <text x="527" y="107" text-anchor="middle" fill="#d1fae5" font-family="Segoe UI,Arial,sans-serif" font-size="11">Ollama Local LLM</text>
+
+  <!-- Vocabulary -->
+  <rect x="30" y="180" width="150" height="60" rx="10" fill="#1e293b" stroke="#00b894" stroke-width="2"/>
+  <text x="105" y="205" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📖 Vocabulary</text>
+  <text x="105" y="225" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">add/load_vocabulary()</text>
+
+  <!-- Progress -->
+  <rect x="225" y="180" width="180" height="60" rx="10" fill="#1e293b" stroke="#00b894" stroke-width="2"/>
+  <text x="315" y="205" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📊 Progress Tracking</text>
+  <text x="315" y="225" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">record_session() • get_progress()</text>
+
+  <!-- System Prompts -->
+  <rect x="450" y="180" width="155" height="60" rx="10" fill="#1e293b" stroke="#00b894" stroke-width="2"/>
+  <text x="527" y="205" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🧠 Dynamic Prompts</text>
+  <text x="527" y="225" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">get_system_prompt(lang, lvl)</text>
+
+  <!-- Storage -->
+  <rect x="645" y="140" width="130" height="100" rx="10" fill="#1e293b" stroke="#06d6a0" stroke-width="2"/>
+  <text x="710" y="165" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">💾 Storage</text>
+  <text x="710" y="185" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">vocabulary.json</text>
+  <text x="710" y="201" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">progress.json</text>
+  <text x="710" y="217" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Per-language data</text>
+
+  <!-- Interfaces -->
+  <rect x="30" y="285" width="230" height="70" rx="10" fill="#1e293b" stroke="#06d6a0" stroke-width="2"/>
+  <text x="145" y="310" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🖥️ CLI (Multi-command)</text>
+  <text x="145" y="327" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">chat-cmd | lesson-plan | quiz | progress-cmd</text>
+  <text x="145" y="343" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">/lesson /translate /vocab /pronounce</text>
+
+  <rect x="300" y="285" width="230" height="70" rx="10" fill="#1e293b" stroke="#06d6a0" stroke-width="2"/>
+  <text x="415" y="310" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🌐 Web UI (4 Tabs)</text>
+  <text x="415" y="327" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Chat | Vocabulary | Lessons | Progress</text>
+  <text x="415" y="343" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Quizzes • Lesson Plans • Stats</text>
+
+  <text x="400" y="385" text-anchor="middle" fill="#4a5568" font-family="Segoe UI,Arial,sans-serif" font-size="11">Language Learning Bot — 15 Languages • 3 Levels • Vocabulary • Progress Tracking</text>
+</svg>

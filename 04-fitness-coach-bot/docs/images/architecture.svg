@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1a0f"/>
+      <stop offset="100%" style="stop-color:#3e2516"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#ff6b35"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+  <text x="400" y="30" text-anchor="middle" fill="#ff6b35" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold">System Architecture</text>
+
+  <!-- User Profile -->
+  <rect x="30" y="55" width="150" height="80" rx="10" fill="#1e293b" stroke="#ff6b35" stroke-width="2"/>
+  <text x="105" y="78" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">👤 User Profile</text>
+  <text x="105" y="95" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Level: beg/int/adv</text>
+  <text x="105" y="110" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">6 Goals • Equipment</text>
+  <text x="105" y="125" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Days/Week • Duration</text>
+
+  <line x1="180" y1="95" x2="220" y2="95" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Workout Generator -->
+  <rect x="225" y="50" width="175" height="90" rx="10" fill="#1e293b" stroke="#ff6b35" stroke-width="2"/>
+  <text x="312" y="75" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">🏋️ Workout Generator</text>
+  <text x="312" y="93" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">generate_workout_plan()</text>
+  <text x="312" y="108" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">get_exercise_details()</text>
+  <text x="312" y="123" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Form + Modifications</text>
+
+  <line x1="400" y1="95" x2="440" y2="95" stroke="#ff6b35" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- LLM -->
+  <rect x="445" y="60" width="155" height="70" rx="10" fill="#f7931e" stroke="#ff6b35" stroke-width="2"/>
+  <text x="522" y="87" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">🤖 Gemma 4</text>
+  <text x="522" y="107" text-anchor="middle" fill="#fff3e0" font-family="Segoe UI,Arial,sans-serif" font-size="11">Ollama Local LLM</text>
+
+  <!-- Exercise Library -->
+  <rect x="30" y="175" width="150" height="60" rx="10" fill="#1e293b" stroke="#f7931e" stroke-width="2"/>
+  <text x="105" y="200" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📚 Exercise Library</text>
+  <text x="105" y="220" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">search_exercises() • Built-in DB</text>
+
+  <!-- Workout Logger -->
+  <rect x="225" y="175" width="175" height="60" rx="10" fill="#1e293b" stroke="#f7931e" stroke-width="2"/>
+  <text x="312" y="200" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📝 Workout Logger</text>
+  <text x="312" y="220" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">log_workout(ex, sets, reps, weight)</text>
+
+  <!-- Progress Tracker -->
+  <rect x="445" y="175" width="155" height="60" rx="10" fill="#1e293b" stroke="#f7931e" stroke-width="2"/>
+  <text x="522" y="200" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">📈 Progress Tracker</text>
+  <text x="522" y="220" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">record_progress() • Charts</text>
+
+  <!-- Storage -->
+  <rect x="640" y="120" width="130" height="120" rx="10" fill="#1e293b" stroke="#ff6b35" stroke-width="2"/>
+  <text x="705" y="148" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold">💾 Storage</text>
+  <text x="705" y="168" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">workout_log.json</text>
+  <text x="705" y="184" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">progress.json</text>
+  <text x="705" y="200" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">EXERCISE_LIBRARY</text>
+  <text x="705" y="216" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">muscles/type/difficulty</text>
+
+  <!-- Interfaces -->
+  <rect x="30" y="280" width="230" height="70" rx="10" fill="#1e293b" stroke="#ff6b35" stroke-width="2"/>
+  <text x="145" y="305" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🖥️ CLI Interface</text>
+  <text x="145" y="322" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">--level --goal --equipment --days --duration</text>
+  <text x="145" y="338" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Interactive: exercise | log | progress | library</text>
+
+  <rect x="300" y="280" width="230" height="70" rx="10" fill="#1e293b" stroke="#ff6b35" stroke-width="2"/>
+  <text x="415" y="305" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold">🌐 Web UI (4 Tabs)</text>
+  <text x="415" y="322" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Workout Plan | Log | Progress | Library</text>
+  <text x="415" y="338" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="10">Charts • Weight/Body Fat Tracking</text>
+
+  <text x="400" y="385" text-anchor="middle" fill="#4a5568" font-family="Segoe UI,Arial,sans-serif" font-size="11">Fitness Coach Bot — 3 Levels • 6 Goals • Exercise Library • Progress Analytics</text>
+</svg>

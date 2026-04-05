@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350">
+  <defs>
+    <linearGradient id="featBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="12" fill="url(#featBg)" />
+  <rect x="1" y="1" width="798" height="348" rx="12" fill="none" stroke="#2ec4b6" stroke-width="1" stroke-opacity="0.2" />
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">Core Features</text>
+  <rect x="330" y="42" width="140" height="2" rx="1" fill="#2ec4b6" opacity="0.5" />
+
+  <!-- Row 1 -->
+  <!-- Card 1: Meeting Summaries -->
+  <g filter="url(#cardShadow)">
+    <rect x="25" y="60" width="240" height="120" rx="10" fill="#161b22" stroke="#2ec4b6" stroke-width="1.2" />
+    <text x="45" y="92" font-family="Segoe UI Emoji, sans-serif" font-size="22" fill="#2ec4b6">📋</text>
+    <text x="75" y="92" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Meeting Summaries</text>
+    <text x="45" y="116" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Attendees &amp; roles</text>
+    <text x="45" y="134" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Agenda topics</text>
+    <text x="45" y="152" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Key decisions overview</text>
+    <text x="45" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#2ec4b6" font-style="italic">summarize_meeting()</text>
+  </g>
+
+  <!-- Card 2: Speaker Identification -->
+  <g filter="url(#cardShadow)">
+    <rect x="280" y="60" width="240" height="120" rx="10" fill="#161b22" stroke="#a78bfa" stroke-width="1.2" />
+    <text x="300" y="92" font-family="Segoe UI Emoji, sans-serif" font-size="22" fill="#a78bfa">👥</text>
+    <text x="330" y="92" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Speaker Identification</text>
+    <text x="300" y="116" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Roles detection</text>
+    <text x="300" y="134" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Contributions tracking</text>
+    <text x="300" y="152" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Speaking frequency</text>
+    <text x="300" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#a78bfa" font-style="italic">identify_speakers()</text>
+  </g>
+
+  <!-- Card 3: Decision Log -->
+  <g filter="url(#cardShadow)">
+    <rect x="535" y="60" width="240" height="120" rx="10" fill="#161b22" stroke="#f59e0b" stroke-width="1.2" />
+    <text x="555" y="92" font-family="Segoe UI Emoji, sans-serif" font-size="22" fill="#f59e0b">✅</text>
+    <text x="585" y="92" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Decision Log</text>
+    <text x="555" y="116" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Proposers &amp; approvers</text>
+    <text x="555" y="134" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Impact assessment</text>
+    <text x="555" y="152" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Conditions &amp; caveats</text>
+    <text x="555" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#f59e0b" font-style="italic">extract_decision_log()</text>
+  </g>
+
+  <!-- Row 2 -->
+  <!-- Card 4: Action Item Tracking -->
+  <g filter="url(#cardShadow)">
+    <rect x="25" y="200" width="240" height="120" rx="10" fill="#161b22" stroke="#ef4444" stroke-width="1.2" />
+    <text x="45" y="232" font-family="Segoe UI Emoji, sans-serif" font-size="22" fill="#ef4444">📝</text>
+    <text x="75" y="232" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Action Item Tracking</text>
+    <text x="45" y="256" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Who / What / When tables</text>
+    <text x="45" y="274" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Assignee identification</text>
+    <text x="45" y="292" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Deadline extraction</text>
+    <text x="45" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#ef4444" font-style="italic">parse_action_items()</text>
+  </g>
+
+  <!-- Card 5: Follow-up Reminders -->
+  <g filter="url(#cardShadow)">
+    <rect x="280" y="200" width="240" height="120" rx="10" fill="#161b22" stroke="#3b82f6" stroke-width="1.2" />
+    <text x="300" y="232" font-family="Segoe UI Emoji, sans-serif" font-size="22" fill="#3b82f6">🔄</text>
+    <text x="330" y="232" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Follow-up Reminders</text>
+    <text x="300" y="256" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Priority levels (H/M/L)</text>
+    <text x="300" y="274" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Deadline scheduling</text>
+    <text x="300" y="292" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Dependency tracking</text>
+    <text x="300" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#3b82f6" font-style="italic">generate_followup_reminders()</text>
+  </g>
+
+  <!-- Card 6: 100% Private -->
+  <g filter="url(#cardShadow)">
+    <rect x="535" y="200" width="240" height="120" rx="10" fill="#161b22" stroke="#10b981" stroke-width="1.2" />
+    <text x="555" y="232" font-family="Segoe UI Emoji, sans-serif" font-size="22" fill="#10b981">🔒</text>
+    <text x="585" y="232" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">100% Private</text>
+    <text x="555" y="256" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Local LLM inference</text>
+    <text x="555" y="274" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• No cloud APIs</text>
+    <text x="555" y="292" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">• Your meetings stay confidential</text>
+    <text x="555" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#10b981" font-style="italic">Ollama + Gemma 4</text>
+  </g>
+</svg>

@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#21262d;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f72585;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#b5179e;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" fill="#f72585">
+      <polygon points="0 0, 10 3.5, 0 7"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="12" ry="12"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="700" fill="#f72585">System Architecture</text>
+
+  <!-- ===== ROW 1: Input → Processing ===== -->
+
+  <!-- Box 1: Document Directory -->
+  <g filter="url(#shadow)" transform="translate(30, 60)">
+    <rect width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#f72585" stroke-width="1.5"/>
+    <text x="65" y="28" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="16" fill="#f72585">📁</text>
+    <text x="65" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#e6edf3" font-weight="600">Document</text>
+    <text x="65" y="58" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8b949e">Directory</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="160" y1="92" x2="195" y2="92" stroke="#f72585" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Box 2: File Loader -->
+  <g filter="url(#shadow)" transform="translate(200, 60)">
+    <rect width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1"/>
+    <text x="65" y="28" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="16" fill="#f72585">📄</text>
+    <text x="65" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#e6edf3" font-weight="600">File Loader</text>
+    <text x="65" y="58" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8b949e">load_text_files()</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="330" y1="92" x2="365" y2="92" stroke="#f72585" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Box 3: Topic Extractor -->
+  <g filter="url(#shadow)" transform="translate(370, 60)">
+    <rect width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1"/>
+    <text x="65" y="28" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="16" fill="#f72585">🔍</text>
+    <text x="65" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#e6edf3" font-weight="600">Topic Extractor</text>
+    <text x="65" y="58" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8b949e">extract_topics()</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <line x1="500" y1="92" x2="535" y2="92" stroke="#f72585" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Box 4: Sentiment Analyzer -->
+  <g filter="url(#shadow)" transform="translate(540, 60)">
+    <rect width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1"/>
+    <text x="65" y="28" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="16" fill="#f72585">💭</text>
+    <text x="65" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#e6edf3" font-weight="600">Sentiment</text>
+    <text x="65" y="58" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8b949e">analyze_sentiment()</text>
+  </g>
+
+  <!-- ===== ROW 2: Analysis Pipeline ===== -->
+
+  <!-- Vertical arrow from Sentiment down -->
+  <line x1="605" y1="125" x2="605" y2="165" stroke="#f72585" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Box 5: Evolution Tracker -->
+  <g filter="url(#shadow)" transform="translate(540, 170)">
+    <rect width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1"/>
+    <text x="65" y="28" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="16" fill="#f72585">📊</text>
+    <text x="65" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#e6edf3" font-weight="600">Evolution Tracker</text>
+    <text x="65" y="58" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8b949e">track_evolution()</text>
+  </g>
+
+  <!-- Arrow 5→6 (left) -->
+  <line x1="540" y1="202" x2="500" y2="202" stroke="#f72585" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Box 6: Correlation Engine -->
+  <g filter="url(#shadow)" transform="translate(370, 170)">
+    <rect width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1"/>
+    <text x="65" y="28" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="16" fill="#f72585">🔗</text>
+    <text x="65" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#e6edf3" font-weight="600">Correlation</text>
+    <text x="65" y="58" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8b949e">correlate_topics()</text>
+  </g>
+
+  <!-- Arrow 6→7 (left) -->
+  <line x1="370" y1="202" x2="330" y2="202" stroke="#f72585" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Box 7: Emerging Detector -->
+  <g filter="url(#shadow)" transform="translate(200, 170)">
+    <rect width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#f72585" stroke-width="1.5"/>
+    <text x="65" y="28" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="16" fill="#f72585">🚨</text>
+    <text x="65" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#e6edf3" font-weight="600">Emerging Detector</text>
+    <text x="65" y="58" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8b949e">detect_emerging()</text>
+  </g>
+
+  <!-- ===== ROW 3: Output ===== -->
+
+  <!-- Vertical arrow from Emerging down -->
+  <line x1="265" y1="235" x2="265" y2="275" stroke="#f72585" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Box 8: Report Generator -->
+  <g filter="url(#shadow)" transform="translate(200, 280)">
+    <rect width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1"/>
+    <text x="65" y="28" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="16" fill="#f72585">📋</text>
+    <text x="65" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#e6edf3" font-weight="600">Report Generator</text>
+    <text x="65" y="58" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8b949e">generate_report()</text>
+  </g>
+
+  <!-- Arrow 8→9 -->
+  <line x1="330" y1="312" x2="365" y2="312" stroke="#f72585" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- Box 9: Schedule Manager -->
+  <g filter="url(#shadow)" transform="translate(370, 280)">
+    <rect width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1"/>
+    <text x="65" y="28" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="16" fill="#f72585">📅</text>
+    <text x="65" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#e6edf3" font-weight="600">Schedule Manager</text>
+    <text x="65" y="58" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8b949e">schedule_report()</text>
+  </g>
+
+  <!-- ===== LLM Engine (sidebar) ===== -->
+  <g filter="url(#shadow)" transform="translate(640, 170)">
+    <rect width="130" height="175" rx="8" fill="url(#boxGrad)" stroke="#f72585" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="65" y="28" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="16" fill="#f72585">🤖</text>
+    <text x="65" y="48" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e6edf3" font-weight="700">Local LLM</text>
+    <text x="65" y="64" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8b949e">Ollama + Gemma 3</text>
+    <line x1="15" y1="76" x2="115" y2="76" stroke="#30363d" stroke-width="1"/>
+    <text x="65" y="96" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#8b949e">Topic Extraction</text>
+    <text x="65" y="112" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#8b949e">Sentiment Analysis</text>
+    <text x="65" y="128" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#8b949e">Evolution Tracking</text>
+    <text x="65" y="144" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#8b949e">Report Generation</text>
+    <line x1="15" y1="154" x2="115" y2="154" stroke="#30363d" stroke-width="1"/>
+    <text x="65" y="170" text-anchor="middle" font-family="'Segoe UI', monospace" font-size="9" fill="#f72585">localhost:11434</text>
+  </g>
+
+  <!-- Dashed lines from LLM to processing boxes -->
+  <line x1="640" y1="202" x2="500" y2="202" stroke="#f72585" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="670" y1="170" x2="670" y2="125" stroke="#f72585" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="640" y1="312" x2="500" y2="312" stroke="#f72585" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- ===== Config (bottom-left) ===== -->
+  <g filter="url(#shadow)" transform="translate(30, 280)">
+    <rect width="130" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="65" y="28" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="16" fill="#f72585">⚙️</text>
+    <text x="65" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="11" fill="#e6edf3" font-weight="600">Configuration</text>
+    <text x="65" y="58" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8b949e">config.yaml</text>
+  </g>
+
+  <!-- Dashed line config → report -->
+  <line x1="160" y1="312" x2="195" y2="312" stroke="#8b949e" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+
+  <!-- ===== Output Icons (bottom-right) ===== -->
+  <g transform="translate(540, 280)">
+    <rect width="90" height="65" rx="8" fill="url(#boxGrad)" stroke="#30363d" stroke-width="1"/>
+    <text x="45" y="26" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="13" fill="#f72585">🖥️ CLI</text>
+    <text x="45" y="42" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#8b949e">Click + Rich</text>
+    <text x="45" y="56" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="13" fill="#f72585">🌐 Web UI</text>
+  </g>
+
+  <!-- Arrow report → output -->
+  <line x1="500" y1="312" x2="535" y2="312" stroke="#f72585" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.8"/>
+
+  <!-- ===== Phase Labels ===== -->
+  <text x="15" y="55" font-family="'Segoe UI', sans-serif" font-size="9" fill="#8b949e" font-weight="600" text-decoration="underline" opacity="0.6">INPUT</text>
+  <text x="15" y="168" font-family="'Segoe UI', sans-serif" font-size="9" fill="#8b949e" font-weight="600" text-decoration="underline" opacity="0.6">ANALYSIS</text>
+  <text x="15" y="275" font-family="'Segoe UI', sans-serif" font-size="9" fill="#8b949e" font-weight="600" text-decoration="underline" opacity="0.6">OUTPUT</text>
+
+  <!-- Border -->
+  <rect width="800" height="400" fill="none" stroke="#f72585" stroke-width="1" rx="12" ry="12" opacity="0.12"/>
+</svg>

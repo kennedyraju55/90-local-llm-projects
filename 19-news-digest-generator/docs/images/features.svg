@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="featBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0e17;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="featAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4361ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7209b7;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="12" fill="url(#featBg)" />
+  <rect x="0" y="0" width="800" height="3" fill="url(#featAccent)" />
+
+  <!-- Title -->
+  <text x="400" y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+    FEATURES
+  </text>
+  <line x1="350" y1="46" x2="450" y2="46" stroke="#4361ee" stroke-width="2" opacity="0.5" />
+
+  <!-- ═══ Row 1 ═══ -->
+
+  <!-- Card 1: Smart Categorization -->
+  <g transform="translate(30, 65)" filter="url(#cardShadow)">
+    <rect width="230" height="110" rx="10" fill="#1a1a2e" stroke="#4361ee" stroke-width="1" />
+    <!-- Icon: grid/category -->
+    <g transform="translate(18, 16)">
+      <rect x="0" y="0" width="18" height="18" rx="3" fill="#4361ee" opacity="0.35" />
+      <rect x="22" y="0" width="18" height="18" rx="3" fill="#4361ee" opacity="0.25" />
+      <rect x="0" y="22" width="18" height="18" rx="3" fill="#4361ee" opacity="0.25" />
+      <rect x="22" y="22" width="18" height="18" rx="3" fill="#4361ee" opacity="0.15" />
+    </g>
+    <text x="80" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Smart</text>
+    <text x="80" y="48" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Categorization</text>
+    <text x="18" y="82" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">Auto-grouping by topic using</text>
+    <text x="18" y="97" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">LLM-powered classification</text>
+  </g>
+
+  <!-- Card 2: Daily/Weekly Digests -->
+  <g transform="translate(285, 65)" filter="url(#cardShadow)">
+    <rect width="230" height="110" rx="10" fill="#1a1a2e" stroke="#4361ee" stroke-width="1" />
+    <!-- Icon: calendar -->
+    <g transform="translate(18, 14)">
+      <rect x="0" y="6" width="40" height="36" rx="4" fill="none" stroke="#4361ee" stroke-width="1.5" opacity="0.7" />
+      <rect x="0" y="6" width="40" height="12" rx="4" fill="#4361ee" opacity="0.2" />
+      <line x1="10" y1="0" x2="10" y2="12" stroke="#4361ee" stroke-width="2" opacity="0.5" />
+      <line x1="30" y1="0" x2="30" y2="12" stroke="#4361ee" stroke-width="2" opacity="0.5" />
+      <rect x="6" y="24" width="6" height="4" rx="1" fill="#4361ee" opacity="0.4" />
+      <rect x="17" y="24" width="6" height="4" rx="1" fill="#4361ee" opacity="0.3" />
+      <rect x="28" y="24" width="6" height="4" rx="1" fill="#4361ee" opacity="0.2" />
+      <rect x="6" y="33" width="6" height="4" rx="1" fill="#4361ee" opacity="0.2" />
+      <rect x="17" y="33" width="6" height="4" rx="1" fill="#4361ee" opacity="0.3" />
+    </g>
+    <text x="75" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Daily / Weekly</text>
+    <text x="75" y="48" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Digests</text>
+    <text x="18" y="82" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">Formatted news summaries</text>
+    <text x="18" y="97" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">tailored to your schedule</text>
+  </g>
+
+  <!-- Card 3: Sentiment Analysis -->
+  <g transform="translate(540, 65)" filter="url(#cardShadow)">
+    <rect width="230" height="110" rx="10" fill="#1a1a2e" stroke="#4361ee" stroke-width="1" />
+    <!-- Icon: gauge/meter -->
+    <g transform="translate(18, 16)">
+      <path d="M 0 35 A 22 22 0 0 1 44 35" fill="none" stroke="#4361ee" stroke-width="2" opacity="0.5" />
+      <circle cx="22" cy="35" r="3" fill="#4361ee" opacity="0.6" />
+      <line x1="22" y1="35" x2="34" y2="18" stroke="#4361ee" stroke-width="2" opacity="0.8" />
+      <circle cx="6" cy="28" r="2" fill="#ef4444" opacity="0.5" />
+      <circle cx="22" cy="14" r="2" fill="#eab308" opacity="0.5" />
+      <circle cx="38" cy="28" r="2" fill="#22c55e" opacity="0.5" />
+    </g>
+    <text x="78" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Sentiment</text>
+    <text x="78" y="48" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Analysis</text>
+    <text x="18" y="82" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">Per-article mood tracking</text>
+    <text x="18" y="97" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">with overall summary</text>
+  </g>
+
+  <!-- ═══ Row 2 ═══ -->
+
+  <!-- Card 4: Trend Detection -->
+  <g transform="translate(30, 195)" filter="url(#cardShadow)">
+    <rect width="230" height="110" rx="10" fill="#1a1a2e" stroke="#4361ee" stroke-width="1" />
+    <!-- Icon: trend line -->
+    <g transform="translate(18, 16)">
+      <polyline points="0,38 12,28 24,32 36,12 44,8" fill="none" stroke="#4361ee" stroke-width="2.5" opacity="0.8" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="44" cy="8" r="3" fill="#4361ee" opacity="0.6" />
+      <line x1="0" y1="40" x2="44" y2="40" stroke="#a0a0c0" stroke-width="0.5" opacity="0.3" />
+    </g>
+    <text x="80" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Trend</text>
+    <text x="80" y="48" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Detection</text>
+    <text x="18" y="82" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">Overarching theme</text>
+    <text x="18" y="97" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">identification across articles</text>
+  </g>
+
+  <!-- Card 5: Batch Processing -->
+  <g transform="translate(285, 195)" filter="url(#cardShadow)">
+    <rect width="230" height="110" rx="10" fill="#1a1a2e" stroke="#4361ee" stroke-width="1" />
+    <!-- Icon: stacked layers -->
+    <g transform="translate(18, 16)">
+      <rect x="4" y="0" width="36" height="10" rx="3" fill="#4361ee" opacity="0.15" stroke="#4361ee" stroke-width="1" />
+      <rect x="2" y="12" width="40" height="10" rx="3" fill="#4361ee" opacity="0.22" stroke="#4361ee" stroke-width="1" />
+      <rect x="0" y="24" width="44" height="10" rx="3" fill="#4361ee" opacity="0.3" stroke="#4361ee" stroke-width="1" />
+      <rect x="0" y="36" width="44" height="10" rx="3" fill="#4361ee" opacity="0.4" stroke="#4361ee" stroke-width="1" />
+    </g>
+    <text x="80" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Batch</text>
+    <text x="80" y="48" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Processing</text>
+    <text x="18" y="82" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">Process entire news folders</text>
+    <text x="18" y="97" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">with a single command</text>
+  </g>
+
+  <!-- Card 6: 100% Private -->
+  <g transform="translate(540, 195)" filter="url(#cardShadow)">
+    <rect width="230" height="110" rx="10" fill="#1a1a2e" stroke="#4361ee" stroke-width="1" />
+    <!-- Icon: shield/lock -->
+    <g transform="translate(18, 14)">
+      <path d="M 22 0 L 44 10 L 44 28 C 44 40 22 48 22 48 C 22 48 0 40 0 28 L 0 10 Z" fill="#4361ee" opacity="0.12" stroke="#4361ee" stroke-width="1.5" />
+      <rect x="14" y="20" width="16" height="14" rx="2" fill="none" stroke="#4361ee" stroke-width="1.5" opacity="0.7" />
+      <path d="M 17 20 L 17 16 A 5 5 0 0 1 27 16 L 27 20" fill="none" stroke="#4361ee" stroke-width="1.5" opacity="0.7" />
+      <circle cx="22" cy="28" r="2" fill="#4361ee" opacity="0.6" />
+    </g>
+    <text x="78" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">100% Private</text>
+    <text x="18" y="82" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">Your news sources stay</text>
+    <text x="18" y="97" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#a0a0c0">private — fully offline LLM</text>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="347" width="800" height="3" fill="url(#featAccent)" />
+</svg>
