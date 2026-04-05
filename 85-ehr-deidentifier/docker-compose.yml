@@ -48,6 +48,8 @@ services:
       - OLLAMA_HOST=http://ollama:11434
     depends_on:
       - ollama
+    networks:
+      - llm-network
     restart: unless-stopped
 
 volumes:

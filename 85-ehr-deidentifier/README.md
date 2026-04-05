@@ -119,7 +119,7 @@ ehr-deidentifier deidentify --file patient_note.txt --output clean_note.txt
 
 ### Expected Output
 
-`
+```
 ╭─────────────────────────────────────────────────────────────╮
 │  ⚠️  MEDICAL DISCLAIMER                                     │
 │  This tool is for educational purposes only.                │
@@ -135,7 +135,7 @@ ehr-deidentifier deidentify --file patient_note.txt --output clean_note.txt
 │                                                             │
 │  ⚠️  Remember: This is not medical advice.                  │
 ╰─────────────────────────────────────────────────────────────╯
-`
+```
 
 
 ## 🐳 Docker Deployment
@@ -204,14 +204,18 @@ docker compose up
 | `GET` | `/health` | Health check |
 | `GET` | `/docs` | Interactive Swagger UI |
 | `GET` | `/redoc` | ReDoc documentation |
-| `POST` | `/analyze` | Main analysis endpoint |
+| `POST` | `/deidentify` | AI-powered de-identification |
+| `POST` | `/deidentify/regex` | Regex-only de-identification |
+| `POST` | `/deidentify/configurable` | Configurable regex de-identification |
+| `GET` | `/hipaa-identifiers` | List HIPAA identifier categories |
+| `GET` | `/disclaimer` | HIPAA disclaimer |
 
 ### Example Request
 
 ```bash
-curl -X POST http://localhost:8000/analyze \
+curl -X POST http://localhost:8000/deidentify \
   -H "Content-Type: application/json" \
-  -d '{"text": "your input here"}'
+  -d '{"text": "Patient John Smith, SSN 123-45-6789"}'
 ```
 
 > 📖 Visit `http://localhost:8000/docs` for the full interactive API documentation.
@@ -306,7 +310,7 @@ python app.py
 
 ### Project Structure
 
-`
+```
 85-ehr-deidentifier/
 ├── src/
 │   └── ehr_deidentifier/
@@ -324,16 +328,16 @@ python app.py
 ├── config.yaml              # Model configuration
 ├── requirements.txt         # Python dependencies
 └── README.md                # This file
-`
+```
 
 ### Data Flow
 
-`
+```
 User Input → CLI/Web Interface → Core Engine → LLM (Ollama) → Response
                                       ↓
                               Built-in Databases
                               (patterns, rules, references)
-`
+```
 
 ### Technology Stack
 
@@ -352,7 +356,7 @@ User Input → CLI/Web Interface → Core Engine → LLM (Ollama) → Response
 
 ### Core Functions
 
-`python
+```python
 from ehr_deidentifier.core import deidentify_text, regex_preprocess, AuditLog, ValidationReport
 
 # De-identify text (dual-layer)
@@ -367,11 +371,11 @@ detections = regex_preprocess("Call 555-123-4567, email john@example.com")
 audit = AuditLog()
 report = ValidationReport(clean_text)
 print(report.generate())
-`
+```
 
 ### Configuration
 
-`yaml
+```yaml
 # config.yaml
 model: llama3.2
 temperature: 0.1
@@ -388,7 +392,7 @@ rules:
   ip_address: true
   url: true
   zip_code: true
-`
+```
 
 ### Environment Variables
 
@@ -528,7 +532,7 @@ The HIPAA Safe Harbor method requires removal of these 18 types of identifiers:
 
 ### Detection Pipeline
 
-`
+```
 Step 1: Configurable Regex Preprocessing
   SSN patterns (XXX-XX-XXXX)
   Phone patterns (XXX-XXX-XXXX, (XXX) XXX-XXXX)
@@ -545,7 +549,7 @@ Step 2: LLM Analysis
   Address identification
   Remaining PHI patterns
   Semantic understanding of clinical context
-`
+```
 
 ### Audit Log Fields
 

@@ -1,0 +1,35 @@
+# Examples for Study Buddy Bot
+
+This directory contains example scripts demonstrating how to use this project.
+
+## Quick Demo
+
+```bash
+python examples/demo.py
+```
+
+## What the Demo Shows
+
+- **`generate_quiz()`** — Generate quiz questions on a topic.
+- **`explain_concept()`** — Explain a concept in detail.
+- **`create_study_plan()`** — Create a study plan for exam preparation.
+- **`generate_flashcards()`** — Generate flashcard-style Q&A pairs.
+- **`ask_question()`** — Answer a study question with context.
+
+## Prerequisites
+
+- Python 3.10+
+- Ollama running with Gemma 4 model
+- Project dependencies installed (`pip install -e .`)
+
+## Running
+
+From the project root directory:
+
+```bash
+# Install the project in development mode
+pip install -e .
+
+# Run the demo
+python examples/demo.py
+```
