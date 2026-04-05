@@ -1,16 +1,20 @@
-"""Tests for API Doc Generator."""
+"""Tests for API Doc Gen core module."""
 
 import pytest
 from unittest.mock import patch
-from click.testing import CliRunner
-
 import sys
 import os
+import json
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from app import main, extract_functions, find_python_files, format_extracted_info
-
+from api_doc_gen.core import generate_docs, generate_openapi, export_docs
+from api_doc_gen.utils import (
+    extract_functions, find_python_files, format_extracted_info,
+    generate_openapi_skeleton,
+)
+from api_doc_gen.config import load_config, DocGenConfig
 
 SAMPLE_CODE = '''"""Sample module."""
 
@@ -20,11 +24,11 @@ def add(a: int, b: int) -> int:
 
 class Calculator:
     """A simple calculator."""
-    
+
     def multiply(self, x: float, y: float) -> float:
         """Multiply two numbers."""
         return x * y
-    
+
     def divide(self, x: float, y: float) -> float:
         """Divide x by y."""
         if y == 0:
@@ -94,49 +98,58 @@ class TestFindPythonFiles:
         assert len(files) == 2
 
     def test_nonexistent_path(self):
-        with pytest.raises(SystemExit):
-            find_python_files("nonexistent_path_xyz")
+        files = find_python_files("nonexistent_path_xyz")
+        assert files == []
 
 
 class TestFormatExtractedInfo:
     def test_formats_function(self):
         items = [{"type": "function", "name": "add", "lineno": 1,
                   "args": [{"name": "a", "annotation": "int"}],
-                  "returns": "int", "docstring": "Add numbers.", "is_async": False}]
+                  "returns": "int", "docstring": "Add numbers.", "is_async": False,
+                  "decorators": []}]
         result = format_extracted_info("test.py", items)
         assert "add" in result
         assert "int" in result
 
 
-class TestMainCLI:
-    @patch("app.check_ollama_running", return_value=True)
-    @patch("app.chat")
-    def test_generate_docs(self, mock_chat, mock_ollama, tmp_path):
+class TestGenerateOpenAPISkeleton:
+    def test_generates_spec(self, tmp_path):
+        f = tmp_path / "sample.py"
+        f.write_text(SAMPLE_CODE, encoding="utf-8")
+        items = extract_functions(str(f))
+        spec = generate_openapi_skeleton(items, "TestAPI")
+        assert "openapi" in spec
+        assert spec["info"]["title"] == "TestAPI"
+
+
+class TestGenerateDocs:
+    @patch("api_doc_gen.core.chat")
+    def test_generate_docs(self, mock_chat, tmp_path):
         mock_chat.return_value = "# API Docs\n## add(a, b)\nAdds two numbers."
         f = tmp_path / "sample.py"
         f.write_text(SAMPLE_CODE, encoding="utf-8")
+        result = generate_docs(str(f))
+        assert "docs" in result
+        assert result["items_count"] > 0
 
-        runner = CliRunner()
-        result = runner.invoke(main, ["--source", str(f)])
-        assert result.exit_code == 0
+    def test_no_files(self):
+        result = generate_docs("nonexistent_xyz")
+        assert "No Python files" in result["docs"]
 
-    @patch("app.check_ollama_running", return_value=True)
-    @patch("app.chat")
-    def test_output_to_file(self, mock_chat, mock_ollama, tmp_path):
-        mock_chat.return_value = "# API Documentation"
-        f = tmp_path / "sample.py"
-        f.write_text(SAMPLE_CODE, encoding="utf-8")
-        out = tmp_path / "docs.md"
 
-        runner = CliRunner()
-        result = runner.invoke(main, ["--source", str(f), "--output", str(out)])
-        assert result.exit_code == 0
-        assert out.exists()
+class TestExportDocs:
+    def test_export_markdown(self, tmp_path):
+        out = str(tmp_path / "docs.md")
+        export_docs("# Docs", out)
+        assert os.path.exists(out)
 
-    @patch("app.check_ollama_running", return_value=False)
-    def test_ollama_not_running(self, mock_ollama, tmp_path):
-        f = tmp_path / "sample.py"
-        f.write_text("x=1", encoding="utf-8")
-        runner = CliRunner()
-        result = runner.invoke(main, ["--source", str(f)])
-        assert result.exit_code != 0
+
+class TestConfig:
+    def test_default(self):
+        config = DocGenConfig()
+        assert config.model == "gemma4"
+
+    def test_load_no_file(self):
+        config = load_config("nonexistent.yaml")
+        assert config.model == "gemma4"

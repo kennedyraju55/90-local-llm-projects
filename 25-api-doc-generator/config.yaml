@@ -1,0 +1,10 @@
+# API Doc Gen Configuration
+
+ollama_base_url: "http://localhost:11434"
+model: "gemma4"
+temperature: 0.3
+max_tokens: 4096
+output_format: "markdown"
+include_examples: true
+include_openapi: false
+log_level: "INFO"

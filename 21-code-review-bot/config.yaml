@@ -1,0 +1,22 @@
+# Code Reviewer Configuration
+# Override settings via environment variables or CLI flags
+
+ollama_base_url: "http://localhost:11434"
+model: "gemma4"
+temperature: 0.3
+max_tokens: 4096
+max_file_size_kb: 500
+output_format: "markdown"
+log_level: "INFO"
+
+severity_levels:
+  - HIGH
+  - MEDIUM
+  - LOW
+
+categories:
+  - BUG
+  - STYLE
+  - SECURITY
+  - PERFORMANCE
+  - BEST_PRACTICE

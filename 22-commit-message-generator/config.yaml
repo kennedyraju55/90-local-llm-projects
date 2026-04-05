@@ -1,0 +1,11 @@
+# Commit Gen Configuration
+
+ollama_base_url: "http://localhost:11434"
+model: "gemma4"
+temperature: 0.5
+max_tokens: 2048
+num_suggestions: 3
+use_emoji: true
+conventional: true
+max_diff_chars: 4000
+log_level: "INFO"

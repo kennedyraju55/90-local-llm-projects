@@ -1,0 +1,8 @@
+# Regex Gen Configuration
+
+ollama_base_url: "http://localhost:11434"
+model: "gemma4"
+temperature: 0.3
+max_tokens: 2048
+default_flavor: "python"
+log_level: "INFO"
