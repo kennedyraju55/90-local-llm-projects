@@ -25,5 +25,16 @@ services:
       - ollama_data:/root/.ollama
     restart: unless-stopped
 
+  api:
+    build: .
+    command: ["uvicorn", "src.ticket_classifier.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
 volumes:
   ollama_data:

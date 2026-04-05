@@ -39,6 +39,17 @@ services:
       - llm-network
     restart: unless-stopped
 
+  api:
+    build: .
+    command: ["uvicorn", "src.stress_manager.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
 volumes:
   ollama_data:
 
