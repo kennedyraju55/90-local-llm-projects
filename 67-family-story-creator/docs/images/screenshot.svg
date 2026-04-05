@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg67" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1b26;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16161e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="10" ry="10" fill="url(#bg67)" stroke="#333" stroke-width="1"/>
+  <rect width="800" height="38" rx="10" ry="10" fill="#21222c"/>
+  <rect y="10" width="800" height="28" fill="#21222c"/>
+  <circle cx="20" cy="19" r="6" fill="#ff5555"/>
+  <circle cx="40" cy="19" r="6" fill="#f1fa8c"/>
+  <circle cx="60" cy="19" r="6" fill="#50fa7b"/>
+  <text x="400" y="23" fill="#bbbbbb" font-family="'Cascadia Code','Fira Code',monospace" font-size="12" text-anchor="middle">Family Story Creator — 67-family-story-creator</text>
+  <rect x="0" y="38" width="800" height="462" fill="transparent"/>
+  <text x="20" y="58" fill="#bd93f9" font-family="'Cascadia Code','Fira Code',monospace" font-size="12">~/projects/90-local-llm-projects/67-family-story-creator</text>
+    <text x="20" y="75" fill="#50fa7b" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="13" font-weight="bold">$ python main.py --theme sharing --age 5</text>
+    <text x="20" y="103" fill="#8be9fd" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">🤖 Gemma 4 Response (123.8s):</text>
+    <text x="20" y="125" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">Barnaby the rabbit loved his crunchy carrot all by himself. One sunny afternoon, his</text>
+    <text x="20" y="143" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">friend Rosie hopped over to play. Barnaby thought about sharing a bite of his yummy</text>
+    <text x="20" y="161" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">snack. He happily broke off a piece for Rosie to taste. Sharing made Barnaby smile</text>
+    <text x="20" y="179" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">even bigger than eating the whole carrot alone!</text>
+    <text x="20" y="478" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="11">─── ✅ Model: gemma4:latest │ Response: 123.8s │ Project 67/90 ───</text>
+</svg>

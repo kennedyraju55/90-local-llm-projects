@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="652" viewBox="0 0 800 652">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="652" rx="12" fill="url(#bg)"/>
+  <rect width="800" height="40" rx="12" fill="#0f0f23"/>
+  <rect y="28" width="800" height="12" fill="#0f0f23"/>
+  <circle cx="24" cy="20" r="7" fill="#ff5f57"/>
+  <circle cx="48" cy="20" r="7" fill="#febc2e"/>
+  <circle cx="72" cy="20" r="7" fill="#28c840"/>
+  <text x="400" y="25" text-anchor="middle" fill="#888" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13">Meal Planner Bot — Terminal</text>
+  <text fill="#28c840" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="70">$ python -m src.meal_planner.cli plan --diet vegetarian --days 1</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="92"></text>
+  <text fill="#667eea" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="114">✨ Meal Planner Bot</text>
+  <text fill="#667eea" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="136">   Model: Gemma 4 (8B) | Provider: Ollama</text>
+  <text fill="#444" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="158">────────────────────────────────────────────────────────────</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="180">Here is a sample 1-day vegetarian meal plan, complete with estimated</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="202">calorie counts.</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="224"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="246">Please Note: Calorie counts are estimates and can vary greatly based on</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="268">specific brands, portion sizes, and preparation methods. This plan is</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="290">designed to be balanced and satisfying.</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="312"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="334">🌿 1-Day Vegetarian Meal Plan</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="356"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="378">Estimated Total Calories: 1,800 – 2,000 kcal (This is a moderate estimate;</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="400">adjust portion sizes based on your specific needs.)</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="422"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="444"># ☀️ Breakfast (Approx. 350 - 400 kcal)</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="466">Overnight Oats with Berries and Nuts</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="488"></text>
+  <text fill="#7dd3fc" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="510">&gt; Ingredients:</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="532">*   1/2 cup rolled oats</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="554">*   1 cup unsweetened almond milk (or other milk alternative)</text>
+  <text fill="#444" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="576">────────────────────────────────────────────────────────────</text>
+  <text fill="#28c840" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="598">✅ Complete! Results generated successfully.</text>
+  <text fill="#888" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="12" x="20" y="620">Powered by Gemma 4 via Ollama • 100% Local • Zero Cloud Costs</text>
+</svg>

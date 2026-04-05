@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="12" fill="url(#bg)"/>
+  <rect width="800" height="40" rx="12" fill="#0f0f23"/>
+  <rect y="28" width="800" height="12" fill="#0f0f23"/>
+  <circle cx="24" cy="20" r="7" fill="#ff5f57"/>
+  <circle cx="48" cy="20" r="7" fill="#febc2e"/>
+  <circle cx="72" cy="20" r="7" fill="#28c840"/>
+  <text x="400" y="25" text-anchor="middle" fill="#888" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13">Fitness Coach Bot — Terminal</text>
+  <text fill="#28c840" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="70">$ python -m src.fitness_coach.cli workout --level beginner</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="92"></text>
+  <text fill="#667eea" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="114">✨ Fitness Coach Bot</text>
+  <text fill="#667eea" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="136">   Model: Gemma 4 (8B) | Provider: Ollama</text>
+  <text fill="#444" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="158">────────────────────────────────────────────────────────────</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="180">Here are 3 beginner dumbbell exercises with suggested sets and reps:</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="202"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="224">1. Goblet Squat: 3 sets of 10-12 reps</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="246">2. Dumbbell Bench Press: 3 sets of 10-12 reps</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="268">3. Dumbbell Row: 3 sets of 10-12 reps (per arm)</text>
+  <text fill="#444" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="290">────────────────────────────────────────────────────────────</text>
+  <text fill="#28c840" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="312">✅ Complete! Results generated successfully.</text>
+  <text fill="#888" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="12" x="20" y="334">Powered by Gemma 4 via Ollama • 100% Local • Zero Cloud Costs</text>
+</svg>

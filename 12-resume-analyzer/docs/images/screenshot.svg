@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="652" viewBox="0 0 800 652">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="652" rx="12" fill="url(#bg)"/>
+  <rect width="800" height="40" rx="12" fill="#0f0f23"/>
+  <rect y="28" width="800" height="12" fill="#0f0f23"/>
+  <circle cx="24" cy="20" r="7" fill="#ff5f57"/>
+  <circle cx="48" cy="20" r="7" fill="#febc2e"/>
+  <circle cx="72" cy="20" r="7" fill="#28c840"/>
+  <text x="400" y="25" text-anchor="middle" fill="#888" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13">Resume Analyzer — Terminal</text>
+  <text fill="#28c840" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="70">$ python -m src.resume_analyzer.cli analyze --file resume.pdf</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="92"></text>
+  <text fill="#667eea" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="114">✨ Resume Analyzer</text>
+  <text fill="#667eea" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="136">   Model: Gemma 4 (8B) | Provider: Ollama</text>
+  <text fill="#444" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="158">────────────────────────────────────────────────────────────</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="180">Rating: 7/10</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="202"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="224">This is a strong, solid resume bullet point/summary statement, but it&#x27;s not</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="246">perfect. It hits all the right keywords and quantifies impact, which is</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="268">excellent.</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="290"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="312">Here&#x27;s a breakdown of the score and the rationale:</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="334"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="356">🧠 Breakdown &amp; Analysis</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="378"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="400">What&#x27;s Great (The Strengths):</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="422"></text>
+  <text fill="#7dd3fc" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="444">&gt; Quantification: &quot;1M req/day&quot; is fantastic. Numbers provide immediate</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="466">proof of scale and impact.</text>
+  <text fill="#7dd3fc" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="488">&gt; Technical Depth: &quot;Python/AWS&quot; hits two highly desirable, in-demand tech</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="510">stacks.</text>
+  <text fill="#7dd3fc" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="532">&gt; Leadership: &quot;led 4 devs&quot; shows management/mentorship capability.</text>
+  <text fill="#7dd3fc" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="554">&gt; Experience Level: &quot;5yr&quot; grounds the experience level.</text>
+  <text fill="#444" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="576">────────────────────────────────────────────────────────────</text>
+  <text fill="#28c840" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="598">✅ Complete! Results generated successfully.</text>
+  <text fill="#888" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="12" x="20" y="620">Powered by Gemma 4 via Ollama • 100% Local • Zero Cloud Costs</text>
+</svg>

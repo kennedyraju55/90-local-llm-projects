@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="652" viewBox="0 0 800 652">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="652" rx="12" fill="url(#bg)"/>
+  <rect width="800" height="40" rx="12" fill="#0f0f23"/>
+  <rect y="28" width="800" height="12" fill="#0f0f23"/>
+  <circle cx="24" cy="20" r="7" fill="#ff5f57"/>
+  <circle cx="48" cy="20" r="7" fill="#febc2e"/>
+  <circle cx="72" cy="20" r="7" fill="#28c840"/>
+  <text x="400" y="25" text-anchor="middle" fill="#888" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13">Meeting Summarizer — Terminal</text>
+  <text fill="#28c840" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="70">$ python -m src.meeting_summarizer.cli summarize --file meeting.txt</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="92"></text>
+  <text fill="#667eea" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="114">✨ Meeting Summarizer</text>
+  <text fill="#667eea" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="136">   Model: Gemma 4 (8B) | Provider: Ollama</text>
+  <text fill="#444" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="158">────────────────────────────────────────────────────────────</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="180">Here are a few ways to summarize the meeting, depending on the desired tone</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="202">and level of detail:</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="224"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="246">Option 1: Concise Summary (Good for quick updates)</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="268"></text>
+  <text fill="#7dd3fc" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="290">&gt; The Q3 launch goal remains on track. The API is 80% complete, and</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="312">PostgreSQL has been selected as the database. Bob is responsible for</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="334">finalizing the API by June 15th.</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="356"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="378">Option 2: Action-Oriented Summary (Good for follow-up emails)</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="400"></text>
+  <text fill="#7dd3fc" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="422">&gt; Key Takeaways &amp; Next Steps:</text>
+  <text fill="#7dd3fc" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="444">&gt; * Goal: Maintain Q3 launch target.</text>
+  <text fill="#7dd3fc" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="466">&gt; * Progress: API development is 80% complete.</text>
+  <text fill="#7dd3fc" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="488">&gt; * Tech Decision: PostgreSQL is confirmed as the database.</text>
+  <text fill="#7dd3fc" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="510">&gt; * Action Item: Bob must finalize the API by June 15th.</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="532"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="554">Option 3: Very Brief Summary (Good for chat/instant messaging)</text>
+  <text fill="#444" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="576">────────────────────────────────────────────────────────────</text>
+  <text fill="#28c840" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="598">✅ Complete! Results generated successfully.</text>
+  <text fill="#888" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="12" x="20" y="620">Powered by Gemma 4 via Ollama • 100% Local • Zero Cloud Costs</text>
+</svg>

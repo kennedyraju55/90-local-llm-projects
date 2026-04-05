@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="12" fill="url(#bg)"/>
+  <rect width="800" height="40" rx="12" fill="#0f0f23"/>
+  <rect y="28" width="800" height="12" fill="#0f0f23"/>
+  <circle cx="24" cy="20" r="7" fill="#ff5f57"/>
+  <circle cx="48" cy="20" r="7" fill="#febc2e"/>
+  <circle cx="72" cy="20" r="7" fill="#28c840"/>
+  <text x="400" y="25" text-anchor="middle" fill="#888" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13">IT Helpdesk Bot — Terminal</text>
+  <text fill="#28c840" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="70">$ python -m src.helpdesk_bot.cli chat</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="92"></text>
+  <text fill="#667eea" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="114">✨ IT Helpdesk Bot</text>
+  <text fill="#667eea" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="136">   Model: Gemma 4 (8B) | Provider: Ollama</text>
+  <text fill="#444" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="158">────────────────────────────────────────────────────────────</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="180">Here are 3 quick fix steps for a Wi-Fi connection showing an &#x27;X&#x27;:</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="202"></text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="224">1. Toggle Airplane Mode: Turn Airplane Mode ON for about 10 seconds, then</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="246">turn it OFF. This forces your device to re-establish all wireless</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="268">connections.</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="290">2. Reboot Your Device: Perform a full restart of the device showing the &#x27;X&#x27;</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="312">(phone, laptop, etc.). This clears temporary software glitches.</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="334">3. Forget and Reconnect: Go to your Wi-Fi settings, select the problematic</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="356">network, choose &quot;Forget&quot; or &quot;Delete Network,&quot; and then attempt to reconnect</text>
+  <text fill="#e0e0e0" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="378">by re-entering the password.</text>
+  <text fill="#444" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" x="20" y="400">────────────────────────────────────────────────────────────</text>
+  <text fill="#28c840" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" x="20" y="422">✅ Complete! Results generated successfully.</text>
+  <text fill="#888" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="12" x="20" y="444">Powered by Gemma 4 via Ollama • 100% Local • Zero Cloud Costs</text>
+</svg>

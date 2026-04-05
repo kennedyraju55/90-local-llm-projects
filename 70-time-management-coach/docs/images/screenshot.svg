@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg70" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1b26;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16161e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="10" ry="10" fill="url(#bg70)" stroke="#333" stroke-width="1"/>
+  <rect width="800" height="38" rx="10" ry="10" fill="#21222c"/>
+  <rect y="10" width="800" height="28" fill="#21222c"/>
+  <circle cx="20" cy="19" r="6" fill="#ff5555"/>
+  <circle cx="40" cy="19" r="6" fill="#f1fa8c"/>
+  <circle cx="60" cy="19" r="6" fill="#50fa7b"/>
+  <text x="400" y="23" fill="#bbbbbb" font-family="'Cascadia Code','Fira Code',monospace" font-size="12" text-anchor="middle">Time Management Coach — 70-time-management-coach</text>
+  <rect x="0" y="38" width="800" height="462" fill="transparent"/>
+  <text x="20" y="58" fill="#bd93f9" font-family="'Cascadia Code','Fira Code',monospace" font-size="12">~/projects/90-local-llm-projects/70-time-management-coach</text>
+    <text x="20" y="75" fill="#50fa7b" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="13" font-weight="bold">$ python main.py --tasks tasks.txt</text>
+    <text x="20" y="103" fill="#8be9fd" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">🤖 Gemma 4 Response (261.6s):</text>
+    <text x="20" y="125" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">Here is a possible time-blocked schedule for your 8 hours, incorporating all your</text>
+    <text x="20" y="143" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">tasks.</text>
+    <text x="20" y="161" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12"></text>
+    <text x="20" y="179" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">Since you have slightly more time allocated for bugs (3 hours) than for reports (2</text>
+    <text x="20" y="197" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">hours), I&#x27;ve clustered the deep work together and placed necessary administrative</text>
+    <text x="20" y="215" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">tasks around them.</text>
+    <text x="20" y="233" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12"></text>
+    <text x="20" y="251" fill="#ff79c6" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">***</text>
+    <text x="20" y="269" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12"></text>
+    <text x="20" y="287" fill="#ff79c6" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">## 🗓️ 8-Hour Time-Blocked Schedule</text>
+    <text x="20" y="305" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12"></text>
+    <text x="20" y="323" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">| Time Slot | Duration | Activity | Focus/Notes |</text>
+    <text x="20" y="341" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">| :--- | :--- | :--- | :--- |</text>
+    <text x="20" y="359" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">| **9:00 AM - 10:30 AM** | 2 hrs | **Report Writing** | Tackle the most demanding</text>
+    <text x="20" y="377" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">cognitive task first while energy is high. |</text>
+    <text x="20" y="395" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">| **10:30 AM - 11:30 AM** | 1 hr | **Code Review** | Deep focus on reviewing code,</text>
+    <text x="20" y="413" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">  ... (truncated)</text>
+    <text x="20" y="478" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="11">─── ✅ Model: gemma4:latest │ Response: 261.6s │ Project 70/90 ───</text>
+</svg>

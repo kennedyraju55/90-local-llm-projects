@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg61" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1b26;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16161e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="10" ry="10" fill="url(#bg61)" stroke="#333" stroke-width="1"/>
+  <rect width="800" height="38" rx="10" ry="10" fill="#21222c"/>
+  <rect y="10" width="800" height="28" fill="#21222c"/>
+  <circle cx="20" cy="19" r="6" fill="#ff5555"/>
+  <circle cx="40" cy="19" r="6" fill="#f1fa8c"/>
+  <circle cx="60" cy="19" r="6" fill="#50fa7b"/>
+  <text x="400" y="23" fill="#bbbbbb" font-family="'Cascadia Code','Fira Code',monospace" font-size="12" text-anchor="middle">Smart Calendar Assistant — 61-smart-calendar-assistant</text>
+  <rect x="0" y="38" width="800" height="462" fill="transparent"/>
+  <text x="20" y="58" fill="#bd93f9" font-family="'Cascadia Code','Fira Code',monospace" font-size="12">~/projects/90-local-llm-projects/61-smart-calendar-assistant</text>
+    <text x="20" y="75" fill="#50fa7b" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="13" font-weight="bold">$ python main.py --day Monday</text>
+    <text x="20" y="103" fill="#8be9fd" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">🤖 Gemma 4 Response (245.6s):</text>
+    <text x="20" y="125" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">Here are a few options for your Monday schedule, depending on how much focus time you</text>
+    <text x="20" y="143" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">need and how flexible you want to be.</text>
+    <text x="20" y="161" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12"></text>
+    <text x="20" y="179" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">I&#x27;ve provided **three options** (Structured, Balanced, and Deep Focus) so you can</text>
+    <text x="20" y="197" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">choose the one that best fits your energy and work style for the day.</text>
+    <text x="20" y="215" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12"></text>
+    <text x="20" y="233" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">---</text>
+    <text x="20" y="251" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12"></text>
+    <text x="20" y="269" fill="#ff79c6" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">## 📊 Option 1: The Structured Approach (Recommended Starting Point)</text>
+    <text x="20" y="287" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12"></text>
+    <text x="20" y="305" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">This option keeps the schedule tight, ensuring you get dedicated time for deep work</text>
+    <text x="20" y="323" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">before the afternoon meetings.</text>
+    <text x="20" y="341" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12"></text>
+    <text x="20" y="359" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">| Time | Activity | Duration | Notes |</text>
+    <text x="20" y="377" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">| :--- | :--- | :--- | :--- |</text>
+    <text x="20" y="395" fill="#f8f8f2" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">| **8:30 AM - 9:00 AM** | Prep &amp; Triage | 30 min | Review notes, prep materials for</text>
+    <text x="20" y="413" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="12">  ... (truncated)</text>
+    <text x="20" y="478" fill="#6272a4" font-family="'Cascadia Code','Fira Code','JetBrains Mono',monospace" font-size="11">─── ✅ Model: gemma4:latest │ Response: 245.6s │ Project 61/90 ───</text>
+</svg>

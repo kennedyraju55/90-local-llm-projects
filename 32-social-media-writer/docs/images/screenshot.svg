@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="12" fill="url(#bg)"/>
+
+  <!-- Terminal window -->
+  <rect x="15" y="15" width="770" height="470" rx="10" fill="#1e1e2e" filter="url(#shadow)" stroke="#333" stroke-width="1"/>
+
+  <!-- Title bar -->
+  <rect x="15" y="15" width="770" height="38" rx="10" fill="#2d2d3f"/>
+  <rect x="15" y="43" width="770" height="10" fill="#2d2d3f"/>
+
+  <!-- Window controls -->
+  <circle cx="38" cy="34" r="7" fill="#ff5f57"/>
+  <circle cx="58" cy="34" r="7" fill="#febc2e"/>
+  <circle cx="78" cy="34" r="7" fill="#28c840"/>
+
+  <!-- Window title -->
+  <text x="400" y="38" text-anchor="middle" fill="#888" font-family="'Segoe UI', Arial, sans-serif" font-size="13">Social Media Writer — Terminal</text>
+
+  <!-- Separator -->
+  <line x1="25" y1="55" x2="775" y2="55" stroke="#333" stroke-width="1"/>
+
+  <!-- Command prompt -->
+  <text x="35" y="80" font-family="'Cascadia Code', 'Fira Code', monospace" font-size="13">
+    <tspan fill="#50fa7b">❯ </tspan><tspan fill="#bd93f9">python src/main.py --platform twitter --topic &#x27;Local LLMs&#x27;</tspan>
+  </text>
+
+  <!-- Loading indicator -->
+  <text x="35" y="105" fill="#6272a4" font-family="'Cascadia Code', 'Fira Code', monospace" font-size="12">⚡ Generating with Gemma 4 via Ollama...</text>
+
+  <!-- Separator line -->
+  <text x="35" y="125" fill="#44475a" font-family="'Cascadia Code', 'Fira Code', monospace" font-size="12">─────────────────────────────────────────────────────────────────</text>
+
+  <!-- Project title in output -->
+  <text x="35" y="150" fill="#ff79c6" font-family="'Cascadia Code', 'Fira Code', monospace" font-size="14" font-weight="bold">📋 Social Media Writer Output:</text>
+
+  <!-- LLM Output -->
+    <text x="35" y="175" fill="#E0E0E0" font-family="'Cascadia Code', 'Fira Code', monospace" font-size="13">🔒 Local LLMs are the future of AI! Run powerful language models on YOUR</text>
+    <text x="35" y="193" fill="#E0E0E0" font-family="'Cascadia Code', 'Fira Code', monospace" font-size="13">hardware — no cloud, no data sharing, complete privacy. The future of AI is</text>
+    <text x="35" y="211" fill="#E0E0E0" font-family="'Cascadia Code', 'Fira Code', monospace" font-size="13">decentralized. #LocalLLM #PrivacyFirst #AI</text>
+
+  <!-- Footer -->
+  <line x1="25" y1="435" x2="775" y2="435" stroke="#333" stroke-width="1"/>
+  <text x="400" y="455" text-anchor="middle" fill="#6272a4" font-family="'Segoe UI', Arial, sans-serif" font-size="12">🔒 Powered by Gemma 4 via Ollama • 100% Local • No data leaves your machine</text>
+  <text x="400" y="472" text-anchor="middle" fill="#44475a" font-family="'Segoe UI', Arial, sans-serif" font-size="11">github.com/kennedyraju55/90-local-llm-projects/32-social-media-writer</text>
+</svg>
