@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+  <text x="400" y="35" text-anchor="middle" fill="#d4a843" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold">Features</text>
+
+  <!-- Row 1 -->
+  <rect x="30" y="60" width="230" height="110" rx="10" fill="#1e3a5f" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="145" y="90" text-anchor="middle" fill="#4fc3f7" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">📋 Deposition Summary</text>
+  <text x="145" y="115" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">Comprehensive analysis</text>
+  <text x="145" y="135" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">of full transcripts</text>
+  <text x="145" y="155" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">with witness profiles</text>
+
+  <rect x="285" y="60" width="230" height="110" rx="10" fill="#1e3a5f" stroke="#ffc107" stroke-width="1.5"/>
+  <text x="400" y="90" text-anchor="middle" fill="#ffc107" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">🎯 Key Admissions</text>
+  <text x="400" y="115" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">Extract statements that</text>
+  <text x="400" y="135" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">support or undermine</text>
+  <text x="400" y="155" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">each party's position</text>
+
+  <rect x="540" y="60" width="230" height="110" rx="10" fill="#1e3a5f" stroke="#f44336" stroke-width="1.5"/>
+  <text x="655" y="90" text-anchor="middle" fill="#f44336" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">⚡ Contradiction Detection</text>
+  <text x="655" y="115" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">Find inconsistencies</text>
+  <text x="655" y="135" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">and conflicting statements</text>
+  <text x="655" y="155" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">in witness testimony</text>
+
+  <!-- Row 2 -->
+  <rect x="30" y="195" width="230" height="110" rx="10" fill="#1e3a5f" stroke="#81c784" stroke-width="1.5"/>
+  <text x="145" y="225" text-anchor="middle" fill="#81c784" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">📄 Testimony Extraction</text>
+  <text x="145" y="250" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">Search testimony by</text>
+  <text x="145" y="270" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">topic with relevance</text>
+  <text x="145" y="290" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">scoring and references</text>
+
+  <rect x="285" y="195" width="230" height="110" rx="10" fill="#1e3a5f" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="400" y="225" text-anchor="middle" fill="#ce93d8" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">❓ Follow-up Questions</text>
+  <text x="400" y="250" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">AI-generated questions</text>
+  <text x="400" y="270" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">targeting gaps and</text>
+  <text x="400" y="290" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">evasive answers</text>
+
+  <rect x="540" y="195" width="230" height="110" rx="10" fill="#1b5e20" stroke="#66bb6a" stroke-width="1.5"/>
+  <text x="655" y="225" text-anchor="middle" fill="#66bb6a" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold">🔒 100% Private</text>
+  <text x="655" y="250" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">All processing local</text>
+  <text x="655" y="270" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">Attorney-client privilege</text>
+  <text x="655" y="290" text-anchor="middle" fill="#aaa" font-family="Segoe UI,Arial,sans-serif" font-size="11">Zero data leakage</text>
+
+  <text x="400" y="335" text-anchor="middle" fill="#555" font-family="Segoe UI,Arial,sans-serif" font-size="11">Powered by Gemma 4 via Ollama • Python • Click • Streamlit • FastAPI</text>
+</svg>

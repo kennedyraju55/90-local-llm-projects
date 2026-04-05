@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f38ba8"/>
+      <stop offset="100%" style="stop-color:#eba0ac"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#89b4fa"/>
+      <stop offset="100%" style="stop-color:#74c7ec"/>
+    </linearGradient>
+    <linearGradient id="card4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a6e3a1"/>
+      <stop offset="100%" style="stop-color:#94e2d5"/>
+    </linearGradient>
+    <linearGradient id="card5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fab387"/>
+      <stop offset="100%" style="stop-color:#f9e2af"/>
+    </linearGradient>
+    <linearGradient id="card6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#cba6f7"/>
+      <stop offset="100%" style="stop-color:#b4befe"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)" rx="12"/>
+  <text x="400" y="40" text-anchor="middle" fill="#cdd6f4" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="bold">✨ Key Features</text>
+
+  <!-- Row 1 -->
+  <rect x="30" y="65" width="230" height="110" rx="12" fill="#313244" stroke="url(#card1)" stroke-width="2"/>
+  <text x="145" y="100" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="28">🔬</text>
+  <text x="145" y="125" text-anchor="middle" fill="#cdd6f4" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">Result Interpretation</text>
+  <text x="145" y="145" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">Comprehensive AI analysis</text>
+  <text x="145" y="160" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">of lab test results</text>
+
+  <rect x="285" y="65" width="230" height="110" rx="12" fill="#313244" stroke="url(#card2)" stroke-width="2"/>
+  <text x="400" y="100" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="28">🚨</text>
+  <text x="400" y="125" text-anchor="middle" fill="#cdd6f4" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">Abnormality Detection</text>
+  <text x="400" y="145" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">Identify out-of-range values</text>
+  <text x="400" y="160" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">with clinical context</text>
+
+  <rect x="540" y="65" width="230" height="110" rx="12" fill="#313244" stroke="url(#card3)" stroke-width="2"/>
+  <text x="655" y="100" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="28">📋</text>
+  <text x="655" y="125" text-anchor="middle" fill="#cdd6f4" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">Follow-up Suggestions</text>
+  <text x="655" y="145" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">Recommend additional tests</text>
+  <text x="655" y="160" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">based on current results</text>
+
+  <!-- Row 2 -->
+  <rect x="30" y="200" width="230" height="110" rx="12" fill="#313244" stroke="url(#card4)" stroke-width="2"/>
+  <text x="145" y="235" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="28">📊</text>
+  <text x="145" y="260" text-anchor="middle" fill="#cdd6f4" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">Reference Ranges</text>
+  <text x="145" y="280" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">Built-in ranges for CBC,</text>
+  <text x="145" y="295" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">BMP, Lipids, Thyroid, more</text>
+
+  <rect x="285" y="200" width="230" height="110" rx="12" fill="#313244" stroke="url(#card5)" stroke-width="2"/>
+  <text x="400" y="235" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="28">🔒</text>
+  <text x="400" y="260" text-anchor="middle" fill="#cdd6f4" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">HIPAA-Friendly</text>
+  <text x="400" y="280" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">100% local processing</text>
+  <text x="400" y="295" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">No data leaves your machine</text>
+
+  <rect x="540" y="200" width="230" height="110" rx="12" fill="#313244" stroke="url(#card6)" stroke-width="2"/>
+  <text x="655" y="235" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="28">🐳</text>
+  <text x="655" y="260" text-anchor="middle" fill="#cdd6f4" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">Docker Ready</text>
+  <text x="655" y="280" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">One-command deployment</text>
+  <text x="655" y="295" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="11">with docker-compose</text>
+</svg>

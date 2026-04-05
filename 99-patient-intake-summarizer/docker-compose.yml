@@ -1,0 +1,60 @@
+# ============================================================
+# Docker Compose for Patient Intake Summarizer
+# ============================================================
+# CLINICAL DISCLAIMER: AI-generated summaries are for clinical
+# decision support only. All output must be reviewed by a
+# licensed physician. No patient data leaves this machine.
+# ============================================================
+
+services:
+  patient-intake-summarizer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      ollama:
+        condition: service_healthy
+    networks:
+      - llm-network
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 15s
+    networks:
+      - llm-network
+    restart: unless-stopped
+
+  api:
+    build: .
+    command: ["uvicorn", "src.patient_intake_summarizer.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    depends_on:
+      - ollama
+    networks:
+      - llm-network
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+
+networks:
+  llm-network:
+    driver: bridge

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg3)" rx="12"/>
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#daa520" text-anchor="middle">Key Features</text>
+  <!-- Row 1 -->
+  <rect x="30" y="55" width="230" height="120" rx="10" fill="#1a1a2e" stroke="#daa520" stroke-width="1"/>
+  <text x="145" y="85" font-size="28" text-anchor="middle">📄</text>
+  <text x="145" y="110" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#daa520" text-anchor="middle">Filing Generation</text>
+  <text x="145" y="130" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">Generate complaints, answers,</text>
+  <text x="145" y="145" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">and briefs from case details</text>
+
+  <rect x="285" y="55" width="230" height="120" rx="10" fill="#1a1a2e" stroke="#daa520" stroke-width="1"/>
+  <text x="400" y="85" font-size="28" text-anchor="middle">⚖️</text>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#daa520" text-anchor="middle">Motion Drafting</text>
+  <text x="400" y="130" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">Draft motions to dismiss,</text>
+  <text x="400" y="145" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">compel, and summary judgment</text>
+
+  <rect x="540" y="55" width="230" height="120" rx="10" fill="#1a1a2e" stroke="#daa520" stroke-width="1"/>
+  <text x="655" y="85" font-size="28" text-anchor="middle">🔍</text>
+  <text x="655" y="110" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#daa520" text-anchor="middle">Discovery Requests</text>
+  <text x="655" y="130" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">Interrogatories, RFPs, and</text>
+  <text x="655" y="145" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">requests for admission</text>
+
+  <!-- Row 2 -->
+  <rect x="30" y="195" width="230" height="120" rx="10" fill="#1a1a2e" stroke="#daa520" stroke-width="1"/>
+  <text x="145" y="225" font-size="28" text-anchor="middle">✅</text>
+  <text x="145" y="250" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#daa520" text-anchor="middle">Filing Validation</text>
+  <text x="145" y="270" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">Check filings for completeness,</text>
+  <text x="145" y="285" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">formatting, and citations</text>
+
+  <rect x="285" y="195" width="230" height="120" rx="10" fill="#1a1a2e" stroke="#daa520" stroke-width="1"/>
+  <text x="400" y="225" font-size="28" text-anchor="middle">📋</text>
+  <text x="400" y="250" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#daa520" text-anchor="middle">Template Library</text>
+  <text x="400" y="270" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">10 filing templates with</text>
+  <text x="400" y="285" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">proper legal structure</text>
+
+  <rect x="540" y="195" width="230" height="120" rx="10" fill="#1a1a2e" stroke="#daa520" stroke-width="1"/>
+  <text x="655" y="225" font-size="28" text-anchor="middle">🔒</text>
+  <text x="655" y="250" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#daa520" text-anchor="middle">100% Private</text>
+  <text x="655" y="270" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">Local LLM processing only.</text>
+  <text x="655" y="285" font-family="Arial, sans-serif" font-size="10" fill="#a0a0b0" text-anchor="middle">Attorney-client privilege safe.</text>
+</svg>

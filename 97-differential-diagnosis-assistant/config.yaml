@@ -1,0 +1,18 @@
+# Differential Diagnosis Assistant Configuration
+model: "gemma4"
+temperature: 0.3
+max_tokens: 2048
+log_level: "INFO"
+ollama_url: "http://localhost:11434"
+
+# Clinical reasoning settings
+clinical:
+  include_red_flags: true
+  include_workup: true
+  max_differentials: 10
+
+# UI Settings
+ui:
+  theme: "medical"
+  show_disclaimer: true
+  show_history: true

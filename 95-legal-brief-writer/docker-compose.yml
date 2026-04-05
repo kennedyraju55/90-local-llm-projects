@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: legal-brief-writer-web
+    ports:
+      - "8501:8501"
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - LLM_MODEL=gemma4:latest
+    depends_on:
+      - ollama
+    volumes:
+      - ./config.yaml:/app/config.yaml
+    restart: unless-stopped
+
+  api:
+    build: .
+    container_name: legal-brief-writer-api
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - LLM_MODEL=gemma4:latest
+    command: ["uvicorn", "src.brief_writer.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    depends_on:
+      - ollama
+    volumes:
+      - ./config.yaml:/app/config.yaml
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: legal-brief-writer-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_data:

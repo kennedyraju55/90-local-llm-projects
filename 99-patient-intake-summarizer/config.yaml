@@ -1,0 +1,13 @@
+model: "gemma4"
+temperature: 0.3
+max_tokens: 2048
+log_level: "INFO"
+ollama_url: "http://localhost:11434"
+summarization:
+  default_format: "structured"
+  include_risk_factors: true
+  flag_missing_info: true
+ui:
+  theme: "clinical"
+  show_disclaimer: true
+  show_history: true

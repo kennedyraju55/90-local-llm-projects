@@ -1,0 +1,17 @@
+# Core
+requests>=2.31.0
+pyyaml>=6.0
+click>=8.1.0
+rich>=13.0.0
+
+# Web UI
+streamlit>=1.30.0
+
+# REST API
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.5.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350">
+  <defs>
+    <linearGradient id="featBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="featAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#featBg)" rx="12"/>
+  <text x="400" y="38" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Key Features</text>
+  <rect x="300" y="48" width="200" height="3" fill="url(#featAccent)" rx="2"/>
+
+  <!-- Feature 1: Report Types -->
+  <rect x="30" y="65" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="50" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">📄</text>
+  <text x="78" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Report Types</text>
+  <text x="45" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">6 clinical report types including</text>
+  <text x="45" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">progress notes, consultation notes,</text>
+  <text x="45" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">and operative reports</text>
+  <rect x="30" y="168" width="235" height="6" rx="3" fill="#667eea" opacity="0.15"/>
+
+  <!-- Feature 2: Discharge Summaries -->
+  <rect x="285" y="65" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="305" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">🏥</text>
+  <text x="333" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Discharge Summaries</text>
+  <text x="300" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Comprehensive hospital stay</text>
+  <text x="300" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">summaries with admission, course,</text>
+  <text x="300" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">and discharge documentation</text>
+  <rect x="285" y="168" width="235" height="6" rx="3" fill="#667eea" opacity="0.15"/>
+
+  <!-- Feature 3: Referral Letters -->
+  <rect x="540" y="65" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="560" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">📨</text>
+  <text x="588" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Referral Letters</text>
+  <text x="555" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Professional referral letters</text>
+  <text x="555" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">with patient info, findings, and</text>
+  <text x="555" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">reason for specialist referral</text>
+  <rect x="540" y="168" width="235" height="6" rx="3" fill="#667eea" opacity="0.15"/>
+
+  <!-- Feature 4: HIPAA-Friendly -->
+  <rect x="30" y="195" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="50" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="20">🔒</text>
+  <text x="78" y="227" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">HIPAA-Friendly</text>
+  <text x="45" y="253" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">100% local processing — no patient</text>
+  <text x="45" y="270" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">data ever leaves your machine.</text>
+  <text x="45" y="287" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Complete data sovereignty</text>
+  <rect x="30" y="298" width="235" height="6" rx="3" fill="#667eea" opacity="0.15"/>
+
+  <!-- Feature 5: REST API -->
+  <rect x="285" y="195" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="305" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="20">⚡</text>
+  <text x="333" y="227" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">REST API</text>
+  <text x="300" y="253" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">FastAPI endpoints for report</text>
+  <text x="300" y="270" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">generation, formatting, and</text>
+  <text x="300" y="287" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">integration with existing EHR</text>
+  <rect x="285" y="298" width="235" height="6" rx="3" fill="#667eea" opacity="0.15"/>
+
+  <!-- Feature 6: Docker Ready -->
+  <rect x="540" y="195" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="560" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="20">🐳</text>
+  <text x="588" y="227" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Docker Ready</text>
+  <text x="555" y="253" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">One-command deployment with</text>
+  <text x="555" y="270" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Docker Compose — includes Web UI,</text>
+  <text x="555" y="287" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">API server, and Ollama</text>
+  <rect x="540" y="298" width="235" height="6" rx="3" fill="#667eea" opacity="0.15"/>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="archAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="800" height="400" fill="url(#archBg)" rx="12"/>
+  <text x="400" y="35" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Architecture Overview</text>
+  <rect x="2" y="45" width="796" height="3" fill="url(#archAccent)" opacity="0.5"/>
+
+  <!-- Node 1: User Input -->
+  <rect x="40" y="70" width="220" height="90" rx="10" fill="#161b22" stroke="#667eea" stroke-width="2" filter="url(#shadow)"/>
+  <text x="150" y="100" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#667eea" text-anchor="middle" font-weight="bold">Clinical Data Input</text>
+  <text x="150" y="120" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Patient data, observations, findings</text>
+  <text x="150" y="138" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">CLI / Web UI / REST API</text>
+
+  <!-- Node 2: Report Type Selector -->
+  <rect x="540" y="70" width="220" height="90" rx="10" fill="#161b22" stroke="#667eea" stroke-width="2" filter="url(#shadow)"/>
+  <text x="650" y="100" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#667eea" text-anchor="middle" font-weight="bold">Report Type Selector</text>
+  <text x="650" y="120" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Discharge, Referral, Consultation</text>
+  <text x="650" y="138" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Operative, Progress, Transfer</text>
+
+  <!-- Arrows -->
+  <line x1="150" y1="160" x2="150" y2="195" stroke="#667eea" stroke-width="2"/>
+  <line x1="650" y1="160" x2="650" y2="195" stroke="#667eea" stroke-width="2"/>
+
+  <!-- Node 3: Report Generator -->
+  <rect x="40" y="195" width="220" height="90" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="150" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#667eea" text-anchor="middle" font-weight="bold">Report Generator</text>
+  <text x="150" y="245" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Prompt construction and formatting</text>
+  <text x="150" y="263" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Template-based section mapping</text>
+
+  <!-- Node 4: LLM Engine -->
+  <rect x="540" y="195" width="220" height="90" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="650" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#667eea" text-anchor="middle" font-weight="bold">LLM Engine (Ollama)</text>
+  <text x="650" y="245" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Gemma 4 local model inference</text>
+  <text x="650" y="263" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">100% on-device processing</text>
+
+  <!-- Horizontal connector -->
+  <line x1="260" y1="240" x2="540" y2="240" stroke="#667eea" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="400" y="235" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#667eea" text-anchor="middle">data flow</text>
+
+  <!-- Arrows down -->
+  <line x1="150" y1="285" x2="150" y2="315" stroke="#667eea" stroke-width="2"/>
+  <line x1="650" y1="285" x2="650" y2="315" stroke="#667eea" stroke-width="2"/>
+
+  <!-- Node 5: Report Session -->
+  <rect x="40" y="315" width="220" height="70" rx="10" fill="#667eea" opacity="0.1" stroke="#667eea" stroke-width="1"/>
+  <text x="150" y="345" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#667eea" text-anchor="middle" font-weight="bold">Report Session Tracker</text>
+  <text x="150" y="365" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">History, summaries, key findings</text>
+
+  <!-- Node 6: Output -->
+  <rect x="540" y="315" width="220" height="70" rx="10" fill="#667eea" opacity="0.1" stroke="#667eea" stroke-width="1"/>
+  <text x="650" y="345" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#667eea" text-anchor="middle" font-weight="bold">Formatted Output</text>
+  <text x="650" y="365" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Reports with physician-review flags</text>
+
+  <!-- Connecting arrows -->
+  <polygon points="147,193 150,185 153,193" fill="#667eea"/>
+  <polygon points="647,193 650,185 653,193" fill="#667eea"/>
+  <polygon points="147,313 150,305 153,313" fill="#667eea"/>
+  <polygon points="647,313 650,305 653,313" fill="#667eea"/>
+</svg>

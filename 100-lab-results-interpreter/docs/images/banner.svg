@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" fill="url(#bg)" rx="12"/>
+  <rect x="50" y="160" width="700" height="3" fill="url(#accent)" rx="2"/>
+  <text x="400" y="85" text-anchor="middle" fill="#cdd6f4" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="bold">🏥 Lab Results Interpreter</text>
+  <text x="400" y="130" text-anchor="middle" fill="#a6adc8" font-family="Segoe UI, Arial, sans-serif" font-size="20">AI-Powered Laboratory Analysis</text>
+  <text x="400" y="155" text-anchor="middle" fill="#6c7086" font-family="Segoe UI, Arial, sans-serif" font-size="14">100% Local • HIPAA-Friendly • Gemma 4 via Ollama</text>
+</svg>

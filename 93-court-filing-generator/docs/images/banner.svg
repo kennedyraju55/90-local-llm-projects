@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b8860b"/>
+      <stop offset="50%" style="stop-color:#daa520"/>
+      <stop offset="100%" style="stop-color:#b8860b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" fill="url(#bg)" rx="12"/>
+  <rect x="2" y="2" width="796" height="196" fill="none" stroke="url(#gold)" stroke-width="2" rx="11"/>
+  <!-- Scale icon -->
+  <text x="190" y="105" font-size="52" text-anchor="middle" fill="#daa520">⚖️</text>
+  <!-- Title -->
+  <text x="430" y="85" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#daa520" text-anchor="middle">Court Filing Generator</text>
+  <!-- Subtitle -->
+  <text x="430" y="120" font-family="Arial, sans-serif" font-size="16" fill="#a0a0b0" text-anchor="middle">AI-Powered Legal Document Generation with Complete Privacy</text>
+  <!-- Privacy badge -->
+  <rect x="310" y="138" width="240" height="28" rx="14" fill="#1b5e20" opacity="0.8"/>
+  <text x="430" y="157" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">🔒 100% Local · No Data Leaves Your Machine</text>
+  <!-- Decorative lines -->
+  <line x1="230" y1="95" x2="230" y2="95" stroke="#daa520" stroke-width="1" opacity="0.3"/>
+</svg>

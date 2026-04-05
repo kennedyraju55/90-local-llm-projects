@@ -1,0 +1,14 @@
+app:
+  name: "Legal Case Researcher"
+  version: "1.0.0"
+llm:
+  model: "gemma4:latest"
+  temperature: 0.3
+  max_tokens: 4096
+  ollama_host: "http://localhost:11434"
+research:
+  default_jurisdiction: "federal"
+  max_results: 10
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

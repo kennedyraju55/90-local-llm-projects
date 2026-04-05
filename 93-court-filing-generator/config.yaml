@@ -1,0 +1,17 @@
+app:
+  name: "Court Filing Generator"
+  version: "1.0.0"
+
+llm:
+  model: "gemma4:latest"
+  temperature: 0.3
+  max_tokens: 4096
+  ollama_host: "http://localhost:11434"
+
+filing:
+  default_jurisdiction: "federal"
+  default_court: "United States District Court"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

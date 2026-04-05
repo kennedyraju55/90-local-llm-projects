@@ -1,0 +1,17 @@
+app:
+  name: "Legal Brief Writer"
+  version: "1.0.0"
+
+llm:
+  model: "gemma4:latest"
+  temperature: 0.4
+  max_tokens: 8192
+  ollama_host: "http://localhost:11434"
+
+writing:
+  default_brief_type: "memorandum_of_law"
+  max_word_count: 15000
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

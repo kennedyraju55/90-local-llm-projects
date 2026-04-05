@@ -1,0 +1,44 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+  <text x="400" y="35" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#d4a574">System Architecture</text>
+
+  <!-- User Layer -->
+  <rect x="250" y="55" width="300" height="45" rx="8" fill="#1e3a5f" stroke="#667eea" stroke-width="1.5"/>
+  <text x="400" y="83" text-anchor="middle" font-family="Arial" font-size="14" fill="#cdd6f4">👤 User (Lawyer / Paralegal)</text>
+
+  <!-- Interface Layer -->
+  <rect x="30" y="130" width="200" height="45" rx="8" fill="#2d1b4e" stroke="#764ba2" stroke-width="1.5"/>
+  <text x="130" y="158" text-anchor="middle" font-family="Arial" font-size="13" fill="#cdd6f4">🖥️ Streamlit UI (:8501)</text>
+  <rect x="300" y="130" width="200" height="45" rx="8" fill="#2d1b4e" stroke="#764ba2" stroke-width="1.5"/>
+  <text x="400" y="158" text-anchor="middle" font-family="Arial" font-size="13" fill="#cdd6f4">🔌 FastAPI (:8000)</text>
+  <rect x="570" y="130" width="200" height="45" rx="8" fill="#2d1b4e" stroke="#764ba2" stroke-width="1.5"/>
+  <text x="670" y="158" text-anchor="middle" font-family="Arial" font-size="13" fill="#cdd6f4">⌨️ CLI (Click+Rich)</text>
+
+  <!-- Core Layer -->
+  <rect x="150" y="210" width="500" height="50" rx="8" fill="#1a3a2e" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="400" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#cdd6f4">⚖️ Core Engine: Clause Analysis • Risk Assessment • Comparison</text>
+
+  <!-- LLM Layer -->
+  <rect x="200" y="295" width="400" height="50" rx="8" fill="#3a2a1a" stroke="#d4a574" stroke-width="1.5"/>
+  <text x="400" y="325" text-anchor="middle" font-family="Arial" font-size="14" fill="#d4a574">🧠 Gemma 4 via Ollama (localhost:11434)</text>
+
+  <!-- Privacy Badge -->
+  <rect x="250" y="365" width="300" height="25" rx="12" fill="#0d3320" stroke="#22c55e" stroke-width="1"/>
+  <text x="400" y="383" text-anchor="middle" font-family="Arial" font-size="12" fill="#4ade80">🔒 100% Local • No Data Leaves Your Machine</text>
+
+  <!-- Arrows -->
+  <line x1="400" y1="100" x2="130" y2="130" stroke="#667eea" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="400" y1="100" x2="400" y2="130" stroke="#667eea" stroke-width="1.5"/>
+  <line x1="400" y1="100" x2="670" y2="130" stroke="#667eea" stroke-width="1.5"/>
+  <line x1="130" y1="175" x2="300" y2="210" stroke="#764ba2" stroke-width="1.5"/>
+  <line x1="400" y1="175" x2="400" y2="210" stroke="#764ba2" stroke-width="1.5"/>
+  <line x1="670" y1="175" x2="500" y2="210" stroke="#764ba2" stroke-width="1.5"/>
+  <line x1="400" y1="260" x2="400" y2="295" stroke="#4ade80" stroke-width="1.5"/>
+</svg>

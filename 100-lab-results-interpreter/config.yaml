@@ -1,0 +1,18 @@
+# Lab Results Interpreter Configuration
+model: "gemma4"
+temperature: 0.3
+max_tokens: 2048
+log_level: "INFO"
+ollama_url: "http://localhost:11434"
+
+# Lab Analysis Settings
+analysis:
+  include_reference_ranges: true
+  highlight_abnormalities: true
+  suggest_followups: true
+
+# UI Settings
+ui:
+  theme: "medical"
+  show_disclaimer: true
+  show_history: true

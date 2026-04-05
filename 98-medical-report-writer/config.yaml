@@ -1,0 +1,18 @@
+# Medical Report Writer Configuration
+model: "gemma4"
+temperature: 0.3
+max_tokens: 3072
+log_level: "INFO"
+ollama_url: "http://localhost:11434"
+
+# Report settings
+reports:
+  default_type: "progress_note"
+  include_disclaimer: true
+  mark_unverified: true
+
+# UI Settings
+ui:
+  theme: "medical"
+  show_disclaimer: true
+  show_history: true

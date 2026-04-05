@@ -1,0 +1,23 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4a574"/>
+      <stop offset="100%" style="stop-color:#b8860b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" fill="url(#bg)" rx="12"/>
+  <rect x="0" y="190" width="800" height="10" fill="url(#gold)" rx="0"/>
+  <text x="400" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="url(#gold)">⚖️ Contract Clause Analyzer</text>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#a0a0b0">AI-Powered Contract Analysis with Complete Privacy</text>
+  <text x="400" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#667eea">🔒 100% Local Processing • Zero Data Leakage • Attorney-Client Privilege Protected</text>
+  <text x="400" y="175" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">Powered by Gemma 4 via Ollama • Project 91 of 95</text>
+</svg>

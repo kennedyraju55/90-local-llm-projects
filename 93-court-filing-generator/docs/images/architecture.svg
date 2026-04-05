@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg2)" rx="12"/>
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#daa520" text-anchor="middle">System Architecture</text>
+  <!-- User Layer -->
+  <rect x="280" y="55" width="240" height="45" rx="8" fill="#1565c0" opacity="0.8"/>
+  <text x="400" y="83" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">👤 Attorney / User</text>
+  <!-- Arrow down -->
+  <line x1="400" y1="100" x2="400" y2="120" stroke="#daa520" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Interface Layer -->
+  <rect x="50" y="125" width="180" height="50" rx="8" fill="#2e7d32" opacity="0.8"/>
+  <text x="140" y="147" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">🖥️ CLI (Click+Rich)</text>
+  <text x="140" y="165" font-family="Arial, sans-serif" font-size="10" fill="#ccc" text-anchor="middle">Terminal Interface</text>
+  <rect x="260" y="125" width="180" height="50" rx="8" fill="#2e7d32" opacity="0.8"/>
+  <text x="350" y="147" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">🌐 Web UI (Streamlit)</text>
+  <text x="350" y="165" font-family="Arial, sans-serif" font-size="10" fill="#ccc" text-anchor="middle">Port 8501</text>
+  <rect x="470" y="125" width="180" height="50" rx="8" fill="#2e7d32" opacity="0.8"/>
+  <text x="560" y="147" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">🔌 REST API (FastAPI)</text>
+  <text x="560" y="165" font-family="Arial, sans-serif" font-size="10" fill="#ccc" text-anchor="middle">Port 8000</text>
+  <!-- Arrows to core -->
+  <line x1="140" y1="175" x2="350" y2="210" stroke="#555" stroke-width="1.5"/>
+  <line x1="350" y1="175" x2="350" y2="210" stroke="#555" stroke-width="1.5"/>
+  <line x1="560" y1="175" x2="350" y2="210" stroke="#555" stroke-width="1.5"/>
+  <!-- Core Engine -->
+  <rect x="200" y="210" width="300" height="55" rx="8" fill="#b8860b" opacity="0.9"/>
+  <text x="350" y="235" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">⚖️ Filing Generator Core</text>
+  <text x="350" y="255" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">Templates · Generation · Validation</text>
+  <!-- Arrow to LLM -->
+  <line x1="350" y1="265" x2="350" y2="290" stroke="#daa520" stroke-width="2"/>
+  <!-- LLM Client -->
+  <rect x="230" y="290" width="240" height="45" rx="8" fill="#4a148c" opacity="0.8"/>
+  <text x="350" y="312" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">🤖 Common LLM Client</text>
+  <text x="350" y="328" font-family="Arial, sans-serif" font-size="10" fill="#ccc" text-anchor="middle">chat() · generate() · stream()</text>
+  <!-- Arrow to Ollama -->
+  <line x1="350" y1="335" x2="350" y2="355" stroke="#daa520" stroke-width="2"/>
+  <!-- Ollama -->
+  <rect x="250" y="355" width="200" height="35" rx="8" fill="#c62828" opacity="0.8"/>
+  <text x="350" y="378" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">🦙 Ollama + Gemma 4</text>
+  <!-- Privacy border -->
+  <rect x="30" y="50" width="740" height="345" fill="none" stroke="#1b5e20" stroke-width="2" stroke-dasharray="8,4" rx="10"/>
+  <text x="720" y="385" font-family="Arial, sans-serif" font-size="10" fill="#1b5e20" text-anchor="end">🔒 All Local</text>
+</svg>

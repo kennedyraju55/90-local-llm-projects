@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350">
+  <defs>
+    <linearGradient id="featBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="featAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#featBg)" rx="12"/>
+  <text x="400" y="38" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">Key Features</text>
+  <rect x="300" y="48" width="200" height="3" fill="url(#featAccent)" rx="2"/>
+
+  <!-- Feature 1: Intake Summarization -->
+  <rect x="30" y="65" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="50" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">📋</text>
+  <text x="78" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Intake Summarization</text>
+  <text x="45" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Summarize patient intake forms</text>
+  <text x="45" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">into concise clinical summaries</text>
+  <text x="45" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">(brief, detailed, structured)</text>
+  <rect x="30" y="170" width="235" height="5" rx="3" fill="#667eea" opacity="0.15"/>
+
+  <!-- Feature 2: History Extraction -->
+  <rect x="285" y="65" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="305" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">🔍</text>
+  <text x="333" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">History Extraction</text>
+  <text x="300" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Extract and categorize medical</text>
+  <text x="300" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">history into 9 standard categories</text>
+  <text x="300" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">automatically</text>
+  <rect x="285" y="170" width="235" height="5" rx="3" fill="#667eea" opacity="0.15"/>
+
+  <!-- Feature 3: Risk Detection -->
+  <rect x="540" y="65" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="560" y="95" font-family="Segoe UI,Arial,sans-serif" font-size="20">⚠️</text>
+  <text x="588" y="97" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Risk Detection</text>
+  <text x="555" y="123" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Identify clinical risk factors</text>
+  <text x="555" y="140" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">from patient history, lifestyle,</text>
+  <text x="555" y="157" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">and family background</text>
+  <rect x="540" y="170" width="235" height="5" rx="3" fill="#667eea" opacity="0.15"/>
+
+  <!-- Feature 4: Pre-Visit Prep -->
+  <rect x="30" y="195" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="50" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="20">🩺</text>
+  <text x="78" y="227" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Pre-Visit Prep</text>
+  <text x="45" y="253" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Generate physician-ready pre-visit</text>
+  <text x="45" y="270" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">summaries with discussion points</text>
+  <text x="45" y="287" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">and red flags</text>
+  <rect x="30" y="300" width="235" height="5" rx="3" fill="#667eea" opacity="0.15"/>
+
+  <!-- Feature 5: HIPAA-Friendly -->
+  <rect x="285" y="195" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="305" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="20">🔒</text>
+  <text x="333" y="227" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">HIPAA-Friendly</text>
+  <text x="300" y="253" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">100% local processing — no patient</text>
+  <text x="300" y="270" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">data leaves your machine. Complete</text>
+  <text x="300" y="287" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">data privacy guaranteed</text>
+  <rect x="285" y="300" width="235" height="5" rx="3" fill="#667eea" opacity="0.15"/>
+
+  <!-- Feature 6: Docker Ready -->
+  <rect x="540" y="195" width="235" height="110" rx="10" fill="#161b22" stroke="#667eea" stroke-width="1.5"/>
+  <text x="560" y="225" font-family="Segoe UI,Arial,sans-serif" font-size="20">🐳</text>
+  <text x="588" y="227" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Docker Ready</text>
+  <text x="555" y="253" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">One-command deployment with Docker</text>
+  <text x="555" y="270" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">Compose. Includes Ollama sidecar</text>
+  <text x="555" y="287" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#8b949e">and API server</text>
+  <rect x="540" y="300" width="235" height="5" rx="3" fill="#667eea" opacity="0.15"/>
+</svg>
